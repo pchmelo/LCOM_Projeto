@@ -1,0 +1,133 @@
+\doxysection{src/prog/process/serial\+\_\+process.h File Reference}
+\hypertarget{serial__process_8h}{}\label{serial__process_8h}\index{src/prog/process/serial\_process.h@{src/prog/process/serial\_process.h}}
+{\ttfamily \#include "{}lcom/lcf.\+h"{}}\newline
+{\ttfamily \#include "{}../functions/composer.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/sp/sp.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/rtc/rtc.\+h"{}}\newline
+{\ttfamily \#include "{}../game\+\_\+rules/rules.\+h"{}}\newline
+Include dependency graph for serial\+\_\+process.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{serial__process_8h_a72ebc9c8b6ee1b881cfa1497b89de292}{serial\+\_\+process}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs during different game states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__process_8h_a9526b4b80c4e0c0ca0bde7eb40d5bfde}{serial\+\_\+process\+\_\+main\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs in the main menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__process_8h_a70897b5243566bc91472ad8b5611b9e3}{serial\+\_\+process\+\_\+\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs for Player 1 during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__process_8h_aa4d3a936659696a543c9eb4241cedac2}{serial\+\_\+process\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs for Player 2 during the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{serial__process_8h_a72ebc9c8b6ee1b881cfa1497b89de292}\index{serial\_process.h@{serial\_process.h}!serial\_process@{serial\_process}}
+\index{serial\_process@{serial\_process}!serial\_process.h@{serial\_process.h}}
+\doxysubsubsection{\texorpdfstring{serial\_process()}{serial\_process()}}
+{\footnotesize\ttfamily \label{serial__process_8h_a72ebc9c8b6ee1b881cfa1497b89de292} 
+void serial\+\_\+process (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs during different game states. 
+
+Handles the processing of serial inputs during different game states. Checks the current state of the game and performs actions based on the state. Handles the actions to be performed in the main menu, multiplayer mode, and other states. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h_a72ebc9c8b6ee1b881cfa1497b89de292_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h_a72ebc9c8b6ee1b881cfa1497b89de292_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__process_8h_a9526b4b80c4e0c0ca0bde7eb40d5bfde}\index{serial\_process.h@{serial\_process.h}!serial\_process\_main\_menu@{serial\_process\_main\_menu}}
+\index{serial\_process\_main\_menu@{serial\_process\_main\_menu}!serial\_process.h@{serial\_process.h}}
+\doxysubsubsection{\texorpdfstring{serial\_process\_main\_menu()}{serial\_process\_main\_menu()}}
+{\footnotesize\ttfamily \label{serial__process_8h_a9526b4b80c4e0c0ca0bde7eb40d5bfde} 
+void serial\+\_\+process\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs in the main menu. 
+
+Handles the processing of serial inputs in the main menu. Checks the value of the serial port and performs actions based on the value. Handles the actions to be performed when the player starts a multiplayer session, accepts an invite, or disconnects from the session. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h_a9526b4b80c4e0c0ca0bde7eb40d5bfde_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__process_8h_a70897b5243566bc91472ad8b5611b9e3}\index{serial\_process.h@{serial\_process.h}!serial\_process\_P1@{serial\_process\_P1}}
+\index{serial\_process\_P1@{serial\_process\_P1}!serial\_process.h@{serial\_process.h}}
+\doxysubsubsection{\texorpdfstring{serial\_process\_P1()}{serial\_process\_P1()}}
+{\footnotesize\ttfamily \label{serial__process_8h_a70897b5243566bc91472ad8b5611b9e3} 
+void serial\+\_\+process\+\_\+\+P1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs for Player 1 during the game. 
+
+Handles the processing of serial inputs for Player 1 during the game. Checks the received value and performs actions based on the value. Handles the actions to be performed when Player 2 disconnects, the game is initialized, and when Player 3 plays a card. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h_a70897b5243566bc91472ad8b5611b9e3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h_a70897b5243566bc91472ad8b5611b9e3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__process_8h_aa4d3a936659696a543c9eb4241cedac2}\index{serial\_process.h@{serial\_process.h}!serial\_process\_P2@{serial\_process\_P2}}
+\index{serial\_process\_P2@{serial\_process\_P2}!serial\_process.h@{serial\_process.h}}
+\doxysubsubsection{\texorpdfstring{serial\_process\_P2()}{serial\_process\_P2()}}
+{\footnotesize\ttfamily \label{serial__process_8h_aa4d3a936659696a543c9eb4241cedac2} 
+void serial\+\_\+process\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs for Player 2 during the game. 
+
+Handles the processing of serial inputs for Player 2 during the game. Checks the received value and performs actions based on the value. Handles the actions to be performed when Player 1 disconnects, the game is initialized, and when Player 1 plays a card. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h_aa4d3a936659696a543c9eb4241cedac2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8h_aa4d3a936659696a543c9eb4241cedac2_icgraph}
+\end{center}
+\end{figure}

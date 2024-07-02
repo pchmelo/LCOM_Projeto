@@ -1,0 +1,137 @@
+\doxysection{src/dispositivos/sp/sp\+\_\+macros.h File Reference}
+\hypertarget{sp__macros_8h}{}\label{sp__macros_8h}\index{src/dispositivos/sp/sp\_macros.h@{src/dispositivos/sp/sp\_macros.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for sp\+\_\+macros.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{sp__macros_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp__macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a3fe4512a3723d1b232994329fe0ac7a0}{IRQ\+\_\+\+SP}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a47bb57f1981e556b052f90b99598b171}{PORT\+\_\+\+COM1}}~4
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_aa501d94aad5260161a3f0b89ec827e92}{UART\+\_\+\+BASE}}~0x3\+F8
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a0f8ac527073d763bac90daba987361c6}{UART\+\_\+\+LSR}}~0x3\+FD
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_aaf7aaa372e86b3aa99e6c78242be2722}{UART\+\_\+\+IER}}~0x3\+F9
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a220a678f91ca8244b30fe813200c26c1}{UART\+\_\+\+FCR}}~0x3\+FA
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a216fc56695adfc83813630d074bdeebb}{FCR\+\_\+\+LIMPAR}}~0x7
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_afe616468359496cb5db500aebfd06415}{INSERT\+\_\+\+QUEUE}}~0xE
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_afaf3689290bd1e58627c9bc2b63d6c85}{IER}}(n)~(n \& 0x\+F0)
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_ac5fee43f3ee35d62a86df9fa091e7919}{IER\+\_\+\+OUT}}(n)~(n \texorpdfstring{$\vert$}{|} BIT(0))
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a1cb287c7425bfda4192ce804a2acd90e}{IER\+\_\+\+IN}}(n)~(!(n \& BIT(0)))
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_abe45ec130df3085bcbfcd6708592d46c}{TENTATIVAS}}~30
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a165b22b5d644704b505eccfc094e4b1f}{IIR\+\_\+\+ID}}~BIT(1) \texorpdfstring{$\vert$}{|} BIT(2) \texorpdfstring{$\vert$}{|} BIT(3)
+\item 
+\#define \mbox{\hyperlink{sp__macros_8h_a3cf797e047136414aa37d350a4b0c0d3}{IIR\+\_\+\+FIFO\+\_\+\+CT}}~BIT(3) \texorpdfstring{$\vert$}{|} BIT(2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{sp__macros_8h_a216fc56695adfc83813630d074bdeebb}\index{sp\_macros.h@{sp\_macros.h}!FCR\_LIMPAR@{FCR\_LIMPAR}}
+\index{FCR\_LIMPAR@{FCR\_LIMPAR}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{FCR\_LIMPAR}{FCR\_LIMPAR}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a216fc56695adfc83813630d074bdeebb} 
+\#define FCR\+\_\+\+LIMPAR~0x7}
+
+\Hypertarget{sp__macros_8h_afaf3689290bd1e58627c9bc2b63d6c85}\index{sp\_macros.h@{sp\_macros.h}!IER@{IER}}
+\index{IER@{IER}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{IER}{IER}}
+{\footnotesize\ttfamily \label{sp__macros_8h_afaf3689290bd1e58627c9bc2b63d6c85} 
+\#define IER(\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})~(n \& 0x\+F0)}
+
+\Hypertarget{sp__macros_8h_a1cb287c7425bfda4192ce804a2acd90e}\index{sp\_macros.h@{sp\_macros.h}!IER\_IN@{IER\_IN}}
+\index{IER\_IN@{IER\_IN}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{IER\_IN}{IER\_IN}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a1cb287c7425bfda4192ce804a2acd90e} 
+\#define IER\+\_\+\+IN(\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})~(!(n \& BIT(0)))}
+
+\Hypertarget{sp__macros_8h_ac5fee43f3ee35d62a86df9fa091e7919}\index{sp\_macros.h@{sp\_macros.h}!IER\_OUT@{IER\_OUT}}
+\index{IER\_OUT@{IER\_OUT}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{IER\_OUT}{IER\_OUT}}
+{\footnotesize\ttfamily \label{sp__macros_8h_ac5fee43f3ee35d62a86df9fa091e7919} 
+\#define IER\+\_\+\+OUT(\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})~(n \texorpdfstring{$\vert$}{|} BIT(0))}
+
+\Hypertarget{sp__macros_8h_a3cf797e047136414aa37d350a4b0c0d3}\index{sp\_macros.h@{sp\_macros.h}!IIR\_FIFO\_CT@{IIR\_FIFO\_CT}}
+\index{IIR\_FIFO\_CT@{IIR\_FIFO\_CT}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{IIR\_FIFO\_CT}{IIR\_FIFO\_CT}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a3cf797e047136414aa37d350a4b0c0d3} 
+\#define IIR\+\_\+\+FIFO\+\_\+\+CT~BIT(3) \texorpdfstring{$\vert$}{|} BIT(2)}
+
+\Hypertarget{sp__macros_8h_a165b22b5d644704b505eccfc094e4b1f}\index{sp\_macros.h@{sp\_macros.h}!IIR\_ID@{IIR\_ID}}
+\index{IIR\_ID@{IIR\_ID}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{IIR\_ID}{IIR\_ID}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a165b22b5d644704b505eccfc094e4b1f} 
+\#define IIR\+\_\+\+ID~BIT(1) \texorpdfstring{$\vert$}{|} BIT(2) \texorpdfstring{$\vert$}{|} BIT(3)}
+
+\Hypertarget{sp__macros_8h_afe616468359496cb5db500aebfd06415}\index{sp\_macros.h@{sp\_macros.h}!INSERT\_QUEUE@{INSERT\_QUEUE}}
+\index{INSERT\_QUEUE@{INSERT\_QUEUE}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{INSERT\_QUEUE}{INSERT\_QUEUE}}
+{\footnotesize\ttfamily \label{sp__macros_8h_afe616468359496cb5db500aebfd06415} 
+\#define INSERT\+\_\+\+QUEUE~0xE}
+
+\Hypertarget{sp__macros_8h_a3fe4512a3723d1b232994329fe0ac7a0}\index{sp\_macros.h@{sp\_macros.h}!IRQ\_SP@{IRQ\_SP}}
+\index{IRQ\_SP@{IRQ\_SP}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{IRQ\_SP}{IRQ\_SP}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a3fe4512a3723d1b232994329fe0ac7a0} 
+\#define IRQ\+\_\+\+SP~BIT(7)}
+
+\Hypertarget{sp__macros_8h_a47bb57f1981e556b052f90b99598b171}\index{sp\_macros.h@{sp\_macros.h}!PORT\_COM1@{PORT\_COM1}}
+\index{PORT\_COM1@{PORT\_COM1}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{PORT\_COM1}{PORT\_COM1}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a47bb57f1981e556b052f90b99598b171} 
+\#define PORT\+\_\+\+COM1~4}
+
+\Hypertarget{sp__macros_8h_abe45ec130df3085bcbfcd6708592d46c}\index{sp\_macros.h@{sp\_macros.h}!TENTATIVAS@{TENTATIVAS}}
+\index{TENTATIVAS@{TENTATIVAS}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{TENTATIVAS}{TENTATIVAS}}
+{\footnotesize\ttfamily \label{sp__macros_8h_abe45ec130df3085bcbfcd6708592d46c} 
+\#define TENTATIVAS~30}
+
+\Hypertarget{sp__macros_8h_aa501d94aad5260161a3f0b89ec827e92}\index{sp\_macros.h@{sp\_macros.h}!UART\_BASE@{UART\_BASE}}
+\index{UART\_BASE@{UART\_BASE}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BASE}{UART\_BASE}}
+{\footnotesize\ttfamily \label{sp__macros_8h_aa501d94aad5260161a3f0b89ec827e92} 
+\#define UART\+\_\+\+BASE~0x3\+F8}
+
+\Hypertarget{sp__macros_8h_a220a678f91ca8244b30fe813200c26c1}\index{sp\_macros.h@{sp\_macros.h}!UART\_FCR@{UART\_FCR}}
+\index{UART\_FCR@{UART\_FCR}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{UART\_FCR}{UART\_FCR}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a220a678f91ca8244b30fe813200c26c1} 
+\#define UART\+\_\+\+FCR~0x3\+FA}
+
+\Hypertarget{sp__macros_8h_aaf7aaa372e86b3aa99e6c78242be2722}\index{sp\_macros.h@{sp\_macros.h}!UART\_IER@{UART\_IER}}
+\index{UART\_IER@{UART\_IER}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{UART\_IER}{UART\_IER}}
+{\footnotesize\ttfamily \label{sp__macros_8h_aaf7aaa372e86b3aa99e6c78242be2722} 
+\#define UART\+\_\+\+IER~0x3\+F9}
+
+\Hypertarget{sp__macros_8h_a0f8ac527073d763bac90daba987361c6}\index{sp\_macros.h@{sp\_macros.h}!UART\_LSR@{UART\_LSR}}
+\index{UART\_LSR@{UART\_LSR}!sp\_macros.h@{sp\_macros.h}}
+\doxysubsubsection{\texorpdfstring{UART\_LSR}{UART\_LSR}}
+{\footnotesize\ttfamily \label{sp__macros_8h_a0f8ac527073d763bac90daba987361c6} 
+\#define UART\+\_\+\+LSR~0x3\+FD}
+

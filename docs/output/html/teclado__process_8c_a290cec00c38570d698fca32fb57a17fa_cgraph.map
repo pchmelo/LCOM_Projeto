@@ -1,0 +1,11 @@
+<map id="process_prepare_round_slide_teclado" name="process_prepare_round_slide_teclado">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,179,63"/>
+<area shape="rect" id="Node000002" href="$sp_8c.html#a0f5877ed1cc7d0cc779f1be8b25fc28f" title="Sends a byte through the serial port." alt="" coords="235,5,334,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,29,221,24,222,29,179,35"/>
+<area shape="rect" id="Node000005" href="$aux__func_8c.html#a273a13e41691394960eebd025f664bd6" title="Gets the position of the slider." alt="" coords="227,55,343,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="179,51,214,56,213,61,179,57"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="391,5,496,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,15,377,15,377,21,334,21"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="544,5,643,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="496,15,530,15,530,21,496,21"/>
+</map>

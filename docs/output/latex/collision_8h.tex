@@ -1,0 +1,794 @@
+\doxysection{src/prog/functions/collision.h File Reference}
+\hypertarget{collision_8h}{}\label{collision_8h}\index{src/prog/functions/collision.h@{src/prog/functions/collision.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}../game\+\_\+rules/rules.\+h"{}}\newline
+Include dependency graph for collision.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_collision}{Collision}}
+\begin{DoxyCompactList}\small\item\em Structure representing a collision area. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{collision_8h_a0621435dbdef02c21f7bc2549fea0287}{allocate\+\_\+collision\+\_\+array}} ()
+\begin{DoxyCompactList}\small\item\em Allocates collision arrays for the main and pause menus. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_aa927b12e2bc0ea43b0b4d2805debec7b}{allocate\+\_\+collision\+\_\+array\+\_\+main\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Allocates collision array for the main menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a358e83dbd1c343b34c21c4956ad77ca9}{allocate\+\_\+collision\+\_\+array\+\_\+pause\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Allocates collision array for the pause menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{collision_8h_a62e9d50a5333e1ec3fcac67b2ae5794a}{free\+\_\+collision\+\_\+array}} ()
+\begin{DoxyCompactList}\small\item\em Frees the collision arrays. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_aa847ebd1f6d9f431211f82ea20568a5f}{is\+Collision}} (int x, int y, \mbox{\hyperlink{struct_collision}{Collision}} collision)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside a collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_af7c56382fb64da8d4f2abdea34d5f85b}{test\+Start\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside the start button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a57d766b55cceb3f8c86149ec5cf8aad0}{test\+Exit\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside the exit button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_afff747f86c2f720bdd2283ba10dbba40}{test\+Multi\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside the multiplayer button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_acb822278b846a2a904931f57246afd02}{test\+Resume\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside the resume button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a46a318dfcb5101187e08c7c369aaf3b6}{test\+Restart\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside the restart button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a15807ecb1059a4b067e9c5caa955cc1a}{test\+Exit\+Button\+Collision\+Pause}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside the exit button collision area in the pause menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a4622c9bbeb2cad51aa617f25da29d70f}{selected\+\_\+card}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside the card grab area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a36fdf4da6f334bebc9507bb89b34196d}{test\+Card\+Grab\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within a card grab collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a230807afecf672e5d9df99057eaa2012}{test\+Cancel\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the cancel button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a2b976fa8d827e8c16e0bd272dfa8e5f3}{test\+Accept\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the accept button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a94807c283aad949f2afab15c9f4958e4}{test\+Decline\+Button\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the decline button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_ab2b82e4bf763c015330fbab62639bc17}{test\+Top\+Button}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the top button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_a60dbc749a5a7ccd2cc1e9fa01a1cbbac}{test\+Bot\+Button}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the bot button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_aeb4235e8e0390ac27d85aaac5e126807}{test\+Slide\+Button}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the slide button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_af1f3554bc4b49545e6c8b232dc84baa8}{test\+Square\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the square button collision area. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{collision_8h_add0b53555541a207b18b312728ab97fb}{test\+Timer\+Tracker\+Collision}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if a given point is within the timer tracker "{}confirm"{} button collision area. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{collision_8h_a0621435dbdef02c21f7bc2549fea0287}\index{collision.h@{collision.h}!allocate\_collision\_array@{allocate\_collision\_array}}
+\index{allocate\_collision\_array@{allocate\_collision\_array}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{allocate\_collision\_array()}{allocate\_collision\_array()}}
+{\footnotesize\ttfamily \label{collision_8h_a0621435dbdef02c21f7bc2549fea0287} 
+int allocate\+\_\+collision\+\_\+array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Allocates collision arrays for the main and pause menus. 
+
+Allocates collision arrays for the main and pause menus. Calls separate functions to allocate each array, and returns an error code if any allocation fails. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{collision_8h_a0621435dbdef02c21f7bc2549fea0287_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a0621435dbdef02c21f7bc2549fea0287_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_aa927b12e2bc0ea43b0b4d2805debec7b}\index{collision.h@{collision.h}!allocate\_collision\_array\_main\_menu@{allocate\_collision\_array\_main\_menu}}
+\index{allocate\_collision\_array\_main\_menu@{allocate\_collision\_array\_main\_menu}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{allocate\_collision\_array\_main\_menu()}{allocate\_collision\_array\_main\_menu()}}
+{\footnotesize\ttfamily \label{collision_8h_aa927b12e2bc0ea43b0b4d2805debec7b} 
+int allocate\+\_\+collision\+\_\+array\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Allocates collision array for the main menu. 
+
+Allocates a collision array for the main menu. Initializes the collision areas for the start, exit, and multiplayer buttons. returns an error code if any allocation fails. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_aa927b12e2bc0ea43b0b4d2805debec7b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a358e83dbd1c343b34c21c4956ad77ca9}\index{collision.h@{collision.h}!allocate\_collision\_array\_pause\_menu@{allocate\_collision\_array\_pause\_menu}}
+\index{allocate\_collision\_array\_pause\_menu@{allocate\_collision\_array\_pause\_menu}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{allocate\_collision\_array\_pause\_menu()}{allocate\_collision\_array\_pause\_menu()}}
+{\footnotesize\ttfamily \label{collision_8h_a358e83dbd1c343b34c21c4956ad77ca9} 
+int allocate\+\_\+collision\+\_\+array\+\_\+pause\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Allocates collision array for the pause menu. 
+
+Allocates a collision array for the pause menu. Initializes the collision areas for the resume, restart, and exit buttons. returns an error code if any allocation fails. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a358e83dbd1c343b34c21c4956ad77ca9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a62e9d50a5333e1ec3fcac67b2ae5794a}\index{collision.h@{collision.h}!free\_collision\_array@{free\_collision\_array}}
+\index{free\_collision\_array@{free\_collision\_array}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{free\_collision\_array()}{free\_collision\_array()}}
+{\footnotesize\ttfamily \label{collision_8h_a62e9d50a5333e1ec3fcac67b2ae5794a} 
+void free\+\_\+collision\+\_\+array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Frees the collision arrays. 
+
+Frees the memory for collision arrays for the main and pause menus. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a62e9d50a5333e1ec3fcac67b2ae5794a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_aa847ebd1f6d9f431211f82ea20568a5f}\index{collision.h@{collision.h}!isCollision@{isCollision}}
+\index{isCollision@{isCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{isCollision()}{isCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_aa847ebd1f6d9f431211f82ea20568a5f} 
+int is\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{\mbox{\hyperlink{struct_collision}{Collision}}}]{collision}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside a collision area. 
+
+Checks if a point is inside a collision area. Returns 1 if the point is inside the collision area, and 0 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+{\em collision} & \doxylink{struct_collision}{Collision} area to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if the point is inside the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_aa847ebd1f6d9f431211f82ea20568a5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a4622c9bbeb2cad51aa617f25da29d70f}\index{collision.h@{collision.h}!selected\_card@{selected\_card}}
+\index{selected\_card@{selected\_card}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{selected\_card()}{selected\_card()}}
+{\footnotesize\ttfamily \label{collision_8h_a4622c9bbeb2cad51aa617f25da29d70f} 
+int selected\+\_\+card (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside the card grab area. 
+
+Checks if a point is inside the card grab area. Returns the index of the card if the point is inside the collision area, and -\/1 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Index of the card if the point is inside the collision area, -\/1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{collision_8h_a4622c9bbeb2cad51aa617f25da29d70f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a4622c9bbeb2cad51aa617f25da29d70f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a2b976fa8d827e8c16e0bd272dfa8e5f3}\index{collision.h@{collision.h}!testAcceptButtonCollision@{testAcceptButtonCollision}}
+\index{testAcceptButtonCollision@{testAcceptButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testAcceptButtonCollision()}{testAcceptButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_a2b976fa8d827e8c16e0bd272dfa8e5f3} 
+int test\+Accept\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the accept button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing an accept button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{collision_8h_a2b976fa8d827e8c16e0bd272dfa8e5f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a2b976fa8d827e8c16e0bd272dfa8e5f3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a60dbc749a5a7ccd2cc1e9fa01a1cbbac}\index{collision.h@{collision.h}!testBotButton@{testBotButton}}
+\index{testBotButton@{testBotButton}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testBotButton()}{testBotButton()}}
+{\footnotesize\ttfamily \label{collision_8h_a60dbc749a5a7ccd2cc1e9fa01a1cbbac} 
+int test\+Bot\+Button (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the bot button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing the bot button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{collision_8h_a60dbc749a5a7ccd2cc1e9fa01a1cbbac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a60dbc749a5a7ccd2cc1e9fa01a1cbbac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a230807afecf672e5d9df99057eaa2012}\index{collision.h@{collision.h}!testCancelButtonCollision@{testCancelButtonCollision}}
+\index{testCancelButtonCollision@{testCancelButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testCancelButtonCollision()}{testCancelButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_a230807afecf672e5d9df99057eaa2012} 
+int test\+Cancel\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the cancel button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing a cancel button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{collision_8h_a230807afecf672e5d9df99057eaa2012_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a230807afecf672e5d9df99057eaa2012_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a36fdf4da6f334bebc9507bb89b34196d}\index{collision.h@{collision.h}!testCardGrabCollision@{testCardGrabCollision}}
+\index{testCardGrabCollision@{testCardGrabCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testCardGrabCollision()}{testCardGrabCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_a36fdf4da6f334bebc9507bb89b34196d} 
+int test\+Card\+Grab\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within a card grab collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing a card grab area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{collision_8h_a36fdf4da6f334bebc9507bb89b34196d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a36fdf4da6f334bebc9507bb89b34196d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a94807c283aad949f2afab15c9f4958e4}\index{collision.h@{collision.h}!testDeclineButtonCollision@{testDeclineButtonCollision}}
+\index{testDeclineButtonCollision@{testDeclineButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testDeclineButtonCollision()}{testDeclineButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_a94807c283aad949f2afab15c9f4958e4} 
+int test\+Decline\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the decline button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing a decline button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{collision_8h_a94807c283aad949f2afab15c9f4958e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a94807c283aad949f2afab15c9f4958e4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a57d766b55cceb3f8c86149ec5cf8aad0}\index{collision.h@{collision.h}!testExitButtonCollision@{testExitButtonCollision}}
+\index{testExitButtonCollision@{testExitButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testExitButtonCollision()}{testExitButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_a57d766b55cceb3f8c86149ec5cf8aad0} 
+int test\+Exit\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside the exit button collision area. 
+
+Checks if a point is inside the exit button collision area. Returns 1 if the point is inside the collision area, and 0 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if the point is inside the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{collision_8h_a57d766b55cceb3f8c86149ec5cf8aad0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a57d766b55cceb3f8c86149ec5cf8aad0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a15807ecb1059a4b067e9c5caa955cc1a}\index{collision.h@{collision.h}!testExitButtonCollisionPause@{testExitButtonCollisionPause}}
+\index{testExitButtonCollisionPause@{testExitButtonCollisionPause}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testExitButtonCollisionPause()}{testExitButtonCollisionPause()}}
+{\footnotesize\ttfamily \label{collision_8h_a15807ecb1059a4b067e9c5caa955cc1a} 
+int test\+Exit\+Button\+Collision\+Pause (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside the exit button collision area in the pause menu. 
+
+Checks if a point is inside the exit button collision area in the pause menu. Returns 1 if the point is inside the collision area, and 0 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if the point is inside the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{collision_8h_a15807ecb1059a4b067e9c5caa955cc1a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a15807ecb1059a4b067e9c5caa955cc1a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_afff747f86c2f720bdd2283ba10dbba40}\index{collision.h@{collision.h}!testMultiButtonCollision@{testMultiButtonCollision}}
+\index{testMultiButtonCollision@{testMultiButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testMultiButtonCollision()}{testMultiButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_afff747f86c2f720bdd2283ba10dbba40} 
+int test\+Multi\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside the multiplayer button collision area. 
+
+Checks if a point is inside the multiplayer button collision area. Returns 1 if the point is inside the collision area, and 0 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if the point is inside the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{collision_8h_afff747f86c2f720bdd2283ba10dbba40_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_afff747f86c2f720bdd2283ba10dbba40_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_a46a318dfcb5101187e08c7c369aaf3b6}\index{collision.h@{collision.h}!testRestartButtonCollision@{testRestartButtonCollision}}
+\index{testRestartButtonCollision@{testRestartButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testRestartButtonCollision()}{testRestartButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_a46a318dfcb5101187e08c7c369aaf3b6} 
+int test\+Restart\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside the restart button collision area. 
+
+Checks if a point is inside the restart button collision area. Returns 1 if the point is inside the collision area, and 0 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if the point is inside the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{collision_8h_a46a318dfcb5101187e08c7c369aaf3b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_a46a318dfcb5101187e08c7c369aaf3b6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_acb822278b846a2a904931f57246afd02}\index{collision.h@{collision.h}!testResumeButtonCollision@{testResumeButtonCollision}}
+\index{testResumeButtonCollision@{testResumeButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testResumeButtonCollision()}{testResumeButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_acb822278b846a2a904931f57246afd02} 
+int test\+Resume\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside the resume button collision area. 
+
+Checks if a point is inside the resume button collision area. Returns 1 if the point is inside the collision area, and 0 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if the point is inside the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{collision_8h_acb822278b846a2a904931f57246afd02_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_acb822278b846a2a904931f57246afd02_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_aeb4235e8e0390ac27d85aaac5e126807}\index{collision.h@{collision.h}!testSlideButton@{testSlideButton}}
+\index{testSlideButton@{testSlideButton}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testSlideButton()}{testSlideButton()}}
+{\footnotesize\ttfamily \label{collision_8h_aeb4235e8e0390ac27d85aaac5e126807} 
+int test\+Slide\+Button (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the slide button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing the button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{collision_8h_aeb4235e8e0390ac27d85aaac5e126807_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_aeb4235e8e0390ac27d85aaac5e126807_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_af1f3554bc4b49545e6c8b232dc84baa8}\index{collision.h@{collision.h}!testSquareCollision@{testSquareCollision}}
+\index{testSquareCollision@{testSquareCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testSquareCollision()}{testSquareCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_af1f3554bc4b49545e6c8b232dc84baa8} 
+int test\+Square\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the square button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing the square button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{collision_8h_af1f3554bc4b49545e6c8b232dc84baa8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_af1f3554bc4b49545e6c8b232dc84baa8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_af7c56382fb64da8d4f2abdea34d5f85b}\index{collision.h@{collision.h}!testStartButtonCollision@{testStartButtonCollision}}
+\index{testStartButtonCollision@{testStartButtonCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testStartButtonCollision()}{testStartButtonCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_af7c56382fb64da8d4f2abdea34d5f85b} 
+int test\+Start\+Button\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a point is inside the start button collision area. 
+
+Checks if a point is inside the start button collision area. Returns 1 if the point is inside the collision area, and 0 otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate of the point. \\
+\hline
+{\em y} & y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if the point is inside the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{collision_8h_af7c56382fb64da8d4f2abdea34d5f85b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_af7c56382fb64da8d4f2abdea34d5f85b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_add0b53555541a207b18b312728ab97fb}\index{collision.h@{collision.h}!testTimerTrackerCollision@{testTimerTrackerCollision}}
+\index{testTimerTrackerCollision@{testTimerTrackerCollision}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testTimerTrackerCollision()}{testTimerTrackerCollision()}}
+{\footnotesize\ttfamily \label{collision_8h_add0b53555541a207b18b312728ab97fb} 
+int test\+Timer\+Tracker\+Collision (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the timer tracker "{}confirm"{} button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing the confirm button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{collision_8h_add0b53555541a207b18b312728ab97fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_add0b53555541a207b18b312728ab97fb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collision_8h_ab2b82e4bf763c015330fbab62639bc17}\index{collision.h@{collision.h}!testTopButton@{testTopButton}}
+\index{testTopButton@{testTopButton}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{testTopButton()}{testTopButton()}}
+{\footnotesize\ttfamily \label{collision_8h_ab2b82e4bf763c015330fbab62639bc17} 
+int test\+Top\+Button (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Tests if a given point is within the top button collision area. 
+
+Checks if a given point (x, y) is within the predefined collision area representing the top button area. If the point is within the collision area, returns 1. Otherwise, returns 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the point. \\
+\hline
+{\em y} & The y-\/coordinate of the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if the point is within the collision area, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{collision_8h_ab2b82e4bf763c015330fbab62639bc17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8h_ab2b82e4bf763c015330fbab62639bc17_icgraph}
+\end{center}
+\end{figure}

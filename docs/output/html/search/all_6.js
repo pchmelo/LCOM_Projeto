@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['game_0',['GAME',['../composer_8h.html#a73254e36fbb9de54f2ee7a4263b9e5b2ad50cf309d7568040619ed26ee6835a84',1,'composer.h']]],
+  ['game_2ec_1',['game.c',['../game_8c.html',1,'']]],
+  ['game_2eh_2',['game.h',['../game_8h.html',1,'']]],
+  ['game_5finit_3',['GAME_INIT',['../composer_8h.html#a923762042f3074402fbf32bc96074164a4a973e379ae7b9c889ab1d10f6ce1521',1,'composer.h']]],
+  ['game_5fround_4',['game_round',['../composer_8h.html#a9948582ef5310fc307a7258c885e38e7',1,'composer.h']]],
+  ['get_5fseed_5',['get_seed',['../aux__func_8c.html#a8254aeb688b82ec38da613c6d9a7f18a',1,'get_seed():&#160;aux_func.c'],['../aux__func_8h.html#a8254aeb688b82ec38da613c6d9a7f18a',1,'get_seed():&#160;aux_func.c']]],
+  ['get_5fslider_5fpos_6',['get_slider_pos',['../aux__func_8c.html#a273a13e41691394960eebd025f664bd6',1,'get_slider_pos(int x):&#160;aux_func.c'],['../aux__func_8h.html#a273a13e41691394960eebd025f664bd6',1,'get_slider_pos(int x):&#160;aux_func.c']]],
+  ['get_5ftime_5fspent_7',['get_time_spent',['../aux__func_8c.html#a61b958aafad26d30fe9f4a26cca143dc',1,'get_time_spent(rtc_struct start, rtc_struct end):&#160;aux_func.c'],['../aux__func_8h.html#a61b958aafad26d30fe9f4a26cca143dc',1,'get_time_spent(rtc_struct start, rtc_struct end):&#160;aux_func.c']]],
+  ['get_5fvalue_8',['get_value',['../sp_8c.html#ab11728b54cf64e7065c11438e362add0',1,'get_value():&#160;sp.c'],['../sp_8h.html#ab11728b54cf64e7065c11438e362add0',1,'get_value():&#160;sp.c']]],
+  ['getbottom_9',['getBottom',['../rules_8c.html#a4d10df4c26ab05e602410300279f2066',1,'getBottom():&#160;rules.c'],['../rules_8h.html#a4d10df4c26ab05e602410300279f2066',1,'getBottom():&#160;rules.c']]],
+  ['getsprite_10',['getSprite',['../rules_8c.html#a3df79d631c10ddcff7ef8064fb4534ac',1,'getSprite(int rank, int suit):&#160;rules.c'],['../rules_8h.html#a3df79d631c10ddcff7ef8064fb4534ac',1,'getSprite(int rank, int suit):&#160;rules.c']]],
+  ['gettop_11',['getTop',['../rules_8c.html#a273228885ce4b0b07699c595b93f4d63',1,'getTop():&#160;rules.c'],['../rules_8h.html#a273228885ce4b0b07699c595b93f4d63',1,'getTop():&#160;rules.c']]],
+  ['grab_12',['GRAB',['../composer_8h.html#a2a2dda99ff6e7a4243c9d483e49b172ca8b49019b2af9a80adeebeb741f277984',1,'composer.h']]],
+  ['grab_13',['grab',['../composer_8c.html#aa6ade37f01e0477e7cd12fcfe6d05692',1,'grab:&#160;composer.c'],['../game_8c.html#aa6ade37f01e0477e7cd12fcfe6d05692',1,'grab:&#160;composer.c'],['../rato__process_8c.html#aa6ade37f01e0477e7cd12fcfe6d05692',1,'grab:&#160;composer.c'],['../timer__process_8c.html#aa6ade37f01e0477e7cd12fcfe6d05692',1,'grab:&#160;composer.c']]],
+  ['grab_5fstate_14',['grab_state',['../composer_8h.html#a2a2dda99ff6e7a4243c9d483e49b172c',1,'composer.h']]],
+  ['grabbedcard_15',['grabbedCard',['../composer_8c.html#a2bd0957d6c7ae9fa6334851fdc4608eb',1,'composer.c']]],
+  ['grabcard_16',['grabCard',['../composer_8c.html#a19bfbd1d5511e4b9989a429ef463cf49',1,'grabCard():&#160;composer.c'],['../composer_8h.html#a19bfbd1d5511e4b9989a429ef463cf49',1,'grabCard():&#160;composer.c']]],
+  ['grabcard_5fp2_17',['grabCard_P2',['../composer_8c.html#ad14cd4f4428fc53696c373a2d5346e78',1,'grabCard_P2():&#160;composer.c'],['../composer_8h.html#ad14cd4f4428fc53696c373a2d5346e78',1,'grabCard_P2():&#160;composer.c']]],
+  ['grabcardx_18',['grabCardX',['../composer_8c.html#a5ac994482989d025c8be50719cbd8289',1,'composer.c']]],
+  ['grabcardy_19',['grabCardY',['../composer_8c.html#a1c79ec92f3e44ff58552ab3eae14c963',1,'composer.c']]],
+  ['grabsquare_20',['grabSquare',['../composer_8c.html#a466f994ce5c0e419c06c0bb07c8a221b',1,'grabSquare():&#160;composer.c'],['../composer_8h.html#a466f994ce5c0e419c06c0bb07c8a221b',1,'grabSquare():&#160;composer.c']]],
+  ['grabsquareslide_21',['grabSquareSlide',['../rato__process_8h.html#a54170fa448b13e1940998e880edcfbd6',1,'rato_process.h']]],
+  ['grafica_2ec_22',['grafica.c',['../grafica_8c.html',1,'']]],
+  ['grafica_2eh_23',['grafica.h',['../grafica_8h.html',1,'']]]
+];

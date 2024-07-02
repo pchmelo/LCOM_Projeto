@@ -1,0 +1,12 @@
+<map id="receber_byte" name="receber_byte">
+<area shape="rect" id="Node000001" title="Receives a byte from the serial port." alt="" coords="5,55,112,80"/>
+<area shape="rect" id="Node000002" href="$fila__sp_8c.html#ade729f42295947061681421a846c1459" title="Inserts a value into the serial port queue." alt="" coords="160,5,272,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,52,161,32,162,37,101,57"/>
+<area shape="rect" id="Node000004" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="163,55,269,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="112,65,149,65,149,70,112,70"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="330,80,429,105"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="101,77,160,90,241,95,316,94,316,99,241,101,160,95,100,83"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#a0b8ca7bc01262e52044c1d72e622383e" title="Places a value into the serial port queue." alt="" coords="320,5,439,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,15,306,15,306,21,272,21"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="269,73,317,80,316,86,269,78"/>
+</map>

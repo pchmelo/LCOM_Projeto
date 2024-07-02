@@ -1,0 +1,5 @@
+<map id="sp_clean_interrupts" name="sp_clean_interrupts">
+<area shape="rect" id="Node000001" title="Cleans the serial port interrupts." alt="" coords="5,5,155,31"/>
+<area shape="rect" id="Node000002" href="$fila__sp_8c.html#a1aea4a5be0ef7f13f8871f5e0b4d32c3" title="Pops a value from the serial port queue." alt="" coords="203,5,297,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,15,189,15,189,21,155,21"/>
+</map>

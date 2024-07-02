@@ -1,0 +1,95 @@
+\doxysection{src/dispositivos/rtc/rtc.h File Reference}
+\hypertarget{rtc_8h}{}\label{rtc_8h}\index{src/dispositivos/rtc/rtc.h@{src/dispositivos/rtc/rtc.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}rtc\+\_\+macros.\+h"{}}\newline
+{\ttfamily \#include "{}../util.\+h"{}}\newline
+{\ttfamily \#include "{}../aux\+\_\+dispositivos.\+h"{}}\newline
+Include dependency graph for rtc.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}}
+\begin{DoxyCompactList}\small\item\em Structure to hold RTC time data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{rtc_8h_a082d1137bf57d60a2747117221f5dbff}{rtc\+\_\+read\+\_\+set}} ()
+\begin{DoxyCompactList}\small\item\em Reads and sets the RTC time. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rtc_8h_ae05582b9454a374bbdc4621cbda8336d}{rtc\+\_\+get\+\_\+time}} (\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \texorpdfstring{$\ast$}{*}rtc\+\_\+time\+\_\+dis)
+\begin{DoxyCompactList}\small\item\em Gets the current time from the RTC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rtc_8h_ae05582b9454a374bbdc4621cbda8336d}\index{rtc.h@{rtc.h}!rtc\_get\_time@{rtc\_get\_time}}
+\index{rtc\_get\_time@{rtc\_get\_time}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_time()}{rtc\_get\_time()}}
+{\footnotesize\ttfamily \label{rtc_8h_ae05582b9454a374bbdc4621cbda8336d} 
+int rtc\+\_\+get\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \texorpdfstring{$\ast$}{*}}]{rtc\+\_\+time\+\_\+dis}{}\end{DoxyParamCaption})}
+
+
+
+Gets the current time from the RTC. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ae05582b9454a374bbdc4621cbda8336d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ae05582b9454a374bbdc4621cbda8336d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8h_a082d1137bf57d60a2747117221f5dbff}\index{rtc.h@{rtc.h}!rtc\_read\_set@{rtc\_read\_set}}
+\index{rtc\_read\_set@{rtc\_read\_set}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_read\_set()}{rtc\_read\_set()}}
+{\footnotesize\ttfamily \label{rtc_8h_a082d1137bf57d60a2747117221f5dbff} 
+int rtc\+\_\+read\+\_\+set (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads and sets the RTC time. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a082d1137bf57d60a2747117221f5dbff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a082d1137bf57d60a2747117221f5dbff_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,371 @@
+\doxysection{src/prog/process/teclado\+\_\+process.h File Reference}
+\hypertarget{teclado__process_8h}{}\label{teclado__process_8h}\index{src/prog/process/teclado\_process.h@{src/prog/process/teclado\_process.h}}
+{\ttfamily \#include "{}../functions/composer.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/i8042.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/sp/sp.\+h"{}}\newline
+{\ttfamily \#include "{}../game\+\_\+rules/rules.\+h"{}}\newline
+{\ttfamily \#include "{}../game.\+h"{}}\newline
+{\ttfamily \#include "{}../functions/aux\+\_\+func.\+h"{}}\newline
+Include dependency graph for teclado\+\_\+process.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{teclado__process_8h_a0ee37f1e7303425b7d4fbf4f43f76fd5}{process\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs based on the current game state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8h_aae3ad73cea948d2846da46830634a16b}{process\+\_\+main\+\_\+menu\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs in the main menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8h_a5d3d3c043e06ce537a08a1fd50465245}{process\+\_\+game\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8h_ab9eaf45861a19da225a3292cc634c8af}{process\+\_\+select\+\_\+card\+\_\+\+P1}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}}, int max\+\_\+cards)
+\begin{DoxyCompactList}\small\item\em Processes the selection of cards for Player 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8h_a496e97d8fdbe56eaf529d3c1ebed3eae}{process\+\_\+select\+\_\+card\+\_\+\+P2}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}}, int max\+\_\+cards)
+\begin{DoxyCompactList}\small\item\em Processes the selection of cards for Player 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8h_a50d2690a2bd307bf886dec9178c98731}{process\+\_\+connection\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs during the connection phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8h_a4bbb02ce0c11506bd7749b4bba3c485e}{process\+\_\+invitation\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs during the invitation phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8h_a4abd67bb8b6c4c87ff15f233ad803728}{process\+\_\+prepare\+\_\+round\+\_\+trump\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\item 
+void \mbox{\hyperlink{teclado__process_8h_a290cec00c38570d698fca32fb57a17fa}{process\+\_\+prepare\+\_\+round\+\_\+slide\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\item 
+void \mbox{\hyperlink{teclado__process_8h_a6fb4fb356f3d9a9155ad454c65103069}{process\+\_\+time\+\_\+tracker\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{teclado__process_8h_a50d2690a2bd307bf886dec9178c98731}\index{teclado\_process.h@{teclado\_process.h}!process\_connection\_teclado@{process\_connection\_teclado}}
+\index{process\_connection\_teclado@{process\_connection\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_connection\_teclado()}{process\_connection\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a50d2690a2bd307bf886dec9178c98731} 
+void process\+\_\+connection\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs during the connection phase. 
+
+Handles the processing of keyboard inputs during the connection phase. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the connection. Handles the actions to be performed when certain keys are pressed, and the navigation between different states using arrow keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a50d2690a2bd307bf886dec9178c98731_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a50d2690a2bd307bf886dec9178c98731_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_a5d3d3c043e06ce537a08a1fd50465245}\index{teclado\_process.h@{teclado\_process.h}!process\_game\_teclado@{process\_game\_teclado}}
+\index{process\_game\_teclado@{process\_game\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_game\_teclado()}{process\_game\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a5d3d3c043e06ce537a08a1fd50465245} 
+void process\+\_\+game\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs during the game. 
+
+Handles the processing of keyboard inputs during the game. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the game. Handles the navigation between different buttons in the pause menu and the actions to be performed when certain keys are pressed. Also processes the selection of cards in the game or multiplayer mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a5d3d3c043e06ce537a08a1fd50465245_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a5d3d3c043e06ce537a08a1fd50465245_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_a4bbb02ce0c11506bd7749b4bba3c485e}\index{teclado\_process.h@{teclado\_process.h}!process\_invitation\_teclado@{process\_invitation\_teclado}}
+\index{process\_invitation\_teclado@{process\_invitation\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_invitation\_teclado()}{process\_invitation\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a4bbb02ce0c11506bd7749b4bba3c485e} 
+void process\+\_\+invitation\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs during the invitation phase. 
+
+Handles the processing of keyboard inputs during the invitation phase. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the invitation. Handles the actions to be performed when certain keys are pressed, and the navigation between different states using arrow keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a4bbb02ce0c11506bd7749b4bba3c485e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a4bbb02ce0c11506bd7749b4bba3c485e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_aae3ad73cea948d2846da46830634a16b}\index{teclado\_process.h@{teclado\_process.h}!process\_main\_menu\_teclado@{process\_main\_menu\_teclado}}
+\index{process\_main\_menu\_teclado@{process\_main\_menu\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_main\_menu\_teclado()}{process\_main\_menu\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_aae3ad73cea948d2846da46830634a16b} 
+void process\+\_\+main\+\_\+menu\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs in the main menu. 
+
+Handles the processing of keyboard inputs in the main menu. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the main menu. Handles the navigation between different buttons in the main menu and the actions to be performed when certain keys are pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_aae3ad73cea948d2846da46830634a16b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_aae3ad73cea948d2846da46830634a16b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_a290cec00c38570d698fca32fb57a17fa}\index{teclado\_process.h@{teclado\_process.h}!process\_prepare\_round\_slide\_teclado@{process\_prepare\_round\_slide\_teclado}}
+\index{process\_prepare\_round\_slide\_teclado@{process\_prepare\_round\_slide\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_prepare\_round\_slide\_teclado()}{process\_prepare\_round\_slide\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a290cec00c38570d698fca32fb57a17fa} 
+void process\+\_\+prepare\+\_\+round\+\_\+slide\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a290cec00c38570d698fca32fb57a17fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a290cec00c38570d698fca32fb57a17fa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_a4abd67bb8b6c4c87ff15f233ad803728}\index{teclado\_process.h@{teclado\_process.h}!process\_prepare\_round\_trump\_teclado@{process\_prepare\_round\_trump\_teclado}}
+\index{process\_prepare\_round\_trump\_teclado@{process\_prepare\_round\_trump\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_prepare\_round\_trump\_teclado()}{process\_prepare\_round\_trump\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a4abd67bb8b6c4c87ff15f233ad803728} 
+void process\+\_\+prepare\+\_\+round\+\_\+trump\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a4abd67bb8b6c4c87ff15f233ad803728_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a4abd67bb8b6c4c87ff15f233ad803728_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_ab9eaf45861a19da225a3292cc634c8af}\index{teclado\_process.h@{teclado\_process.h}!process\_select\_card\_P1@{process\_select\_card\_P1}}
+\index{process\_select\_card\_P1@{process\_select\_card\_P1}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_select\_card\_P1()}{process\_select\_card\_P1()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_ab9eaf45861a19da225a3292cc634c8af} 
+void process\+\_\+select\+\_\+card\+\_\+\+P1 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{, }\item[{int}]{max\+\_\+cards}{}\end{DoxyParamCaption})}
+
+
+
+Processes the selection of cards for Player 1. 
+
+Handles the processing of keyboard inputs for the selection of cards for Player 1. Checks the scancode of the key pressed and performs actions based on the scancode. Handles the navigation between different cards using arrow keys and the action to be performed when the ENTER key is pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+{\em max\+\_\+cards} & The maximum number of cards that can be selected. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_ab9eaf45861a19da225a3292cc634c8af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_ab9eaf45861a19da225a3292cc634c8af_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_a496e97d8fdbe56eaf529d3c1ebed3eae}\index{teclado\_process.h@{teclado\_process.h}!process\_select\_card\_P2@{process\_select\_card\_P2}}
+\index{process\_select\_card\_P2@{process\_select\_card\_P2}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_select\_card\_P2()}{process\_select\_card\_P2()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a496e97d8fdbe56eaf529d3c1ebed3eae} 
+void process\+\_\+select\+\_\+card\+\_\+\+P2 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{, }\item[{int}]{max\+\_\+cards}{}\end{DoxyParamCaption})}
+
+
+
+Processes the selection of cards for Player 2. 
+
+Handles the processing of keyboard inputs for the selection of cards for Player 2. Checks the scancode of the key pressed and performs actions based on the scancode. Handles the navigation between different cards using arrow keys and the action to be performed when the ENTER key is pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+{\em max\+\_\+cards} & The maximum number of cards that can be selected. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a496e97d8fdbe56eaf529d3c1ebed3eae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a496e97d8fdbe56eaf529d3c1ebed3eae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_a0ee37f1e7303425b7d4fbf4f43f76fd5}\index{teclado\_process.h@{teclado\_process.h}!process\_teclado@{process\_teclado}}
+\index{process\_teclado@{process\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_teclado()}{process\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a0ee37f1e7303425b7d4fbf4f43f76fd5} 
+void process\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs based on the current game state. 
+
+Handles the processing of keyboard inputs based on the current game state. If the game is in the main menu, processes the keyboard inputs for the main menu, connection, or invitation based on the current connection and invitation states. If the game is in the game state or multiplayer mode, it processes the keyboard inputs for the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a0ee37f1e7303425b7d4fbf4f43f76fd5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a0ee37f1e7303425b7d4fbf4f43f76fd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8h_a6fb4fb356f3d9a9155ad454c65103069}\index{teclado\_process.h@{teclado\_process.h}!process\_time\_tracker\_teclado@{process\_time\_tracker\_teclado}}
+\index{process\_time\_tracker\_teclado@{process\_time\_tracker\_teclado}!teclado\_process.h@{teclado\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_time\_tracker\_teclado()}{process\_time\_tracker\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8h_a6fb4fb356f3d9a9155ad454c65103069} 
+void process\+\_\+time\+\_\+tracker\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8h_a6fb4fb356f3d9a9155ad454c65103069_icgraph}
+\end{center}
+\end{figure}

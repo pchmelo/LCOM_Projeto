@@ -1,0 +1,37 @@
+<map id="rtc_get_time" name="rtc_get_time">
+<area shape="rect" id="Node000001" title="Gets the current time from the RTC." alt="" coords="756,207,860,232"/>
+<area shape="rect" id="Node000002" href="$teclado__process_8c.html#a5d3d3c043e06ce537a08a1fd50465245" title="Processes keyboard inputs during the game." alt="" coords="537,5,708,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="797,194,784,160,765,119,740,79,706,44,688,33,690,29,710,40,744,75,770,117,789,158,802,192"/>
+<area shape="rect" id="Node000006" href="$timer__process_8c.html#a67d5c3dff00cb6a8b4a04324d8808d4c" title="Processes the game timer events and updates game states." alt="" coords="543,55,702,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="790,197,755,149,732,124,707,102,669,82,671,78,709,97,736,120,760,145,794,194"/>
+<area shape="rect" id="Node000007" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="369,105,483,131"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="771,203,707,175,648,158,589,145,483,127,484,122,590,140,650,153,709,170,773,198"/>
+<area shape="rect" id="Node000008" href="$rato__process_8c.html#a24ce13e18f0e9cb0674c54d3fe885d3a" title="Processes mouse inputs during different game states." alt="" coords="373,207,479,232"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="753,206,708,197,623,190,538,197,472,209,471,204,537,191,623,185,708,191,754,201"/>
+<area shape="rect" id="Node000009" href="$rato__process_8c.html#a8d2c7a28e7be735956de6e02befdb313" title="Processes mouse inputs for Player 1 during the game." alt="" coords="559,207,687,232"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="742,222,687,222,687,217,742,217"/>
+<area shape="rect" id="Node000010" href="$rato__process_8c.html#a074eb76b6094f3d712031fd7c26b0f9f" title="Processes mouse inputs for Player 2 during the game." alt="" coords="559,256,687,281"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="747,238,672,258,671,253,746,233"/>
+<area shape="rect" id="Node000011" href="$rtc_8c.html#a082d1137bf57d60a2747117221f5dbff" title="Reads and sets the RTC time." alt="" coords="375,281,477,307"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="787,244,752,272,709,295,648,309,585,313,527,311,477,306,478,300,527,306,585,308,647,304,707,290,749,268,783,240"/>
+<area shape="rect" id="Node000012" href="$serial__process_8c.html#a70897b5243566bc91472ad8b5611b9e3" title="Processes serial inputs for Player 1 during the game." alt="" coords="553,357,692,383"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="794,245,759,293,736,318,709,340,671,360,669,355,707,336,732,314,755,289,790,242"/>
+<area shape="rect" id="Node000014" href="$serial__process_8c.html#aa4d3a936659696a543c9eb4241cedac2" title="Processes serial inputs for Player 2 during the game." alt="" coords="553,407,692,432"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="802,246,789,280,770,321,744,362,710,397,690,409,688,404,706,393,739,359,765,319,784,278,797,244"/>
+<area shape="rect" id="Node000003" href="$teclado__process_8c.html#a0ee37f1e7303425b7d4fbf4f43f76fd5" title="Processes keyboard inputs based on the current game state." alt="" coords="363,31,489,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="524,33,490,38,489,33,523,28"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,207,315,232"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="398,66,364,95,304,157,259,208,255,205,300,153,361,91,395,62"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,207,128,232"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,222,128,222,128,217,163,217"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="560,86,477,108,475,103,558,81"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="392,140,270,209,268,204,389,135"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="360,222,315,222,315,217,360,217"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="545,222,479,222,479,217,545,217"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="558,255,477,235,478,229,559,250"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="380,278,276,234,278,230,382,273"/>
+<area shape="rect" id="Node000013" href="$serial__process_8c.html#a72ebc9c8b6ee1b881cfa1497b89de292" title="Processes serial inputs during different game states." alt="" coords="369,357,483,383"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="539,373,484,373,484,367,539,367"/>
+<area shape="poly" id="edge19_Node000013_Node000004" title=" " alt="" coords="397,351,361,320,260,234,263,230,364,316,401,346"/>
+<area shape="poly" id="edge21_Node000014_Node000013" title=" " alt="" coords="558,406,477,385,478,380,559,401"/>
+</map>

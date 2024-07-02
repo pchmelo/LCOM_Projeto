@@ -1,0 +1,22 @@
+<map id="testBotButton" name="testBotButton">
+<area shape="rect" id="Node000001" title="Tests if a given point is within the bot button collision area." alt="" coords="928,44,1040,69"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#a03432a52e5ca823ca9ab88f0bc8bf032" title="Handles the creation of a mouse in the game." alt="" coords="749,5,833,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="914,45,833,29,834,24,915,40"/>
+<area shape="rect" id="Node000006" href="$rato__process_8c.html#a0c6657d850be9b2f06e4b2471d1e7dd5" title=" " alt="" coords="701,68,880,93"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="915,68,880,72,880,67,914,63"/>
+<area shape="rect" id="Node000003" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="363,5,477,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="735,21,478,21,478,15,735,15"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,44,315,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="350,36,304,47,303,41,349,31"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,44,128,69"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,59,128,59,128,54,163,54"/>
+<area shape="rect" id="Node000007" href="$rato__process_8c.html#a24ce13e18f0e9cb0674c54d3fe885d3a" title="Processes mouse inputs during different game states." alt="" coords="367,68,473,93"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="688,83,473,83,473,78,688,78"/>
+<area shape="rect" id="Node000008" href="$rato__process_8c.html#a8d2c7a28e7be735956de6e02befdb313" title="Processes mouse inputs for Player 1 during the game." alt="" coords="525,93,653,119"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="688,96,654,101,653,95,687,91"/>
+<area shape="rect" id="Node000009" href="$rato__process_8c.html#a074eb76b6094f3d712031fd7c26b0f9f" title="Processes mouse inputs for Player 2 during the game." alt="" coords="525,143,653,168"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="743,101,625,145,623,140,742,96"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="353,74,314,69,315,64,354,69"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="511,97,473,91,473,86,512,92"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="539,140,524,134,445,96,447,91,526,129,541,135"/>
+</map>

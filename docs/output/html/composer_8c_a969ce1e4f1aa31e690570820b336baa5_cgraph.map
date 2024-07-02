@@ -1,0 +1,7 @@
+<map id="display_card_jogador_2" name="display_card_jogador_2">
+<area shape="rect" id="Node000001" title="Displays the card for player 2. Prints the sprite of the card. If there is an error in printing the s..." alt="" coords="5,5,180,31"/>
+<area shape="rect" id="Node000002" href="$grafica_8c.html#afe44ad8c40405c5ae1dd181c70e5d2e6" title="Prints a form from an XPM sprite." alt="" coords="228,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,15,214,15,214,21,181,21"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#a1ebb4488d400f798504117c353edd1bd" title="Draws a pixel based on the received parameters." alt="" coords="459,5,579,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,15,445,15,445,21,411,21"/>
+</map>

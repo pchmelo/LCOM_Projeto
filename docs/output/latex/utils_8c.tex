@@ -1,0 +1,107 @@
+\doxysection{src/dispositivos/utils.c File Reference}
+\hypertarget{utils_8c}{}\label{utils_8c}\index{src/dispositivos/utils.c@{src/dispositivos/utils.c}}
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+Include dependency graph for utils.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{utils_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{utils_8c_a31ab374573517f8a5ba31c52a49a8606}{util\+\_\+get\+\_\+\+LSB}} (uint16\+\_\+t val, uint8\+\_\+t \texorpdfstring{$\ast$}{*}lsb)
+\begin{DoxyCompactList}\small\item\em Gets the least significant byte (LSB) of a 16-\/bit value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8c_afc6ca7a9a39943ff1792d206da514a59}{util\+\_\+get\+\_\+\+MSB}} (uint16\+\_\+t val, uint8\+\_\+t \texorpdfstring{$\ast$}{*}msb)
+\begin{DoxyCompactList}\small\item\em Gets the most significant byte (MSB) of a 16-\/bit value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9}{util\+\_\+sys\+\_\+inb}} (int port, uint8\+\_\+t \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Reads a byte from a specified port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8c_a31ab374573517f8a5ba31c52a49a8606}\index{utils.c@{utils.c}!util\_get\_LSB@{util\_get\_LSB}}
+\index{util\_get\_LSB@{util\_get\_LSB}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_get\_LSB()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily \label{utils_8c_a31ab374573517f8a5ba31c52a49a8606} 
+int util\+\_\+get\+\_\+\+LSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{lsb}{}\end{DoxyParamCaption})}
+
+
+
+Gets the least significant byte (LSB) of a 16-\/bit value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The 16-\/bit value. \\
+\hline
+{\em lsb} & Pointer to store the LSB. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 if the pointer is NULL. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a31ab374573517f8a5ba31c52a49a8606_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{utils_8c_afc6ca7a9a39943ff1792d206da514a59}\index{utils.c@{utils.c}!util\_get\_MSB@{util\_get\_MSB}}
+\index{util\_get\_MSB@{util\_get\_MSB}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_get\_MSB()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily \label{utils_8c_afc6ca7a9a39943ff1792d206da514a59} 
+int util\+\_\+get\+\_\+\+MSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{msb}{}\end{DoxyParamCaption})}
+
+
+
+Gets the most significant byte (MSB) of a 16-\/bit value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The 16-\/bit value. \\
+\hline
+{\em msb} & Pointer to store the MSB. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 if the pointer is NULL. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_afc6ca7a9a39943ff1792d206da514a59_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9}\index{utils.c@{utils.c}!util\_sys\_inb@{util\_sys\_inb}}
+\index{util\_sys\_inb@{util\_sys\_inb}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_sys\_inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily \label{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9} 
+int util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reads a byte from a specified port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to read from. \\
+\hline
+{\em value} & Pointer to store the read value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 if the pointer is NULL or if the sys\+\_\+inb function fails. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,19 @@
+<map id="ler_status_KBC" name="ler_status_KBC">
+<area shape="rect" id="Node000001" title="Reads the status of the Keyboard Controller." alt="" coords="805,80,925,105"/>
+<area shape="rect" id="Node000002" href="$kbc_8c.html#af00123e2b17f85beb8565fddd0e7385a" title="Reads the output of the Keyboard Controller." alt="" coords="615,55,738,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="792,85,738,78,739,73,792,80"/>
+<area shape="rect" id="Node000007" href="$kbc_8c.html#a9328ad256b9b72373801a76d49568dfd" title="Writes a command byte to the Keyboard Controller." alt="" coords="596,104,757,129"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="792,105,758,109,757,104,791,99"/>
+<area shape="rect" id="Node000003" href="$handler_8c.html#a6a2a6c2b64c950d09dbcc2cc52073e12" title="Keyboard interrupt handler." alt="" coords="405,5,506,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="605,54,506,32,507,27,607,49"/>
+<area shape="rect" id="Node000006" href="$handler_8c.html#a1ba8ccf32722915b37e49d01e9f9b6d6" title="Handles Mouse interrupts." alt="" coords="363,55,548,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="602,70,548,70,548,65,602,65"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,55,315,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="392,36,301,57,299,52,391,30"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,55,128,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,70,128,70,128,65,163,65"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="349,70,315,70,315,65,349,65"/>
+<area shape="rect" id="Node000008" href="$mouse_8c.html#a01a70d44c0ecd2ff75328d443517b08c" title="Writes a command directly to the Mouse." alt="" coords="402,104,509,129"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="582,119,509,119,509,114,582,114"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="388,104,299,83,301,77,389,98"/>
+</map>

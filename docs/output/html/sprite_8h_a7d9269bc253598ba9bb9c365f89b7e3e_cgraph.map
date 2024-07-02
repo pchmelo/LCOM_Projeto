@@ -1,0 +1,5 @@
+<map id="alocar_sprite_mem" name="alocar_sprite_mem">
+<area shape="rect" id="Node000001" title="Allocates memory for sprites." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a0b6f957b85614efb2291c6e366da0d86" title="Creates a sprite from an XPM file." alt="" coords="200,5,295,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
+</map>

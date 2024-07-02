@@ -1,0 +1,147 @@
+\doxysection{src/dispositivos/rato/mouse.c File Reference}
+\hypertarget{mouse_8c}{}\label{mouse_8c}\index{src/dispositivos/rato/mouse.c@{src/dispositivos/rato/mouse.c}}
+{\ttfamily \#include "{}mouse.\+h"{}}\newline
+Include dependency graph for mouse.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mouse_8c_a01a70d44c0ecd2ff75328d443517b08c}{write\+\_\+mouse}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes a command directly to the Mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mouse_8c_a8d6ee7592c47e8f3830a140c1c36587d}{mouse\+\_\+sync\+\_\+bytes}} ()
+\begin{DoxyCompactList}\small\item\em Synchronizes the bytes received from the Mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mouse_8c_a763e29f4a4e0f5682458012740c6450b}{mouse\+\_\+bytes\+\_\+to\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em Converts the array of bytes into a packet structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct packet \mbox{\hyperlink{mouse_8c_a3b2e64ffb96c650d6525c99be01c7331}{mouse\+\_\+packet}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{mouse_8c_a8884dab9d88cd6c24f21afc6c7144a7b}{byte\+\_\+index}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{mouse_8c_addea07e4cbaf9574f38de24dcf0bf3cb}{mouse\+\_\+bytes}} \mbox{[}3\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{mouse_8c_a65b988e1163cc65c6d3e5562fbc36a98}{current\+\_\+byte}}
+\item 
+int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}} = 100
+\item 
+int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}} = 100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mouse_8c_a763e29f4a4e0f5682458012740c6450b}\index{mouse.c@{mouse.c}!mouse\_bytes\_to\_packet@{mouse\_bytes\_to\_packet}}
+\index{mouse\_bytes\_to\_packet@{mouse\_bytes\_to\_packet}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_bytes\_to\_packet()}{mouse\_bytes\_to\_packet()}}
+{\footnotesize\ttfamily \label{mouse_8c_a763e29f4a4e0f5682458012740c6450b} 
+void mouse\+\_\+bytes\+\_\+to\+\_\+packet (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Converts the array of bytes into a packet structure. 
+
+Transforms the mouse\+\_\+bytes array into a mouse\+\_\+packet structure. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a763e29f4a4e0f5682458012740c6450b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8c_a8d6ee7592c47e8f3830a140c1c36587d}\index{mouse.c@{mouse.c}!mouse\_sync\_bytes@{mouse\_sync\_bytes}}
+\index{mouse\_sync\_bytes@{mouse\_sync\_bytes}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_sync\_bytes()}{mouse\_sync\_bytes()}}
+{\footnotesize\ttfamily \label{mouse_8c_a8d6ee7592c47e8f3830a140c1c36587d} 
+void mouse\+\_\+sync\+\_\+bytes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Synchronizes the bytes received from the Mouse. 
+
+Ensures the first byte of the packet has BIT(3) set. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a8d6ee7592c47e8f3830a140c1c36587d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8c_a01a70d44c0ecd2ff75328d443517b08c}\index{mouse.c@{mouse.c}!write\_mouse@{write\_mouse}}
+\index{write\_mouse@{write\_mouse}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{write\_mouse()}{write\_mouse()}}
+{\footnotesize\ttfamily \label{mouse_8c_a01a70d44c0ecd2ff75328d443517b08c} 
+int write\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Writes a command directly to the Mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command byte to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a01a70d44c0ecd2ff75328d443517b08c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a01a70d44c0ecd2ff75328d443517b08c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{mouse_8c_a8884dab9d88cd6c24f21afc6c7144a7b}\index{mouse.c@{mouse.c}!byte\_index@{byte\_index}}
+\index{byte\_index@{byte\_index}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{byte\_index}{byte\_index}}
+{\footnotesize\ttfamily \label{mouse_8c_a8884dab9d88cd6c24f21afc6c7144a7b} 
+uint8\+\_\+t byte\+\_\+index = 0}
+
+\Hypertarget{mouse_8c_a65b988e1163cc65c6d3e5562fbc36a98}\index{mouse.c@{mouse.c}!current\_byte@{current\_byte}}
+\index{current\_byte@{current\_byte}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{current\_byte}{current\_byte}}
+{\footnotesize\ttfamily \label{mouse_8c_a65b988e1163cc65c6d3e5562fbc36a98} 
+uint8\+\_\+t current\+\_\+byte}
+
+\Hypertarget{mouse_8c_addea07e4cbaf9574f38de24dcf0bf3cb}\index{mouse.c@{mouse.c}!mouse\_bytes@{mouse\_bytes}}
+\index{mouse\_bytes@{mouse\_bytes}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_bytes}{mouse\_bytes}}
+{\footnotesize\ttfamily \label{mouse_8c_addea07e4cbaf9574f38de24dcf0bf3cb} 
+uint8\+\_\+t mouse\+\_\+bytes\mbox{[}3\mbox{]}}
+
+\Hypertarget{mouse_8c_a3b2e64ffb96c650d6525c99be01c7331}\index{mouse.c@{mouse.c}!mouse\_packet@{mouse\_packet}}
+\index{mouse\_packet@{mouse\_packet}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet}{mouse\_packet}}
+{\footnotesize\ttfamily \label{mouse_8c_a3b2e64ffb96c650d6525c99be01c7331} 
+struct packet mouse\+\_\+packet}
+
+\Hypertarget{mouse_8c_a6c59af730728bf5260ef828aea2eebee}\index{mouse.c@{mouse.c}!mouse\_x@{mouse\_x}}
+\index{mouse\_x@{mouse\_x}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_x}{mouse\_x}}
+{\footnotesize\ttfamily \label{mouse_8c_a6c59af730728bf5260ef828aea2eebee} 
+int mouse\+\_\+x = 100}
+
+\Hypertarget{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}\index{mouse.c@{mouse.c}!mouse\_y@{mouse\_y}}
+\index{mouse\_y@{mouse\_y}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_y}{mouse\_y}}
+{\footnotesize\ttfamily \label{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2} 
+int mouse\+\_\+y = 100}
+

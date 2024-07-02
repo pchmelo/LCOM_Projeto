@@ -1,0 +1,137 @@
+\doxysection{src/dispositivos/rtc/rtc\+\_\+macros.h File Reference}
+\hypertarget{rtc__macros_8h}{}\label{rtc__macros_8h}\index{src/dispositivos/rtc/rtc\_macros.h@{src/dispositivos/rtc/rtc\_macros.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for rtc\+\_\+macros.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{rtc__macros_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc__macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_a4e22feb6ffbc1cda32fadff5c740dc51}{RTC\+\_\+\+IRQ}}~8
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_a559f323bbb1cf080e0fd3f9b90ebe243}{RTC\+\_\+\+IN\+\_\+\+ADDR\+\_\+\+REG}}~0x70
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_a5105241affc413667bfdc9dc374e0fa3}{RTC\+\_\+\+OUT\+\_\+\+ADDR\+\_\+\+REG}}~0x71
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_ac0900532424779d5d1efb1d09caab87e}{SECONDS\+\_\+\+BIT}}~0
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_a04a8472aceef70b18c5c9ede5304518d}{MINUTES\+\_\+\+BIT}}~2
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_ac95b1ef512a58208c7d7649d7d4c6aba}{HOURS\+\_\+\+BIT}}~4
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_ac842b4960b8f75fb8e03fb531606eb89}{DAY\+\_\+\+BIT}}~7
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_a5019dd1b39aac6089aebdb4ffa5ec71f}{MONTH\+\_\+\+BIT}}~8
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_ab5357fd1369660f970814d510e9517cb}{YEAR\+\_\+\+BIT}}~9
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_ae86f95d3e1b44075f3a7d90abaa32a6e}{UPDATE\+\_\+\+BIT}}~10
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_ae81e6dad7320a57aa5004349856c84f8}{COUNTING\+\_\+\+BIT}}~11
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_ae950fef43abba397d74ea77a961a035d}{UPDATE\+\_\+\+MODE}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_a399981b4dd18f0e6b9252badf307ce05}{BINARY\+\_\+\+MODE}}~BIT(2)
+\item 
+\#define \mbox{\hyperlink{rtc__macros_8h_a808c0cb093bd9bf80e470aaa78109608}{BINARY}}(number)~(((number $>$$>$ 4) \texorpdfstring{$\ast$}{*} 10) + ((number \& 0xF)))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{rtc__macros_8h_a808c0cb093bd9bf80e470aaa78109608}\index{rtc\_macros.h@{rtc\_macros.h}!BINARY@{BINARY}}
+\index{BINARY@{BINARY}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{BINARY}{BINARY}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_a808c0cb093bd9bf80e470aaa78109608} 
+\#define BINARY(\begin{DoxyParamCaption}\item[{}]{number}{}\end{DoxyParamCaption})~(((number $>$$>$ 4) \texorpdfstring{$\ast$}{*} 10) + ((number \& 0xF)))}
+
+\Hypertarget{rtc__macros_8h_a399981b4dd18f0e6b9252badf307ce05}\index{rtc\_macros.h@{rtc\_macros.h}!BINARY\_MODE@{BINARY\_MODE}}
+\index{BINARY\_MODE@{BINARY\_MODE}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{BINARY\_MODE}{BINARY\_MODE}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_a399981b4dd18f0e6b9252badf307ce05} 
+\#define BINARY\+\_\+\+MODE~BIT(2)}
+
+\Hypertarget{rtc__macros_8h_ae81e6dad7320a57aa5004349856c84f8}\index{rtc\_macros.h@{rtc\_macros.h}!COUNTING\_BIT@{COUNTING\_BIT}}
+\index{COUNTING\_BIT@{COUNTING\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{COUNTING\_BIT}{COUNTING\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_ae81e6dad7320a57aa5004349856c84f8} 
+\#define COUNTING\+\_\+\+BIT~11}
+
+\Hypertarget{rtc__macros_8h_ac842b4960b8f75fb8e03fb531606eb89}\index{rtc\_macros.h@{rtc\_macros.h}!DAY\_BIT@{DAY\_BIT}}
+\index{DAY\_BIT@{DAY\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{DAY\_BIT}{DAY\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_ac842b4960b8f75fb8e03fb531606eb89} 
+\#define DAY\+\_\+\+BIT~7}
+
+\Hypertarget{rtc__macros_8h_ac95b1ef512a58208c7d7649d7d4c6aba}\index{rtc\_macros.h@{rtc\_macros.h}!HOURS\_BIT@{HOURS\_BIT}}
+\index{HOURS\_BIT@{HOURS\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{HOURS\_BIT}{HOURS\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_ac95b1ef512a58208c7d7649d7d4c6aba} 
+\#define HOURS\+\_\+\+BIT~4}
+
+\Hypertarget{rtc__macros_8h_a04a8472aceef70b18c5c9ede5304518d}\index{rtc\_macros.h@{rtc\_macros.h}!MINUTES\_BIT@{MINUTES\_BIT}}
+\index{MINUTES\_BIT@{MINUTES\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{MINUTES\_BIT}{MINUTES\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_a04a8472aceef70b18c5c9ede5304518d} 
+\#define MINUTES\+\_\+\+BIT~2}
+
+\Hypertarget{rtc__macros_8h_a5019dd1b39aac6089aebdb4ffa5ec71f}\index{rtc\_macros.h@{rtc\_macros.h}!MONTH\_BIT@{MONTH\_BIT}}
+\index{MONTH\_BIT@{MONTH\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{MONTH\_BIT}{MONTH\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_a5019dd1b39aac6089aebdb4ffa5ec71f} 
+\#define MONTH\+\_\+\+BIT~8}
+
+\Hypertarget{rtc__macros_8h_a559f323bbb1cf080e0fd3f9b90ebe243}\index{rtc\_macros.h@{rtc\_macros.h}!RTC\_IN\_ADDR\_REG@{RTC\_IN\_ADDR\_REG}}
+\index{RTC\_IN\_ADDR\_REG@{RTC\_IN\_ADDR\_REG}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_IN\_ADDR\_REG}{RTC\_IN\_ADDR\_REG}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_a559f323bbb1cf080e0fd3f9b90ebe243} 
+\#define RTC\+\_\+\+IN\+\_\+\+ADDR\+\_\+\+REG~0x70}
+
+\Hypertarget{rtc__macros_8h_a4e22feb6ffbc1cda32fadff5c740dc51}\index{rtc\_macros.h@{rtc\_macros.h}!RTC\_IRQ@{RTC\_IRQ}}
+\index{RTC\_IRQ@{RTC\_IRQ}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_IRQ}{RTC\_IRQ}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_a4e22feb6ffbc1cda32fadff5c740dc51} 
+\#define RTC\+\_\+\+IRQ~8}
+
+\Hypertarget{rtc__macros_8h_a5105241affc413667bfdc9dc374e0fa3}\index{rtc\_macros.h@{rtc\_macros.h}!RTC\_OUT\_ADDR\_REG@{RTC\_OUT\_ADDR\_REG}}
+\index{RTC\_OUT\_ADDR\_REG@{RTC\_OUT\_ADDR\_REG}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_OUT\_ADDR\_REG}{RTC\_OUT\_ADDR\_REG}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_a5105241affc413667bfdc9dc374e0fa3} 
+\#define RTC\+\_\+\+OUT\+\_\+\+ADDR\+\_\+\+REG~0x71}
+
+\Hypertarget{rtc__macros_8h_ac0900532424779d5d1efb1d09caab87e}\index{rtc\_macros.h@{rtc\_macros.h}!SECONDS\_BIT@{SECONDS\_BIT}}
+\index{SECONDS\_BIT@{SECONDS\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{SECONDS\_BIT}{SECONDS\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_ac0900532424779d5d1efb1d09caab87e} 
+\#define SECONDS\+\_\+\+BIT~0}
+
+\Hypertarget{rtc__macros_8h_ae86f95d3e1b44075f3a7d90abaa32a6e}\index{rtc\_macros.h@{rtc\_macros.h}!UPDATE\_BIT@{UPDATE\_BIT}}
+\index{UPDATE\_BIT@{UPDATE\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{UPDATE\_BIT}{UPDATE\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_ae86f95d3e1b44075f3a7d90abaa32a6e} 
+\#define UPDATE\+\_\+\+BIT~10}
+
+\Hypertarget{rtc__macros_8h_ae950fef43abba397d74ea77a961a035d}\index{rtc\_macros.h@{rtc\_macros.h}!UPDATE\_MODE@{UPDATE\_MODE}}
+\index{UPDATE\_MODE@{UPDATE\_MODE}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{UPDATE\_MODE}{UPDATE\_MODE}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_ae950fef43abba397d74ea77a961a035d} 
+\#define UPDATE\+\_\+\+MODE~BIT(7)}
+
+\Hypertarget{rtc__macros_8h_ab5357fd1369660f970814d510e9517cb}\index{rtc\_macros.h@{rtc\_macros.h}!YEAR\_BIT@{YEAR\_BIT}}
+\index{YEAR\_BIT@{YEAR\_BIT}!rtc\_macros.h@{rtc\_macros.h}}
+\doxysubsubsection{\texorpdfstring{YEAR\_BIT}{YEAR\_BIT}}
+{\footnotesize\ttfamily \label{rtc__macros_8h_ab5357fd1369660f970814d510e9517cb} 
+\#define YEAR\+\_\+\+BIT~9}
+

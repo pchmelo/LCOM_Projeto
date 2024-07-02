@@ -1,0 +1,15 @@
+<map id="testResumeButtonCollision" name="testResumeButtonCollision">
+<area shape="rect" id="Node000001" title="Checks if a point is inside the resume button collision area." alt="" coords="692,23,891,48"/>
+<area shape="rect" id="Node000002" href="$rato__process_8c.html#a24ce13e18f0e9cb0674c54d3fe885d3a" title="Processes mouse inputs during different game states." alt="" coords="363,23,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="717,23,644,13,580,8,516,13,457,25,456,20,516,7,580,3,644,7,718,18"/>
+<area shape="rect" id="Node000005" href="$rato__process_8c.html#a8d2c7a28e7be735956de6e02befdb313" title="Processes mouse inputs for Player 1 during the game." alt="" coords="516,23,644,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="678,38,645,38,645,33,678,33"/>
+<area shape="rect" id="Node000006" href="$rato__process_8c.html#a074eb76b6094f3d712031fd7c26b0f9f" title="Processes mouse inputs for Player 2 during the game." alt="" coords="516,72,644,97"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="724,54,636,75,635,69,723,49"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,23,315,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,38,315,38,315,33,349,33"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,23,128,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="163,38,128,38,128,33,163,33"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="502,38,468,38,468,33,502,33"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="523,71,458,51,460,46,525,66"/>
+</map>

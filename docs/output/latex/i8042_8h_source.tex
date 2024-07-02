@@ -1,0 +1,84 @@
+\doxysection{i8042.\+h}
+\hypertarget{i8042_8h_source}{}\label{i8042_8h_source}\index{src/dispositivos/i8042.h@{src/dispositivos/i8042.h}}
+\mbox{\hyperlink{i8042_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ IRQ\_KBD\ \ \ \ 1}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ IRQ\_MOUSE\ \ 12}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ ESC\_BREAK\ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x81}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ENTER\_BREAK\ \ \ \ \ \ \ \ \ \ \ \ 0x9C}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ LEFT\_ARROW\_BREAK\ \ \ \ \ \ \ 0xCB}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ RIGHT\_ARROW\_BREAK\ \ \ \ \ \ 0xCD}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ UP\_ARROW\_BREAK\ \ \ \ \ \ \ \ \ 0xC8}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ DOWN\_ARROW\_BREAK\ \ \ \ \ \ \ 0xD0}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ MAKE\_CODE\ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ DOIS\_BYTES\ \ \ \ \ \ \ \ \ \ \ \ \ 0xE0}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ INTERRUPTOR\ \ \ \ \ \ \ \ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ ERRO\_TIMEOUT\ \ \ \ \ \ \ \ \ \ \ BIT(6)}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ ERRO\_PARIDADE\ \ \ \ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ OUTPUT\_BUFFER\_CHEIO\ \ \ \ BIT(0)}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ INPUT\_BUFFER\_CHEIO\ \ \ \ \ BIT(1)}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ KBC\_REG\_STATUS\ \ \ \ \ \ \ \ \ \ 0x64}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ KBC\_INPUT\_COMMAND\ \ \ \ \ \ \ 0x64}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ KBC\_OUTPUT\_COMMAND\ \ \ \ \ \ 0x60}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ KBC\_READ\_COMMAND\ \ \ \ \ \ \ \ 0x20}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ KBC\_WRITE\_COMMAND\ \ \ \ \ \ \ 0x60}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ KBC\_TEMPO\_ESPERA\ \ \ \ 20000}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ MAX\_TENTATIVAS\ \ \ \ \ \ 10}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ LEFT\_BUTTON\ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ RIGHT\_BUTTON\ \ \ \ BIT(1)}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ MIDDLE\_BUTTON\ \ \ BIT(2)}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ PRIMEIRO\_BYTE\ \ \ BIT(3)}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ MOUSE\_X\ \ \ \ \ \ \ \ \ BIT(4)}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ MOUSE\_Y\ \ \ \ \ \ \ \ \ BIT(5)}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ X\_OVERFLOW\ \ \ \ \ \ BIT(6)}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ Y\_OVERFLOW\ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ DESLIGAR\_DATA\_REPORT\ \ \ \ 0xF5}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ LIGAR\_DATA\_REPORT\ \ \ \ \ \ \ 0xF4}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ LIGAR\_STREAM\_MODE\ \ \ \ \ \ \ 0xEA}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ LER\_MOUSE\_DATA\ \ \ \ \ \ \ \ \ \ 0xEB}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ WRITE\_MOUSE\_BYTE\ \ \ \ \ \ \ \ 0xD4}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ ACKNOWLEDGED\ \ \ \ \ \ \ \ \ 0xFA}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ NOT\_ACKNOWLEDGED\ \ \ \ \ 0xFE}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

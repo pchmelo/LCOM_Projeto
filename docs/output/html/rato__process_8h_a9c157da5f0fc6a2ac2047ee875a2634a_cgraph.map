@@ -1,0 +1,16 @@
+<map id="process_rato_invitation" name="process_rato_invitation">
+<area shape="rect" id="Node000001" title="Processes mouse inputs during the invitation phase." alt="" coords="5,55,180,80"/>
+<area shape="rect" id="Node000002" href="$sp_8c.html#a0f5877ed1cc7d0cc779f1be8b25fc28f" title="Sends a byte through the serial port." alt="" coords="276,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,52,262,29,263,34,154,57"/>
+<area shape="rect" id="Node000005" href="$collision_8c.html#a2b976fa8d827e8c16e0bd272dfa8e5f3" title="Tests if a given point is within the accept button collision area." alt="" coords="230,55,421,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="180,65,216,65,216,70,180,70"/>
+<area shape="rect" id="Node000007" href="$collision_8c.html#a94807c283aad949f2afab15c9f4958e4" title="Tests if a given point is within the decline button collision area." alt="" coords="228,104,423,129"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="154,77,252,98,251,104,153,83"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="471,5,576,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,15,457,15,457,21,375,21"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="624,5,723,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="576,15,610,15,610,21,576,21"/>
+<area shape="rect" id="Node000006" href="$collision_8c.html#aa847ebd1f6d9f431211f82ea20568a5f" title="Checks if a point is inside a collision area." alt="" coords="479,79,568,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="421,76,465,82,465,87,421,82"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="423,102,465,96,466,101,424,107"/>
+</map>

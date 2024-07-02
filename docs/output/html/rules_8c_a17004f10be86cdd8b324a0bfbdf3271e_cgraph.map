@@ -1,0 +1,5 @@
+<map id="removeCard" name="removeCard">
+<area shape="rect" id="Node000001" title="Removes a card from a player&#39;s hand." alt="" coords="5,5,108,31"/>
+<area shape="rect" id="Node000002" href="$rules_8c.html#a91a0d490a3563ee97302b9a4eda45f67" title="Removes a card from a player&#39;s hand." alt="" coords="156,5,292,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,15,142,15,142,21,108,21"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="wait_60_seconds" name="wait_60_seconds">
+<area shape="rect" id="Node000001" title="Waits for 60 seconds during a pause in the game." alt="" coords="725,31,859,56"/>
+<area shape="rect" id="Node000002" href="$timer__process_8c.html#a7dc69e7e999eb6570eda1718ff0f250b" title="Processes a round of the game." alt="" coords="543,5,659,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="711,35,660,28,660,23,712,30"/>
+<area shape="rect" id="Node000006" href="$timer__process_8c.html#aedf736e2ebdb639de95eed424a33b64b" title="Processes the round in a multiplayer game." alt="" coords="525,55,677,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="712,56,678,60,677,55,711,51"/>
+<area shape="rect" id="Node000003" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="363,31,477,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="530,31,478,38,477,33,529,25"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,31,315,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="349,46,315,46,315,41,349,41"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,31,128,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,46,128,46,128,41,163,41"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="511,58,477,54,478,48,512,53"/>
+</map>

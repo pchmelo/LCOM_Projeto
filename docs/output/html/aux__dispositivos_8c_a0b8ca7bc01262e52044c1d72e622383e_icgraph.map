@@ -1,0 +1,13 @@
+<map id="colocar_fila_sp" name="colocar_fila_sp">
+<area shape="rect" id="Node000001" title="Places a value into the serial port queue." alt="" coords="881,5,1000,31"/>
+<area shape="rect" id="Node000002" href="$fila__sp_8c.html#ade729f42295947061681421a846c1459" title="Inserts a value into the serial port queue." alt="" coords="721,5,833,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="868,21,833,21,833,15,868,15"/>
+<area shape="rect" id="Node000003" href="$sp_8c.html#ac49ac47c244b1208cb547863f2eee4a4" title="Receives a byte from the serial port." alt="" coords="567,5,673,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="707,21,674,21,674,15,707,15"/>
+<area shape="rect" id="Node000004" href="$handler_8c.html#aca5f9a009c7c9ba2b5140f59232e2b02" title="Handles the serial port interrupts." alt="" coords="363,5,519,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="553,21,519,21,519,15,553,15"/>
+<area shape="rect" id="Node000005" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,5,315,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="349,21,315,21,315,15,349,15"/>
+<area shape="rect" id="Node000006" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="163,21,128,21,128,15,163,15"/>
+</map>

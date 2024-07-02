@@ -1,0 +1,33 @@
+\doxysection{aux\+\_\+dispositivos.\+h}
+\hypertarget{aux__dispositivos_8h_source}{}\label{aux__dispositivos_8h_source}\index{src/dispositivos/aux\_dispositivos.h@{src/dispositivos/aux\_dispositivos.h}}
+\mbox{\hyperlink{aux__dispositivos_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_AUX\_DISPOSITIVOS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_AUX\_DISPOSITIVOS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{grafica_8h}{grafica/grafica.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{i8042_8h}{i8042.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sp__macros_8h}{sp/sp\_macros.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{fila__sp_8h}{sp/fila\_sp.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8h}{utils.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rtc__macros_8h}{rtc/rtc\_macros.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{i8254_8h}{timer/i8254.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00020\ int\ (\mbox{\hyperlink{aux__dispositivos_8h_a1ebb4488d400f798504117c353edd1bd}{desenhar\_pixel}})(uint16\_t\ x,\ uint16\_t\ y,\ uint32\_t\ cor);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00028\ int\ (\mbox{\hyperlink{aux__dispositivos_8h_aea12e94b49a4890d1f6b6ef71437586e}{ler\_status\_KBC}})(uint8\_t*\ status);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ int\ (\mbox{\hyperlink{aux__dispositivos_8h_ae99efaf0e0d9e755532707deea1e60e6}{serial\_status}})(uint8\_t*\ status);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{aux__dispositivos_8h_a0b8ca7bc01262e52044c1d72e622383e}{colocar\_fila\_sp}}(\mbox{\hyperlink{structfila__sp}{fila\_sp}}*\ \mbox{\hyperlink{interrupts_8c_a1c185ef10097e4cde9265c5df24b13a5}{f}},\ \textcolor{keywordtype}{int}\ valor);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00056\ int\ (\mbox{\hyperlink{aux__dispositivos_8h_a12feaa4b91b2a749d13b96eab97d6662}{rtc\_read\_output}})(uint8\_t\ *data,\ uint8\_t\ comando);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00065\ int\ (\mbox{\hyperlink{aux__dispositivos_8h_afafc1891c876602d55b894103b1841a7}{timer\_get\_conf}})(uint8\_t\ timer,\ uint8\_t\ *st);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,9 @@
+<map id="process_prepare_round_trump_teclado" name="process_prepare_round_trump_teclado">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,179,45"/>
+<area shape="rect" id="Node000002" href="$sp_8c.html#a0f5877ed1cc7d0cc779f1be8b25fc28f" title="Sends a byte through the serial port." alt="" coords="227,13,325,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,23,213,23,213,28,179,28"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="373,13,479,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,23,360,23,360,28,326,28"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="527,13,625,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="479,23,513,23,513,28,479,28"/>
+</map>

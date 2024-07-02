@@ -1,0 +1,5 @@
+<map id="fillDeck" name="fillDeck">
+<area shape="rect" id="Node000001" title="Fills a deck of cards." alt="" coords="5,5,76,31"/>
+<area shape="rect" id="Node000002" href="$rules_8c.html#a3df79d631c10ddcff7ef8064fb4534ac" title="Retrieves the sprite for a card based on its rank and suit." alt="" coords="124,5,205,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,15,110,15,110,21,76,21"/>
+</map>

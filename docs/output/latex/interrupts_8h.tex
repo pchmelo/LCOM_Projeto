@@ -1,0 +1,358 @@
+\doxysection{src/dispositivos/interrupts.h File Reference}
+\hypertarget{interrupts_8h}{}\label{interrupts_8h}\index{src/dispositivos/interrupts.h@{src/dispositivos/interrupts.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}timer/i8254.\+h"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include "{}i8042.\+h"{}}\newline
+{\ttfamily \#include "{}teclado/kbc.\+h"{}}\newline
+{\ttfamily \#include "{}util.\+h"{}}\newline
+{\ttfamily \#include "{}rtc/rtc\+\_\+macros.\+h"{}}\newline
+{\ttfamily \#include "{}sp/sp\+\_\+macros.\+h"{}}\newline
+{\ttfamily \#include "{}sp/fila\+\_\+sp.\+h"{}}\newline
+{\ttfamily \#include "{}sp/sp.\+h"{}}\newline
+{\ttfamily \#include "{}grafica/grafica.\+h"{}}\newline
+Include dependency graph for interrupts.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interrupts_8h_a6f786481e80308348d629d605ffa2d84}{timer\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Timer 0 interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_ab9eea51549744bca5c5c923b388bb4ee}{timer\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Timer 0 interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_ada88f1ab0e87b58cb4483d028c591912}{keyboard\+\_\+subscribe\+\_\+interrupt}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Keyboard interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_a77d820ca8b86036e1605f2eb84a220c7}{keyboard\+\_\+unsubscribe\+\_\+interrupt}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Keyboard interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_a9da18257ff113b686bb826d154bfaa87}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Mouse interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_a685ad2706aca36d9869a30a19b9f446a}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Mouse interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_a9b846878b39c3afb8b09de10be7f4362}{serial\+\_\+port\+\_\+subscribe\+\_\+interrupt}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes to serial port interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_a610196a607154eaf563ccdee58b1621f}{serial\+\_\+port\+\_\+unsubscribe\+\_\+interrupt}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes from serial port interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_af875e5543c2189d65f13c53ae3a908dc}{start\+\_\+serial\+\_\+port}} ()
+\begin{DoxyCompactList}\small\item\em Starts the serial port. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_af452aff05c9b212cb7f66704ffebffc1}{modo\+\_\+grafico}} (uint16\+\_\+t submode)
+\begin{DoxyCompactList}\small\item\em Sets Minix in graphic mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_aba236da3b3ecfccac6edc3621ee3caad}{const\+\_\+buffer\+\_\+frame}} (uint16\+\_\+t \mbox{\hyperlink{rtc_8c_a37e90f5e3bd99fac2021fb3a326607d4}{mode}})
+\begin{DoxyCompactList}\small\item\em Creates a physical and virtual buffer for the frame. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interrupts_8h_a44b9e3cbf1f7a02d96ecaa401789fba8}{sp\+\_\+clean\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the serial port interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{interrupts_8h_aba236da3b3ecfccac6edc3621ee3caad}\index{interrupts.h@{interrupts.h}!const\_buffer\_frame@{const\_buffer\_frame}}
+\index{const\_buffer\_frame@{const\_buffer\_frame}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{const\_buffer\_frame()}{const\_buffer\_frame()}}
+{\footnotesize\ttfamily \label{interrupts_8h_aba236da3b3ecfccac6edc3621ee3caad} 
+int const\+\_\+buffer\+\_\+frame (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
+
+
+
+Creates a physical and virtual buffer for the frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{interrupts_8h_aba236da3b3ecfccac6edc3621ee3caad_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_ada88f1ab0e87b58cb4483d028c591912}\index{interrupts.h@{interrupts.h}!keyboard\_subscribe\_interrupt@{keyboard\_subscribe\_interrupt}}
+\index{keyboard\_subscribe\_interrupt@{keyboard\_subscribe\_interrupt}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_subscribe\_interrupt()}{keyboard\_subscribe\_interrupt()}}
+{\footnotesize\ttfamily \label{interrupts_8h_ada88f1ab0e87b58cb4483d028c591912} 
+int keyboard\+\_\+subscribe\+\_\+interrupt (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no}{}\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Keyboard interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to store the bit number to set in the mask returned upon an interrupt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_ada88f1ab0e87b58cb4483d028c591912_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_a77d820ca8b86036e1605f2eb84a220c7}\index{interrupts.h@{interrupts.h}!keyboard\_unsubscribe\_interrupt@{keyboard\_unsubscribe\_interrupt}}
+\index{keyboard\_unsubscribe\_interrupt@{keyboard\_unsubscribe\_interrupt}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_unsubscribe\_interrupt()}{keyboard\_unsubscribe\_interrupt()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a77d820ca8b86036e1605f2eb84a220c7} 
+int keyboard\+\_\+unsubscribe\+\_\+interrupt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_a77d820ca8b86036e1605f2eb84a220c7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_af452aff05c9b212cb7f66704ffebffc1}\index{interrupts.h@{interrupts.h}!modo\_grafico@{modo\_grafico}}
+\index{modo\_grafico@{modo\_grafico}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{modo\_grafico()}{modo\_grafico()}}
+{\footnotesize\ttfamily \label{interrupts_8h_af452aff05c9b212cb7f66704ffebffc1} 
+int modo\+\_\+grafico (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode}{}\end{DoxyParamCaption})}
+
+
+
+Sets Minix in graphic mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em submode} & The submode to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{interrupts_8h_af452aff05c9b212cb7f66704ffebffc1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_a9da18257ff113b686bb826d154bfaa87}\index{interrupts.h@{interrupts.h}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a9da18257ff113b686bb826d154bfaa87} 
+int mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no}{}\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Mouse interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to store the bit number to set in the mask returned upon an interrupt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_a9da18257ff113b686bb826d154bfaa87_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_a685ad2706aca36d9869a30a19b9f446a}\index{interrupts.h@{interrupts.h}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a685ad2706aca36d9869a30a19b9f446a} 
+int mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_a685ad2706aca36d9869a30a19b9f446a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_a9b846878b39c3afb8b09de10be7f4362}\index{interrupts.h@{interrupts.h}!serial\_port\_subscribe\_interrupt@{serial\_port\_subscribe\_interrupt}}
+\index{serial\_port\_subscribe\_interrupt@{serial\_port\_subscribe\_interrupt}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{serial\_port\_subscribe\_interrupt()}{serial\_port\_subscribe\_interrupt()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a9b846878b39c3afb8b09de10be7f4362} 
+int serial\+\_\+port\+\_\+subscribe\+\_\+interrupt (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no}{}\end{DoxyParamCaption})}
+
+
+
+Subscribes to serial port interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to store the bit number to set in the mask returned upon an interrupt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_a9b846878b39c3afb8b09de10be7f4362_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_a610196a607154eaf563ccdee58b1621f}\index{interrupts.h@{interrupts.h}!serial\_port\_unsubscribe\_interrupt@{serial\_port\_unsubscribe\_interrupt}}
+\index{serial\_port\_unsubscribe\_interrupt@{serial\_port\_unsubscribe\_interrupt}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{serial\_port\_unsubscribe\_interrupt()}{serial\_port\_unsubscribe\_interrupt()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a610196a607154eaf563ccdee58b1621f} 
+int serial\+\_\+port\+\_\+unsubscribe\+\_\+interrupt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Unsubscribes from serial port interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_a610196a607154eaf563ccdee58b1621f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_a44b9e3cbf1f7a02d96ecaa401789fba8}\index{interrupts.h@{interrupts.h}!sp\_clean\_interrupts@{sp\_clean\_interrupts}}
+\index{sp\_clean\_interrupts@{sp\_clean\_interrupts}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{sp\_clean\_interrupts()}{sp\_clean\_interrupts()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a44b9e3cbf1f7a02d96ecaa401789fba8} 
+int sp\+\_\+clean\+\_\+interrupts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Cleans the serial port interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{interrupts_8h_a44b9e3cbf1f7a02d96ecaa401789fba8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_a44b9e3cbf1f7a02d96ecaa401789fba8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_af875e5543c2189d65f13c53ae3a908dc}\index{interrupts.h@{interrupts.h}!start\_serial\_port@{start\_serial\_port}}
+\index{start\_serial\_port@{start\_serial\_port}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{start\_serial\_port()}{start\_serial\_port()}}
+{\footnotesize\ttfamily \label{interrupts_8h_af875e5543c2189d65f13c53ae3a908dc} 
+int start\+\_\+serial\+\_\+port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Starts the serial port. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{interrupts_8h_af875e5543c2189d65f13c53ae3a908dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_af875e5543c2189d65f13c53ae3a908dc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_a6f786481e80308348d629d605ffa2d84}\index{interrupts.h@{interrupts.h}!timer\_subscribe\_int@{timer\_subscribe\_int}}
+\index{timer\_subscribe\_int@{timer\_subscribe\_int}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{timer\_subscribe\_int()}{timer\_subscribe\_int()}}
+{\footnotesize\ttfamily \label{interrupts_8h_a6f786481e80308348d629d605ffa2d84} 
+int timer\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no}{}\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Timer 0 interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to store the bit number to set in the mask returned upon an interrupt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_a6f786481e80308348d629d605ffa2d84_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interrupts_8h_ab9eea51549744bca5c5c923b388bb4ee}\index{interrupts.h@{interrupts.h}!timer\_unsubscribe\_int@{timer\_unsubscribe\_int}}
+\index{timer\_unsubscribe\_int@{timer\_unsubscribe\_int}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{timer\_unsubscribe\_int()}{timer\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \label{interrupts_8h_ab9eea51549744bca5c5c923b388bb4ee} 
+int timer\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Timer 0 interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8h_ab9eea51549744bca5c5c923b388bb4ee_icgraph}
+\end{center}
+\end{figure}

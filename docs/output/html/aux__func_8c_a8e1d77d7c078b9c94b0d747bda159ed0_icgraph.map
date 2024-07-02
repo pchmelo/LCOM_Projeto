@@ -1,0 +1,19 @@
+<map id="lcg_rand" name="lcg_rand">
+<area shape="rect" id="Node000001" title="Generates a random number using a linear congruential generator (LCG)." alt="" coords="933,31,1011,56"/>
+<area shape="rect" id="Node000002" href="$aux__func_8c.html#a2d8673850890faf99b8f55a7b228622d" title="Sets the seed for the random number generator and prints some random numbers." alt="" coords="780,5,860,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="919,37,860,27,860,22,920,32"/>
+<area shape="rect" id="Node000006" href="$rules_8c.html#a1c629ccbdb12749b09e75c86f2759650" title="Shuffles the deck of cards with a seed." alt="" coords="755,55,885,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="920,54,886,60,885,54,919,49"/>
+<area shape="rect" id="Node000003" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="363,55,477,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="767,22,656,29,526,45,468,57,467,52,525,39,655,24,766,17"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,55,315,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="349,70,315,70,315,65,349,65"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,55,128,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,70,128,70,128,65,163,65"/>
+<area shape="rect" id="Node000007" href="$timer__process_8c.html#a9f9192f61838e1bc485e138becf22079" title="Processes the game timer events and updates game states for Player 1 in multiplayer mode." alt="" coords="525,55,707,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="741,70,707,70,707,65,741,65"/>
+<area shape="rect" id="Node000008" href="$timer__process_8c.html#adf8442c897e4175d1a7f55cffd57257b" title="Processes the game timer events and updates game states for Player 2 in multiplayer mode." alt="" coords="525,104,707,129"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="754,86,670,107,669,101,753,81"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="511,70,477,70,477,65,511,65"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="551,103,471,83,472,77,552,98"/>
+</map>

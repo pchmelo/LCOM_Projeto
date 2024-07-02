@@ -1,0 +1,123 @@
+<map id="util_sys_inb" name="util_sys_inb">
+<area shape="rect" id="Node000001" title="Reads a byte from a specified port." alt="" coords="1471,257,1569,283"/>
+<area shape="rect" id="Node000002" href="$kbc_8c.html#af00123e2b17f85beb8565fddd0e7385a" title="Reads the output of the Keyboard Controller." alt="" coords="1105,55,1227,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1510,245,1499,209,1481,168,1456,127,1440,110,1421,95,1375,73,1324,62,1273,59,1228,61,1228,56,1274,53,1325,57,1377,68,1424,90,1443,106,1460,124,1486,165,1504,207,1515,243"/>
+<area shape="rect" id="Node000007" href="$aux__dispositivos_8c.html#aea12e94b49a4890d1f6b6ef71437586e" title="Reads the status of the Keyboard Controller." alt="" coords="1299,105,1419,131"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="1502,247,1468,200,1421,152,1390,133,1393,129,1424,148,1472,197,1506,244"/>
+<area shape="rect" id="Node000009" href="$mouse_8c.html#a01a70d44c0ecd2ff75328d443517b08c" title="Writes a command directly to the Mouse." alt="" coords="893,105,999,131"/>
+<area shape="poly" id="edge80_Node000001_Node000009" title=" " alt="" coords="1484,253,1422,225,1338,201,1221,175,999,130,1000,125,1222,169,1339,196,1424,219,1486,248"/>
+<area shape="rect" id="Node000010" href="$sp_8c.html#ac49ac47c244b1208cb547863f2eee4a4" title="Receives a byte from the serial port." alt="" coords="1113,257,1219,283"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1457,273,1219,273,1219,267,1457,267"/>
+<area shape="rect" id="Node000011" href="$handler_8c.html#aca5f9a009c7c9ba2b5140f59232e2b02" title="Handles the serial port interrupts." alt="" coords="868,155,1024,180"/>
+<area shape="poly" id="edge74_Node000001_Node000011" title=" " alt="" coords="1457,260,1422,254,1021,183,1022,177,1423,249,1458,255"/>
+<area shape="rect" id="Node000012" href="$aux__dispositivos_8c.html#a12feaa4b91b2a749d13b96eab97d6662" title="Reads the output of the RTC based on the sent command." alt="" coords="1104,1127,1228,1152"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="1508,296,1416,487,1355,621,1297,760,1256,870,1220,978,1174,1127,1169,1126,1215,977,1251,869,1292,758,1351,619,1411,485,1504,294"/>
+<area shape="rect" id="Node000025" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="1306,308,1411,333"/>
+<area shape="poly" id="edge38_Node000001_Node000025" title=" " alt="" coords="1467,289,1401,310,1399,305,1465,284"/>
+<area shape="rect" id="Node000039" href="$interrupts_8c.html#af875e5543c2189d65f13c53ae3a908dc" title="Starts the serial port." alt="" coords="1295,772,1423,797"/>
+<area shape="poly" id="edge75_Node000001_Node000039" title=" " alt="" coords="1513,296,1366,773,1361,771,1508,295"/>
+<area shape="rect" id="Node000040" href="$aux__dispositivos_8c.html#afafc1891c876602d55b894103b1841a7" title="Reads the input timer configuration via Read&#45;Back command." alt="" coords="1299,1305,1419,1331"/>
+<area shape="poly" id="edge77_Node000001_Node000040" title=" " alt="" coords="1517,297,1365,1305,1359,1305,1512,296"/>
+<area shape="rect" id="Node000003" href="$handler_8c.html#a6a2a6c2b64c950d09dbcc2cc52073e12" title="Keyboard interrupt handler." alt="" coords="405,55,506,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1091,70,506,70,506,65,1091,65"/>
+<area shape="rect" id="Node000006" href="$handler_8c.html#a1ba8ccf32722915b37e49d01e9f9b6d6" title="Handles Mouse interrupts." alt="" coords="363,5,548,31"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1091,58,1037,51,771,32,548,23,548,18,771,27,1038,46,1092,53"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,799,315,824"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="393,81,378,90,365,101,348,126,333,159,308,244,288,347,273,459,256,668,250,799,244,798,250,668,268,458,283,346,303,243,328,157,344,123,361,98,374,85,391,77"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,799,128,824"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,814,128,814,128,809,163,809"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="368,41,365,44,346,70,330,106,303,198,282,309,268,430,253,659,249,799,244,798,248,658,263,430,277,309,297,196,325,104,342,68,361,40,364,37"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="1296,104,1215,83,1216,78,1297,99"/>
+<area shape="rect" id="Node000008" href="$kbc_8c.html#a9328ad256b9b72373801a76d49568dfd" title="Writes a command byte to the Keyboard Controller." alt="" coords="1085,105,1247,131"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="1285,121,1247,121,1247,115,1285,115"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="1072,121,1000,121,1000,115,1072,115"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="879,116,764,116,694,122,622,135,549,155,480,184,417,224,389,249,365,277,341,321,320,384,301,460,286,542,262,698,251,799,245,798,257,698,280,542,296,459,315,383,336,319,360,274,386,245,414,220,477,179,547,150,620,130,694,117,764,111,879,110"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="1112,254,1084,240,1060,221,1036,202,992,183,994,178,1039,197,1063,216,1087,236,1115,250"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="854,163,795,163,730,167,662,178,597,197,519,229,462,262,415,307,365,374,332,432,306,494,286,558,272,620,255,730,250,799,244,798,250,729,267,619,281,556,301,492,327,429,360,371,411,304,459,258,517,224,595,191,661,172,729,162,795,158,854,158"/>
+<area shape="rect" id="Node000013" href="$rtc_8c.html#ae05582b9454a374bbdc4621cbda8336d" title="Gets the current time from the RTC." alt="" coords="894,1127,998,1152"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="1090,1142,998,1142,998,1137,1090,1137"/>
+<area shape="rect" id="Node000021" href="$rtc_8c.html#a082d1137bf57d60a2747117221f5dbff" title="Reads and sets the RTC time." alt="" coords="650,1325,753,1351"/>
+<area shape="poly" id="edge37_Node000012_Node000021" title=" " alt="" coords="1132,1161,993,1235,902,1277,808,1315,754,1331,752,1325,806,1310,900,1272,990,1230,1129,1157"/>
+<area shape="rect" id="Node000014" href="$teclado__process_8c.html#a5d3d3c043e06ce537a08a1fd50465245" title="Processes keyboard inputs during the game." alt="" coords="616,472,787,497"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="926,1116,888,1048,868,1006,852,961,844,919,841,864,840,737,838,673,832,614,822,564,805,528,787,511,764,500,767,495,790,507,809,524,827,562,838,613,843,673,845,737,846,864,850,918,857,960,873,1004,893,1046,931,1114"/>
+<area shape="rect" id="Node000016" href="$timer__process_8c.html#a67d5c3dff00cb6a8b4a04324d8808d4c" title="Processes the game timer events and updates game states." alt="" coords="622,1177,781,1203"/>
+<area shape="poly" id="edge20_Node000013_Node000016" title=" " alt="" coords="881,1155,764,1180,763,1175,880,1150"/>
+<area shape="rect" id="Node000017" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="398,1076,513,1101"/>
+<area shape="poly" id="edge29_Node000013_Node000017" title=" " alt="" coords="880,1137,596,1110,513,1099,513,1094,596,1105,881,1132"/>
+<area shape="rect" id="Node000018" href="$rato__process_8c.html#a24ce13e18f0e9cb0674c54d3fe885d3a" title="Processes mouse inputs during different game states." alt="" coords="403,823,508,848"/>
+<area shape="poly" id="edge23_Node000013_Node000018" title=" " alt="" coords="887,1125,727,1073,649,1042,594,1014,549,973,510,926,461,850,466,847,514,923,553,969,598,1009,651,1037,728,1068,889,1120"/>
+<area shape="rect" id="Node000019" href="$rato__process_8c.html#a8d2c7a28e7be735956de6e02befdb313" title="Processes mouse inputs for Player 1 during the game." alt="" coords="637,873,765,899"/>
+<area shape="poly" id="edge25_Node000013_Node000019" title=" " alt="" coords="927,1117,876,1045,842,1003,805,964,762,928,722,901,725,897,765,924,808,960,846,1000,880,1042,931,1114"/>
+<area shape="rect" id="Node000020" href="$rato__process_8c.html#a074eb76b6094f3d712031fd7c26b0f9f" title="Processes mouse inputs for Player 2 during the game." alt="" coords="637,975,765,1000"/>
+<area shape="poly" id="edge27_Node000013_Node000020" title=" " alt="" coords="911,1121,722,1002,724,998,914,1117"/>
+<area shape="poly" id="edge30_Node000013_Node000021" title=" " alt="" coords="925,1165,857,1246,844,1266,836,1283,826,1299,808,1315,782,1328,753,1336,752,1331,780,1323,805,1310,822,1296,831,1281,840,1263,853,1243,921,1161"/>
+<area shape="rect" id="Node000022" href="$serial__process_8c.html#a70897b5243566bc91472ad8b5611b9e3" title="Processes serial inputs for Player 1 during the game." alt="" coords="632,1227,771,1252"/>
+<area shape="poly" id="edge32_Node000013_Node000022" title=" " alt="" coords="915,1162,865,1190,808,1216,767,1229,765,1224,806,1212,863,1185,912,1157"/>
+<area shape="rect" id="Node000024" href="$serial__process_8c.html#aa4d3a936659696a543c9eb4241cedac2" title="Processes serial inputs for Player 2 during the game." alt="" coords="632,1276,771,1301"/>
+<area shape="poly" id="edge35_Node000013_Node000024" title=" " alt="" coords="927,1164,877,1216,844,1243,808,1266,772,1280,770,1275,805,1261,841,1239,873,1212,924,1161"/>
+<area shape="rect" id="Node000015" href="$teclado__process_8c.html#a0ee37f1e7303425b7d4fbf4f43f76fd5" title="Processes keyboard inputs based on the current game state." alt="" coords="392,385,519,411"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="651,470,491,413,493,408,652,465"/>
+<area shape="poly" id="edge19_Node000015_Node000004" title=" " alt="" coords="444,424,255,800,251,797,439,422"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="639,1176,595,1160,531,1131,478,1104,481,1099,533,1127,597,1156,641,1171"/>
+<area shape="poly" id="edge22_Node000017_Node000004" title=" " alt="" coords="434,1066,254,826,259,823,438,1063"/>
+<area shape="poly" id="edge24_Node000018_Node000004" title=" " alt="" coords="388,830,315,822,315,817,389,825"/>
+<area shape="poly" id="edge26_Node000019_Node000018" title=" " alt="" coords="625,873,508,849,509,843,626,868"/>
+<area shape="poly" id="edge28_Node000020_Node000018" title=" " alt="" coords="630,973,595,958,555,932,518,902,466,850,470,846,522,898,558,927,597,953,632,968"/>
+<area shape="poly" id="edge31_Node000021_Node000004" title=" " alt="" coords="636,1345,572,1343,498,1333,461,1322,425,1308,391,1289,361,1265,337,1230,315,1178,297,1114,281,1045,257,912,246,824,251,824,263,911,286,1044,302,1113,320,1176,341,1227,365,1262,394,1285,427,1303,462,1317,499,1327,572,1338,636,1340"/>
+<area shape="rect" id="Node000023" href="$serial__process_8c.html#a72ebc9c8b6ee1b881cfa1497b89de292" title="Processes serial inputs during different game states." alt="" coords="398,1227,513,1252"/>
+<area shape="poly" id="edge33_Node000022_Node000023" title=" " alt="" coords="618,1242,513,1242,513,1237,618,1237"/>
+<area shape="poly" id="edge34_Node000023_Node000004" title=" " alt="" coords="432,1217,396,1171,360,1114,320,1030,287,946,248,825,253,824,292,944,325,1028,365,1111,401,1168,436,1214"/>
+<area shape="poly" id="edge36_Node000024_Node000023" title=" " alt="" coords="623,1276,512,1253,513,1248,624,1271"/>
+<area shape="poly" id="edge73_Node000025_Node000010" title=" " alt="" coords="1296,307,1215,285,1216,280,1297,302"/>
+<area shape="rect" id="Node000026" href="$sp_8c.html#a0f5877ed1cc7d0cc779f1be8b25fc28f" title="Sends a byte through the serial port." alt="" coords="1117,597,1215,623"/>
+<area shape="poly" id="edge39_Node000025_Node000026" title=" " alt="" coords="1344,346,1178,598,1174,595,1339,343"/>
+<area shape="poly" id="edge42_Node000026_Node000014" title=" " alt="" coords="1150,586,1132,555,1107,520,1075,487,1036,462,997,448,956,441,914,440,872,442,796,457,737,474,735,469,794,451,872,437,914,434,956,436,998,443,1039,457,1078,483,1111,517,1137,552,1155,584"/>
+<area shape="poly" id="edge72_Node000026_Node000017" title=" " alt="" coords="1168,636,1165,713,1159,763,1148,817,1132,872,1110,926,1079,975,1039,1017,999,1040,941,1057,871,1070,794,1079,639,1089,513,1092,513,1086,638,1084,794,1074,871,1065,940,1052,996,1035,1036,1013,1075,972,1105,924,1127,870,1143,816,1153,762,1159,712,1163,636"/>
+<area shape="poly" id="edge51_Node000026_Node000018" title=" " alt="" coords="1104,626,838,686,697,723,597,755,529,790,476,825,473,820,526,786,595,750,696,718,836,681,1103,620"/>
+<area shape="poly" id="edge62_Node000026_Node000019" title=" " alt="" coords="1163,637,1150,686,1127,748,1110,781,1091,811,1067,839,1039,862,1006,879,972,892,898,906,827,907,766,901,766,895,827,901,898,900,970,887,1004,875,1036,857,1063,835,1086,808,1106,778,1122,746,1145,685,1157,635"/>
+<area shape="poly" id="edge63_Node000026_Node000020" title=" " alt="" coords="1167,637,1161,705,1142,794,1126,841,1104,887,1075,928,1039,963,1007,983,971,997,934,1006,896,1011,823,1010,760,1003,760,997,823,1005,896,1005,933,1001,970,992,1004,978,1036,959,1071,925,1099,884,1121,839,1137,793,1155,704,1161,636"/>
+<area shape="rect" id="Node000027" href="$teclado__process_8c.html#a50d2690a2bd307bf886dec9178c98731" title="Processes keyboard inputs during the connection phase." alt="" coords="626,538,777,578"/>
+<area shape="poly" id="edge40_Node000026_Node000027" title=" " alt="" coords="1103,606,777,569,777,564,1103,600"/>
+<area shape="rect" id="Node000028" href="$teclado__process_8c.html#a4bbb02ce0c11506bd7749b4bba3c485e" title="Processes keyboard inputs during the invitation phase." alt="" coords="631,206,772,246"/>
+<area shape="poly" id="edge43_Node000026_Node000028" title=" " alt="" coords="1161,584,1154,518,1134,432,1118,386,1097,343,1070,303,1036,269,1006,250,974,235,939,225,904,219,834,214,772,218,772,212,834,209,904,213,940,220,975,230,1009,245,1039,265,1074,300,1102,340,1123,384,1140,430,1159,517,1166,583"/>
+<area shape="rect" id="Node000029" href="$teclado__process_8c.html#aae3ad73cea948d2846da46830634a16b" title="Processes keyboard inputs in the main menu." alt="" coords="596,271,807,296"/>
+<area shape="poly" id="edge45_Node000026_Node000029" title=" " alt="" coords="1160,584,1150,525,1130,449,1113,410,1093,373,1067,339,1036,311,1004,292,970,279,933,271,896,266,824,266,762,273,762,268,824,261,897,261,934,265,971,274,1006,287,1039,307,1071,335,1097,370,1118,408,1135,448,1156,524,1165,583"/>
+<area shape="rect" id="Node000030" href="$teclado__process_8c.html#a290cec00c38570d698fca32fb57a17fa" title=" " alt="" coords="615,321,788,361"/>
+<area shape="poly" id="edge47_Node000026_Node000030" title=" " alt="" coords="1159,584,1147,531,1125,465,1109,431,1089,399,1065,370,1036,347,1006,331,973,320,905,311,837,314,777,323,776,318,837,308,905,306,974,315,1008,326,1039,342,1069,366,1094,396,1114,428,1130,463,1153,530,1164,583"/>
+<area shape="rect" id="Node000031" href="$teclado__process_8c.html#a4abd67bb8b6c4c87ff15f233ad803728" title=" " alt="" coords="859,357,1033,397"/>
+<area shape="poly" id="edge49_Node000026_Node000031" title=" " alt="" coords="1152,586,1134,549,1108,504,1075,458,1036,417,1006,399,1009,395,1039,413,1079,455,1112,501,1138,546,1156,583"/>
+<area shape="rect" id="Node000032" href="$rato__process_8c.html#a56dd5a3b28a0482d4832ad7d87bb9002" title="Processes mouse inputs during the connection phase." alt="" coords="855,724,1037,749"/>
+<area shape="poly" id="edge52_Node000026_Node000032" title=" " alt="" coords="1142,634,1096,670,1039,707,993,726,990,721,1036,702,1092,666,1139,630"/>
+<area shape="rect" id="Node000033" href="$rato__process_8c.html#a0c6657d850be9b2f06e4b2471d1e7dd5" title=" " alt="" coords="857,823,1035,848"/>
+<area shape="poly" id="edge54_Node000026_Node000033" title=" " alt="" coords="1158,637,1141,676,1115,723,1081,771,1039,812,1016,825,1013,820,1036,808,1077,768,1111,720,1136,673,1153,635"/>
+<area shape="rect" id="Node000034" href="$rato__process_8c.html#a5da1d7e9d1351001b8f4e534937d1852" title="Processes mouse inputs for card grab and drop actions." alt="" coords="367,697,544,723"/>
+<area shape="poly" id="edge58_Node000026_Node000034" title=" " alt="" coords="1103,614,879,628,738,644,597,667,540,683,490,700,488,695,538,677,595,662,737,638,878,623,1103,609"/>
+<area shape="rect" id="Node000035" href="$rato__process_8c.html#a9c157da5f0fc6a2ac2047ee875a2634a" title="Processes mouse inputs during the invitation phase." alt="" coords="859,773,1033,799"/>
+<area shape="poly" id="edge60_Node000026_Node000035" title=" " alt="" coords="1153,636,1107,700,1075,734,1039,763,1012,776,1010,771,1036,758,1072,730,1103,696,1148,633"/>
+<area shape="rect" id="Node000036" href="$rato__process_8c.html#a19019ad5af5b2487b8edaaa8d904dce7" title=" " alt="" coords="875,924,1017,949"/>
+<area shape="poly" id="edge64_Node000026_Node000036" title=" " alt="" coords="1163,636,1151,692,1128,764,1092,840,1068,875,1039,907,1007,926,1004,922,1036,903,1063,872,1087,837,1123,762,1146,690,1158,635"/>
+<area shape="rect" id="Node000037" href="$teclado__process_8c.html#ab9eaf45861a19da225a3292cc634c8af" title="Processes the selection of cards for Player 1." alt="" coords="858,472,1034,497"/>
+<area shape="poly" id="edge68_Node000026_Node000037" title=" " alt="" coords="1141,589,1095,549,1036,511,1008,500,1010,495,1039,506,1098,545,1144,585"/>
+<area shape="rect" id="Node000038" href="$teclado__process_8c.html#a496e97d8fdbe56eaf529d3c1ebed3eae" title="Processes the selection of cards for Player 2." alt="" coords="858,521,1034,547"/>
+<area shape="poly" id="edge70_Node000026_Node000038" title=" " alt="" coords="1114,595,983,549,985,544,1116,590"/>
+<area shape="poly" id="edge41_Node000027_Node000015" title=" " alt="" coords="638,534,595,511,522,459,469,413,472,409,525,454,597,506,640,530"/>
+<area shape="poly" id="edge44_Node000028_Node000015" title=" " alt="" coords="619,250,597,260,556,291,519,326,468,387,464,383,515,323,552,287,595,256,616,245"/>
+<area shape="poly" id="edge46_Node000029_Node000015" title=" " alt="" coords="621,302,597,311,527,350,474,387,471,383,524,345,595,306,619,297"/>
+<area shape="poly" id="edge48_Node000030_Node000015" title=" " alt="" coords="602,366,511,388,510,383,601,361"/>
+<area shape="poly" id="edge50_Node000031_Node000015" title=" " alt="" coords="846,384,519,398,519,393,846,378"/>
+<area shape="poly" id="edge53_Node000032_Node000018" title=" " alt="" coords="841,750,723,766,597,791,540,808,490,825,489,820,538,802,595,786,722,761,841,745"/>
+<area shape="poly" id="edge55_Node000033_Node000018" title=" " alt="" coords="843,838,508,838,508,833,843,833"/>
+<area shape="poly" id="edge56_Node000033_Node000019" title=" " alt="" coords="871,854,764,876,763,871,870,848"/>
+<area shape="poly" id="edge57_Node000033_Node000020" title=" " alt="" coords="914,858,724,977,722,972,911,853"/>
+<area shape="poly" id="edge59_Node000034_Node000004" title=" " alt="" coords="417,731,274,801,272,796,414,726"/>
+<area shape="poly" id="edge61_Node000035_Node000018" title=" " alt="" coords="845,796,596,819,509,831,508,825,596,814,845,791"/>
+<area shape="poly" id="edge65_Node000036_Node000018" title=" " alt="" coords="861,943,734,937,664,928,595,913,560,899,526,883,473,850,476,846,529,878,562,895,597,907,665,923,735,932,861,937"/>
+<area shape="poly" id="edge66_Node000036_Node000019" title=" " alt="" coords="870,924,763,901,764,896,871,918"/>
+<area shape="poly" id="edge67_Node000036_Node000020" title=" " alt="" coords="871,955,764,977,763,972,870,950"/>
+<area shape="poly" id="edge69_Node000037_Node000014" title=" " alt="" coords="844,487,787,487,787,482,844,482"/>
+<area shape="poly" id="edge71_Node000038_Node000014" title=" " alt="" coords="868,521,765,500,766,495,869,516"/>
+<area shape="poly" id="edge76_Node000039_Node000004" title=" " alt="" coords="1358,812,1350,878,1331,969,1299,1070,1276,1119,1249,1165,1186,1258,1156,1297,1126,1329,1092,1356,1052,1375,1005,1387,947,1391,700,1391,647,1394,599,1399,516,1408,478,1406,440,1397,402,1378,361,1347,346,1329,332,1305,309,1244,290,1168,274,1085,254,927,245,825,250,824,259,927,280,1085,295,1167,314,1242,337,1303,350,1326,365,1343,404,1374,442,1392,479,1401,516,1402,599,1394,646,1388,700,1386,947,1386,1004,1382,1050,1370,1089,1351,1122,1325,1152,1293,1181,1255,1244,1162,1271,1117,1294,1068,1326,968,1344,877,1353,811"/>
+<area shape="rect" id="Node000041" href="$timer_8c.html#aca1506be74dfc71c6f90772ca269c619" title="Changes the operating frequency of a timer." alt="" coords="377,1427,533,1452"/>
+<area shape="poly" id="edge78_Node000040_Node000041" title=" " alt="" coords="1339,1343,1300,1379,1275,1397,1248,1410,1152,1439,1052,1459,951,1470,852,1474,758,1474,672,1469,534,1454,534,1449,672,1464,758,1468,852,1469,951,1465,1051,1454,1151,1434,1246,1405,1272,1392,1296,1375,1335,1339"/>
+<area shape="poly" id="edge79_Node000041_Node000004" title=" " alt="" coords="376,1422,361,1409,346,1388,333,1360,309,1289,290,1203,274,1111,254,936,245,824,250,824,259,935,280,1110,295,1202,314,1288,337,1358,351,1385,365,1406,379,1418"/>
+</map>

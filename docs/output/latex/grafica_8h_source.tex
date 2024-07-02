@@ -1,0 +1,41 @@
+\doxysection{grafica.\+h}
+\hypertarget{grafica_8h_source}{}\label{grafica_8h_source}\index{src/dispositivos/grafica/grafica.h@{src/dispositivos/grafica/grafica.h}}
+\mbox{\hyperlink{grafica_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_GRAFICA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_GRAFICA\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vbe_8h}{vbe.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{../../prog/functions/sprite.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{aux__dispositivos_8h}{../aux\_dispositivos.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ vbe\_mode\_info\_t\ \mbox{\hyperlink{grafica_8h_aa19f9b39471a0ff5d5cb0e3c41a80421}{modInf}};}
+\DoxyCodeLine{00010\ uint8\_t*\ \mbox{\hyperlink{grafica_8h_a8c8538ed22b6719ed1022061f7f21535}{bufferGrafico}};}
+\DoxyCodeLine{00011\ uint8\_t\ *\mbox{\hyperlink{grafica_8h_af6e9d4cd5e2d7c6ad2594fca1b647a63}{bufferSetDesenho}};}
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{grafica_8h_af62f882913619371164e7731a978a928}{bytesInAPixel}};}
+\DoxyCodeLine{00013\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{grafica_8h_aa5151578f53c2409ba24773631554b49}{frameTamanho}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ int\ (\mbox{\hyperlink{grafica_8h_ab45734b3f9e5604b431f5b348fc54d79}{printar\_form\_xpm}})(uint16\_t\ x,\ uint16\_t\ y,\ xpm\_map\_t\ xpm);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00033\ int\ (\mbox{\hyperlink{grafica_8h_afe44ad8c40405c5ae1dd181c70e5d2e6}{printar\_form\_xpm\_sprite}})(uint16\_t\ x,\ uint16\_t\ y,\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *sprite);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00042\ int\ (\mbox{\hyperlink{grafica_8h_afc7879979765f48b6385ddd03b5b2f36}{printar\_form\_xpm\_sprite\_rotated}})(uint16\_t\ x,\ uint16\_t\ y,\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *sprite);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{grafica_8h_a42ae3c01986189018ee1270409435f83}{molduraCarta}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ uint32\_t\ cor);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{grafica_8h_af432710d3828b6f1ef376a2dde588a7f}{criarBufferSetDesenho}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{grafica_8h_aed84d65f66a82afabb78b16c6966aff9}{copiarbufferSetDesenhoToBufferGrafico}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{grafica_8h_aec4db1eee466b906c5f21a2bea09d85d}{limparBufferGrafico}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{grafica_8h_a41389fd868881a7d67ea9a39286f4506}{drawSpiltSecondBar}}(uint16\_t\ x,\ uint16\_t\ y,\ uint16\_t\ width,\ uint16\_t\ height,\ uint32\_t\ color);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

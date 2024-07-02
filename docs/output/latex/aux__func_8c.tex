@@ -1,0 +1,314 @@
+\doxysection{src/prog/functions/aux\+\_\+func.c File Reference}
+\hypertarget{aux__func_8c}{}\label{aux__func_8c}\index{src/prog/functions/aux\_func.c@{src/prog/functions/aux\_func.c}}
+{\ttfamily \#include "{}aux\+\_\+func.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for aux\+\_\+func.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{aux__func_8c_a2d25a4cddf0245e49b3b9d445ef0d390}{time\+\_\+to\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Converts the current RTC time into an array of integers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{aux__func_8c_a117c80c1097e2105f62c481b22cce24a}{num\+\_\+to\+\_\+sprite}} (int num)
+\begin{DoxyCompactList}\small\item\em Converts a number into a sprite. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{aux__func_8c_a8254aeb688b82ec38da613c6d9a7f18a}{get\+\_\+seed}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current seed. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{aux__func_8c_a8e1d77d7c078b9c94b0d747bda159ed0}{lcg\+\_\+rand}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random number using a linear congruential generator (LCG). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{aux__func_8c_a2d8673850890faf99b8f55a7b228622d}{set\+\_\+seed}} (uint8\+\_\+t seed\+\_\+res)
+\begin{DoxyCompactList}\small\item\em Sets the seed for the random number generator and prints some random numbers. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{aux__func_8c_a9dacede309082ef811b2624742085c4b}{score\+\_\+to\+\_\+int}} (int score)
+\begin{DoxyCompactList}\small\item\em Converts a score into an array of integers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{aux__func_8c_a273a13e41691394960eebd025f664bd6}{get\+\_\+slider\+\_\+pos}} (int x)
+\begin{DoxyCompactList}\small\item\em Gets the position of the slider. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{aux__func_8c_a61b958aafad26d30fe9f4a26cca143dc}{get\+\_\+time\+\_\+spent}} (\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} start, \mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} end)
+\begin{DoxyCompactList}\small\item\em Calculates the time spent between two RTC times. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{aux__func_8c_a40315791d60ce97710995e8ee2746dbb}{time\+\_\+spent\+\_\+to\+\_\+array}} (int time\+\_\+spent, int \texorpdfstring{$\ast$}{*}size)
+\begin{DoxyCompactList}\small\item\em Converts a time interval into an array of integers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{aux__func_8c_a00e70ef1ef9e5d3500ae8b09605b16fe}{rtc\+\_\+time}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{aux__func_8c_a3dd45dcfd3f90ebffbac7acd4a647e17}{seed}} = 0
+\item 
+uint32\+\_\+t \mbox{\hyperlink{aux__func_8c_a86988a65e0d3ece7990c032c159786d6}{count}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{aux__func_8c_a8254aeb688b82ec38da613c6d9a7f18a}\index{aux\_func.c@{aux\_func.c}!get\_seed@{get\_seed}}
+\index{get\_seed@{get\_seed}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{get\_seed()}{get\_seed()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a8254aeb688b82ec38da613c6d9a7f18a} 
+uint8\+\_\+t get\+\_\+seed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the current seed. 
+
+Returns the current seed used for the random number generator.
+
+\begin{DoxyReturn}{Returns}
+Returns the current seed. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a8254aeb688b82ec38da613c6d9a7f18a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a273a13e41691394960eebd025f664bd6}\index{aux\_func.c@{aux\_func.c}!get\_slider\_pos@{get\_slider\_pos}}
+\index{get\_slider\_pos@{get\_slider\_pos}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{get\_slider\_pos()}{get\_slider\_pos()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a273a13e41691394960eebd025f664bd6} 
+int get\+\_\+slider\+\_\+pos (\begin{DoxyParamCaption}\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Gets the position of the slider. 
+
+Receives the x position of the slider and returns the corresponding card
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the slider.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the deck index corresponding to the slider position. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a273a13e41691394960eebd025f664bd6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a61b958aafad26d30fe9f4a26cca143dc}\index{aux\_func.c@{aux\_func.c}!get\_time\_spent@{get\_time\_spent}}
+\index{get\_time\_spent@{get\_time\_spent}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{get\_time\_spent()}{get\_time\_spent()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a61b958aafad26d30fe9f4a26cca143dc} 
+int get\+\_\+time\+\_\+spent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}}}]{start}{, }\item[{\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}}}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the time spent between two RTC times. 
+
+Calculates the time spent between two RTC times, in minutes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The start time. \\
+\hline
+{\em end} & The end time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the time spent between the two times, in minutes. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a61b958aafad26d30fe9f4a26cca143dc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a8e1d77d7c078b9c94b0d747bda159ed0}\index{aux\_func.c@{aux\_func.c}!lcg\_rand@{lcg\_rand}}
+\index{lcg\_rand@{lcg\_rand}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{lcg\_rand()}{lcg\_rand()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a8e1d77d7c078b9c94b0d747bda159ed0} 
+uint32\+\_\+t lcg\+\_\+rand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Generates a random number using a linear congruential generator (LCG). 
+
+Generates a random number using a linear congruential generator (LCG) algorithm. Multiplies the seed by a count, multiplies the result by a large prime number, adds a constant, and masks the result to 31 bits. The count is then incremented.
+
+\begin{DoxyReturn}{Returns}
+Returns the generated number. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a8e1d77d7c078b9c94b0d747bda159ed0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a117c80c1097e2105f62c481b22cce24a}\index{aux\_func.c@{aux\_func.c}!num\_to\_sprite@{num\_to\_sprite}}
+\index{num\_to\_sprite@{num\_to\_sprite}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{num\_to\_sprite()}{num\_to\_sprite()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a117c80c1097e2105f62c481b22cce24a} 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} num\+\_\+to\+\_\+sprite (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+
+
+
+Converts a number into a sprite. 
+
+Receives a number and returns a pointer to the corresponding sprite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number to be converted into a sprite. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the sprite corresponding to the number. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a117c80c1097e2105f62c481b22cce24a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a9dacede309082ef811b2624742085c4b}\index{aux\_func.c@{aux\_func.c}!score\_to\_int@{score\_to\_int}}
+\index{score\_to\_int@{score\_to\_int}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{score\_to\_int()}{score\_to\_int()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a9dacede309082ef811b2624742085c4b} 
+int \texorpdfstring{$\ast$}{*} score\+\_\+to\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{score}{}\end{DoxyParamCaption})}
+
+
+
+Converts a score into an array of integers. 
+
+Allocates an array of integers and fills it with the provided score, split into tens and units. The array is then returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & The score to be converted into an array of integers. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the array of integers representing the score. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a9dacede309082ef811b2624742085c4b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a2d8673850890faf99b8f55a7b228622d}\index{aux\_func.c@{aux\_func.c}!set\_seed@{set\_seed}}
+\index{set\_seed@{set\_seed}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{set\_seed()}{set\_seed()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a2d8673850890faf99b8f55a7b228622d} 
+void set\+\_\+seed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Sets the seed for the random number generator and prints some random numbers. 
+
+Sets the seed for the random number generator to the provided value. Generates and prints ten random numbers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed\+\_\+res} & The seed to be set for the random number generator. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{aux__func_8c_a2d8673850890faf99b8f55a7b228622d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a2d8673850890faf99b8f55a7b228622d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a40315791d60ce97710995e8ee2746dbb}\index{aux\_func.c@{aux\_func.c}!time\_spent\_to\_array@{time\_spent\_to\_array}}
+\index{time\_spent\_to\_array@{time\_spent\_to\_array}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{time\_spent\_to\_array()}{time\_spent\_to\_array()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a40315791d60ce97710995e8ee2746dbb} 
+int \texorpdfstring{$\ast$}{*} time\+\_\+spent\+\_\+to\+\_\+array (\begin{DoxyParamCaption}\item[{int}]{time\+\_\+spent}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Converts a time interval into an array of integers. 
+
+Allocates an array of integers and fills it with the provided time interval, split into hours, minutes, and seconds. The array is then returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+spent} & The time interval to be converted into an array of integers. \\
+\hline
+{\em size} & The size of the array to be allocated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the array of integers representing the time interval. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__func_8c_a40315791d60ce97710995e8ee2746dbb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__func_8c_a2d25a4cddf0245e49b3b9d445ef0d390}\index{aux\_func.c@{aux\_func.c}!time\_to\_int@{time\_to\_int}}
+\index{time\_to\_int@{time\_to\_int}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{time\_to\_int()}{time\_to\_int()}}
+{\footnotesize\ttfamily \label{aux__func_8c_a2d25a4cddf0245e49b3b9d445ef0d390} 
+int \texorpdfstring{$\ast$}{*} time\+\_\+to\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Converts the current RTC time into an array of integers. 
+
+Allocates an array of integers and fills it with the current RTC time, split into tens and units for hours, minutes, and seconds. The array is then returned.
+
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the array of integers representing the current RTC time. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{aux__func_8c_a2d25a4cddf0245e49b3b9d445ef0d390_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{aux__func_8c_a86988a65e0d3ece7990c032c159786d6}\index{aux\_func.c@{aux\_func.c}!count@{count}}
+\index{count@{count}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \label{aux__func_8c_a86988a65e0d3ece7990c032c159786d6} 
+uint32\+\_\+t count = 0}
+
+\Hypertarget{aux__func_8c_a00e70ef1ef9e5d3500ae8b09605b16fe}\index{aux\_func.c@{aux\_func.c}!rtc\_time@{rtc\_time}}
+\index{rtc\_time@{rtc\_time}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_time}{rtc\_time}}
+{\footnotesize\ttfamily \label{aux__func_8c_a00e70ef1ef9e5d3500ae8b09605b16fe} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} rtc\+\_\+time\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{aux__func_8c_a3dd45dcfd3f90ebffbac7acd4a647e17}\index{aux\_func.c@{aux\_func.c}!seed@{seed}}
+\index{seed@{seed}!aux\_func.c@{aux\_func.c}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily \label{aux__func_8c_a3dd45dcfd3f90ebffbac7acd4a647e17} 
+uint8\+\_\+t seed = 0}
+

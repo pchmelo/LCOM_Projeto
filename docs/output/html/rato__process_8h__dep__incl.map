@@ -1,0 +1,33 @@
+<map id="src/prog/process/rato_process.h" name="src/prog/process/rato_process.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="124,5,283,45"/>
+<area shape="rect" id="Node000002" href="$game_8h.html" title=" " alt="" coords="140,101,267,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,59,206,100,201,100,201,59"/>
+<area shape="rect" id="Node000013" href="$rato__process_8c.html" title=" " alt="" coords="291,93,450,133"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="253,49,335,91,333,96,251,54"/>
+<area shape="rect" id="Node000003" href="$game_8c.html" title=" " alt="" coords="346,189,472,214"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,129,382,186,380,191,243,134"/>
+<area shape="rect" id="Node000004" href="$teclado__process_8h.html" title=" " alt="" coords="36,181,216,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,137,138,183,134,179,175,134"/>
+<area shape="rect" id="Node000012" href="$proj_8c.html" title=" " alt="" coords="240,189,322,214"/>
+<area shape="poly" id="edge17_Node000002_Node000012" title=" " alt="" coords="225,135,272,186,268,190,221,138"/>
+<area shape="poly" id="edge15_Node000004_Node000002" title=" " alt="" coords="159,170,198,124,202,128,163,173"/>
+<area shape="rect" id="Node000005" href="$composer_8h.html" title=" " alt="" coords="57,269,196,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,235,121,269,116,269,115,235"/>
+<area shape="rect" id="Node000011" href="$teclado__process_8c.html" title=" " alt="" coords="220,269,400,309"/>
+<area shape="poly" id="edge16_Node000004_Node000011" title=" " alt="" coords="180,225,271,267,269,272,178,230"/>
+<area shape="poly" id="edge7_Node000005_Node000001" title=" " alt="" coords="56,265,30,247,9,223,3,202,9,180,40,134,80,96,123,65,162,43,164,48,126,70,83,100,44,138,14,182,8,202,14,220,33,243,59,261"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="65,265,40,247,21,223,14,201,21,180,46,155,75,137,108,125,139,118,141,123,109,130,78,142,49,159,26,183,19,201,26,220,44,243,68,260"/>
+<area shape="poly" id="edge11_Node000005_Node000004" title=" " alt="" coords="132,256,131,222,137,222,138,256"/>
+<area shape="rect" id="Node000006" href="$composer_8c.html" title=" " alt="" coords="57,357,196,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="129,323,129,357,124,357,124,323"/>
+<area shape="rect" id="Node000007" href="$serial__process_8h.html" title=" " alt="" coords="237,357,405,397"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="182,312,279,355,277,360,180,317"/>
+<area shape="rect" id="Node000009" href="$timer__process_8h.html" title=" " alt="" coords="462,357,628,397"/>
+<area shape="poly" id="edge12_Node000005_Node000009" title=" " alt="" coords="210,307,462,358,461,363,209,312"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="369,348,420,315,468,274,485,251,494,228,494,205,483,183,461,161,440,148,418,142,394,141,341,142,311,141,278,136,248,129,249,123,279,131,311,136,341,137,394,135,418,137,442,143,465,157,487,180,499,204,499,229,490,254,472,277,424,319,371,353"/>
+<area shape="rect" id="Node000008" href="$serial__process_8c.html" title=" " alt="" coords="237,445,405,485"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="324,411,324,445,318,445,318,411"/>
+<area shape="poly" id="edge13_Node000009_Node000002" title=" " alt="" coords="546,344,548,306,544,263,531,220,521,200,507,183,481,161,456,148,430,142,404,141,347,143,314,142,278,136,247,129,248,123,279,131,315,136,347,137,405,135,431,137,457,143,484,157,511,179,525,197,536,218,549,262,553,306,552,344"/>
+<area shape="rect" id="Node000010" href="$timer__process_8c.html" title=" " alt="" coords="462,445,628,485"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="548,411,548,445,542,445,542,411"/>
+</map>

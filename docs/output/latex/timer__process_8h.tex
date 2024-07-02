@@ -1,0 +1,345 @@
+\doxysection{src/prog/process/timer\+\_\+process.h File Reference}
+\hypertarget{timer__process_8h}{}\label{timer__process_8h}\index{src/prog/process/timer\_process.h@{src/prog/process/timer\_process.h}}
+{\ttfamily \#include "{}../functions/composer.\+h"{}}\newline
+{\ttfamily \#include "{}../game\+\_\+rules/rules.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/sp/sp.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/rtc/rtc.\+h"{}}\newline
+{\ttfamily \#include "{}../functions/aux\+\_\+func.\+h"{}}\newline
+Include dependency graph for timer\+\_\+process.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{timer__process_8h_a64fd6fd0bc8e963b4609e5b919321a12}{process\+\_\+timer}} (int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}}, int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes game timer events and updates game states. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8h_a0dc3c9d6d60caf9f138d02fd4f0da19c}{process\+\_\+main\+\_\+menu\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em Processes the main menu timer events and updates game states. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8h_a67d5c3dff00cb6a8b4a04324d8808d4c}{process\+\_\+game\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em Processes the game timer events and updates game states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8h_a7dc69e7e999eb6570eda1718ff0f250b}{process\+\_\+round}} ()
+\begin{DoxyCompactList}\small\item\em Processes a round of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8h_afb1045e70aa06f1d3e32a3c6caf070eb}{process\+\_\+display}} ()
+\begin{DoxyCompactList}\small\item\em Processes the display of the game based on the current round. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8h_a9f9192f61838e1bc485e138becf22079}{process\+\_\+game\+\_\+timer\+\_\+\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Processes the game timer events and updates game states for Player 1 in multiplayer mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8h_adf8442c897e4175d1a7f55cffd57257b}{process\+\_\+game\+\_\+timer\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Processes the game timer events and updates game states for Player 2 in multiplayer mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8h_aedf736e2ebdb639de95eed424a33b64b}{process\+\_\+round\+\_\+\+MUL}} ()
+\begin{DoxyCompactList}\small\item\em Processes the round in a multiplayer game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8h_a0bdb4570bfceb45ef7a3eccccae0cc40}{process\+\_\+display\+\_\+\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Processes the display for Player 1 in a multiplayer game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8h_a4cf537a56fb1484a861581947c928511}{process\+\_\+display\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Processes the display for Player 2 in a multiplayer game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{timer__process_8h_afb1045e70aa06f1d3e32a3c6caf070eb}\index{timer\_process.h@{timer\_process.h}!process\_display@{process\_display}}
+\index{process\_display@{process\_display}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_display()}{process\_display()}}
+{\footnotesize\ttfamily \label{timer__process_8h_afb1045e70aa06f1d3e32a3c6caf070eb} 
+void process\+\_\+display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the display of the game based on the current round. 
+
+Handles the display of the game based on the current round. Processes the display for each player\textquotesingle{}s turn, including the selection of the card, the removal of the card from the player\textquotesingle{}s hand, and the setting of the round suit. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_afb1045e70aa06f1d3e32a3c6caf070eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_afb1045e70aa06f1d3e32a3c6caf070eb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_a0bdb4570bfceb45ef7a3eccccae0cc40}\index{timer\_process.h@{timer\_process.h}!process\_display\_P1@{process\_display\_P1}}
+\index{process\_display\_P1@{process\_display\_P1}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_display\_P1()}{process\_display\_P1()}}
+{\footnotesize\ttfamily \label{timer__process_8h_a0bdb4570bfceb45ef7a3eccccae0cc40} 
+void process\+\_\+display\+\_\+\+P1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the display for Player 1 in a multiplayer game. 
+
+Handles the display processing for Player 1 in a multiplayer game. Checks the current round and performs actions based on the player whose turn it is. For Player 1, it handles the display of the selected card and the removal of the card from the player\textquotesingle{}s hand. For Players 2 and 4, it handles the display of the selected card by the bot and the removal of the card from the bot\textquotesingle{}s hand. For Player 3, it handles the start and finish of the single player mode. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a0bdb4570bfceb45ef7a3eccccae0cc40_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a0bdb4570bfceb45ef7a3eccccae0cc40_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_a4cf537a56fb1484a861581947c928511}\index{timer\_process.h@{timer\_process.h}!process\_display\_P2@{process\_display\_P2}}
+\index{process\_display\_P2@{process\_display\_P2}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_display\_P2()}{process\_display\_P2()}}
+{\footnotesize\ttfamily \label{timer__process_8h_a4cf537a56fb1484a861581947c928511} 
+void process\+\_\+display\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the display for Player 2 in a multiplayer game. 
+
+Handles the display processing for Player 2 in a multiplayer game. Checks the current round and performs actions based on the player whose turn it is. For Player 1, it handles the start and finish of the single player mode. For Players 2, 3, and 4, it handles the display of the selected card and the removal of the card from the player\textquotesingle{}s hand. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a4cf537a56fb1484a861581947c928511_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a4cf537a56fb1484a861581947c928511_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_a67d5c3dff00cb6a8b4a04324d8808d4c}\index{timer\_process.h@{timer\_process.h}!process\_game\_timer@{process\_game\_timer}}
+\index{process\_game\_timer@{process\_game\_timer}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_game\_timer()}{process\_game\_timer()}}
+{\footnotesize\ttfamily \label{timer__process_8h_a67d5c3dff00cb6a8b4a04324d8808d4c} 
+int process\+\_\+game\+\_\+timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the game timer events and updates game states. 
+
+Handles the game timer events. If the previous game state was not GAME, sets the current game state to GAME, the main menu state to NOTHING\+\_\+\+MAIN\+\_\+\+MENU, and the game play state to GAME\+\_\+\+INIT. Also handles the initialization of the game, the start of the game, the creation of the game, and the pause menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+jogo or criar\+\_\+menu\+\_\+pausa functions. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a67d5c3dff00cb6a8b4a04324d8808d4c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a67d5c3dff00cb6a8b4a04324d8808d4c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_a9f9192f61838e1bc485e138becf22079}\index{timer\_process.h@{timer\_process.h}!process\_game\_timer\_P1@{process\_game\_timer\_P1}}
+\index{process\_game\_timer\_P1@{process\_game\_timer\_P1}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_game\_timer\_P1()}{process\_game\_timer\_P1()}}
+{\footnotesize\ttfamily \label{timer__process_8h_a9f9192f61838e1bc485e138becf22079} 
+int process\+\_\+game\+\_\+timer\+\_\+\+P1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the game timer events and updates game states for Player 1 in multiplayer mode. 
+
+Handles the game timer events for Player 1 in multiplayer mode. If the previous game state was not MULTIPLAYER\+\_\+\+P1, it sets the current game state to MULTIPLAYER\+\_\+\+P1, the main menu state to NOTHING\+\_\+\+MAIN\+\_\+\+MENU, and the game play state to GAME\+\_\+\+INIT. Handles the initialization of the P1 game, the start of the game, the creation of the game, and the pause menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+jogo\+\_\+\+P1 or criar\+\_\+menu\+\_\+pausa functions. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a9f9192f61838e1bc485e138becf22079_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a9f9192f61838e1bc485e138becf22079_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_adf8442c897e4175d1a7f55cffd57257b}\index{timer\_process.h@{timer\_process.h}!process\_game\_timer\_P2@{process\_game\_timer\_P2}}
+\index{process\_game\_timer\_P2@{process\_game\_timer\_P2}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_game\_timer\_P2()}{process\_game\_timer\_P2()}}
+{\footnotesize\ttfamily \label{timer__process_8h_adf8442c897e4175d1a7f55cffd57257b} 
+int process\+\_\+game\+\_\+timer\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the game timer events and updates game states for Player 2 in multiplayer mode. 
+
+This function handles the game timer events for Player 2 in multiplayer mode. If the previous game state was not MULTIPLAYER\+\_\+\+P2, it sets the current game state to MULTIPLAYER\+\_\+\+P2, the main menu state to NOTHING\+\_\+\+MAIN\+\_\+\+MENU, and the game play state to GAME\+\_\+\+INIT. Handles the initialization of the P2 game, the start of the game, the creation of the game, and the pause menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+jogo\+\_\+\+P2 or criar\+\_\+menu\+\_\+pausa functions. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_adf8442c897e4175d1a7f55cffd57257b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_adf8442c897e4175d1a7f55cffd57257b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_a0dc3c9d6d60caf9f138d02fd4f0da19c}\index{timer\_process.h@{timer\_process.h}!process\_main\_menu\_timer@{process\_main\_menu\_timer}}
+\index{process\_main\_menu\_timer@{process\_main\_menu\_timer}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_main\_menu\_timer()}{process\_main\_menu\_timer()}}
+{\footnotesize\ttfamily \label{timer__process_8h_a0dc3c9d6d60caf9f138d02fd4f0da19c} 
+int process\+\_\+main\+\_\+menu\+\_\+timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the main menu timer events and updates game states. 
+
+Handles the main menu timer events. If the previous game state was not MAIN\+\_\+\+MENU, sets the current game state to MAIN\+\_\+\+MENU, the main menu state to WAIT, and the game play state to NOTHING\+\_\+\+GAME\+\_\+\+PLAY. Also handles the creation of the main menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+main\+\_\+menu function. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a0dc3c9d6d60caf9f138d02fd4f0da19c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a0dc3c9d6d60caf9f138d02fd4f0da19c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_a7dc69e7e999eb6570eda1718ff0f250b}\index{timer\_process.h@{timer\_process.h}!process\_round@{process\_round}}
+\index{process\_round@{process\_round}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_round()}{process\_round()}}
+{\footnotesize\ttfamily \label{timer__process_8h_a7dc69e7e999eb6570eda1718ff0f250b} 
+void process\+\_\+round (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes a round of the game. 
+
+handles the processing of a game round. Determines the winner of the round, resets the selected cards and the player who played, and updates the number of cards, turn, and round suit. It also handles the end of the round and the transitions between players, including pauses and waits. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{timer__process_8h_a7dc69e7e999eb6570eda1718ff0f250b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a7dc69e7e999eb6570eda1718ff0f250b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_aedf736e2ebdb639de95eed424a33b64b}\index{timer\_process.h@{timer\_process.h}!process\_round\_MUL@{process\_round\_MUL}}
+\index{process\_round\_MUL@{process\_round\_MUL}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_round\_MUL()}{process\_round\_MUL()}}
+{\footnotesize\ttfamily \label{timer__process_8h_aedf736e2ebdb639de95eed424a33b64b} 
+void process\+\_\+round\+\_\+\+MUL (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the round in a multiplayer game. 
+
+Handles the processing of a round in a multiplayer game. Checks if the turn is 5, indicating the end of a round, and then processes the round to determine the winner. Also handles the resetting of the game state at the end of a round. If the turn is not 5, processes the round for each player, waiting for 60 seconds before moving to the next player. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{timer__process_8h_aedf736e2ebdb639de95eed424a33b64b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_aedf736e2ebdb639de95eed424a33b64b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8h_a64fd6fd0bc8e963b4609e5b919321a12}\index{timer\_process.h@{timer\_process.h}!process\_timer@{process\_timer}}
+\index{process\_timer@{process\_timer}!timer\_process.h@{timer\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_timer()}{process\_timer()}}
+{\footnotesize\ttfamily \label{timer__process_8h_a64fd6fd0bc8e963b4609e5b919321a12} 
+int process\+\_\+timer (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{, }\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes game timer events and updates game states. 
+
+Handles the game timer events based on the current game state. Processes the main menu timer, game timer, multiplayer game timers, and mouse events. It also handles the creation of the mouse and the copying of the buffer set drawing to the graphic buffer. Processes game rounds for both single and multiplayer modes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em teclado\+\_\+on} & Pointer to the keyboard status. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the mouse status. \\
+\hline
+{\em mouse\+\_\+x} & X-\/coordinate of the mouse. \\
+\hline
+{\em mouse\+\_\+y} & Y-\/coordinate of the mouse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a64fd6fd0bc8e963b4609e5b919321a12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8h_a64fd6fd0bc8e963b4609e5b919321a12_icgraph}
+\end{center}
+\end{figure}

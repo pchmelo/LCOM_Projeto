@@ -1,0 +1,33 @@
+<map id="criar_rato" name="criar_rato">
+<area shape="rect" id="Node000001" title="Handles the creation of a mouse in the game." alt="" coords="5,231,89,256"/>
+<area shape="rect" id="Node000002" href="$collision_8c.html#aa847ebd1f6d9f431211f82ea20568a5f" title="Checks if a point is inside a collision area." alt="" coords="391,255,481,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,230,59,200,76,161,101,123,117,106,136,93,187,69,233,62,278,70,329,93,350,107,368,124,396,164,417,205,430,240,425,242,412,207,392,167,364,128,346,111,327,98,277,75,233,67,189,74,139,98,121,110,105,126,80,164,64,202,54,231"/>
+<area shape="rect" id="Node000003" href="$grafica_8c.html#afe44ad8c40405c5ae1dd181c70e5d2e6" title="Prints a form from an XPM sprite." alt="" coords="141,5,324,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="48,230,57,194,73,146,99,94,116,69,136,48,156,34,159,39,139,52,120,73,103,96,78,148,62,196,54,231"/>
+<area shape="rect" id="Node000005" href="$collision_8c.html#a4622c9bbeb2cad51aa617f25da29d70f" title="Checks if a point is inside the card grab area." alt="" coords="177,107,289,132"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="54,229,86,186,109,163,136,142,162,130,164,135,139,147,113,167,90,190,59,232"/>
+<area shape="rect" id="Node000006" href="$collision_8c.html#a2b976fa8d827e8c16e0bd272dfa8e5f3" title="Tests if a given point is within the accept button collision area." alt="" coords="137,156,328,181"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="67,228,99,210,136,192,161,183,163,188,138,196,101,214,70,233"/>
+<area shape="rect" id="Node000007" href="$collision_8c.html#a60dbc749a5a7ccd2cc1e9fa01a1cbbac" title="Tests if a given point is within the bot button collision area." alt="" coords="177,205,289,231"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="89,235,163,225,164,230,90,240"/>
+<area shape="rect" id="Node000008" href="$collision_8c.html#a230807afecf672e5d9df99057eaa2012" title="Tests if a given point is within the cancel button collision area." alt="" coords="137,255,328,280"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="90,246,124,251,124,256,89,251"/>
+<area shape="rect" id="Node000009" href="$collision_8c.html#aeb4235e8e0390ac27d85aaac5e126807" title="Tests if a given point is within the slide button collision area." alt="" coords="171,304,294,329"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="69,254,101,272,138,290,160,298,158,303,136,295,99,277,67,258"/>
+<area shape="rect" id="Node000010" href="$collision_8c.html#af1f3554bc4b49545e6c8b232dc84baa8" title="Tests if a given point is within the square button collision area." alt="" coords="159,353,307,379"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="59,255,90,297,113,320,139,340,150,346,148,351,136,344,109,324,86,300,54,258"/>
+<area shape="rect" id="Node000011" href="$collision_8c.html#add0b53555541a207b18b312728ab97fb" title="Tests if a given point is within the timer tracker &quot;confirm&quot; button collision area." alt="" coords="139,403,326,428"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="55,255,66,284,83,320,107,358,139,389,147,394,144,399,136,393,103,361,78,323,61,286,50,257"/>
+<area shape="rect" id="Node000012" href="$collision_8c.html#ab2b82e4bf763c015330fbab62639bc17" title="Tests if a given point is within the top button collision area." alt="" coords="177,452,289,477"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="53,256,61,292,76,342,102,394,119,418,139,439,165,453,162,457,136,443,115,421,97,397,71,344,56,294,48,257"/>
+<area shape="rect" id="Node000004" href="$aux__dispositivos_8c.html#a1ebb4488d400f798504117c353edd1bd" title="Draws a pixel based on the received parameters." alt="" coords="376,5,496,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="324,15,362,15,362,21,324,21"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="290,126,329,142,359,165,384,191,422,241,418,244,380,194,355,169,327,147,288,131"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="294,179,329,192,374,217,411,244,408,248,371,221,327,196,292,184"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="286,228,379,251,377,256,285,233"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="328,265,378,265,378,270,328,270"/>
+<area shape="poly" id="edge13_Node000009_Node000002" title=" " alt="" coords="285,301,377,279,379,284,286,307"/>
+<area shape="poly" id="edge15_Node000010_Node000002" title=" " alt="" coords="296,351,327,340,371,314,408,287,411,291,374,319,329,344,298,356"/>
+<area shape="poly" id="edge17_Node000011_Node000002" title=" " alt="" coords="303,400,327,389,355,367,381,341,418,290,422,293,385,344,359,371,329,394,305,405"/>
+<area shape="poly" id="edge19_Node000012_Node000002" title=" " alt="" coords="288,456,308,449,326,439,361,405,389,365,410,326,424,292,428,294,414,328,393,368,365,409,330,443,310,454,290,461"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="selected_card" name="selected_card">
+<area shape="rect" id="Node000001" title="Checks if a point is inside the card grab area." alt="" coords="701,105,813,131"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#a03432a52e5ca823ca9ab88f0bc8bf032" title="Handles the creation of a mouse in the game." alt="" coords="547,5,631,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="729,99,694,71,652,44,628,33,630,28,655,40,697,67,733,94"/>
+<area shape="rect" id="Node000006" href="$rato__process_8c.html#a378dda404ba854377a6a6ad11e01f299" title=" " alt="" coords="536,55,643,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="701,104,632,83,633,78,702,99"/>
+<area shape="rect" id="Node000007" href="$rato__process_8c.html#a24ce13e18f0e9cb0674c54d3fe885d3a" title="Processes mouse inputs during different game states." alt="" coords="367,131,473,156"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="688,126,473,142,473,137,687,121"/>
+<area shape="rect" id="Node000008" href="$rato__process_8c.html#a8d2c7a28e7be735956de6e02befdb313" title="Processes mouse inputs for Player 1 during the game." alt="" coords="525,156,653,181"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="702,137,633,158,632,153,701,132"/>
+<area shape="rect" id="Node000009" href="$rato__process_8c.html#a074eb76b6094f3d712031fd7c26b0f9f" title="Processes mouse inputs for Player 2 during the game." alt="" coords="525,205,653,231"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="733,142,697,169,655,196,630,208,628,203,652,192,694,165,729,137"/>
+<area shape="rect" id="Node000003" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="363,44,477,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="535,33,477,47,476,41,534,28"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,107,315,132"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="372,77,283,109,281,104,370,72"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,107,128,132"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,122,128,122,128,117,163,117"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="353,137,314,131,315,126,354,132"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="511,160,473,154,473,149,512,154"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="539,203,524,196,445,158,447,154,526,192,541,198"/>
+</map>

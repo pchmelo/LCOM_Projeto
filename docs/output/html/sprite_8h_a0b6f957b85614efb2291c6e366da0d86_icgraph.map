@@ -1,0 +1,7 @@
+<map id="criar_sprite" name="criar_sprite">
+<area shape="rect" id="Node000001" title="Creates a sprite from an XPM file." alt="" coords="371,5,465,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a7d9269bc253598ba9bb9c365f89b7e3e" title="Allocates memory for sprites." alt="" coords="176,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,21,323,21,323,15,357,15"/>
+<area shape="rect" id="Node000003" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="162,21,128,21,128,15,162,15"/>
+</map>

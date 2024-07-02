@@ -1,0 +1,90 @@
+\doxysection{collision.\+h}
+\hypertarget{collision_8h_source}{}\label{collision_8h_source}\index{src/prog/functions/collision.h@{src/prog/functions/collision.h}}
+\mbox{\hyperlink{collision_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COLLISION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COLLISION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rules_8h}{../game\_rules/rules.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_collision_af55497c668909df153bd9818cf765594}{xi}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_collision_a86e281628d1fbf84b8099731659a8b11}{xf}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_collision_a525987ab72296fdd74c5bad7185fc0a4}{yi}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_collision_afe60fc8907c0d8ad46c62a7e6c58cb1c}{yf}};}
+\DoxyCodeLine{00026\ \}\ \mbox{\hyperlink{struct_collision}{Collision}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a0621435dbdef02c21f7bc2549fea0287}{allocate\_collision\_array}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_aa927b12e2bc0ea43b0b4d2805debec7b}{allocate\_collision\_array\_main\_menu}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a358e83dbd1c343b34c21c4956ad77ca9}{allocate\_collision\_array\_pause\_menu}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{collision_8h_a62e9d50a5333e1ec3fcac67b2ae5794a}{free\_collision\_array}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00075\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_aa847ebd1f6d9f431211f82ea20568a5f}{isCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \mbox{\hyperlink{struct_collision}{Collision}}\ collision);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_af7c56382fb64da8d4f2abdea34d5f85b}{testStartButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00099\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a57d766b55cceb3f8c86149ec5cf8aad0}{testExitButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00111\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_afff747f86c2f720bdd2283ba10dbba40}{testMultiButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00123\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_acb822278b846a2a904931f57246afd02}{testResumeButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a46a318dfcb5101187e08c7c369aaf3b6}{testRestartButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00147\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a15807ecb1059a4b067e9c5caa955cc1a}{testExitButtonCollisionPause}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00159\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a4622c9bbeb2cad51aa617f25da29d70f}{selected\_card}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00172\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a36fdf4da6f334bebc9507bb89b34196d}{testCardGrabCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00185\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a230807afecf672e5d9df99057eaa2012}{testCancelButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00198\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a2b976fa8d827e8c16e0bd272dfa8e5f3}{testAcceptButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00211\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a94807c283aad949f2afab15c9f4958e4}{testDeclineButtonCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00224\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_ab2b82e4bf763c015330fbab62639bc17}{testTopButton}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00237\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_a60dbc749a5a7ccd2cc1e9fa01a1cbbac}{testBotButton}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00251\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_aeb4235e8e0390ac27d85aaac5e126807}{testSlideButton}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00264\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_af1f3554bc4b49545e6c8b232dc84baa8}{testSquareCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00278\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{collision_8h_add0b53555541a207b18b312728ab97fb}{testTimerTrackerCollision}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COLLISION\_H}}
+
+\end{DoxyCode}

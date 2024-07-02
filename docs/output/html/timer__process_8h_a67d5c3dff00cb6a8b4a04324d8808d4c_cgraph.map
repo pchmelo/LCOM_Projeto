@@ -1,0 +1,118 @@
+<map id="process_game_timer" name="process_game_timer">
+<area shape="rect" id="Node000001" title="Processes the game timer events and updates game states." alt="" coords="5,1022,164,1047"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#a6c7cc7359a9f7454b8f0433f5d8774b0" title="Manages the game state." alt="" coords="239,623,326,649"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,1021,267,660,271,662,95,1023"/>
+<area shape="rect" id="Node000031" href="$composer_8c.html#aac4791dd014af5c97c812c245a40ad72" title="Creates a pause menu in the game." alt="" coords="212,211,353,237"/>
+<area shape="poly" id="edge49_Node000001_Node000031" title=" " alt="" coords="86,1021,272,249,278,251,92,1023"/>
+<area shape="rect" id="Node000032" href="$rules_8c.html#a54c0cd193fcd3f116ad8ef4b233eb391" title="Fills the hands of the players with cards from the deck." alt="" coords="223,923,343,949"/>
+<area shape="poly" id="edge57_Node000001_Node000032" title=" " alt="" coords="104,1020,151,990,211,958,226,951,228,956,213,962,154,994,106,1024"/>
+<area shape="rect" id="Node000033" href="$rules_8c.html#a4d10df4c26ab05e602410300279f2066" title="Deals a card from the deck." alt="" coords="237,973,328,998"/>
+<area shape="poly" id="edge58_Node000001_Node000033" title=" " alt="" coords="136,1019,223,997,225,1002,137,1025"/>
+<area shape="rect" id="Node000034" href="$rules_8c.html#a273228885ce4b0b07699c595b93f4d63" title="Deals a card from the deck." alt="" coords="250,1022,315,1047"/>
+<area shape="poly" id="edge59_Node000001_Node000034" title=" " alt="" coords="164,1032,236,1032,236,1037,164,1037"/>
+<area shape="rect" id="Node000035" href="$timer__process_8c.html#afb1045e70aa06f1d3e32a3c6caf070eb" title="Processes the display of the game based on the current round." alt="" coords="219,1071,346,1097"/>
+<area shape="poly" id="edge60_Node000001_Node000035" title=" " alt="" coords="137,1045,218,1065,217,1071,136,1050"/>
+<area shape="rect" id="Node000039" href="$rtc_8c.html#ae05582b9454a374bbdc4621cbda8336d" title="Gets the current time from the RTC." alt="" coords="231,1121,335,1146"/>
+<area shape="poly" id="edge64_Node000001_Node000039" title=" " alt="" coords="107,1045,154,1074,213,1106,231,1113,229,1118,211,1110,152,1079,104,1050"/>
+<area shape="rect" id="Node000042" href="$rules_8c.html#aebdb0f340a4800e7b841571ffc1f5da9" title="Shuffles the deck of cards." alt="" coords="233,1170,332,1195"/>
+<area shape="poly" id="edge67_Node000001_Node000042" title=" " alt="" coords="98,1046,145,1098,177,1128,213,1155,227,1162,224,1167,211,1160,174,1133,141,1102,94,1049"/>
+<area shape="rect" id="Node000045" href="$rules_8c.html#aeaefd5413bdb591b46cb4f4ff0442d48" title="Splits and reorders a deck of cards." alt="" coords="241,1243,324,1269"/>
+<area shape="poly" id="edge70_Node000001_Node000045" title=" " alt="" coords="96,1046,141,1118,175,1163,214,1206,249,1234,246,1238,210,1210,171,1167,137,1121,91,1049"/>
+<area shape="rect" id="Node000003" href="$composer_8c.html#a2bea6b56f96c7c4e1fc906af5572e0d5" title="Creates the hand of grabbed cards for player 1." alt="" coords="626,350,773,375"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,622,331,558,363,519,400,483,455,446,516,416,576,393,629,376,630,382,577,398,518,421,458,450,403,487,367,522,335,561,293,625"/>
+<area shape="rect" id="Node000004" href="$grafica_8c.html#afe44ad8c40405c5ae1dd181c70e5d2e6" title="Prints a form from an XPM sprite." alt="" coords="839,449,1021,474"/>
+<area shape="poly" id="edge48_Node000002_Node000004" title=" " alt="" coords="285,622,299,585,322,532,356,476,376,449,400,425,450,385,495,362,544,348,607,335,660,322,703,312,724,311,745,314,768,322,792,335,805,346,812,358,819,383,825,411,831,424,841,438,837,441,826,427,820,412,814,385,808,360,801,349,789,340,765,327,744,319,724,316,704,317,661,327,609,340,545,353,497,367,453,390,403,429,380,452,360,479,327,535,304,587,290,624"/>
+<area shape="rect" id="Node000006" href="$composer_8c.html#ad041db058730236cdecd2e622bd6aded" title="Creates the hand of player 1." alt="" coords="401,186,560,211"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="281,623,282,553,296,446,310,386,331,326,361,270,399,221,403,217,407,221,403,225,365,273,336,329,315,388,301,447,288,554,286,623"/>
+<area shape="rect" id="Node000007" href="$composer_8c.html#a2e32ce8279148e9fe17cfd7a7b96ee8c" title="Creates the hand of player 2." alt="" coords="401,137,560,162"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="283,623,295,533,320,398,336,327,354,262,376,208,399,172,403,168,407,172,403,175,380,211,359,264,341,329,325,399,301,534,288,623"/>
+<area shape="rect" id="Node000009" href="$composer_8c.html#a88136264bcb4c61123fff769218ab509" title="Creates the hand of player 3." alt="" coords="401,235,560,261"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="281,623,286,561,301,466,316,414,337,362,364,313,399,270,404,266,408,270,403,274,369,316,342,364,321,416,307,467,291,561,287,623"/>
+<area shape="rect" id="Node000010" href="$composer_8c.html#a8777999065ea7703ca260381a2f52a34" title="Creates the hand of player 4." alt="" coords="401,87,560,113"/>
+<area shape="poly" id="edge12_Node000002_Node000010" title=" " alt="" coords="284,622,333,359,367,207,384,152,399,122,403,118,407,122,403,126,389,154,373,208,338,360,289,623"/>
+<area shape="rect" id="Node000011" href="$composer_8c.html#a395ff9a993b3236fef6753cb62bd49c7" title="Displays a score board in the game." alt="" coords="412,598,549,623"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="326,628,398,619,399,624,327,633"/>
+<area shape="rect" id="Node000014" href="$composer_8c.html#a464ce9e849224e99cb23fd630536586e" title="Creates a frame for a card." alt="" coords="411,947,550,973"/>
+<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="288,649,296,701,315,777,330,819,349,860,373,899,403,933,410,938,407,943,399,937,369,902,344,863,325,821,310,779,290,702,283,649"/>
+<area shape="rect" id="Node000016" href="$composer_8c.html#a672804277ef8478a0dbb3cb6fe810daa" title="Displays the trump card." alt="" coords="405,285,556,310"/>
+<area shape="poly" id="edge21_Node000002_Node000016" title=" " alt="" coords="283,623,291,570,310,491,326,448,345,405,370,364,399,327,417,314,421,318,403,331,374,367,350,407,331,450,315,493,296,571,288,623"/>
+<area shape="rect" id="Node000017" href="$composer_8c.html#a7453e6f99090d2d372a5154be0d221da" title="Displays the cards of all players." alt="" coords="427,498,534,523"/>
+<area shape="poly" id="edge23_Node000002_Node000017" title=" " alt="" coords="302,621,446,529,449,533,305,626"/>
+<area shape="rect" id="Node000022" href="$composer_8c.html#aa033c965043c3cc67feac74a7cb3708d" title="Displays a drag frame in the game." alt="" coords="410,997,551,1022"/>
+<area shape="poly" id="edge32_Node000002_Node000022" title=" " alt="" coords="289,648,305,718,332,818,366,918,385,956,403,982,409,987,406,991,399,986,380,959,361,920,327,820,300,719,284,650"/>
+<area shape="rect" id="Node000023" href="$composer_8c.html#a6dbe34b122f587eba9717495a1817d8c" title="Displays the select top or bottom card menu." alt="" coords="630,849,769,874"/>
+<area shape="poly" id="edge34_Node000002_Node000023" title=" " alt="" coords="315,646,402,682,448,695,486,702,522,714,562,741,580,765,586,789,593,812,610,834,619,841,616,845,606,838,588,815,581,791,575,767,558,745,520,719,485,707,447,700,400,687,313,651"/>
+<area shape="rect" id="Node000024" href="$composer_8c.html#ab47a61a38cbec7370daf382452febe08" title="Displays the split deck menu." alt="" coords="415,647,546,673"/>
+<area shape="poly" id="edge36_Node000002_Node000024" title=" " alt="" coords="327,639,402,648,402,653,326,644"/>
+<area shape="rect" id="Node000027" href="$composer_8c.html#a19bfbd1d5511e4b9989a429ef463cf49" title="Handles the grabbing of a card by player 1." alt="" coords="659,950,740,975"/>
+<area shape="poly" id="edge43_Node000002_Node000027" title=" " alt="" coords="296,647,340,693,370,718,403,740,425,750,446,755,485,757,522,761,542,770,562,785,576,801,584,818,588,851,592,884,598,900,610,917,627,932,647,943,645,948,624,936,606,920,593,903,587,885,583,852,578,819,571,804,558,789,539,774,521,766,484,762,445,760,424,755,400,745,366,723,336,697,293,651"/>
+<area shape="rect" id="Node000028" href="$composer_8c.html#a466f994ce5c0e419c06c0bb07c8a221b" title="Slider for the deck split." alt="" coords="433,799,529,825"/>
+<area shape="poly" id="edge45_Node000002_Node000028" title=" " alt="" coords="294,648,335,709,367,746,403,778,427,792,424,796,400,782,363,749,331,712,289,650"/>
+<area shape="rect" id="Node000029" href="$rules_8c.html#af3766cd05cc46936abb71224c2d061ee" title="Checks if a selected card is playable." alt="" coords="436,849,525,874"/>
+<area shape="poly" id="edge46_Node000002_Node000029" title=" " alt="" coords="290,648,304,685,327,735,360,788,380,813,403,834,424,846,421,851,400,838,376,816,356,791,322,737,299,687,285,650"/>
+<area shape="rect" id="Node000030" href="$grafica_8c.html#aec4db1eee466b906c5f21a2bea09d85d" title="Clears the graphic buffer." alt="" coords="406,898,555,923"/>
+<area shape="poly" id="edge47_Node000002_Node000030" title=" " alt="" coords="289,648,300,693,321,756,355,824,377,856,403,883,411,889,408,894,400,887,373,859,350,827,316,758,294,695,284,650"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="757,373,792,384,849,411,899,439,896,444,847,416,790,389,756,378"/>
+<area shape="rect" id="Node000005" href="$aux__dispositivos_8c.html#a1ebb4488d400f798504117c353edd1bd" title="Draws a pixel based on the received parameters." alt="" coords="1069,562,1189,587"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="955,472,1095,553,1093,557,952,476"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="560,185,615,183,675,187,736,200,765,211,792,226,808,240,826,262,862,320,920,435,915,438,857,322,822,265,805,244,789,230,763,216,734,205,674,192,615,188,561,190"/>
+<area shape="rect" id="Node000008" href="$grafica_8c.html#afc7879979765f48b6385ddd03b5b2f36" title="Prints a rotated form from an XPM sprite." alt="" coords="608,83,791,123"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="540,134,594,122,595,128,542,139"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="724,121,793,187,911,308,1023,434,1113,549,1108,552,1019,438,907,312,789,191,720,125"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="546,233,602,227,665,227,731,237,762,247,792,260,817,277,840,298,877,346,904,394,922,435,917,437,900,397,873,349,836,302,814,281,789,265,760,252,729,242,665,232,602,232,547,238"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="561,98,594,99,594,104,561,104"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="549,614,603,615,665,611,729,601,790,582,826,561,859,535,909,483,913,487,863,539,829,566,792,586,730,606,665,617,603,620,549,619"/>
+<area shape="rect" id="Node000012" href="$aux__func_8c.html#a117c80c1097e2105f62c481b22cce24a" title="Converts a number into a sprite." alt="" coords="642,649,757,674"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="537,621,631,643,630,648,536,626"/>
+<area shape="rect" id="Node000013" href="$aux__func_8c.html#a9dacede309082ef811b2624742085c4b" title="Converts a score into an array of integers." alt="" coords="649,698,750,723"/>
+<area shape="poly" id="edge17_Node000011_Node000013" title=" " alt="" coords="538,621,561,632,577,645,586,659,595,671,609,683,637,695,634,700,607,688,591,675,582,662,573,649,559,637,535,626"/>
+<area shape="rect" id="Node000015" href="$grafica_8c.html#a84c1929b86d7414b130a664e5586d366" title="Draws a card frame." alt="" coords="644,999,755,1025"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="535,970,633,994,632,999,534,975"/>
+<area shape="poly" id="edge20_Node000015_Node000005" title=" " alt="" coords="754,997,790,984,862,950,917,919,966,881,1019,822,1057,765,1086,703,1107,645,1119,600,1125,601,1112,647,1091,705,1062,767,1023,826,970,885,920,924,865,955,792,989,756,1002"/>
+<area shape="poly" id="edge22_Node000016_Node000004" title=" " alt="" coords="528,282,584,272,651,266,723,270,758,278,792,291,836,321,872,360,900,400,919,435,915,437,896,403,868,363,832,325,789,296,757,283,722,276,651,271,584,277,529,287"/>
+<area shape="rect" id="Node000018" href="$composer_8c.html#a234715d2d473e108649d586163a0020c" title="Displays the card for player 1." alt="" coords="612,449,787,474"/>
+<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="534,496,629,474,630,480,535,501"/>
+<area shape="rect" id="Node000019" href="$composer_8c.html#a969ce1e4f1aa31e690570820b336baa5" title="Displays the card for player 2. Prints the sprite of the card. If there is an error in printing the s..." alt="" coords="612,399,787,425"/>
+<area shape="poly" id="edge26_Node000017_Node000019" title=" " alt="" coords="499,496,546,465,607,434,627,426,629,431,609,438,549,470,501,500"/>
+<area shape="rect" id="Node000020" href="$composer_8c.html#ac05fe105d1a875868bbe76cf50d5ad1a" title="Displays the card for player 3." alt="" coords="612,498,787,523"/>
+<area shape="poly" id="edge28_Node000017_Node000020" title=" " alt="" coords="534,508,598,508,598,513,534,513"/>
+<area shape="rect" id="Node000021" href="$composer_8c.html#a2bb47290c917ef1fff082f7dc3da91ff" title="Displays the card for player 4." alt="" coords="612,547,787,573"/>
+<area shape="poly" id="edge30_Node000017_Node000021" title=" " alt="" coords="535,520,630,542,629,547,534,525"/>
+<area shape="poly" id="edge25_Node000018_Node000004" title=" " alt="" coords="787,459,825,459,825,464,787,464"/>
+<area shape="poly" id="edge27_Node000019_Node000004" title=" " alt="" coords="760,422,857,443,856,448,759,427"/>
+<area shape="poly" id="edge29_Node000020_Node000004" title=" " alt="" coords="759,495,856,474,857,480,760,501"/>
+<area shape="poly" id="edge31_Node000021_Node000004" title=" " alt="" coords="752,545,790,532,846,506,895,479,898,483,848,511,792,537,754,550"/>
+<area shape="poly" id="edge33_Node000022_Node000015" title=" " alt="" coords="552,1008,630,1009,630,1014,551,1013"/>
+<area shape="poly" id="edge35_Node000023_Node000004" title=" " alt="" coords="767,848,789,834,809,809,829,770,867,671,899,567,920,487,925,488,904,568,872,673,834,773,813,811,792,838,770,852"/>
+<area shape="poly" id="edge41_Node000024_Node000004" title=" " alt="" coords="521,670,561,690,576,702,585,714,594,724,609,732,660,750,702,759,743,754,789,732,820,709,846,679,868,646,885,611,909,542,922,487,927,488,915,543,890,613,872,648,850,682,824,712,792,737,744,759,702,764,658,755,607,737,591,728,581,717,572,706,559,694,519,675"/>
+<area shape="poly" id="edge40_Node000024_Node000012" title=" " alt="" coords="546,658,628,658,628,664,546,663"/>
+<area shape="poly" id="edge42_Node000024_Node000013" title=" " alt="" coords="537,670,636,693,635,699,536,675"/>
+<area shape="rect" id="Node000025" href="$grafica_8c.html#a41389fd868881a7d67ea9a39286f4506" title=" " alt="" coords="854,787,1006,813"/>
+<area shape="poly" id="edge37_Node000024_Node000025" title=" " alt="" coords="500,671,531,701,562,741,572,763,577,783,579,821,585,854,594,869,610,883,633,897,654,906,674,909,694,909,738,899,790,883,895,818,898,822,792,888,739,904,695,914,674,915,653,911,630,902,606,887,590,872,580,856,574,821,572,784,567,765,558,744,527,705,496,675"/>
+<area shape="rect" id="Node000026" href="$aux__func_8c.html#a273a13e41691394960eebd025f664bd6" title="Gets the position of the slider." alt="" coords="641,799,757,825"/>
+<area shape="poly" id="edge39_Node000024_Node000026" title=" " alt="" coords="529,671,562,690,579,713,586,736,593,757,610,778,631,792,628,796,606,782,589,760,581,737,574,715,558,694,527,675"/>
+<area shape="poly" id="edge38_Node000025_Node000005" title=" " alt="" coords="940,786,1106,596,1110,600,944,789"/>
+<area shape="poly" id="edge44_Node000027_Node000004" title=" " alt="" coords="720,948,755,921,788,884,815,820,853,705,919,486,924,488,858,707,820,822,793,887,759,925,723,952"/>
+<area shape="poly" id="edge56_Node000031_Node000004" title=" " alt="" coords="287,210,302,180,326,141,359,102,378,86,400,72,507,25,555,11,601,4,647,5,693,16,741,37,792,69,834,106,866,153,890,204,908,257,920,310,927,359,931,435,926,435,921,360,914,311,903,259,885,206,861,155,830,110,789,73,738,41,691,21,646,10,601,9,556,16,509,30,403,77,381,90,362,106,330,144,306,183,292,212"/>
+<area shape="poly" id="edge50_Node000031_Node000006" title=" " alt="" coords="353,212,387,208,388,213,354,218"/>
+<area shape="poly" id="edge51_Node000031_Node000007" title=" " alt="" coords="310,209,400,171,421,164,423,169,402,176,312,214"/>
+<area shape="poly" id="edge52_Node000031_Node000009" title=" " alt="" coords="354,230,388,234,387,239,353,235"/>
+<area shape="poly" id="edge53_Node000031_Node000010" title=" " alt="" coords="294,209,338,167,368,143,400,122,414,115,416,120,403,126,371,147,341,171,298,213"/>
+<area shape="poly" id="edge54_Node000031_Node000011" title=" " alt="" coords="289,236,302,287,325,362,358,449,380,493,404,533,427,563,453,587,450,591,423,566,399,536,375,495,354,451,320,364,297,288,284,237"/>
+<area shape="poly" id="edge55_Node000031_Node000016" title=" " alt="" coords="315,234,402,270,426,278,424,283,400,275,313,239"/>
+<area shape="rect" id="Node000036" href="$rules_8c.html#adebe5c3d5222f8b9e4ffe63ec311000f" title="Determines the card to be played by the bot." alt="" coords="430,1046,531,1071"/>
+<area shape="poly" id="edge61_Node000035_Node000036" title=" " alt="" coords="346,1073,416,1064,417,1070,347,1079"/>
+<area shape="rect" id="Node000037" href="$rules_8c.html#a17004f10be86cdd8b324a0bfbdf3271e" title="Removes a card from a player&#39;s hand." alt="" coords="429,1095,532,1121"/>
+<area shape="poly" id="edge62_Node000035_Node000037" title=" " alt="" coords="347,1089,416,1098,415,1103,346,1094"/>
+<area shape="rect" id="Node000038" href="$rules_8c.html#a91a0d490a3563ee97302b9a4eda45f67" title="Removes a card from a player&#39;s hand." alt="" coords="631,1095,767,1121"/>
+<area shape="poly" id="edge63_Node000037_Node000038" title=" " alt="" coords="532,1105,618,1105,618,1111,532,1111"/>
+<area shape="rect" id="Node000040" href="$aux__dispositivos_8c.html#a12feaa4b91b2a749d13b96eab97d6662" title="Reads the output of the RTC based on the sent command." alt="" coords="419,1145,543,1170"/>
+<area shape="poly" id="edge65_Node000039_Node000040" title=" " alt="" coords="335,1137,405,1146,405,1151,334,1142"/>
+<area shape="rect" id="Node000041" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="650,1145,749,1170"/>
+<area shape="poly" id="edge66_Node000040_Node000041" title=" " alt="" coords="543,1155,636,1155,636,1160,543,1160"/>
+<area shape="rect" id="Node000043" href="$rules_8c.html#ab13c958758a438df8ffa77ca4975bc55" title="Fills a deck of cards." alt="" coords="445,1194,516,1219"/>
+<area shape="poly" id="edge68_Node000042_Node000043" title=" " alt="" coords="333,1186,432,1198,431,1203,332,1191"/>
+<area shape="rect" id="Node000044" href="$rules_8c.html#a3df79d631c10ddcff7ef8064fb4534ac" title="Retrieves the sprite for a card based on its rank and suit." alt="" coords="659,1194,740,1219"/>
+<area shape="poly" id="edge69_Node000043_Node000044" title=" " alt="" coords="516,1204,645,1204,645,1209,516,1209"/>
+<area shape="poly" id="edge71_Node000045_Node000045" title=" " alt="" coords="250,1245,243,1235,247,1225,260,1219,283,1217,310,1220,321,1229,318,1233,308,1225,283,1222,262,1224,251,1229,248,1234,254,1242"/>
+</map>

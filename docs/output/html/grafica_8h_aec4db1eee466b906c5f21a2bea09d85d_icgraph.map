@@ -1,0 +1,28 @@
+<map id="limparBufferGrafico" name="limparBufferGrafico">
+<area shape="rect" id="Node000001" title="Clears the graphic buffer." alt="" coords="955,80,1104,105"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#a6c7cc7359a9f7454b8f0433f5d8774b0" title="Manages the game state." alt="" coords="796,5,883,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="985,77,906,44,876,33,878,28,908,40,987,72"/>
+<area shape="rect" id="Node000007" href="$composer_8c.html#a0751beffc95521a2e8729c5556f9da38" title="Creates the game for player 1." alt="" coords="785,55,894,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="941,84,894,77,895,72,942,78"/>
+<area shape="rect" id="Node000009" href="$composer_8c.html#a0bab17a2f62c67f1b12dda747dae2e47" title="Creates the game for player 2." alt="" coords="785,104,894,129"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="942,106,895,112,894,107,941,101"/>
+<area shape="rect" id="Node000011" href="$composer_8c.html#a354537f43440702f41f54da9f51f24ef" title="Creates the main menu of the game." alt="" coords="772,153,907,179"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="984,113,908,143,875,156,873,151,906,138,982,108"/>
+<area shape="rect" id="Node000003" href="$timer__process_8c.html#a67d5c3dff00cb6a8b4a04324d8808d4c" title="Processes the game timer events and updates game states." alt="" coords="545,5,704,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="782,21,704,21,704,15,782,15"/>
+<area shape="rect" id="Node000004" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="363,80,477,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="550,37,526,44,483,63,445,82,443,78,480,58,524,40,549,32"/>
+<area shape="rect" id="Node000005" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,80,315,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="349,95,315,95,315,90,349,90"/>
+<area shape="rect" id="Node000006" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,80,128,105"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="163,95,128,95,128,90,163,90"/>
+<area shape="rect" id="Node000008" href="$timer__process_8c.html#a9f9192f61838e1bc485e138becf22079" title="Processes the game timer events and updates game states for Player 1 in multiplayer mode." alt="" coords="534,55,715,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="771,70,715,70,715,65,771,65"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="520,83,478,88,477,83,520,78"/>
+<area shape="rect" id="Node000010" href="$timer__process_8c.html#adf8442c897e4175d1a7f55cffd57257b" title="Processes the game timer events and updates game states for Player 2 in multiplayer mode." alt="" coords="534,104,715,129"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="771,119,715,119,715,114,771,114"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="520,107,477,102,478,97,520,102"/>
+<area shape="rect" id="Node000012" href="$timer__process_8c.html#a0dc3c9d6d60caf9f138d02fd4f0da19c" title="Processes the main menu timer events and updates game states." alt="" coords="525,153,724,179"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="758,169,724,169,724,163,758,163"/>
+<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="553,152,524,143,445,108,447,103,526,138,555,147"/>
+</map>

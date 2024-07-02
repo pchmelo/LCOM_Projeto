@@ -1,0 +1,334 @@
+\doxysection{src/prog/process/rato\+\_\+process.h File Reference}
+\hypertarget{rato__process_8h}{}\label{rato__process_8h}\index{src/prog/process/rato\_process.h@{src/prog/process/rato\_process.h}}
+{\ttfamily \#include "{}../functions/composer.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/i8042.\+h"{}}\newline
+{\ttfamily \#include "{}../../dispositivos/sp/sp.\+h"{}}\newline
+{\ttfamily \#include "{}../functions/collision.\+h"{}}\newline
+{\ttfamily \#include "{}../functions/aux\+\_\+func.\+h"{}}\newline
+{\ttfamily \#include "{}../game\+\_\+rules/rules.\+h"{}}\newline
+Include dependency graph for rato\+\_\+process.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rato__process_8h_a24ce13e18f0e9cb0674c54d3fe885d3a}{process\+\_\+rato}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs during different game states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8h_a5da1d7e9d1351001b8f4e534937d1852}{process\+\_\+rato\+\_\+grab\+\_\+drop}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs for card grab and drop actions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8h_aefbb451da6d9fc3e4b6f7695f255fd98}{process\+\_\+rato\+\_\+\+P1}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int mouse)
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs for Player 1 during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8h_a0b82e48a158655e8a483fe8e69a678ab}{process\+\_\+rato\+\_\+\+P2}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int mouse)
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs for Player 2 during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8h_a56dd5a3b28a0482d4832ad7d87bb9002}{process\+\_\+rato\+\_\+connection}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs during the connection phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8h_a9c157da5f0fc6a2ac2047ee875a2634a}{process\+\_\+rato\+\_\+invitation}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs during the invitation phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8h_a0c6657d850be9b2f06e4b2471d1e7dd5}{process\+\_\+rato\+\_\+get\+\_\+trump}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\item 
+void \mbox{\hyperlink{rato__process_8h_a19019ad5af5b2487b8edaaa8d904dce7}{process\+\_\+rato\+\_\+slide}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\item 
+void \mbox{\hyperlink{rato__process_8h_a54170fa448b13e1940998e880edcfbd6}{grab\+Square\+Slide}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\item 
+void \mbox{\hyperlink{rato__process_8h_a830d9bbdf4cd44309ed29b8c74a328af}{process\+\_\+rato\+\_\+time\+\_\+tracker}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rato__process_8h_a54170fa448b13e1940998e880edcfbd6}\index{rato\_process.h@{rato\_process.h}!grabSquareSlide@{grabSquareSlide}}
+\index{grabSquareSlide@{grabSquareSlide}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{grabSquareSlide()}{grabSquareSlide()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a54170fa448b13e1940998e880edcfbd6} 
+void grab\+Square\+Slide (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{rato__process_8h_a24ce13e18f0e9cb0674c54d3fe885d3a}\index{rato\_process.h@{rato\_process.h}!process\_rato@{process\_rato}}
+\index{process\_rato@{process\_rato}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato()}{process\_rato()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a24ce13e18f0e9cb0674c54d3fe885d3a} 
+void process\+\_\+rato (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs during different game states. 
+
+Handles the processing of mouse inputs during different game states. Checks the current state of the game and performs actions based on the state and the mouse coordinates. Handles the actions to be performed when different buttons are clicked, and the navigation between different states based on mouse inputs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a24ce13e18f0e9cb0674c54d3fe885d3a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a24ce13e18f0e9cb0674c54d3fe885d3a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_a56dd5a3b28a0482d4832ad7d87bb9002}\index{rato\_process.h@{rato\_process.h}!process\_rato\_connection@{process\_rato\_connection}}
+\index{process\_rato\_connection@{process\_rato\_connection}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_connection()}{process\_rato\_connection()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a56dd5a3b28a0482d4832ad7d87bb9002} 
+void process\+\_\+rato\+\_\+connection (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs during the connection phase. 
+
+Handles the processing of mouse inputs during the connection phase. Checks if the cancel button has been clicked and performs actions based on the mouse coordinates. Handles the actions to be performed when the cancel button is clicked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a56dd5a3b28a0482d4832ad7d87bb9002_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a56dd5a3b28a0482d4832ad7d87bb9002_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_a0c6657d850be9b2f06e4b2471d1e7dd5}\index{rato\_process.h@{rato\_process.h}!process\_rato\_get\_trump@{process\_rato\_get\_trump}}
+\index{process\_rato\_get\_trump@{process\_rato\_get\_trump}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_get\_trump()}{process\_rato\_get\_trump()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a0c6657d850be9b2f06e4b2471d1e7dd5} 
+void process\+\_\+rato\+\_\+get\+\_\+trump (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a0c6657d850be9b2f06e4b2471d1e7dd5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a0c6657d850be9b2f06e4b2471d1e7dd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_a5da1d7e9d1351001b8f4e534937d1852}\index{rato\_process.h@{rato\_process.h}!process\_rato\_grab\_drop@{process\_rato\_grab\_drop}}
+\index{process\_rato\_grab\_drop@{process\_rato\_grab\_drop}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_grab\_drop()}{process\_rato\_grab\_drop()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a5da1d7e9d1351001b8f4e534937d1852} 
+void process\+\_\+rato\+\_\+grab\+\_\+drop (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs for card grab and drop actions. 
+
+Handles the processing of mouse inputs for card grab and drop actions. Checks if a card grab collision has occurred and performs actions based on the current state of the game. Handles the actions to be performed when a card is dropped in the multiplayer mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a5da1d7e9d1351001b8f4e534937d1852_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a5da1d7e9d1351001b8f4e534937d1852_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_a9c157da5f0fc6a2ac2047ee875a2634a}\index{rato\_process.h@{rato\_process.h}!process\_rato\_invitation@{process\_rato\_invitation}}
+\index{process\_rato\_invitation@{process\_rato\_invitation}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_invitation()}{process\_rato\_invitation()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a9c157da5f0fc6a2ac2047ee875a2634a} 
+void process\+\_\+rato\+\_\+invitation (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs during the invitation phase. 
+
+Handles the processing of mouse inputs during the invitation phase. Checks if the accept or decline buttons have been clicked and performs actions based on the mouse coordinates. Handles the actions to be performed when the accept or decline buttons are clicked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a9c157da5f0fc6a2ac2047ee875a2634a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a9c157da5f0fc6a2ac2047ee875a2634a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_aefbb451da6d9fc3e4b6f7695f255fd98}\index{rato\_process.h@{rato\_process.h}!process\_rato\_P1@{process\_rato\_P1}}
+\index{process\_rato\_P1@{process\_rato\_P1}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_P1()}{process\_rato\_P1()}}
+{\footnotesize\ttfamily \label{rato__process_8h_aefbb451da6d9fc3e4b6f7695f255fd98} 
+void process\+\_\+rato\+\_\+\+P1 (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs for Player 1 during the game. 
+
+Handles the processing of mouse inputs for Player 1 during the game. Checks the current state of the game and performs actions based on the state and the mouse coordinates. Handles the actions to be performed when different buttons are clicked in the pause menu, and the selection of cards by Player 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_aefbb451da6d9fc3e4b6f7695f255fd98_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_aefbb451da6d9fc3e4b6f7695f255fd98_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_a0b82e48a158655e8a483fe8e69a678ab}\index{rato\_process.h@{rato\_process.h}!process\_rato\_P2@{process\_rato\_P2}}
+\index{process\_rato\_P2@{process\_rato\_P2}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_P2()}{process\_rato\_P2()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a0b82e48a158655e8a483fe8e69a678ab} 
+void process\+\_\+rato\+\_\+\+P2 (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs for Player 2 during the game. 
+
+Handles the processing of mouse inputs for Player 2 during the game. Checks the current state of the game and performs actions based on the state and the mouse coordinates. Handles the actions to be performed when different buttons are clicked in the pause menu, and the selection of cards by Player 2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a0b82e48a158655e8a483fe8e69a678ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a0b82e48a158655e8a483fe8e69a678ab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_a19019ad5af5b2487b8edaaa8d904dce7}\index{rato\_process.h@{rato\_process.h}!process\_rato\_slide@{process\_rato\_slide}}
+\index{process\_rato\_slide@{process\_rato\_slide}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_slide()}{process\_rato\_slide()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a19019ad5af5b2487b8edaaa8d904dce7} 
+void process\+\_\+rato\+\_\+slide (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a19019ad5af5b2487b8edaaa8d904dce7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a19019ad5af5b2487b8edaaa8d904dce7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8h_a830d9bbdf4cd44309ed29b8c74a328af}\index{rato\_process.h@{rato\_process.h}!process\_rato\_time\_tracker@{process\_rato\_time\_tracker}}
+\index{process\_rato\_time\_tracker@{process\_rato\_time\_tracker}!rato\_process.h@{rato\_process.h}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_time\_tracker()}{process\_rato\_time\_tracker()}}
+{\footnotesize\ttfamily \label{rato__process_8h_a830d9bbdf4cd44309ed29b8c74a328af} 
+void process\+\_\+rato\+\_\+time\+\_\+tracker (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a830d9bbdf4cd44309ed29b8c74a328af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8h_a830d9bbdf4cd44309ed29b8c74a328af_icgraph}
+\end{center}
+\end{figure}

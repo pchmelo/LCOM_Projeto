@@ -1,0 +1,33 @@
+\doxysection{sp\+\_\+macros.\+h}
+\hypertarget{sp__macros_8h_source}{}\label{sp__macros_8h_source}\index{src/dispositivos/sp/sp\_macros.h@{src/dispositivos/sp/sp\_macros.h}}
+\mbox{\hyperlink{sp__macros_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_SP\_MACROS\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_SP\_MACROS\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ \ \ IRQ\_SP\ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ \ \ PORT\_COM1\ \ \ \ 4}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ \ \ UART\_BASE\ \ \ \ 0x3F8}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ \ \ UART\_LSR\ \ \ \ \ 0x3FD\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//0x3F8\ +\ 0x05\ }}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ \ \ UART\_IER\ \ \ \ \ 0x3F9\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//0x3F8\ +\ 0x01}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ \ \ UART\_FCR\ \ \ \ \ 0x3FA\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//0x3F8\ +\ 0x02\ }}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ \ \ FCR\_LIMPAR\ \ 0x7}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ \ \ INSERT\_QUEUE\ 0xE}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ \ \ IER(n)\ \ \ \ \ \ (n\ \&\ 0xF0)\ \ \ \ \ }}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ \ \ IER\_OUT(n)\ \ (n\ |\ BIT(0))\ \ }}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ \ \ IER\_IN(n)\ \ \ (!(n\ \&\ BIT(0)))\ \ \ }}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ \ \ TENTATIVAS\ \ \ 30}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ IIR\_ID\ \ \ \ \ \ \ \ \ \ BIT(1)\ |\ BIT(2)\ |\ BIT(3)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ IIR\_FIFO\_CT\ BIT(3)\ |\ BIT(2)}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

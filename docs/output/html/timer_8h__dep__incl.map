@@ -1,0 +1,37 @@
+<map id="src/dispositivos/timer/timer.h" name="src/dispositivos/timer/timer.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="307,5,470,45"/>
+<area shape="rect" id="Node000002" href="$timer_8c.html" title=" " alt="" coords="223,93,386,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="363,57,325,95,321,91,359,53"/>
+<area shape="rect" id="Node000003" href="$game_8h.html" title=" " alt="" coords="411,101,537,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="419,53,464,98,460,102,415,57"/>
+<area shape="rect" id="Node000004" href="$game_8c.html" title=" " alt="" coords="5,189,132,214"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="417,132,399,136,275,160,152,184,119,191,117,186,151,179,274,155,397,131,415,127"/>
+<area shape="rect" id="Node000005" href="$teclado__process_8h.html" title=" " alt="" coords="320,181,500,221"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="452,138,419,182,415,179,448,135"/>
+<area shape="rect" id="Node000015" href="$proj_8c.html" title=" " alt="" coords="677,189,759,214"/>
+<area shape="poly" id="edge20_Node000003_Node000015" title=" " alt="" coords="521,128,686,186,684,191,519,133"/>
+<area shape="poly" id="edge18_Node000005_Node000003" title=" " alt="" coords="439,169,470,125,474,128,443,172"/>
+<area shape="rect" id="Node000006" href="$composer_8h.html" title=" " alt="" coords="413,269,551,309"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="429,231,460,267,456,271,425,234"/>
+<area shape="rect" id="Node000014" href="$teclado__process_8c.html" title=" " alt="" coords="208,269,388,309"/>
+<area shape="poly" id="edge19_Node000005_Node000014" title=" " alt="" coords="376,232,324,271,321,267,372,228"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="497,256,509,220,511,201,509,182,496,152,481,128,485,125,501,149,514,181,516,201,514,221,502,258"/>
+<area shape="poly" id="edge14_Node000006_Node000005" title=" " alt="" coords="463,260,432,223,436,220,467,256"/>
+<area shape="rect" id="Node000007" href="$composer_8c.html" title=" " alt="" coords="274,357,413,397"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="442,319,375,360,372,355,439,314"/>
+<area shape="rect" id="Node000008" href="$rato__process_8h.html" title=" " alt="" coords="91,357,249,397"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="401,316,239,360,238,355,400,310"/>
+<area shape="rect" id="Node000010" href="$serial__process_8h.html" title=" " alt="" coords="437,357,605,397"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="499,321,515,356,510,358,494,323"/>
+<area shape="rect" id="Node000012" href="$timer__process_8h.html" title=" " alt="" coords="629,357,796,397"/>
+<area shape="poly" id="edge15_Node000006_Node000012" title=" " alt="" coords="546,312,663,355,661,360,544,317"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="169,343,177,306,193,268,216,238,243,213,305,171,369,142,426,124,427,129,371,147,308,176,246,217,220,242,198,271,182,307,175,344"/>
+<area shape="rect" id="Node000009" href="$rato__process_8c.html" title=" " alt="" coords="91,445,249,485"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="173,411,173,445,167,445,167,411"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="543,345,561,309,564,289,561,270,550,224,529,183,507,152,485,128,488,125,511,149,534,180,555,223,566,269,569,290,566,310,547,347"/>
+<area shape="rect" id="Node000011" href="$serial__process_8c.html" title=" " alt="" coords="437,445,605,485"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="523,411,523,445,518,445,518,411"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="690,347,634,270,598,225,559,183,523,152,490,128,493,124,526,148,563,179,602,222,638,267,695,344"/>
+<area shape="rect" id="Node000013" href="$timer__process_8c.html" title=" " alt="" coords="629,445,796,485"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="715,411,715,445,710,445,710,411"/>
+</map>

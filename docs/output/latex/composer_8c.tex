@@ -1,0 +1,1544 @@
+\doxysection{src/prog/functions/composer.c File Reference}
+\hypertarget{composer_8c}{}\label{composer_8c}\index{src/prog/functions/composer.c@{src/prog/functions/composer.c}}
+{\ttfamily \#include "{}composer.\+h"{}}\newline
+Include dependency graph for composer.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{composer_8c_a354537f43440702f41f54da9f51f24ef}{criar\+\_\+main\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Creates the main menu of the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a6c7cc7359a9f7454b8f0433f5d8774b0}{criar\+\_\+jogo}} ()
+\begin{DoxyCompactList}\small\item\em Manages the game state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a03432a52e5ca823ca9ab88f0bc8bf032}{criar\+\_\+rato}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Handles the creation of a mouse in the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_aac4791dd014af5c97c812c245a40ad72}{criar\+\_\+menu\+\_\+pausa}} ()
+\begin{DoxyCompactList}\small\item\em Creates a pause menu in the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_ad041db058730236cdecd2e622bd6aded}{criar\+\_\+mao\+\_\+jogador\+\_\+1}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Hand, int num\+Cards)
+\begin{DoxyCompactList}\small\item\em Creates the hand of player 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a2e32ce8279148e9fe17cfd7a7b96ee8c}{criar\+\_\+mao\+\_\+jogador\+\_\+2}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Hand, int num\+Cards)
+\begin{DoxyCompactList}\small\item\em Creates the hand of player 2. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a88136264bcb4c61123fff769218ab509}{criar\+\_\+mao\+\_\+jogador\+\_\+3}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Hand, int num\+Cards)
+\begin{DoxyCompactList}\small\item\em Creates the hand of player 3. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a8777999065ea7703ca260381a2f52a34}{criar\+\_\+mao\+\_\+jogador\+\_\+4}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Hand, int num\+Cards)
+\begin{DoxyCompactList}\small\item\em Creates the hand of player 4. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a234715d2d473e108649d586163a0020c}{display\+\_\+card\+\_\+jogador\+\_\+1}} (\mbox{\hyperlink{struct_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Displays the card for player 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a969ce1e4f1aa31e690570820b336baa5}{display\+\_\+card\+\_\+jogador\+\_\+2}} (\mbox{\hyperlink{struct_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Displays the card for player 2. Prints the sprite of the card. If there is an error in printing the sprite, it prints an error message to stderr and returns 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_ac05fe105d1a875868bbe76cf50d5ad1a}{display\+\_\+card\+\_\+jogador\+\_\+3}} (\mbox{\hyperlink{struct_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Displays the card for player 3. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a2bb47290c917ef1fff082f7dc3da91ff}{display\+\_\+card\+\_\+jogador\+\_\+4}} (\mbox{\hyperlink{struct_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Displays the card for player 4. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a672804277ef8478a0dbb3cb6fe810daa}{display\+\_\+trump\+\_\+card}} (\mbox{\hyperlink{struct_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Displays the trump card. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a464ce9e849224e99cb23fd630536586e}{criar\+Moldura\+Carta}} (int color)
+\begin{DoxyCompactList}\small\item\em Creates a frame for a card. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_aaa56531c1222bd718950bf24ebbfdea0}{criar\+Moldura\+Carta\+\_\+\+P2}} (int color)
+\begin{DoxyCompactList}\small\item\em Creates a frame around the selected card for player 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{composer_8c_a7453e6f99090d2d372a5154be0d221da}{display\+Cards}} ()
+\begin{DoxyCompactList}\small\item\em Displays the cards of all players. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_aa033c965043c3cc67feac74a7cb3708d}{display\+Drag\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Displays a drag frame in the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a19bfbd1d5511e4b9989a429ef463cf49}{grab\+Card}} ()
+\begin{DoxyCompactList}\small\item\em Handles the grabbing of a card by player 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_ad14cd4f4428fc53696c373a2d5346e78}{grab\+Card\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Handles the card grabbing process for player 2. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a2bea6b56f96c7c4e1fc906af5572e0d5}{criar\+\_\+mao\+\_\+grabbed}} ()
+\begin{DoxyCompactList}\small\item\em Creates the hand of grabbed cards for player 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a149eca94ec3297d5a224fe288b460e50}{criar\+\_\+mao\+\_\+grabbed\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Creates the hand of grabbed cards for player 2. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a0751beffc95521a2e8729c5556f9da38}{criar\+\_\+jogo\+\_\+\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Creates the game for player 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a0bab17a2f62c67f1b12dda747dae2e47}{criar\+\_\+jogo\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Creates the game for player 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{composer_8c_afa1445c192a2fc4d4053377fdfb2723d}{display\+Cards\+\_\+\+MUL}} ()
+\begin{DoxyCompactList}\small\item\em Displays the cards for a multiplayer game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_ae0caca23df585ad5b33cbd09fc814ac0}{display\+Time}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Displays the current time at (x, y). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a25fb78cd36fc504288e4c7f5afb46ab1}{display\+\_\+connection\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the connection menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a6784bddfa50786e649cec1d2045383a0}{display\+\_\+invitation\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the invitation menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a395ff9a993b3236fef6753cb62bd49c7}{criar\+\_\+score\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Displays a score board in the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a6dbe34b122f587eba9717495a1817d8c}{display\+Select\+Card}} ()
+\begin{DoxyCompactList}\small\item\em Displays the select top or bottom card menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_ab47a61a38cbec7370daf382452febe08}{display\+Split\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Displays the split deck menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{composer_8c_a07a784e7ea6967105b2dc4e560f8e144}{display\+Time\+Tracker}} ()
+\begin{DoxyCompactList}\small\item\em Displays the time tracking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{composer_8c_a466f994ce5c0e419c06c0bb07c8a221b}{grab\+Square}} ()
+\begin{DoxyCompactList}\small\item\em Slider for the deck split. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{composer_8c_af734f89ae53dba176b520ae604992795}{debug\+\_\+cards}} = 0
+\item 
+uint32\+\_\+t \mbox{\hyperlink{composer_8c_afd340b365e80aafac7d06b77c82b2052}{ambar}} = 0xffbf00
+\item 
+uint32\+\_\+t \mbox{\hyperlink{composer_8c_a9c68591f9c6663e7eab8cab1df645a80}{vermelho}} = 0xb22222
+\item 
+int \mbox{\hyperlink{composer_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}
+\item 
+int \mbox{\hyperlink{composer_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}}
+\item 
+\mbox{\hyperlink{struct_collision}{Collision}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{composer_8c_aad2bf89df6d2b8bc0c81c50dcaa34d57}{array\+\_\+collision\+\_\+main\+\_\+menu}}
+\item 
+int \mbox{\hyperlink{composer_8c_a5f508b0a28f4ceb11bbaa701adb6aaac}{size\+\_\+array\+\_\+collision\+\_\+main\+\_\+menu}}
+\item 
+\mbox{\hyperlink{struct_collision}{Collision}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{composer_8c_aff41c764ae60cc8e8a146e3fd81b453d}{array\+\_\+collision\+\_\+pause\+\_\+menu}}
+\item 
+int \mbox{\hyperlink{composer_8c_a640dd7fdbf129d5eda506d8779eda506}{size\+\_\+array\+\_\+collision\+\_\+pause\+\_\+menu}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a07ba4594fb5c8d14b3523a9870d433c5}{deck}} \mbox{[}\mbox{\hyperlink{rules_8h_ab48a679225d82ec51e09e62d14313b34}{DECK\+\_\+\+SIZE}}\mbox{]}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{composer_8c_a3e6e6f29084971899a686ce9a1a3387a}{player1}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{composer_8c_a35a776e3cebb62d6547a769980fef1c8}{player2}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{composer_8c_a66e9c264dc76e28477f2848bfd9bd247}{player3}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{composer_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64}{player4}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a6b0317c964e845aac22514aa059456c7}{card\+\_\+player\+\_\+1}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a4d4566c0ac528e5f47246deb958adaac}{card\+\_\+player\+\_\+2}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a7e92ab63718b30f4c636fa001f1d4cd1}{card\+\_\+player\+\_\+3}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a3950e93ad01de21f04caecff8706dfab}{card\+\_\+player\+\_\+4}}
+\item 
+int \mbox{\hyperlink{composer_8c_ae7397b90d6412f27103e2ddd3290afbb}{selected\+\_\+card\+\_\+player\+\_\+1}}
+\item 
+int \mbox{\hyperlink{composer_8c_af127c467a6fc53d3a2bc6f0bb7709b6d}{selected\+\_\+card\+\_\+player\+\_\+2}}
+\item 
+int \mbox{\hyperlink{composer_8c_aa85e8f951e5ae1eab799914ed3916a84}{selected\+\_\+card\+\_\+player\+\_\+3}}
+\item 
+int \mbox{\hyperlink{composer_8c_a563773274b3ee56ffbd4bb58c9f181ac}{selected\+\_\+card\+\_\+player\+\_\+4}}
+\item 
+int \mbox{\hyperlink{composer_8c_a85a359fca667c371d197c5e0895e2d6b}{player\+\_\+1\+\_\+played}}
+\item 
+int \mbox{\hyperlink{composer_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b}{player\+\_\+3\+\_\+played}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a82ae4144ba4eead926bae4a546871dba}{trump\+\_\+card}}
+\item 
+int \mbox{\hyperlink{composer_8c_a6d62e31b8f1c394fb39d740b477c6ac5}{blue\+Score}}
+\item 
+int \mbox{\hyperlink{composer_8c_a5594cebb2b5e20aa709644b5e331e0ce}{red\+Score}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{composer_8c_acfeef0fb69a884a6407f55be9a44239d}{state\+\_\+of\+\_\+game\+\_\+current}} = \mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2ac22743f1fc74de09544ecc9bab74a17b}{MAIN\+\_\+\+MENU}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{composer_8c_ae15c7c4d04ece7eef3d011d6b2654eda}{state\+\_\+of\+\_\+game\+\_\+previous}} = \mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2aa6a7ad85e8f809ac90df9787d1ce25a3}{NOTHING\+\_\+\+GAME}}
+\item 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} \mbox{\hyperlink{composer_8c_acf3b88ad82da765f4133edaf7c34315f}{state\+\_\+main\+\_\+menu\+\_\+current}} = \mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30ba9dc1b5f224e876319a0b9186b99c6e0c}{NOTHING\+\_\+\+MAIN\+\_\+\+MENU}}
+\item 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} \mbox{\hyperlink{composer_8c_a49775543b61b6d7073a319a8cb5bb660}{state\+\_\+game\+\_\+current}} = \mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164a4d1641092288ae7c18790d6f2827943a}{NOTHING\+\_\+\+GAME\+\_\+\+PLAY}}
+\item 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} \mbox{\hyperlink{composer_8c_a3c13ebda1df4624b49da4526768fba3a}{state\+\_\+menu\+\_\+pause\+\_\+current}} = \mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012a058310c879b704f480aec1c33950852a}{NOTHING\+\_\+\+PAUSE\+\_\+\+MENU}}
+\item 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} \mbox{\hyperlink{composer_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}{state\+\_\+multiplayer\+\_\+current}} = \mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84a3faf1846ca301f25223e19fc401eec9a}{NO\+\_\+\+PLAYER}}
+\item 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} \mbox{\hyperlink{composer_8c_a5e23243b38366a394331c3ea89c5190d}{state\+\_\+sp\+\_\+current}} = \mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85adfcddf86311b8ad4c3c470c3fc7fecc0}{NOTHING\+\_\+\+SP}}
+\item 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} \mbox{\hyperlink{composer_8c_a18d9006704d3f9b8a71e0589315bc937}{state\+\_\+invited\+\_\+current}} = \mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329a84af5219558b4cf9860b04a9efd1f030}{NOTHING\+\_\+\+INVITED}}
+\item 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} \mbox{\hyperlink{composer_8c_a491bc2f539592755fefc04bc9eedba0f}{state\+\_\+connection\+\_\+current}} = \mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1a88d1ccdbe753b07001bd1385c95dc533}{NOTHING\+\_\+\+CONNECTING}}
+\item 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} \mbox{\hyperlink{composer_8c_aaa0bb0b7dff0cc701562858bde039341}{state\+\_\+select\+\_\+card\+\_\+current}} = \mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3af184dd092ee37baa25995be5dc75e2b5}{NOTHING\+\_\+\+CARD\+\_\+\+SELECT}}
+\item 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} \mbox{\hyperlink{composer_8c_aa6ade37f01e0477e7cd12fcfe6d05692}{grab}} = \mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172ca674cda3a5b648b6acd995111a7c0d562}{NO\+\_\+\+GRAB}}
+\item 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} \mbox{\hyperlink{composer_8c_ab3a7c5625440730169d69d3a41ea0017}{round}} = \mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7aea9c4fa835a0c2d16ab224598bcaa028}{WHAIT\+\_\+\+GAME\+\_\+\+ROUND}}
+\item 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} \mbox{\hyperlink{composer_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}{state\+\_\+prepare\+\_\+current}} = \mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51ea75b8fb4e8a91c6a91ccee2bf4aad8c9d}{NOTHING\+\_\+\+PREPARE}}
+\item 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} \mbox{\hyperlink{composer_8c_a1d487359caf9090127372f89fcb84c59}{state\+\_\+split\+\_\+current}} = \mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215a7cd58d2c577972b0b3426f12b25ae91c}{NOTHING\+\_\+\+SPLIT}}
+\item 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} \mbox{\hyperlink{composer_8c_a2106df119fe4a2964e5b8e31295534fc}{state\+\_\+time\+\_\+tracker\+\_\+current}} = \mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0caaff4a98cf536e4979c09a51700fe899ca}{NOTHING\+\_\+\+TIME}}
+\item 
+int \mbox{\hyperlink{composer_8c_a5ac994482989d025c8be50719cbd8289}{grab\+CardX}} = -\/1000
+\item 
+int \mbox{\hyperlink{composer_8c_a1c79ec92f3e44ff58552ab3eae14c963}{grab\+CardY}} = -\/1000
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a2bd0957d6c7ae9fa6334851fdc4608eb}{grabbed\+Card}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a58229ca77f1fd2bbd02235a5b7a81202}{player\+\_\+1\+\_\+deck\+\_\+grabbed}} \mbox{[}10\mbox{]}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{composer_8c_a6d87852ffe8464938441dbb27afd24a7}{player\+\_\+3\+\_\+deck\+\_\+grabbed}} \mbox{[}10\mbox{]}
+\item 
+int \mbox{\hyperlink{composer_8c_a48a3334beea41baf828f5d2b64a77742}{previous\+\_\+mouse\+\_\+x}} = 0
+\item 
+int \mbox{\hyperlink{composer_8c_a7b432e4c3b5600ba2d73cffc83ed1cc0}{previous\+\_\+mouse\+\_\+y}} = 0
+\item 
+int \mbox{\hyperlink{composer_8c_af3646bb8c5d5c8836e3601cc7344dcdc}{square\+\_\+x}} = 387
+\item 
+int \mbox{\hyperlink{composer_8c_ae41a01f49b604baef12ece1266dfb91a}{square\+\_\+y}} = 328
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{composer_8c_ad378a63e5307c8aa046aa0ec42315e01}{time\+\_\+start}}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{composer_8c_a63bd2db6b62e3ab777e5813e4c71cd80}{time\+\_\+end}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{composer_8c_a6c7cc7359a9f7454b8f0433f5d8774b0}\index{composer.c@{composer.c}!criar\_jogo@{criar\_jogo}}
+\index{criar\_jogo@{criar\_jogo}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_jogo()}{criar\_jogo()}}
+{\footnotesize\ttfamily \label{composer_8c_a6c7cc7359a9f7454b8f0433f5d8774b0} 
+int criar\+\_\+jogo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Manages the game state. 
+
+Sets up the game by clearing the graphic buffer and printing the background. Depending on the game state, it manages player hands, displays the score board and the trump card. Handles card selection, card grabbing, and card display based on the round and grab states.
+
+\begin{DoxyReturn}{Returns}
+0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a6c7cc7359a9f7454b8f0433f5d8774b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a6c7cc7359a9f7454b8f0433f5d8774b0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a0751beffc95521a2e8729c5556f9da38}\index{composer.c@{composer.c}!criar\_jogo\_P1@{criar\_jogo\_P1}}
+\index{criar\_jogo\_P1@{criar\_jogo\_P1}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_jogo\_P1()}{criar\_jogo\_P1()}}
+{\footnotesize\ttfamily \label{composer_8c_a0751beffc95521a2e8729c5556f9da38} 
+int criar\+\_\+jogo\+\_\+\+P1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates the game for player 1. 
+
+Manages game state, player hands, card grabbing, and card playability. Displays game elements and handles errors.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a0751beffc95521a2e8729c5556f9da38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a0751beffc95521a2e8729c5556f9da38_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a0bab17a2f62c67f1b12dda747dae2e47}\index{composer.c@{composer.c}!criar\_jogo\_P2@{criar\_jogo\_P2}}
+\index{criar\_jogo\_P2@{criar\_jogo\_P2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_jogo\_P2()}{criar\_jogo\_P2()}}
+{\footnotesize\ttfamily \label{composer_8c_a0bab17a2f62c67f1b12dda747dae2e47} 
+int criar\+\_\+jogo\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates the game for player 2. 
+
+Similar to criar\+\_\+jogo\+\_\+\+P1, but tailored for player 2. Manages game state, player hands, card grabbing, and card playability. Displays game elements and handles errors.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a0bab17a2f62c67f1b12dda747dae2e47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a0bab17a2f62c67f1b12dda747dae2e47_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a354537f43440702f41f54da9f51f24ef}\index{composer.c@{composer.c}!criar\_main\_menu@{criar\_main\_menu}}
+\index{criar\_main\_menu@{criar\_main\_menu}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_main\_menu()}{criar\_main\_menu()}}
+{\footnotesize\ttfamily \label{composer_8c_a354537f43440702f41f54da9f51f24ef} 
+int criar\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates the main menu of the game. 
+
+Creates the main menu of the game. Clears the graphic buffer and prints the main menu background and title. Depending on the current state of the main menu, it prints the appropriate buttons (start, multiplayer, exit) in their normal or pressed state. If the current state of the connection is not NOTHING\+\_\+\+CONNECTING, it displays the connection menu.
+
+\begin{DoxyReturn}{Returns}
+Returns 0 if the main menu is successfully created, and 1 if there is an error in printing the sprites or displaying the connection menu. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a354537f43440702f41f54da9f51f24ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a354537f43440702f41f54da9f51f24ef_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a2bea6b56f96c7c4e1fc906af5572e0d5}\index{composer.c@{composer.c}!criar\_mao\_grabbed@{criar\_mao\_grabbed}}
+\index{criar\_mao\_grabbed@{criar\_mao\_grabbed}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_mao\_grabbed()}{criar\_mao\_grabbed()}}
+{\footnotesize\ttfamily \label{composer_8c_a2bea6b56f96c7c4e1fc906af5572e0d5} 
+int criar\+\_\+mao\+\_\+grabbed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates the hand of grabbed cards for player 1. 
+
+Calculates the space needed for the cards. Iterates over the grabbed cards and prints the sprite of each card, excludes the grabbed card. For each card, it prints the sprite of the card. If there is an error in printing the sprite, it prints an error message to stderr and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a2bea6b56f96c7c4e1fc906af5572e0d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a2bea6b56f96c7c4e1fc906af5572e0d5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a149eca94ec3297d5a224fe288b460e50}\index{composer.c@{composer.c}!criar\_mao\_grabbed\_P2@{criar\_mao\_grabbed\_P2}}
+\index{criar\_mao\_grabbed\_P2@{criar\_mao\_grabbed\_P2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_mao\_grabbed\_P2()}{criar\_mao\_grabbed\_P2()}}
+{\footnotesize\ttfamily \label{composer_8c_a149eca94ec3297d5a224fe288b460e50} 
+int criar\+\_\+mao\+\_\+grabbed\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates the hand of grabbed cards for player 2. 
+
+Calculates the space needed for the cards and then iterates over the number of cards in player 3\textquotesingle{}s hand. It prints each card using the printar\+\_\+form\+\_\+xpm\+\_\+sprite function. If there\textquotesingle{}s an error in printing, it logs the error and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a149eca94ec3297d5a224fe288b460e50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a149eca94ec3297d5a224fe288b460e50_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_ad041db058730236cdecd2e622bd6aded}\index{composer.c@{composer.c}!criar\_mao\_jogador\_1@{criar\_mao\_jogador\_1}}
+\index{criar\_mao\_jogador\_1@{criar\_mao\_jogador\_1}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_mao\_jogador\_1()}{criar\_mao\_jogador\_1()}}
+{\footnotesize\ttfamily \label{composer_8c_ad041db058730236cdecd2e622bd6aded} 
+int criar\+\_\+mao\+\_\+jogador\+\_\+1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Hand}{, }\item[{int}]{num\+Cards}{}\end{DoxyParamCaption})}
+
+
+
+Creates the hand of player 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Hand} & A pointer to the array of cards that represents the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The number of cards in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ad041db058730236cdecd2e622bd6aded_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ad041db058730236cdecd2e622bd6aded_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a2e32ce8279148e9fe17cfd7a7b96ee8c}\index{composer.c@{composer.c}!criar\_mao\_jogador\_2@{criar\_mao\_jogador\_2}}
+\index{criar\_mao\_jogador\_2@{criar\_mao\_jogador\_2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_mao\_jogador\_2()}{criar\_mao\_jogador\_2()}}
+{\footnotesize\ttfamily \label{composer_8c_a2e32ce8279148e9fe17cfd7a7b96ee8c} 
+int criar\+\_\+mao\+\_\+jogador\+\_\+2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Hand}{, }\item[{int}]{num\+Cards}{}\end{DoxyParamCaption})}
+
+
+
+Creates the hand of player 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Hand} & A pointer to the array of cards that represents the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The number of cards in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a2e32ce8279148e9fe17cfd7a7b96ee8c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a2e32ce8279148e9fe17cfd7a7b96ee8c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a88136264bcb4c61123fff769218ab509}\index{composer.c@{composer.c}!criar\_mao\_jogador\_3@{criar\_mao\_jogador\_3}}
+\index{criar\_mao\_jogador\_3@{criar\_mao\_jogador\_3}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_mao\_jogador\_3()}{criar\_mao\_jogador\_3()}}
+{\footnotesize\ttfamily \label{composer_8c_a88136264bcb4c61123fff769218ab509} 
+int criar\+\_\+mao\+\_\+jogador\+\_\+3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Hand}{, }\item[{int}]{num\+Cards}{}\end{DoxyParamCaption})}
+
+
+
+Creates the hand of player 3. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Hand} & A pointer to the array of cards that represents the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The number of cards in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a88136264bcb4c61123fff769218ab509_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a88136264bcb4c61123fff769218ab509_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a8777999065ea7703ca260381a2f52a34}\index{composer.c@{composer.c}!criar\_mao\_jogador\_4@{criar\_mao\_jogador\_4}}
+\index{criar\_mao\_jogador\_4@{criar\_mao\_jogador\_4}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_mao\_jogador\_4()}{criar\_mao\_jogador\_4()}}
+{\footnotesize\ttfamily \label{composer_8c_a8777999065ea7703ca260381a2f52a34} 
+int criar\+\_\+mao\+\_\+jogador\+\_\+4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Hand}{, }\item[{int}]{num\+Cards}{}\end{DoxyParamCaption})}
+
+
+
+Creates the hand of player 4. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Hand} & A pointer to the array of cards that represents the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The number of cards in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a8777999065ea7703ca260381a2f52a34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a8777999065ea7703ca260381a2f52a34_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_aac4791dd014af5c97c812c245a40ad72}\index{composer.c@{composer.c}!criar\_menu\_pausa@{criar\_menu\_pausa}}
+\index{criar\_menu\_pausa@{criar\_menu\_pausa}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_menu\_pausa()}{criar\_menu\_pausa()}}
+{\footnotesize\ttfamily \label{composer_8c_aac4791dd014af5c97c812c245a40ad72} 
+int criar\+\_\+menu\+\_\+pausa (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates a pause menu in the game. 
+
+Depending on the current state of the game, it creates the hands of the players. It then displays the trump card and prints the pause menu sprite. Depending on the current state of the pause menu, it prints the buttons with different states (normal, selected, pressed). If there is an error in printing any of the sprites, it prints an error message to stderr and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing any of the sprites. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_aac4791dd014af5c97c812c245a40ad72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_aac4791dd014af5c97c812c245a40ad72_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a03432a52e5ca823ca9ab88f0bc8bf032}\index{composer.c@{composer.c}!criar\_rato@{criar\_rato}}
+\index{criar\_rato@{criar\_rato}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_rato()}{criar\_rato()}}
+{\footnotesize\ttfamily \label{composer_8c_a03432a52e5ca823ca9ab88f0bc8bf032} 
+int criar\+\_\+rato (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Handles the creation of a mouse in the game. 
+
+Checks the current state of the game and the connection, and based on these states, performs different actions. Checks for collisions and changes the state of the game accordingly. Handles the printing of the mouse sprite, and returns an error if the printing fails.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate where the mouse should be created. \\
+\hline
+{\em y} & The y-\/coordinate where the mouse should be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the mouse sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a03432a52e5ca823ca9ab88f0bc8bf032_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a03432a52e5ca823ca9ab88f0bc8bf032_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a395ff9a993b3236fef6753cb62bd49c7}\index{composer.c@{composer.c}!criar\_score\_board@{criar\_score\_board}}
+\index{criar\_score\_board@{criar\_score\_board}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criar\_score\_board()}{criar\_score\_board()}}
+{\footnotesize\ttfamily \label{composer_8c_a395ff9a993b3236fef6753cb62bd49c7} 
+int criar\+\_\+score\+\_\+board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays a score board in the game. 
+
+Prints the score board sprite. If there is an error in printing the sprite, it prints an error message to stderr and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a395ff9a993b3236fef6753cb62bd49c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a395ff9a993b3236fef6753cb62bd49c7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a464ce9e849224e99cb23fd630536586e}\index{composer.c@{composer.c}!criarMolduraCarta@{criarMolduraCarta}}
+\index{criarMolduraCarta@{criarMolduraCarta}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criarMolduraCarta()}{criarMolduraCarta()}}
+{\footnotesize\ttfamily \label{composer_8c_a464ce9e849224e99cb23fd630536586e} 
+int criar\+Moldura\+Carta (\begin{DoxyParamCaption}\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Creates a frame for a card. 
+
+If no card is selected by player 1, the function returns 0. Calculates the space needed for the frame and the x and y coordinates where the frame should be created. Calls the moldura\+Carta function to create the frame. If there is an error in creating the frame, it prints an error message to stderr and returns 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color of the frame to be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in creating the frame. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a464ce9e849224e99cb23fd630536586e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a464ce9e849224e99cb23fd630536586e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_aaa56531c1222bd718950bf24ebbfdea0}\index{composer.c@{composer.c}!criarMolduraCarta\_P2@{criarMolduraCarta\_P2}}
+\index{criarMolduraCarta\_P2@{criarMolduraCarta\_P2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{criarMolduraCarta\_P2()}{criarMolduraCarta\_P2()}}
+{\footnotesize\ttfamily \label{composer_8c_aaa56531c1222bd718950bf24ebbfdea0} 
+int criar\+Moldura\+Carta\+\_\+\+P2 (\begin{DoxyParamCaption}\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Creates a frame around the selected card for player 2. 
+
+If no card is selected, it returns 0. Otherwise, it calculates the position of the selected card and calls the moldura\+Carta function to create a frame of the specified color around the card. If there\textquotesingle{}s an error in creating the frame, it logs the error and returns 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color of the frame to be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_aaa56531c1222bd718950bf24ebbfdea0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_aaa56531c1222bd718950bf24ebbfdea0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a234715d2d473e108649d586163a0020c}\index{composer.c@{composer.c}!display\_card\_jogador\_1@{display\_card\_jogador\_1}}
+\index{display\_card\_jogador\_1@{display\_card\_jogador\_1}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{display\_card\_jogador\_1()}{display\_card\_jogador\_1()}}
+{\footnotesize\ttfamily \label{composer_8c_a234715d2d473e108649d586163a0020c} 
+int display\+\_\+card\+\_\+jogador\+\_\+1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}}}]{card}{}\end{DoxyParamCaption})}
+
+
+
+Displays the card for player 1. 
+
+Prints the sprite of the card. If there is an error in printing the sprite, it prints an error message to stderr and returns 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a234715d2d473e108649d586163a0020c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a234715d2d473e108649d586163a0020c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a969ce1e4f1aa31e690570820b336baa5}\index{composer.c@{composer.c}!display\_card\_jogador\_2@{display\_card\_jogador\_2}}
+\index{display\_card\_jogador\_2@{display\_card\_jogador\_2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{display\_card\_jogador\_2()}{display\_card\_jogador\_2()}}
+{\footnotesize\ttfamily \label{composer_8c_a969ce1e4f1aa31e690570820b336baa5} 
+int display\+\_\+card\+\_\+jogador\+\_\+2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}}}]{card}{}\end{DoxyParamCaption})}
+
+
+
+Displays the card for player 2. Prints the sprite of the card. If there is an error in printing the sprite, it prints an error message to stderr and returns 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a969ce1e4f1aa31e690570820b336baa5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a969ce1e4f1aa31e690570820b336baa5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_ac05fe105d1a875868bbe76cf50d5ad1a}\index{composer.c@{composer.c}!display\_card\_jogador\_3@{display\_card\_jogador\_3}}
+\index{display\_card\_jogador\_3@{display\_card\_jogador\_3}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{display\_card\_jogador\_3()}{display\_card\_jogador\_3()}}
+{\footnotesize\ttfamily \label{composer_8c_ac05fe105d1a875868bbe76cf50d5ad1a} 
+int display\+\_\+card\+\_\+jogador\+\_\+3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}}}]{card}{}\end{DoxyParamCaption})}
+
+
+
+Displays the card for player 3. 
+
+Prints the sprite of the card. If there is an error in printing the sprite, it prints an error message to stderr and returns 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ac05fe105d1a875868bbe76cf50d5ad1a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ac05fe105d1a875868bbe76cf50d5ad1a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a2bb47290c917ef1fff082f7dc3da91ff}\index{composer.c@{composer.c}!display\_card\_jogador\_4@{display\_card\_jogador\_4}}
+\index{display\_card\_jogador\_4@{display\_card\_jogador\_4}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{display\_card\_jogador\_4()}{display\_card\_jogador\_4()}}
+{\footnotesize\ttfamily \label{composer_8c_a2bb47290c917ef1fff082f7dc3da91ff} 
+int display\+\_\+card\+\_\+jogador\+\_\+4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}}}]{card}{}\end{DoxyParamCaption})}
+
+
+
+Displays the card for player 4. 
+
+Prints the sprite of the card. If there is an error in printing the sprite, it prints an error message to stderr and returns 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a2bb47290c917ef1fff082f7dc3da91ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a2bb47290c917ef1fff082f7dc3da91ff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a25fb78cd36fc504288e4c7f5afb46ab1}\index{composer.c@{composer.c}!display\_connection\_menu@{display\_connection\_menu}}
+\index{display\_connection\_menu@{display\_connection\_menu}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{display\_connection\_menu()}{display\_connection\_menu()}}
+{\footnotesize\ttfamily \label{composer_8c_a25fb78cd36fc504288e4c7f5afb46ab1} 
+int display\+\_\+connection\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the connection menu. 
+
+Prints the main menu and the cancel button, depending on the current connection state. If printing fails, logs the error and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a25fb78cd36fc504288e4c7f5afb46ab1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a25fb78cd36fc504288e4c7f5afb46ab1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a6784bddfa50786e649cec1d2045383a0}\index{composer.c@{composer.c}!display\_invitation\_menu@{display\_invitation\_menu}}
+\index{display\_invitation\_menu@{display\_invitation\_menu}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{display\_invitation\_menu()}{display\_invitation\_menu()}}
+{\footnotesize\ttfamily \label{composer_8c_a6784bddfa50786e649cec1d2045383a0} 
+int display\+\_\+invitation\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the invitation menu. 
+
+Prints the menu and the accept and decline buttons, depending on the current invitation state. If printing fails, logs the error and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a6784bddfa50786e649cec1d2045383a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a6784bddfa50786e649cec1d2045383a0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a672804277ef8478a0dbb3cb6fe810daa}\index{composer.c@{composer.c}!display\_trump\_card@{display\_trump\_card}}
+\index{display\_trump\_card@{display\_trump\_card}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{display\_trump\_card()}{display\_trump\_card()}}
+{\footnotesize\ttfamily \label{composer_8c_a672804277ef8478a0dbb3cb6fe810daa} 
+int display\+\_\+trump\+\_\+card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}}}]{card}{}\end{DoxyParamCaption})}
+
+
+
+Displays the trump card. 
+
+Prints the sprite of the trump card. If there is an error in printing the sprite, it prints an error message to stderr and returns 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to be displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a672804277ef8478a0dbb3cb6fe810daa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a672804277ef8478a0dbb3cb6fe810daa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a7453e6f99090d2d372a5154be0d221da}\index{composer.c@{composer.c}!displayCards@{displayCards}}
+\index{displayCards@{displayCards}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{displayCards()}{displayCards()}}
+{\footnotesize\ttfamily \label{composer_8c_a7453e6f99090d2d372a5154be0d221da} 
+void display\+Cards (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the cards of all players. 
+
+If player 1 has played, it displays player 1\textquotesingle{}s card. If player 2 has played, it displays player 2\textquotesingle{}s card. If player 3 has played, it displays player 3\textquotesingle{}s card. If player 4 has played, it displays player 4\textquotesingle{}s card. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a7453e6f99090d2d372a5154be0d221da_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a7453e6f99090d2d372a5154be0d221da_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_afa1445c192a2fc4d4053377fdfb2723d}\index{composer.c@{composer.c}!displayCards\_MUL@{displayCards\_MUL}}
+\index{displayCards\_MUL@{displayCards\_MUL}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{displayCards\_MUL()}{displayCards\_MUL()}}
+{\footnotesize\ttfamily \label{composer_8c_afa1445c192a2fc4d4053377fdfb2723d} 
+void display\+Cards\+\_\+\+MUL (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the cards for a multiplayer game. 
+
+Depending on the current game state, it checks if a player has played. If so, it displays the player\textquotesingle{}s card. If a card is selected by a player, it also displays that card.
+
+\begin{DoxyNote}{Note}
+The function handles two game states\+: MULTIPLAYER\+\_\+\+P1 and MULTIPLAYER\+\_\+\+P2. 
+\end{DoxyNote}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_afa1445c192a2fc4d4053377fdfb2723d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_afa1445c192a2fc4d4053377fdfb2723d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_aa033c965043c3cc67feac74a7cb3708d}\index{composer.c@{composer.c}!displayDragFrame@{displayDragFrame}}
+\index{displayDragFrame@{displayDragFrame}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{displayDragFrame()}{displayDragFrame()}}
+{\footnotesize\ttfamily \label{composer_8c_aa033c965043c3cc67feac74a7cb3708d} 
+int display\+Drag\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays a drag frame in the game. 
+
+Calls the moldura\+Carta function to create a drag frame. If there is an error in creating the frame, it prints an error message to stderr and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in creating the frame. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_aa033c965043c3cc67feac74a7cb3708d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_aa033c965043c3cc67feac74a7cb3708d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a6dbe34b122f587eba9717495a1817d8c}\index{composer.c@{composer.c}!displaySelectCard@{displaySelectCard}}
+\index{displaySelectCard@{displaySelectCard}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{displaySelectCard()}{displaySelectCard()}}
+{\footnotesize\ttfamily \label{composer_8c_a6dbe34b122f587eba9717495a1817d8c} 
+int display\+Select\+Card (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the select top or bottom card menu. 
+
+Prints the menu and the top and bottom buttons, depending on the current select card state. If printing fails, logs the error and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a6dbe34b122f587eba9717495a1817d8c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a6dbe34b122f587eba9717495a1817d8c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_ab47a61a38cbec7370daf382452febe08}\index{composer.c@{composer.c}!displaySplitDeck@{displaySplitDeck}}
+\index{displaySplitDeck@{displaySplitDeck}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{displaySplitDeck()}{displaySplitDeck()}}
+{\footnotesize\ttfamily \label{composer_8c_ab47a61a38cbec7370daf382452febe08} 
+int display\+Split\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the split deck menu. 
+
+Prints the menu and the split button, depending on the current split state. If printing fails, logs the error and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ab47a61a38cbec7370daf382452febe08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ab47a61a38cbec7370daf382452febe08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_ae0caca23df585ad5b33cbd09fc814ac0}\index{composer.c@{composer.c}!displayTime@{displayTime}}
+\index{displayTime@{displayTime}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{displayTime()}{displayTime()}}
+{\footnotesize\ttfamily \label{composer_8c_ae0caca23df585ad5b33cbd09fc814ac0} 
+int display\+Time (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Displays the current time at (x, y). 
+
+Converts time to an array of digits, prints each digit as a sprite. If printing fails, logs the error and returns 1. Adjusts x-\/coordinate for each digit and adds extra space after every two digits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate to start displaying time. \\
+\hline
+{\em y} & The y-\/coordinate to start displaying time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ae0caca23df585ad5b33cbd09fc814ac0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a07a784e7ea6967105b2dc4e560f8e144}\index{composer.c@{composer.c}!displayTimeTracker@{displayTimeTracker}}
+\index{displayTimeTracker@{displayTimeTracker}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{displayTimeTracker()}{displayTimeTracker()}}
+{\footnotesize\ttfamily \label{composer_8c_a07a784e7ea6967105b2dc4e560f8e144} 
+int display\+Time\+Tracker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the time tracking. 
+
+Prints the elapsed time in minutes at the end of the game. If printing fails, logs the error and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a07a784e7ea6967105b2dc4e560f8e144_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a07a784e7ea6967105b2dc4e560f8e144_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a19bfbd1d5511e4b9989a429ef463cf49}\index{composer.c@{composer.c}!grabCard@{grabCard}}
+\index{grabCard@{grabCard}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{grabCard()}{grabCard()}}
+{\footnotesize\ttfamily \label{composer_8c_a19bfbd1d5511e4b9989a429ef463cf49} 
+int grab\+Card (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Handles the grabbing of a card by player 1. 
+
+If the grab process is ongoing, it calculates the x and y coordinates of the grabbed card and stores the current mouse coordinates. Iterates over the cards in player 1\textquotesingle{}s hand. If a card is the selected card, it is set as the grabbed card. If the grab process is not ongoing, it checks if the mouse has moved. If it has, it updates the x and y coordinates of the grabbed card and stores the new mouse coordinates. Prints the sprite of the grabbed card. If there is an error in printing the sprite, prints an error message to stderr and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if the function executes successfully, and 1 if there is an error in printing the sprite. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a19bfbd1d5511e4b9989a429ef463cf49_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a19bfbd1d5511e4b9989a429ef463cf49_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_ad14cd4f4428fc53696c373a2d5346e78}\index{composer.c@{composer.c}!grabCard\_P2@{grabCard\_P2}}
+\index{grabCard\_P2@{grabCard\_P2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{grabCard\_P2()}{grabCard\_P2()}}
+{\footnotesize\ttfamily \label{composer_8c_ad14cd4f4428fc53696c373a2d5346e78} 
+int grab\+Card\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Handles the card grabbing process for player 2. 
+
+If the grab process is ongoing, it calculates the card\textquotesingle{}s position and stores the current mouse coordinates. It then iterates over the player\textquotesingle{}s hand, storing the grabbed card and the remaining cards separately. If the grab process is not ongoing, it updates the card\textquotesingle{}s position based on the mouse movement. Prints the grabbed card using the printar\+\_\+form\+\_\+xpm\+\_\+sprite function. If there\textquotesingle{}s an error in printing, it logs the error and returns 1.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, and 1 if there is an error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ad14cd4f4428fc53696c373a2d5346e78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_ad14cd4f4428fc53696c373a2d5346e78_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{composer_8c_a466f994ce5c0e419c06c0bb07c8a221b}\index{composer.c@{composer.c}!grabSquare@{grabSquare}}
+\index{grabSquare@{grabSquare}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{grabSquare()}{grabSquare()}}
+{\footnotesize\ttfamily \label{composer_8c_a466f994ce5c0e419c06c0bb07c8a221b} 
+void grab\+Square (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Slider for the deck split. 
+
+If the mouse is clicked, it checks if the mouse is over the split button. If it is, it changes the split state to SPLIT\+\_\+\+SELECTED.Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{composer_8c_a466f994ce5c0e419c06c0bb07c8a221b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{composer_8c_afd340b365e80aafac7d06b77c82b2052}\index{composer.c@{composer.c}!ambar@{ambar}}
+\index{ambar@{ambar}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{ambar}{ambar}}
+{\footnotesize\ttfamily \label{composer_8c_afd340b365e80aafac7d06b77c82b2052} 
+uint32\+\_\+t ambar = 0xffbf00}
+
+\Hypertarget{composer_8c_aad2bf89df6d2b8bc0c81c50dcaa34d57}\index{composer.c@{composer.c}!array\_collision\_main\_menu@{array\_collision\_main\_menu}}
+\index{array\_collision\_main\_menu@{array\_collision\_main\_menu}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{array\_collision\_main\_menu}{array\_collision\_main\_menu}}
+{\footnotesize\ttfamily \label{composer_8c_aad2bf89df6d2b8bc0c81c50dcaa34d57} 
+\mbox{\hyperlink{struct_collision}{Collision}}\texorpdfstring{$\ast$}{*} array\+\_\+collision\+\_\+main\+\_\+menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_aff41c764ae60cc8e8a146e3fd81b453d}\index{composer.c@{composer.c}!array\_collision\_pause\_menu@{array\_collision\_pause\_menu}}
+\index{array\_collision\_pause\_menu@{array\_collision\_pause\_menu}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{array\_collision\_pause\_menu}{array\_collision\_pause\_menu}}
+{\footnotesize\ttfamily \label{composer_8c_aff41c764ae60cc8e8a146e3fd81b453d} 
+\mbox{\hyperlink{struct_collision}{Collision}}\texorpdfstring{$\ast$}{*} array\+\_\+collision\+\_\+pause\+\_\+menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a6d62e31b8f1c394fb39d740b477c6ac5}\index{composer.c@{composer.c}!blueScore@{blueScore}}
+\index{blueScore@{blueScore}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{blueScore}{blueScore}}
+{\footnotesize\ttfamily \label{composer_8c_a6d62e31b8f1c394fb39d740b477c6ac5} 
+int blue\+Score\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a6b0317c964e845aac22514aa059456c7}\index{composer.c@{composer.c}!card\_player\_1@{card\_player\_1}}
+\index{card\_player\_1@{card\_player\_1}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_1}{card\_player\_1}}
+{\footnotesize\ttfamily \label{composer_8c_a6b0317c964e845aac22514aa059456c7} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a4d4566c0ac528e5f47246deb958adaac}\index{composer.c@{composer.c}!card\_player\_2@{card\_player\_2}}
+\index{card\_player\_2@{card\_player\_2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_2}{card\_player\_2}}
+{\footnotesize\ttfamily \label{composer_8c_a4d4566c0ac528e5f47246deb958adaac} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a7e92ab63718b30f4c636fa001f1d4cd1}\index{composer.c@{composer.c}!card\_player\_3@{card\_player\_3}}
+\index{card\_player\_3@{card\_player\_3}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_3}{card\_player\_3}}
+{\footnotesize\ttfamily \label{composer_8c_a7e92ab63718b30f4c636fa001f1d4cd1} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a3950e93ad01de21f04caecff8706dfab}\index{composer.c@{composer.c}!card\_player\_4@{card\_player\_4}}
+\index{card\_player\_4@{card\_player\_4}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_4}{card\_player\_4}}
+{\footnotesize\ttfamily \label{composer_8c_a3950e93ad01de21f04caecff8706dfab} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+4\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_af734f89ae53dba176b520ae604992795}\index{composer.c@{composer.c}!debug\_cards@{debug\_cards}}
+\index{debug\_cards@{debug\_cards}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{debug\_cards}{debug\_cards}}
+{\footnotesize\ttfamily \label{composer_8c_af734f89ae53dba176b520ae604992795} 
+int debug\+\_\+cards = 0}
+
+\Hypertarget{composer_8c_a07ba4594fb5c8d14b3523a9870d433c5}\index{composer.c@{composer.c}!deck@{deck}}
+\index{deck@{deck}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{deck}{deck}}
+{\footnotesize\ttfamily \label{composer_8c_a07ba4594fb5c8d14b3523a9870d433c5} 
+\mbox{\hyperlink{struct_card}{Card}} deck\mbox{[}\mbox{\hyperlink{rules_8h_ab48a679225d82ec51e09e62d14313b34}{DECK\+\_\+\+SIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_aa6ade37f01e0477e7cd12fcfe6d05692}\index{composer.c@{composer.c}!grab@{grab}}
+\index{grab@{grab}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{grab}{grab}}
+{\footnotesize\ttfamily \label{composer_8c_aa6ade37f01e0477e7cd12fcfe6d05692} 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} grab = \mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172ca674cda3a5b648b6acd995111a7c0d562}{NO\+\_\+\+GRAB}}}
+
+\Hypertarget{composer_8c_a2bd0957d6c7ae9fa6334851fdc4608eb}\index{composer.c@{composer.c}!grabbedCard@{grabbedCard}}
+\index{grabbedCard@{grabbedCard}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{grabbedCard}{grabbedCard}}
+{\footnotesize\ttfamily \label{composer_8c_a2bd0957d6c7ae9fa6334851fdc4608eb} 
+\mbox{\hyperlink{struct_card}{Card}} grabbed\+Card}
+
+\Hypertarget{composer_8c_a5ac994482989d025c8be50719cbd8289}\index{composer.c@{composer.c}!grabCardX@{grabCardX}}
+\index{grabCardX@{grabCardX}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{grabCardX}{grabCardX}}
+{\footnotesize\ttfamily \label{composer_8c_a5ac994482989d025c8be50719cbd8289} 
+int grab\+CardX = -\/1000}
+
+\Hypertarget{composer_8c_a1c79ec92f3e44ff58552ab3eae14c963}\index{composer.c@{composer.c}!grabCardY@{grabCardY}}
+\index{grabCardY@{grabCardY}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{grabCardY}{grabCardY}}
+{\footnotesize\ttfamily \label{composer_8c_a1c79ec92f3e44ff58552ab3eae14c963} 
+int grab\+CardY = -\/1000}
+
+\Hypertarget{composer_8c_a6c59af730728bf5260ef828aea2eebee}\index{composer.c@{composer.c}!mouse\_x@{mouse\_x}}
+\index{mouse\_x@{mouse\_x}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_x}{mouse\_x}}
+{\footnotesize\ttfamily \label{composer_8c_a6c59af730728bf5260ef828aea2eebee} 
+int mouse\+\_\+x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_ab21653e455bbca86826aa5f628a5fdb2}\index{composer.c@{composer.c}!mouse\_y@{mouse\_y}}
+\index{mouse\_y@{mouse\_y}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_y}{mouse\_y}}
+{\footnotesize\ttfamily \label{composer_8c_ab21653e455bbca86826aa5f628a5fdb2} 
+int mouse\+\_\+y\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a3e6e6f29084971899a686ce9a1a3387a}\index{composer.c@{composer.c}!player1@{player1}}
+\index{player1@{player1}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player1}{player1}}
+{\footnotesize\ttfamily \label{composer_8c_a3e6e6f29084971899a686ce9a1a3387a} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a35a776e3cebb62d6547a769980fef1c8}\index{composer.c@{composer.c}!player2@{player2}}
+\index{player2@{player2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player2}{player2}}
+{\footnotesize\ttfamily \label{composer_8c_a35a776e3cebb62d6547a769980fef1c8} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a66e9c264dc76e28477f2848bfd9bd247}\index{composer.c@{composer.c}!player3@{player3}}
+\index{player3@{player3}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player3}{player3}}
+{\footnotesize\ttfamily \label{composer_8c_a66e9c264dc76e28477f2848bfd9bd247} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64}\index{composer.c@{composer.c}!player4@{player4}}
+\index{player4@{player4}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player4}{player4}}
+{\footnotesize\ttfamily \label{composer_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player4\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a58229ca77f1fd2bbd02235a5b7a81202}\index{composer.c@{composer.c}!player\_1\_deck\_grabbed@{player\_1\_deck\_grabbed}}
+\index{player\_1\_deck\_grabbed@{player\_1\_deck\_grabbed}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player\_1\_deck\_grabbed}{player\_1\_deck\_grabbed}}
+{\footnotesize\ttfamily \label{composer_8c_a58229ca77f1fd2bbd02235a5b7a81202} 
+\mbox{\hyperlink{struct_card}{Card}} player\+\_\+1\+\_\+deck\+\_\+grabbed\mbox{[}10\mbox{]}}
+
+\Hypertarget{composer_8c_a85a359fca667c371d197c5e0895e2d6b}\index{composer.c@{composer.c}!player\_1\_played@{player\_1\_played}}
+\index{player\_1\_played@{player\_1\_played}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player\_1\_played}{player\_1\_played}}
+{\footnotesize\ttfamily \label{composer_8c_a85a359fca667c371d197c5e0895e2d6b} 
+int player\+\_\+1\+\_\+played\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a6d87852ffe8464938441dbb27afd24a7}\index{composer.c@{composer.c}!player\_3\_deck\_grabbed@{player\_3\_deck\_grabbed}}
+\index{player\_3\_deck\_grabbed@{player\_3\_deck\_grabbed}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player\_3\_deck\_grabbed}{player\_3\_deck\_grabbed}}
+{\footnotesize\ttfamily \label{composer_8c_a6d87852ffe8464938441dbb27afd24a7} 
+\mbox{\hyperlink{struct_card}{Card}} player\+\_\+3\+\_\+deck\+\_\+grabbed\mbox{[}10\mbox{]}}
+
+\Hypertarget{composer_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b}\index{composer.c@{composer.c}!player\_3\_played@{player\_3\_played}}
+\index{player\_3\_played@{player\_3\_played}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{player\_3\_played}{player\_3\_played}}
+{\footnotesize\ttfamily \label{composer_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b} 
+int player\+\_\+3\+\_\+played\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a48a3334beea41baf828f5d2b64a77742}\index{composer.c@{composer.c}!previous\_mouse\_x@{previous\_mouse\_x}}
+\index{previous\_mouse\_x@{previous\_mouse\_x}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{previous\_mouse\_x}{previous\_mouse\_x}}
+{\footnotesize\ttfamily \label{composer_8c_a48a3334beea41baf828f5d2b64a77742} 
+int previous\+\_\+mouse\+\_\+x = 0}
+
+\Hypertarget{composer_8c_a7b432e4c3b5600ba2d73cffc83ed1cc0}\index{composer.c@{composer.c}!previous\_mouse\_y@{previous\_mouse\_y}}
+\index{previous\_mouse\_y@{previous\_mouse\_y}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{previous\_mouse\_y}{previous\_mouse\_y}}
+{\footnotesize\ttfamily \label{composer_8c_a7b432e4c3b5600ba2d73cffc83ed1cc0} 
+int previous\+\_\+mouse\+\_\+y = 0}
+
+\Hypertarget{composer_8c_a5594cebb2b5e20aa709644b5e331e0ce}\index{composer.c@{composer.c}!redScore@{redScore}}
+\index{redScore@{redScore}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{redScore}{redScore}}
+{\footnotesize\ttfamily \label{composer_8c_a5594cebb2b5e20aa709644b5e331e0ce} 
+int red\+Score\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_ab3a7c5625440730169d69d3a41ea0017}\index{composer.c@{composer.c}!round@{round}}
+\index{round@{round}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily \label{composer_8c_ab3a7c5625440730169d69d3a41ea0017} 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} round = \mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7aea9c4fa835a0c2d16ab224598bcaa028}{WHAIT\+\_\+\+GAME\+\_\+\+ROUND}}}
+
+\Hypertarget{composer_8c_ae7397b90d6412f27103e2ddd3290afbb}\index{composer.c@{composer.c}!selected\_card\_player\_1@{selected\_card\_player\_1}}
+\index{selected\_card\_player\_1@{selected\_card\_player\_1}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_1}{selected\_card\_player\_1}}
+{\footnotesize\ttfamily \label{composer_8c_ae7397b90d6412f27103e2ddd3290afbb} 
+int selected\+\_\+card\+\_\+player\+\_\+1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_af127c467a6fc53d3a2bc6f0bb7709b6d}\index{composer.c@{composer.c}!selected\_card\_player\_2@{selected\_card\_player\_2}}
+\index{selected\_card\_player\_2@{selected\_card\_player\_2}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_2}{selected\_card\_player\_2}}
+{\footnotesize\ttfamily \label{composer_8c_af127c467a6fc53d3a2bc6f0bb7709b6d} 
+int selected\+\_\+card\+\_\+player\+\_\+2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_aa85e8f951e5ae1eab799914ed3916a84}\index{composer.c@{composer.c}!selected\_card\_player\_3@{selected\_card\_player\_3}}
+\index{selected\_card\_player\_3@{selected\_card\_player\_3}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_3}{selected\_card\_player\_3}}
+{\footnotesize\ttfamily \label{composer_8c_aa85e8f951e5ae1eab799914ed3916a84} 
+int selected\+\_\+card\+\_\+player\+\_\+3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a563773274b3ee56ffbd4bb58c9f181ac}\index{composer.c@{composer.c}!selected\_card\_player\_4@{selected\_card\_player\_4}}
+\index{selected\_card\_player\_4@{selected\_card\_player\_4}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_4}{selected\_card\_player\_4}}
+{\footnotesize\ttfamily \label{composer_8c_a563773274b3ee56ffbd4bb58c9f181ac} 
+int selected\+\_\+card\+\_\+player\+\_\+4\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a5f508b0a28f4ceb11bbaa701adb6aaac}\index{composer.c@{composer.c}!size\_array\_collision\_main\_menu@{size\_array\_collision\_main\_menu}}
+\index{size\_array\_collision\_main\_menu@{size\_array\_collision\_main\_menu}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{size\_array\_collision\_main\_menu}{size\_array\_collision\_main\_menu}}
+{\footnotesize\ttfamily \label{composer_8c_a5f508b0a28f4ceb11bbaa701adb6aaac} 
+int size\+\_\+array\+\_\+collision\+\_\+main\+\_\+menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a640dd7fdbf129d5eda506d8779eda506}\index{composer.c@{composer.c}!size\_array\_collision\_pause\_menu@{size\_array\_collision\_pause\_menu}}
+\index{size\_array\_collision\_pause\_menu@{size\_array\_collision\_pause\_menu}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{size\_array\_collision\_pause\_menu}{size\_array\_collision\_pause\_menu}}
+{\footnotesize\ttfamily \label{composer_8c_a640dd7fdbf129d5eda506d8779eda506} 
+int size\+\_\+array\+\_\+collision\+\_\+pause\+\_\+menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_af3646bb8c5d5c8836e3601cc7344dcdc}\index{composer.c@{composer.c}!square\_x@{square\_x}}
+\index{square\_x@{square\_x}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{square\_x}{square\_x}}
+{\footnotesize\ttfamily \label{composer_8c_af3646bb8c5d5c8836e3601cc7344dcdc} 
+int square\+\_\+x = 387}
+
+\Hypertarget{composer_8c_ae41a01f49b604baef12ece1266dfb91a}\index{composer.c@{composer.c}!square\_y@{square\_y}}
+\index{square\_y@{square\_y}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{square\_y}{square\_y}}
+{\footnotesize\ttfamily \label{composer_8c_ae41a01f49b604baef12ece1266dfb91a} 
+int square\+\_\+y = 328}
+
+\Hypertarget{composer_8c_a491bc2f539592755fefc04bc9eedba0f}\index{composer.c@{composer.c}!state\_connection\_current@{state\_connection\_current}}
+\index{state\_connection\_current@{state\_connection\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_connection\_current}{state\_connection\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a491bc2f539592755fefc04bc9eedba0f} 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} state\+\_\+connection\+\_\+current = \mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1a88d1ccdbe753b07001bd1385c95dc533}{NOTHING\+\_\+\+CONNECTING}}}
+
+\Hypertarget{composer_8c_a49775543b61b6d7073a319a8cb5bb660}\index{composer.c@{composer.c}!state\_game\_current@{state\_game\_current}}
+\index{state\_game\_current@{state\_game\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_game\_current}{state\_game\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a49775543b61b6d7073a319a8cb5bb660} 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} state\+\_\+game\+\_\+current = \mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164a4d1641092288ae7c18790d6f2827943a}{NOTHING\+\_\+\+GAME\+\_\+\+PLAY}}}
+
+\Hypertarget{composer_8c_a18d9006704d3f9b8a71e0589315bc937}\index{composer.c@{composer.c}!state\_invited\_current@{state\_invited\_current}}
+\index{state\_invited\_current@{state\_invited\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_invited\_current}{state\_invited\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a18d9006704d3f9b8a71e0589315bc937} 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} state\+\_\+invited\+\_\+current = \mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329a84af5219558b4cf9860b04a9efd1f030}{NOTHING\+\_\+\+INVITED}}}
+
+\Hypertarget{composer_8c_acf3b88ad82da765f4133edaf7c34315f}\index{composer.c@{composer.c}!state\_main\_menu\_current@{state\_main\_menu\_current}}
+\index{state\_main\_menu\_current@{state\_main\_menu\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_main\_menu\_current}{state\_main\_menu\_current}}
+{\footnotesize\ttfamily \label{composer_8c_acf3b88ad82da765f4133edaf7c34315f} 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} state\+\_\+main\+\_\+menu\+\_\+current = \mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30ba9dc1b5f224e876319a0b9186b99c6e0c}{NOTHING\+\_\+\+MAIN\+\_\+\+MENU}}}
+
+\Hypertarget{composer_8c_a3c13ebda1df4624b49da4526768fba3a}\index{composer.c@{composer.c}!state\_menu\_pause\_current@{state\_menu\_pause\_current}}
+\index{state\_menu\_pause\_current@{state\_menu\_pause\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_menu\_pause\_current}{state\_menu\_pause\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a3c13ebda1df4624b49da4526768fba3a} 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} state\+\_\+menu\+\_\+pause\+\_\+current = \mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012a058310c879b704f480aec1c33950852a}{NOTHING\+\_\+\+PAUSE\+\_\+\+MENU}}}
+
+\Hypertarget{composer_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}\index{composer.c@{composer.c}!state\_multiplayer\_current@{state\_multiplayer\_current}}
+\index{state\_multiplayer\_current@{state\_multiplayer\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_multiplayer\_current}{state\_multiplayer\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a9a52ccb1c42185bb4f11f15ca88ac08c} 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} state\+\_\+multiplayer\+\_\+current = \mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84a3faf1846ca301f25223e19fc401eec9a}{NO\+\_\+\+PLAYER}}}
+
+\Hypertarget{composer_8c_acfeef0fb69a884a6407f55be9a44239d}\index{composer.c@{composer.c}!state\_of\_game\_current@{state\_of\_game\_current}}
+\index{state\_of\_game\_current@{state\_of\_game\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_current}{state\_of\_game\_current}}
+{\footnotesize\ttfamily \label{composer_8c_acfeef0fb69a884a6407f55be9a44239d} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+current = \mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2ac22743f1fc74de09544ecc9bab74a17b}{MAIN\+\_\+\+MENU}}}
+
+\Hypertarget{composer_8c_ae15c7c4d04ece7eef3d011d6b2654eda}\index{composer.c@{composer.c}!state\_of\_game\_previous@{state\_of\_game\_previous}}
+\index{state\_of\_game\_previous@{state\_of\_game\_previous}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_previous}{state\_of\_game\_previous}}
+{\footnotesize\ttfamily \label{composer_8c_ae15c7c4d04ece7eef3d011d6b2654eda} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+previous = \mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2aa6a7ad85e8f809ac90df9787d1ce25a3}{NOTHING\+\_\+\+GAME}}}
+
+\Hypertarget{composer_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}\index{composer.c@{composer.c}!state\_prepare\_current@{state\_prepare\_current}}
+\index{state\_prepare\_current@{state\_prepare\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_prepare\_current}{state\_prepare\_current}}
+{\footnotesize\ttfamily \label{composer_8c_ac8f57491cd8cc29c7a48fbb8848fde2f} 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} state\+\_\+prepare\+\_\+current = \mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51ea75b8fb4e8a91c6a91ccee2bf4aad8c9d}{NOTHING\+\_\+\+PREPARE}}}
+
+\Hypertarget{composer_8c_aaa0bb0b7dff0cc701562858bde039341}\index{composer.c@{composer.c}!state\_select\_card\_current@{state\_select\_card\_current}}
+\index{state\_select\_card\_current@{state\_select\_card\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_select\_card\_current}{state\_select\_card\_current}}
+{\footnotesize\ttfamily \label{composer_8c_aaa0bb0b7dff0cc701562858bde039341} 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} state\+\_\+select\+\_\+card\+\_\+current = \mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3af184dd092ee37baa25995be5dc75e2b5}{NOTHING\+\_\+\+CARD\+\_\+\+SELECT}}}
+
+\Hypertarget{composer_8c_a5e23243b38366a394331c3ea89c5190d}\index{composer.c@{composer.c}!state\_sp\_current@{state\_sp\_current}}
+\index{state\_sp\_current@{state\_sp\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_sp\_current}{state\_sp\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a5e23243b38366a394331c3ea89c5190d} 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} state\+\_\+sp\+\_\+current = \mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85adfcddf86311b8ad4c3c470c3fc7fecc0}{NOTHING\+\_\+\+SP}}}
+
+\Hypertarget{composer_8c_a1d487359caf9090127372f89fcb84c59}\index{composer.c@{composer.c}!state\_split\_current@{state\_split\_current}}
+\index{state\_split\_current@{state\_split\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_split\_current}{state\_split\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a1d487359caf9090127372f89fcb84c59} 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} state\+\_\+split\+\_\+current = \mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215a7cd58d2c577972b0b3426f12b25ae91c}{NOTHING\+\_\+\+SPLIT}}}
+
+\Hypertarget{composer_8c_a2106df119fe4a2964e5b8e31295534fc}\index{composer.c@{composer.c}!state\_time\_tracker\_current@{state\_time\_tracker\_current}}
+\index{state\_time\_tracker\_current@{state\_time\_tracker\_current}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{state\_time\_tracker\_current}{state\_time\_tracker\_current}}
+{\footnotesize\ttfamily \label{composer_8c_a2106df119fe4a2964e5b8e31295534fc} 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} state\+\_\+time\+\_\+tracker\+\_\+current = \mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0caaff4a98cf536e4979c09a51700fe899ca}{NOTHING\+\_\+\+TIME}}}
+
+\Hypertarget{composer_8c_a63bd2db6b62e3ab777e5813e4c71cd80}\index{composer.c@{composer.c}!time\_end@{time\_end}}
+\index{time\_end@{time\_end}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{time\_end}{time\_end}}
+{\footnotesize\ttfamily \label{composer_8c_a63bd2db6b62e3ab777e5813e4c71cd80} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} time\+\_\+end}
+
+\Hypertarget{composer_8c_ad378a63e5307c8aa046aa0ec42315e01}\index{composer.c@{composer.c}!time\_start@{time\_start}}
+\index{time\_start@{time\_start}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{time\_start}{time\_start}}
+{\footnotesize\ttfamily \label{composer_8c_ad378a63e5307c8aa046aa0ec42315e01} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} time\+\_\+start}
+
+\Hypertarget{composer_8c_a82ae4144ba4eead926bae4a546871dba}\index{composer.c@{composer.c}!trump\_card@{trump\_card}}
+\index{trump\_card@{trump\_card}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{trump\_card}{trump\_card}}
+{\footnotesize\ttfamily \label{composer_8c_a82ae4144ba4eead926bae4a546871dba} 
+\mbox{\hyperlink{struct_card}{Card}} trump\+\_\+card\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{composer_8c_a9c68591f9c6663e7eab8cab1df645a80}\index{composer.c@{composer.c}!vermelho@{vermelho}}
+\index{vermelho@{vermelho}!composer.c@{composer.c}}
+\doxysubsubsection{\texorpdfstring{vermelho}{vermelho}}
+{\footnotesize\ttfamily \label{composer_8c_a9c68591f9c6663e7eab8cab1df645a80} 
+uint32\+\_\+t vermelho = 0xb22222}
+

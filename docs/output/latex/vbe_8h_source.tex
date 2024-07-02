@@ -1,0 +1,35 @@
+\doxysection{vbe.\+h}
+\hypertarget{vbe_8h_source}{}\label{vbe_8h_source}\index{src/dispositivos/grafica/vbe.h@{src/dispositivos/grafica/vbe.h}}
+\mbox{\hyperlink{vbe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_VBE\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_VBE\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ REG86\_INTNO\ 0x10}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ REG86\_AH\ 0x4F}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ REG86\_AL\ 0x02}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ REG86\_BX\ BIT(14)}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ BYTES\_NUM\_PIXEL(n)\ \ (n\ +7)\ /\ 8;}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ SIZ\_COR\_PADRAO\ 32}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ MASK\_COR\_PADRAO(n)\ (BIT(n)\ \ -\/1)}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ VBE\_768\ 0x105\ \ \ }\textcolor{comment}{//indexado}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ VBE\_480\ 0x110}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ VBE\_600\ 0x115}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ VBE\_1024\ 0x11A}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ VBE\_864\ 0x14C}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ MODO\_VBE\_SET\ 0x4F02}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ LINEAR\_VBE\_FB\ BIT(14)}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ DIRETA\_COR\ 0x06}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ INDEXADA\_COR\ 0x105}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ BIOS\_SET\_MODOVIDEO\ 0x00}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ BIOS\_CARTAIVIDEO\_SERV\ 0x10}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

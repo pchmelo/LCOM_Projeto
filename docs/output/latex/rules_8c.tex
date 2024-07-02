@@ -1,0 +1,618 @@
+\doxysection{src/prog/game\+\_\+rules/rules.c File Reference}
+\hypertarget{rules_8c}{}\label{rules_8c}\index{src/prog/game\_rules/rules.c@{src/prog/game\_rules/rules.c}}
+{\ttfamily \#include "{}rules.\+h"{}}\newline
+Include dependency graph for rules.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rules_8c_ab13c958758a438df8ffa77ca4975bc55}{fill\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Fills a deck of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8c_aebdb0f340a4800e7b841571ffc1f5da9}{shuffle\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Shuffles the deck of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8c_a1c629ccbdb12749b09e75c86f2759650}{shuffle\+Deck\+Seed}} ()
+\begin{DoxyCompactList}\small\item\em Shuffles the deck of cards with a seed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a273228885ce4b0b07699c595b93f4d63}{get\+Top}} ()
+\begin{DoxyCompactList}\small\item\em Deals a card from the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a4d10df4c26ab05e602410300279f2066}{get\+Bottom}} ()
+\begin{DoxyCompactList}\small\item\em Deals a card from the deck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8c_aeaefd5413bdb591b46cb4f4ff0442d48}{split\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Splits and reorders a deck of cards. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rules_8c_abf760716bfff375324964b5f23708c3d}{process\+Round}} ()
+\begin{DoxyCompactList}\small\item\em Processes a round of a card game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{rules_8c_af3766cd05cc46936abb71224c2d061ee}{is\+Playable}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Hand, int num\+Cards, \mbox{\hyperlink{struct_card}{Card}} selected\+Card)
+\begin{DoxyCompactList}\small\item\em Checks if a selected card is playable. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rules_8c_adebe5c3d5222f8b9e4ffe63ec311000f}{bot\+Play\+Card}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Deck)
+\begin{DoxyCompactList}\small\item\em Determines the card to be played by the bot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{rules_8c_a3df79d631c10ddcff7ef8064fb4534ac}{get\+Sprite}} (int rank, int suit)
+\begin{DoxyCompactList}\small\item\em Retrieves the sprite for a card based on its rank and suit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8c_a54c0cd193fcd3f116ad8ef4b233eb391}{fill\+Players\+Hand}} (int order, int player\+Num)
+\begin{DoxyCompactList}\small\item\em Fills the hands of the players with cards from the deck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8c_a17004f10be86cdd8b324a0bfbdf3271e}{remove\+Card}} (int player, int card\+Index)
+\begin{DoxyCompactList}\small\item\em Removes a card from a player\textquotesingle{}s hand. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8c_a91a0d490a3563ee97302b9a4eda45f67}{remove\+Card\+Hand}} (\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \texorpdfstring{$\ast$}{*}player, int card\+Index, int num\+Cards)
+\begin{DoxyCompactList}\small\item\em Removes a card from a player\textquotesingle{}s hand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a07ba4594fb5c8d14b3523a9870d433c5}{deck}} \mbox{[}\mbox{\hyperlink{rules_8h_ab48a679225d82ec51e09e62d14313b34}{DECK\+\_\+\+SIZE}}\mbox{]}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{rules_8c_a3e6e6f29084971899a686ce9a1a3387a}{player1}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{rules_8c_a35a776e3cebb62d6547a769980fef1c8}{player2}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{rules_8c_a66e9c264dc76e28477f2848bfd9bd247}{player3}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{rules_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64}{player4}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a6b0317c964e845aac22514aa059456c7}{card\+\_\+player\+\_\+1}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a4d4566c0ac528e5f47246deb958adaac}{card\+\_\+player\+\_\+2}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a7e92ab63718b30f4c636fa001f1d4cd1}{card\+\_\+player\+\_\+3}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a3950e93ad01de21f04caecff8706dfab}{card\+\_\+player\+\_\+4}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8c_a82ae4144ba4eead926bae4a546871dba}{trump\+\_\+card}}
+\item 
+int \mbox{\hyperlink{rules_8c_ac3d4f3b90dd1f5105984342ca522b4e6}{player\+\_\+a\+\_\+dar}} = 1
+\item 
+int \mbox{\hyperlink{rules_8c_af5b6d85c7b40a07df150ae29e088deda}{player\+\_\+a\+\_\+split}} = 4
+\item 
+int \mbox{\hyperlink{rules_8c_a4a2e9a802a7d2717096036db9853445e}{num\+\_\+cards}} = 0
+\item 
+int \mbox{\hyperlink{rules_8c_aaefa47f4fdf865c2358c22b542a993e4}{turn}} = 0
+\item 
+int \mbox{\hyperlink{rules_8c_abff3f5a0e76dd66b277a03c01b5b3056}{round\+Suit}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_ab2c4d2cad1a69ad48fb003d6153cf809}{trump\+Suit}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_ae7397b90d6412f27103e2ddd3290afbb}{selected\+\_\+card\+\_\+player\+\_\+1}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_af127c467a6fc53d3a2bc6f0bb7709b6d}{selected\+\_\+card\+\_\+player\+\_\+2}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_aa85e8f951e5ae1eab799914ed3916a84}{selected\+\_\+card\+\_\+player\+\_\+3}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_a563773274b3ee56ffbd4bb58c9f181ac}{selected\+\_\+card\+\_\+player\+\_\+4}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_a85a359fca667c371d197c5e0895e2d6b}{player\+\_\+1\+\_\+played}} = 0
+\item 
+int \mbox{\hyperlink{rules_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b}{player\+\_\+3\+\_\+played}} = 0
+\item 
+int \mbox{\hyperlink{rules_8c_a28ee33f04adbe3bdd53e606aead42473}{trump\+\_\+location}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_ab5d2a533d3c16134c03dd9727f2a2303}{slide\+\_\+number}} = -\/1
+\item 
+int \mbox{\hyperlink{rules_8c_a6d62e31b8f1c394fb39d740b477c6ac5}{blue\+Score}} = 0
+\item 
+int \mbox{\hyperlink{rules_8c_a5594cebb2b5e20aa709644b5e331e0ce}{red\+Score}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rules_8c_adebe5c3d5222f8b9e4ffe63ec311000f}\index{rules.c@{rules.c}!botPlayCard@{botPlayCard}}
+\index{botPlayCard@{botPlayCard}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{botPlayCard()}{botPlayCard()}}
+{\footnotesize\ttfamily \label{rules_8c_adebe5c3d5222f8b9e4ffe63ec311000f} 
+int bot\+Play\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Deck}{}\end{DoxyParamCaption})}
+
+
+
+Determines the card to be played by the bot. 
+
+Decides which card the bot should play based on the current round suit and trump suit. If the round suit hasn\textquotesingle{}t been set, it sets the round suit to the suit of the first card in the bot\textquotesingle{}s deck and plays that card. If the bot has a card of the round suit, it plays that card. If the bot doesn\textquotesingle{}t have a card of the round suit, but has a card of the trump suit, it plays that card. If the bot doesn\textquotesingle{}t have a card of either the round suit or the trump suit, it plays the first card in its deck.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Deck} & Pointer to the array of cards in the bot\textquotesingle{}s deck. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the card to be played in the bot\textquotesingle{}s deck. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_adebe5c3d5222f8b9e4ffe63ec311000f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_ab13c958758a438df8ffa77ca4975bc55}\index{rules.c@{rules.c}!fillDeck@{fillDeck}}
+\index{fillDeck@{fillDeck}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{fillDeck()}{fillDeck()}}
+{\footnotesize\ttfamily \label{rules_8c_ab13c958758a438df8ffa77ca4975bc55} 
+void fill\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Fills a deck of cards. 
+
+Initializes a deck of cards, assigning each card a rank, suit, value, and sprite. Fills the deck in a specific order, with the rank and suit incrementing sequentially. The value of the cards is determined by a switch statement, with specific values assigned to ranks 5-\/9. All other ranks are assigned a value of 0. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{rules_8c_ab13c958758a438df8ffa77ca4975bc55_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_ab13c958758a438df8ffa77ca4975bc55_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_a54c0cd193fcd3f116ad8ef4b233eb391}\index{rules.c@{rules.c}!fillPlayersHand@{fillPlayersHand}}
+\index{fillPlayersHand@{fillPlayersHand}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{fillPlayersHand()}{fillPlayersHand()}}
+{\footnotesize\ttfamily \label{rules_8c_a54c0cd193fcd3f116ad8ef4b233eb391} 
+void fill\+Players\+Hand (\begin{DoxyParamCaption}\item[{int}]{order}{, }\item[{int}]{player\+Num}{}\end{DoxyParamCaption})}
+
+
+
+Fills the hands of the players with cards from the deck. 
+
+Distributes cards from the deck to the players\textquotesingle{} hands. The order of distribution is determined by the \textquotesingle{}order\textquotesingle{} parameter\+: 1 for clockwise and 0 for counter-\/clockwise. Each player is given 10 cards from the deck.
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & The order of distribution\+: 1 for clockwise, 0 for counter-\/clockwise. \\
+\hline
+{\em player\+Num} & The player number (1-\/4) to be dealt cards first. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a54c0cd193fcd3f116ad8ef4b233eb391_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_a4d10df4c26ab05e602410300279f2066}\index{rules.c@{rules.c}!getBottom@{getBottom}}
+\index{getBottom@{getBottom}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{getBottom()}{getBottom()}}
+{\footnotesize\ttfamily \label{rules_8c_a4d10df4c26ab05e602410300279f2066} 
+\mbox{\hyperlink{struct_card}{Card}} get\+Bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Deals a card from the deck. 
+
+Deals a card from the deck, removing the card from the deck and returning it. The card is removed from the bottom of the deck, and the deck is resized accordingly.
+
+\begin{DoxyReturn}{Returns}
+The card that was dealt. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a4d10df4c26ab05e602410300279f2066_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_a3df79d631c10ddcff7ef8064fb4534ac}\index{rules.c@{rules.c}!getSprite@{getSprite}}
+\index{getSprite@{getSprite}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{getSprite()}{getSprite()}}
+{\footnotesize\ttfamily \label{rules_8c_a3df79d631c10ddcff7ef8064fb4534ac} 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} get\+Sprite (\begin{DoxyParamCaption}\item[{int}]{rank}{, }\item[{int}]{suit}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the sprite for a card based on its rank and suit. 
+
+Maps a card\textquotesingle{}s rank and suit to it\textquotesingle{}s sprite. The rank is mapped to a number from 0 to 9, representing 2, 3, 4, 5, 6, Q, J, K, 7, and Ace respectively. The suit is mapped to a number from 0 to 3, representing clubs, diamonds, hearts, and spades respectively. If the rank or suit does not match any of the predefined values, the function returns NULL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & The rank of the card. \\
+\hline
+{\em suit} & The suit of the card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sprite representing the card, or NULL if the rank or suit is invalid. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a3df79d631c10ddcff7ef8064fb4534ac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_a273228885ce4b0b07699c595b93f4d63}\index{rules.c@{rules.c}!getTop@{getTop}}
+\index{getTop@{getTop}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{getTop()}{getTop()}}
+{\footnotesize\ttfamily \label{rules_8c_a273228885ce4b0b07699c595b93f4d63} 
+\mbox{\hyperlink{struct_card}{Card}} get\+Top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Deals a card from the deck. 
+
+Deals a card from the deck, removing the card from the deck and returning it. The card is removed from the top of the deck, and the deck is resized accordingly.
+
+\begin{DoxyReturn}{Returns}
+The card that was dealt. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a273228885ce4b0b07699c595b93f4d63_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_af3766cd05cc46936abb71224c2d061ee}\index{rules.c@{rules.c}!isPlayable@{isPlayable}}
+\index{isPlayable@{isPlayable}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{isPlayable()}{isPlayable()}}
+{\footnotesize\ttfamily \label{rules_8c_af3766cd05cc46936abb71224c2d061ee} 
+bool is\+Playable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Hand}{, }\item[{int}]{num\+Cards}{, }\item[{\mbox{\hyperlink{struct_card}{Card}}}]{selected\+Card}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a selected card is playable. 
+
+Checks if a selected card from a player\textquotesingle{}s hand is playable based on the round suit. If the player has a card of the round suit in their hand, they must play a card of that suit. If they do not have a card of the round suit, they can play any card.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Hand} & Pointer to the array of cards in the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The number of cards in the player\textquotesingle{}s hand. \\
+\hline
+{\em selected\+Card} & The card the player has selected to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the selected card is playable, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_af3766cd05cc46936abb71224c2d061ee_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_abf760716bfff375324964b5f23708c3d}\index{rules.c@{rules.c}!processRound@{processRound}}
+\index{processRound@{processRound}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{processRound()}{processRound()}}
+{\footnotesize\ttfamily \label{rules_8c_abf760716bfff375324964b5f23708c3d} 
+int process\+Round (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes a round of a card game. 
+
+Calculates the rank of each player\textquotesingle{}s card, taking into account the trump suit and the round suit. Determines the winner of the round based on the calculated ranks.
+
+\begin{DoxyReturn}{Returns}
+The player number (1-\/4) who won the round. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_abf760716bfff375324964b5f23708c3d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_a17004f10be86cdd8b324a0bfbdf3271e}\index{rules.c@{rules.c}!removeCard@{removeCard}}
+\index{removeCard@{removeCard}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{removeCard()}{removeCard()}}
+{\footnotesize\ttfamily \label{rules_8c_a17004f10be86cdd8b324a0bfbdf3271e} 
+void remove\+Card (\begin{DoxyParamCaption}\item[{int}]{player}{, }\item[{int}]{card\+Index}{}\end{DoxyParamCaption})}
+
+
+
+Removes a card from a player\textquotesingle{}s hand. 
+
+Removes a card at a specific index from a player\textquotesingle{}s hand. After the card is removed, the number of cards in the player\textquotesingle{}s hand is decremented.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player number (1-\/4) from whose hand the card is to be removed. \\
+\hline
+{\em card\+Index} & The index of the card to be removed in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{rules_8c_a17004f10be86cdd8b324a0bfbdf3271e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a17004f10be86cdd8b324a0bfbdf3271e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_a91a0d490a3563ee97302b9a4eda45f67}\index{rules.c@{rules.c}!removeCardHand@{removeCardHand}}
+\index{removeCardHand@{removeCardHand}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{removeCardHand()}{removeCardHand()}}
+{\footnotesize\ttfamily \label{rules_8c_a91a0d490a3563ee97302b9a4eda45f67} 
+void remove\+Card\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \texorpdfstring{$\ast$}{*}}]{player}{, }\item[{int}]{card\+Index}{, }\item[{int}]{num\+Cards}{}\end{DoxyParamCaption})}
+
+
+
+Removes a card from a player\textquotesingle{}s hand. 
+
+Removes a card at a specific index from a player\textquotesingle{}s hand. The \textquotesingle{}player\textquotesingle{} parameter is a pointer to the player structure whose hand the card is to be removed from. Creates a temporary hand without the card to be removed, then copies this back to the player\textquotesingle{}s hand.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & A pointer to the player structure. \\
+\hline
+{\em card\+Index} & The index of the card to be removed in the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The current number of cards in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a91a0d490a3563ee97302b9a4eda45f67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_aebdb0f340a4800e7b841571ffc1f5da9}\index{rules.c@{rules.c}!shuffleDeck@{shuffleDeck}}
+\index{shuffleDeck@{shuffleDeck}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{shuffleDeck()}{shuffleDeck()}}
+{\footnotesize\ttfamily \label{rules_8c_aebdb0f340a4800e7b841571ffc1f5da9} 
+void shuffle\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Shuffles the deck of cards. 
+
+Shuffles the deck of cards using the Fisher-\/\+Yates algorithm. The deck is shuffled in place, with each card being swapped with another card at a random index. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{rules_8c_aebdb0f340a4800e7b841571ffc1f5da9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_aebdb0f340a4800e7b841571ffc1f5da9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_a1c629ccbdb12749b09e75c86f2759650}\index{rules.c@{rules.c}!shuffleDeckSeed@{shuffleDeckSeed}}
+\index{shuffleDeckSeed@{shuffleDeckSeed}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{shuffleDeckSeed()}{shuffleDeckSeed()}}
+{\footnotesize\ttfamily \label{rules_8c_a1c629ccbdb12749b09e75c86f2759650} 
+void shuffle\+Deck\+Seed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Shuffles the deck of cards with a seed. 
+
+Shuffles the deck of cards using the Fisher-\/\+Yates algorithm. The deck is shuffled in place, with each card being swapped with another card at a random index. The seed is used to generate a random number, which is used to shuffle the deck. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a1c629ccbdb12749b09e75c86f2759650_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_a1c629ccbdb12749b09e75c86f2759650_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8c_aeaefd5413bdb591b46cb4f4ff0442d48}\index{rules.c@{rules.c}!splitDeck@{splitDeck}}
+\index{splitDeck@{splitDeck}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{splitDeck()}{splitDeck()}}
+{\footnotesize\ttfamily \label{rules_8c_aeaefd5413bdb591b46cb4f4ff0442d48} 
+void split\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Splits and reorders a deck of cards. 
+
+Splits the deck at a given index and reorders it by placing the second half before the first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index at which to split and reorder the deck. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{rules_8c_aeaefd5413bdb591b46cb4f4ff0442d48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8c_aeaefd5413bdb591b46cb4f4ff0442d48_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rules_8c_a6d62e31b8f1c394fb39d740b477c6ac5}\index{rules.c@{rules.c}!blueScore@{blueScore}}
+\index{blueScore@{blueScore}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{blueScore}{blueScore}}
+{\footnotesize\ttfamily \label{rules_8c_a6d62e31b8f1c394fb39d740b477c6ac5} 
+int blue\+Score = 0}
+
+\Hypertarget{rules_8c_a6b0317c964e845aac22514aa059456c7}\index{rules.c@{rules.c}!card\_player\_1@{card\_player\_1}}
+\index{card\_player\_1@{card\_player\_1}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_1}{card\_player\_1}}
+{\footnotesize\ttfamily \label{rules_8c_a6b0317c964e845aac22514aa059456c7} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+1}
+
+\Hypertarget{rules_8c_a4d4566c0ac528e5f47246deb958adaac}\index{rules.c@{rules.c}!card\_player\_2@{card\_player\_2}}
+\index{card\_player\_2@{card\_player\_2}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_2}{card\_player\_2}}
+{\footnotesize\ttfamily \label{rules_8c_a4d4566c0ac528e5f47246deb958adaac} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+2}
+
+\Hypertarget{rules_8c_a7e92ab63718b30f4c636fa001f1d4cd1}\index{rules.c@{rules.c}!card\_player\_3@{card\_player\_3}}
+\index{card\_player\_3@{card\_player\_3}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_3}{card\_player\_3}}
+{\footnotesize\ttfamily \label{rules_8c_a7e92ab63718b30f4c636fa001f1d4cd1} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+3}
+
+\Hypertarget{rules_8c_a3950e93ad01de21f04caecff8706dfab}\index{rules.c@{rules.c}!card\_player\_4@{card\_player\_4}}
+\index{card\_player\_4@{card\_player\_4}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_4}{card\_player\_4}}
+{\footnotesize\ttfamily \label{rules_8c_a3950e93ad01de21f04caecff8706dfab} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+4}
+
+\Hypertarget{rules_8c_a07ba4594fb5c8d14b3523a9870d433c5}\index{rules.c@{rules.c}!deck@{deck}}
+\index{deck@{deck}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{deck}{deck}}
+{\footnotesize\ttfamily \label{rules_8c_a07ba4594fb5c8d14b3523a9870d433c5} 
+\mbox{\hyperlink{struct_card}{Card}} deck\mbox{[}\mbox{\hyperlink{rules_8h_ab48a679225d82ec51e09e62d14313b34}{DECK\+\_\+\+SIZE}}\mbox{]}}
+
+\Hypertarget{rules_8c_a4a2e9a802a7d2717096036db9853445e}\index{rules.c@{rules.c}!num\_cards@{num\_cards}}
+\index{num\_cards@{num\_cards}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{num\_cards}{num\_cards}}
+{\footnotesize\ttfamily \label{rules_8c_a4a2e9a802a7d2717096036db9853445e} 
+int num\+\_\+cards = 0}
+
+\Hypertarget{rules_8c_a3e6e6f29084971899a686ce9a1a3387a}\index{rules.c@{rules.c}!player1@{player1}}
+\index{player1@{player1}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player1}{player1}}
+{\footnotesize\ttfamily \label{rules_8c_a3e6e6f29084971899a686ce9a1a3387a} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player1}
+
+\Hypertarget{rules_8c_a35a776e3cebb62d6547a769980fef1c8}\index{rules.c@{rules.c}!player2@{player2}}
+\index{player2@{player2}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player2}{player2}}
+{\footnotesize\ttfamily \label{rules_8c_a35a776e3cebb62d6547a769980fef1c8} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player2}
+
+\Hypertarget{rules_8c_a66e9c264dc76e28477f2848bfd9bd247}\index{rules.c@{rules.c}!player3@{player3}}
+\index{player3@{player3}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player3}{player3}}
+{\footnotesize\ttfamily \label{rules_8c_a66e9c264dc76e28477f2848bfd9bd247} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player3}
+
+\Hypertarget{rules_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64}\index{rules.c@{rules.c}!player4@{player4}}
+\index{player4@{player4}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player4}{player4}}
+{\footnotesize\ttfamily \label{rules_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player4}
+
+\Hypertarget{rules_8c_a85a359fca667c371d197c5e0895e2d6b}\index{rules.c@{rules.c}!player\_1\_played@{player\_1\_played}}
+\index{player\_1\_played@{player\_1\_played}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player\_1\_played}{player\_1\_played}}
+{\footnotesize\ttfamily \label{rules_8c_a85a359fca667c371d197c5e0895e2d6b} 
+int player\+\_\+1\+\_\+played = 0}
+
+\Hypertarget{rules_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b}\index{rules.c@{rules.c}!player\_3\_played@{player\_3\_played}}
+\index{player\_3\_played@{player\_3\_played}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player\_3\_played}{player\_3\_played}}
+{\footnotesize\ttfamily \label{rules_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b} 
+int player\+\_\+3\+\_\+played = 0}
+
+\Hypertarget{rules_8c_ac3d4f3b90dd1f5105984342ca522b4e6}\index{rules.c@{rules.c}!player\_a\_dar@{player\_a\_dar}}
+\index{player\_a\_dar@{player\_a\_dar}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player\_a\_dar}{player\_a\_dar}}
+{\footnotesize\ttfamily \label{rules_8c_ac3d4f3b90dd1f5105984342ca522b4e6} 
+int player\+\_\+a\+\_\+dar = 1}
+
+\Hypertarget{rules_8c_af5b6d85c7b40a07df150ae29e088deda}\index{rules.c@{rules.c}!player\_a\_split@{player\_a\_split}}
+\index{player\_a\_split@{player\_a\_split}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{player\_a\_split}{player\_a\_split}}
+{\footnotesize\ttfamily \label{rules_8c_af5b6d85c7b40a07df150ae29e088deda} 
+int player\+\_\+a\+\_\+split = 4}
+
+\Hypertarget{rules_8c_a5594cebb2b5e20aa709644b5e331e0ce}\index{rules.c@{rules.c}!redScore@{redScore}}
+\index{redScore@{redScore}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{redScore}{redScore}}
+{\footnotesize\ttfamily \label{rules_8c_a5594cebb2b5e20aa709644b5e331e0ce} 
+int red\+Score = 0}
+
+\Hypertarget{rules_8c_abff3f5a0e76dd66b277a03c01b5b3056}\index{rules.c@{rules.c}!roundSuit@{roundSuit}}
+\index{roundSuit@{roundSuit}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{roundSuit}{roundSuit}}
+{\footnotesize\ttfamily \label{rules_8c_abff3f5a0e76dd66b277a03c01b5b3056} 
+int round\+Suit = -\/1}
+
+\Hypertarget{rules_8c_ae7397b90d6412f27103e2ddd3290afbb}\index{rules.c@{rules.c}!selected\_card\_player\_1@{selected\_card\_player\_1}}
+\index{selected\_card\_player\_1@{selected\_card\_player\_1}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_1}{selected\_card\_player\_1}}
+{\footnotesize\ttfamily \label{rules_8c_ae7397b90d6412f27103e2ddd3290afbb} 
+int selected\+\_\+card\+\_\+player\+\_\+1 = -\/1}
+
+\Hypertarget{rules_8c_af127c467a6fc53d3a2bc6f0bb7709b6d}\index{rules.c@{rules.c}!selected\_card\_player\_2@{selected\_card\_player\_2}}
+\index{selected\_card\_player\_2@{selected\_card\_player\_2}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_2}{selected\_card\_player\_2}}
+{\footnotesize\ttfamily \label{rules_8c_af127c467a6fc53d3a2bc6f0bb7709b6d} 
+int selected\+\_\+card\+\_\+player\+\_\+2 = -\/1}
+
+\Hypertarget{rules_8c_aa85e8f951e5ae1eab799914ed3916a84}\index{rules.c@{rules.c}!selected\_card\_player\_3@{selected\_card\_player\_3}}
+\index{selected\_card\_player\_3@{selected\_card\_player\_3}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_3}{selected\_card\_player\_3}}
+{\footnotesize\ttfamily \label{rules_8c_aa85e8f951e5ae1eab799914ed3916a84} 
+int selected\+\_\+card\+\_\+player\+\_\+3 = -\/1}
+
+\Hypertarget{rules_8c_a563773274b3ee56ffbd4bb58c9f181ac}\index{rules.c@{rules.c}!selected\_card\_player\_4@{selected\_card\_player\_4}}
+\index{selected\_card\_player\_4@{selected\_card\_player\_4}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_4}{selected\_card\_player\_4}}
+{\footnotesize\ttfamily \label{rules_8c_a563773274b3ee56ffbd4bb58c9f181ac} 
+int selected\+\_\+card\+\_\+player\+\_\+4 = -\/1}
+
+\Hypertarget{rules_8c_ab5d2a533d3c16134c03dd9727f2a2303}\index{rules.c@{rules.c}!slide\_number@{slide\_number}}
+\index{slide\_number@{slide\_number}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{slide\_number}{slide\_number}}
+{\footnotesize\ttfamily \label{rules_8c_ab5d2a533d3c16134c03dd9727f2a2303} 
+int slide\+\_\+number = -\/1}
+
+\Hypertarget{rules_8c_a82ae4144ba4eead926bae4a546871dba}\index{rules.c@{rules.c}!trump\_card@{trump\_card}}
+\index{trump\_card@{trump\_card}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{trump\_card}{trump\_card}}
+{\footnotesize\ttfamily \label{rules_8c_a82ae4144ba4eead926bae4a546871dba} 
+\mbox{\hyperlink{struct_card}{Card}} trump\+\_\+card}
+
+\Hypertarget{rules_8c_a28ee33f04adbe3bdd53e606aead42473}\index{rules.c@{rules.c}!trump\_location@{trump\_location}}
+\index{trump\_location@{trump\_location}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{trump\_location}{trump\_location}}
+{\footnotesize\ttfamily \label{rules_8c_a28ee33f04adbe3bdd53e606aead42473} 
+int trump\+\_\+location = -\/1}
+
+\Hypertarget{rules_8c_ab2c4d2cad1a69ad48fb003d6153cf809}\index{rules.c@{rules.c}!trumpSuit@{trumpSuit}}
+\index{trumpSuit@{trumpSuit}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{trumpSuit}{trumpSuit}}
+{\footnotesize\ttfamily \label{rules_8c_ab2c4d2cad1a69ad48fb003d6153cf809} 
+int trump\+Suit = -\/1}
+
+\Hypertarget{rules_8c_aaefa47f4fdf865c2358c22b542a993e4}\index{rules.c@{rules.c}!turn@{turn}}
+\index{turn@{turn}!rules.c@{rules.c}}
+\doxysubsubsection{\texorpdfstring{turn}{turn}}
+{\footnotesize\ttfamily \label{rules_8c_aaefa47f4fdf865c2358c22b542a993e4} 
+int turn = 0}
+

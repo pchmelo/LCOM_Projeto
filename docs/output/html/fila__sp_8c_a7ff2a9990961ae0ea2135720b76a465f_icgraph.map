@@ -1,0 +1,5 @@
+<map id="limpar_fila_sp" name="limpar_fila_sp">
+<area shape="rect" id="Node000001" title="Clears the serial port queue." alt="" coords="176,5,289,31"/>
+<area shape="rect" id="Node000002" href="$sp_8c.html#a467e0bab480cfb9578c3866536dc0433" title="Exits the serial port." alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,21,129,21,129,15,162,15"/>
+</map>

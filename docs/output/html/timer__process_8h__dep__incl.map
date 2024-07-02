@@ -1,0 +1,33 @@
+<map id="src/prog/process/timer_process.h" name="src/prog/process/timer_process.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="120,5,287,45"/>
+<area shape="rect" id="Node000002" href="$game_8h.html" title=" " alt="" coords="140,101,267,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,59,206,100,201,100,201,59"/>
+<area shape="rect" id="Node000013" href="$timer__process_8c.html" title=" " alt="" coords="291,93,458,133"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="255,49,338,91,336,96,252,54"/>
+<area shape="rect" id="Node000003" href="$game_8c.html" title=" " alt="" coords="346,189,472,214"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,129,382,186,380,191,243,134"/>
+<area shape="rect" id="Node000004" href="$teclado__process_8h.html" title=" " alt="" coords="36,181,216,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,137,138,183,134,179,175,134"/>
+<area shape="rect" id="Node000012" href="$proj_8c.html" title=" " alt="" coords="240,189,322,214"/>
+<area shape="poly" id="edge17_Node000002_Node000012" title=" " alt="" coords="225,135,272,186,268,190,221,138"/>
+<area shape="poly" id="edge15_Node000004_Node000002" title=" " alt="" coords="159,170,198,124,202,128,163,173"/>
+<area shape="rect" id="Node000005" href="$composer_8h.html" title=" " alt="" coords="57,269,196,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,235,121,269,116,269,115,235"/>
+<area shape="rect" id="Node000011" href="$teclado__process_8c.html" title=" " alt="" coords="220,269,400,309"/>
+<area shape="poly" id="edge16_Node000004_Node000011" title=" " alt="" coords="180,225,271,267,269,272,178,230"/>
+<area shape="poly" id="edge14_Node000005_Node000001" title=" " alt="" coords="56,265,30,247,9,223,3,202,9,180,40,134,80,96,123,65,162,43,164,48,126,70,83,100,44,138,14,182,8,202,14,220,33,243,59,261"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="65,265,40,247,21,223,14,201,21,180,46,155,75,137,108,125,139,118,141,123,109,130,78,142,49,159,26,183,19,201,26,220,44,243,68,260"/>
+<area shape="poly" id="edge13_Node000005_Node000004" title=" " alt="" coords="132,256,131,222,137,222,138,256"/>
+<area shape="rect" id="Node000006" href="$composer_8c.html" title=" " alt="" coords="57,357,196,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="129,323,129,357,124,357,124,323"/>
+<area shape="rect" id="Node000007" href="$rato__process_8h.html" title=" " alt="" coords="256,357,415,397"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="186,312,291,355,289,360,184,317"/>
+<area shape="rect" id="Node000009" href="$serial__process_8h.html" title=" " alt="" coords="458,357,626,397"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="210,307,459,357,458,363,209,312"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="379,348,427,314,471,273,486,250,494,227,494,205,483,183,462,161,440,148,418,142,395,141,342,142,312,141,279,136,249,129,250,123,280,131,313,136,342,137,395,135,419,137,442,143,465,157,487,180,499,204,500,228,491,252,475,276,430,319,382,352"/>
+<area shape="rect" id="Node000008" href="$rato__process_8c.html" title=" " alt="" coords="256,445,415,485"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="338,411,338,445,333,445,333,411"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="544,344,546,306,543,263,531,220,521,200,507,183,481,161,456,148,431,142,405,141,348,143,315,142,279,136,248,129,250,123,280,131,316,136,348,137,405,135,432,137,458,143,484,156,511,179,525,198,536,218,548,262,551,306,550,344"/>
+<area shape="rect" id="Node000010" href="$serial__process_8c.html" title=" " alt="" coords="458,445,626,485"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="545,411,545,445,540,445,540,411"/>
+</map>

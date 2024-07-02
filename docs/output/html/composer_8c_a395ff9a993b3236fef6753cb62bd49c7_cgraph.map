@@ -1,0 +1,11 @@
+<map id="criar_score_board" name="criar_score_board">
+<area shape="rect" id="Node000001" title="Displays a score board in the game." alt="" coords="5,55,143,80"/>
+<area shape="rect" id="Node000002" href="$aux__func_8c.html#a117c80c1097e2105f62c481b22cce24a" title="Converts a number into a sprite." alt="" coords="225,5,339,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,52,214,31,215,37,129,57"/>
+<area shape="rect" id="Node000003" href="$grafica_8c.html#afe44ad8c40405c5ae1dd181c70e5d2e6" title="Prints a form from an XPM sprite." alt="" coords="191,55,373,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,65,177,65,177,70,143,70"/>
+<area shape="rect" id="Node000005" href="$aux__func_8c.html#a9dacede309082ef811b2624742085c4b" title="Converts a score into an array of integers." alt="" coords="231,104,333,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="129,77,219,99,217,104,128,83"/>
+<area shape="rect" id="Node000004" href="$aux__dispositivos_8c.html#a1ebb4488d400f798504117c353edd1bd" title="Draws a pixel based on the received parameters." alt="" coords="421,55,541,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="374,65,408,65,408,70,374,70"/>
+</map>

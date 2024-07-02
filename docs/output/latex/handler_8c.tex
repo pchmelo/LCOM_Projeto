@@ -1,0 +1,155 @@
+\doxysection{src/dispositivos/handler.c File Reference}
+\hypertarget{handler_8c}{}\label{handler_8c}\index{src/dispositivos/handler.c@{src/dispositivos/handler.c}}
+{\ttfamily \#include "{}handler.\+h"{}}\newline
+Include dependency graph for handler.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{handler_8c_a10fc9c867b15c7da6649311c9987cd17}{timer\+\_\+int\+\_\+handler}} ()
+\item 
+void \mbox{\hyperlink{handler_8c_a6a2a6c2b64c950d09dbcc2cc52073e12}{keyboard\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt handler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{handler_8c_a1ba8ccf32722915b37e49d01e9f9b6d6}{mouse\+\_\+interrupt\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em Handles Mouse interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{handler_8c_aca5f9a009c7c9ba2b5140f59232e2b02}{sp\+\_\+interrupt\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em Handles the serial port interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{handler_8c_a617a47c70795bcff659815ad0efd2266}{counter}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{handler_8c_a65b988e1163cc65c6d3e5562fbc36a98}{current\+\_\+byte}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{handler_8c_a6a2a6c2b64c950d09dbcc2cc52073e12}\index{handler.c@{handler.c}!keyboard\_ih@{keyboard\_ih}}
+\index{keyboard\_ih@{keyboard\_ih}!handler.c@{handler.c}}
+\doxysubsubsection{\texorpdfstring{keyboard\_ih()}{keyboard\_ih()}}
+{\footnotesize\ttfamily \label{handler_8c_a6a2a6c2b64c950d09dbcc2cc52073e12} 
+void keyboard\+\_\+ih (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Keyboard interrupt handler. 
+
+Reads the output of the Keyboard Controller.
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c_a6a2a6c2b64c950d09dbcc2cc52073e12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c_a6a2a6c2b64c950d09dbcc2cc52073e12_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handler_8c_a1ba8ccf32722915b37e49d01e9f9b6d6}\index{handler.c@{handler.c}!mouse\_interrupt\_handler@{mouse\_interrupt\_handler}}
+\index{mouse\_interrupt\_handler@{mouse\_interrupt\_handler}!handler.c@{handler.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_interrupt\_handler()}{mouse\_interrupt\_handler()}}
+{\footnotesize\ttfamily \label{handler_8c_a1ba8ccf32722915b37e49d01e9f9b6d6} 
+void mouse\+\_\+interrupt\+\_\+handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Handles Mouse interrupts. 
+
+Reads the output of the Mouse Controller. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c_a1ba8ccf32722915b37e49d01e9f9b6d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c_a1ba8ccf32722915b37e49d01e9f9b6d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handler_8c_aca5f9a009c7c9ba2b5140f59232e2b02}\index{handler.c@{handler.c}!sp\_interrupt\_handler@{sp\_interrupt\_handler}}
+\index{sp\_interrupt\_handler@{sp\_interrupt\_handler}!handler.c@{handler.c}}
+\doxysubsubsection{\texorpdfstring{sp\_interrupt\_handler()}{sp\_interrupt\_handler()}}
+{\footnotesize\ttfamily \label{handler_8c_aca5f9a009c7c9ba2b5140f59232e2b02} 
+int sp\+\_\+interrupt\+\_\+handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Handles the serial port interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c_aca5f9a009c7c9ba2b5140f59232e2b02_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c_aca5f9a009c7c9ba2b5140f59232e2b02_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{handler_8c_a10fc9c867b15c7da6649311c9987cd17}\index{handler.c@{handler.c}!timer\_int\_handler@{timer\_int\_handler}}
+\index{timer\_int\_handler@{timer\_int\_handler}!handler.c@{handler.c}}
+\doxysubsubsection{\texorpdfstring{timer\_int\_handler()}{timer\_int\_handler()}}
+{\footnotesize\ttfamily \label{handler_8c_a10fc9c867b15c7da6649311c9987cd17} 
+void timer\+\_\+int\+\_\+handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{handler_8c_a10fc9c867b15c7da6649311c9987cd17_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{handler_8c_a617a47c70795bcff659815ad0efd2266}\index{handler.c@{handler.c}!counter@{counter}}
+\index{counter@{counter}!handler.c@{handler.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{handler_8c_a617a47c70795bcff659815ad0efd2266} 
+int counter = 0}
+
+\Hypertarget{handler_8c_a65b988e1163cc65c6d3e5562fbc36a98}\index{handler.c@{handler.c}!current\_byte@{current\_byte}}
+\index{current\_byte@{current\_byte}!handler.c@{handler.c}}
+\doxysubsubsection{\texorpdfstring{current\_byte}{current\_byte}}
+{\footnotesize\ttfamily \label{handler_8c_a65b988e1163cc65c6d3e5562fbc36a98} 
+uint8\+\_\+t current\+\_\+byte\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}\index{handler.c@{handler.c}!scancode@{scancode}}
+\index{scancode@{scancode}!handler.c@{handler.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily \label{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f} 
+uint8\+\_\+t scancode = 0}
+

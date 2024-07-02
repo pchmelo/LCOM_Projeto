@@ -1,0 +1,9 @@
+<map id="process_display" name="process_display">
+<area shape="rect" id="Node000001" title="Processes the display of the game based on the current round." alt="" coords="5,31,132,56"/>
+<area shape="rect" id="Node000002" href="$rules_8c.html#adebe5c3d5222f8b9e4ffe63ec311000f" title="Determines the card to be played by the bot." alt="" coords="181,5,282,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,31,167,25,168,31,133,36"/>
+<area shape="rect" id="Node000003" href="$rules_8c.html#a17004f10be86cdd8b324a0bfbdf3271e" title="Removes a card from a player&#39;s hand." alt="" coords="180,55,283,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,50,167,55,166,60,132,55"/>
+<area shape="rect" id="Node000004" href="$rules_8c.html#a91a0d490a3563ee97302b9a4eda45f67" title="Removes a card from a player&#39;s hand." alt="" coords="331,55,467,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="283,65,317,65,317,70,283,70"/>
+</map>

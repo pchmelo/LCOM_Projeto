@@ -1,0 +1,310 @@
+\doxysection{src/dispositivos/grafica/grafica.h File Reference}
+\hypertarget{grafica_8h}{}\label{grafica_8h}\index{src/dispositivos/grafica/grafica.h@{src/dispositivos/grafica/grafica.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}vbe.\+h"{}}\newline
+{\ttfamily \#include "{}../../prog/functions/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}../aux\+\_\+dispositivos.\+h"{}}\newline
+Include dependency graph for grafica.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{grafica_8h_ab45734b3f9e5604b431f5b348fc54d79}{printar\+\_\+form\+\_\+xpm}} (uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+map\+\_\+t xpm)
+\begin{DoxyCompactList}\small\item\em Prints a form from an XPM. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grafica_8h_afe44ad8c40405c5ae1dd181c70e5d2e6}{printar\+\_\+form\+\_\+xpm\+\_\+sprite}} (uint16\+\_\+t x, uint16\+\_\+t y, \mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Prints a form from an XPM sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grafica_8h_afc7879979765f48b6385ddd03b5b2f36}{printar\+\_\+form\+\_\+xpm\+\_\+sprite\+\_\+rotated}} (uint16\+\_\+t x, uint16\+\_\+t y, \mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Prints a rotated form from an XPM sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grafica_8h_a42ae3c01986189018ee1270409435f83}{moldura\+Carta}} (int x, int y, uint32\+\_\+t cor)
+\begin{DoxyCompactList}\small\item\em Draws a card frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grafica_8h_af432710d3828b6f1ef376a2dde588a7f}{criar\+Buffer\+Set\+Desenho}} ()
+\begin{DoxyCompactList}\small\item\em Creates a drawing set buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grafica_8h_aed84d65f66a82afabb78b16c6966aff9}{copiarbuffer\+Set\+Desenho\+To\+Buffer\+Grafico}} ()
+\begin{DoxyCompactList}\small\item\em Copies the drawing set buffer to the graphic buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grafica_8h_aec4db1eee466b906c5f21a2bea09d85d}{limpar\+Buffer\+Grafico}} ()
+\begin{DoxyCompactList}\small\item\em Clears the graphic buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grafica_8h_a41389fd868881a7d67ea9a39286f4506}{draw\+Spilt\+Second\+Bar}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{grafica_8h_aa19f9b39471a0ff5d5cb0e3c41a80421}{mod\+Inf}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafica_8h_a8c8538ed22b6719ed1022061f7f21535}{buffer\+Grafico}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafica_8h_af6e9d4cd5e2d7c6ad2594fca1b647a63}{buffer\+Set\+Desenho}}
+\item 
+int \mbox{\hyperlink{grafica_8h_af62f882913619371164e7731a978a928}{bytes\+In\+APixel}}
+\item 
+int \mbox{\hyperlink{grafica_8h_aa5151578f53c2409ba24773631554b49}{frame\+Tamanho}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{grafica_8h_aed84d65f66a82afabb78b16c6966aff9}\index{grafica.h@{grafica.h}!copiarbufferSetDesenhoToBufferGrafico@{copiarbufferSetDesenhoToBufferGrafico}}
+\index{copiarbufferSetDesenhoToBufferGrafico@{copiarbufferSetDesenhoToBufferGrafico}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{copiarbufferSetDesenhoToBufferGrafico()}{copiarbufferSetDesenhoToBufferGrafico()}}
+{\footnotesize\ttfamily \label{grafica_8h_aed84d65f66a82afabb78b16c6966aff9} 
+void copiarbuffer\+Set\+Desenho\+To\+Buffer\+Grafico (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Copies the drawing set buffer to the graphic buffer. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h_aed84d65f66a82afabb78b16c6966aff9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{grafica_8h_af432710d3828b6f1ef376a2dde588a7f}\index{grafica.h@{grafica.h}!criarBufferSetDesenho@{criarBufferSetDesenho}}
+\index{criarBufferSetDesenho@{criarBufferSetDesenho}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{criarBufferSetDesenho()}{criarBufferSetDesenho()}}
+{\footnotesize\ttfamily \label{grafica_8h_af432710d3828b6f1ef376a2dde588a7f} 
+void criar\+Buffer\+Set\+Desenho (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates a drawing set buffer. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{grafica_8h_af432710d3828b6f1ef376a2dde588a7f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{grafica_8h_a41389fd868881a7d67ea9a39286f4506}\index{grafica.h@{grafica.h}!drawSpiltSecondBar@{drawSpiltSecondBar}}
+\index{drawSpiltSecondBar@{drawSpiltSecondBar}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{drawSpiltSecondBar()}{drawSpiltSecondBar()}}
+{\footnotesize\ttfamily \label{grafica_8h_a41389fd868881a7d67ea9a39286f4506} 
+int draw\+Spilt\+Second\+Bar (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{, }\item[{uint32\+\_\+t}]{color}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{grafica_8h_a41389fd868881a7d67ea9a39286f4506_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h_a41389fd868881a7d67ea9a39286f4506_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{grafica_8h_aec4db1eee466b906c5f21a2bea09d85d}\index{grafica.h@{grafica.h}!limparBufferGrafico@{limparBufferGrafico}}
+\index{limparBufferGrafico@{limparBufferGrafico}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{limparBufferGrafico()}{limparBufferGrafico()}}
+{\footnotesize\ttfamily \label{grafica_8h_aec4db1eee466b906c5f21a2bea09d85d} 
+void limpar\+Buffer\+Grafico (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Clears the graphic buffer. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h_aec4db1eee466b906c5f21a2bea09d85d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{grafica_8h_a42ae3c01986189018ee1270409435f83}\index{grafica.h@{grafica.h}!molduraCarta@{molduraCarta}}
+\index{molduraCarta@{molduraCarta}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{molduraCarta()}{molduraCarta()}}
+{\footnotesize\ttfamily \label{grafica_8h_a42ae3c01986189018ee1270409435f83} 
+int moldura\+Carta (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{uint32\+\_\+t}]{cor}{}\end{DoxyParamCaption})}
+
+
+
+Draws a card frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the frame. \\
+\hline
+{\em y} & The y-\/coordinate of the frame. \\
+\hline
+{\em cor} & The color of the frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{grafica_8h_a42ae3c01986189018ee1270409435f83_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h_a42ae3c01986189018ee1270409435f83_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{grafica_8h_ab45734b3f9e5604b431f5b348fc54d79}\index{grafica.h@{grafica.h}!printar\_form\_xpm@{printar\_form\_xpm}}
+\index{printar\_form\_xpm@{printar\_form\_xpm}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{printar\_form\_xpm()}{printar\_form\_xpm()}}
+{\footnotesize\ttfamily \label{grafica_8h_ab45734b3f9e5604b431f5b348fc54d79} 
+int printar\+\_\+form\+\_\+xpm (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{xpm\+\_\+map\+\_\+t}]{xpm}{}\end{DoxyParamCaption})}
+
+
+
+Prints a form from an XPM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the form. \\
+\hline
+{\em y} & The y-\/coordinate of the form. \\
+\hline
+{\em xpm} & The XPM to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{grafica_8h_ab45734b3f9e5604b431f5b348fc54d79_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{grafica_8h_afe44ad8c40405c5ae1dd181c70e5d2e6}\index{grafica.h@{grafica.h}!printar\_form\_xpm\_sprite@{printar\_form\_xpm\_sprite}}
+\index{printar\_form\_xpm\_sprite@{printar\_form\_xpm\_sprite}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{printar\_form\_xpm\_sprite()}{printar\_form\_xpm\_sprite()}}
+{\footnotesize\ttfamily \label{grafica_8h_afe44ad8c40405c5ae1dd181c70e5d2e6} 
+int printar\+\_\+form\+\_\+xpm\+\_\+sprite (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Prints a form from an XPM sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the form. \\
+\hline
+{\em y} & The y-\/coordinate of the form. \\
+\hline
+{\em sprite} & The sprite to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{grafica_8h_afe44ad8c40405c5ae1dd181c70e5d2e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h_afe44ad8c40405c5ae1dd181c70e5d2e6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{grafica_8h_afc7879979765f48b6385ddd03b5b2f36}\index{grafica.h@{grafica.h}!printar\_form\_xpm\_sprite\_rotated@{printar\_form\_xpm\_sprite\_rotated}}
+\index{printar\_form\_xpm\_sprite\_rotated@{printar\_form\_xpm\_sprite\_rotated}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{printar\_form\_xpm\_sprite\_rotated()}{printar\_form\_xpm\_sprite\_rotated()}}
+{\footnotesize\ttfamily \label{grafica_8h_afc7879979765f48b6385ddd03b5b2f36} 
+int printar\+\_\+form\+\_\+xpm\+\_\+sprite\+\_\+rotated (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Prints a rotated form from an XPM sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the form. \\
+\hline
+{\em y} & The y-\/coordinate of the form. \\
+\hline
+{\em sprite} & The sprite to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{grafica_8h_afc7879979765f48b6385ddd03b5b2f36_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafica_8h_afc7879979765f48b6385ddd03b5b2f36_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{grafica_8h_a8c8538ed22b6719ed1022061f7f21535}\index{grafica.h@{grafica.h}!bufferGrafico@{bufferGrafico}}
+\index{bufferGrafico@{bufferGrafico}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{bufferGrafico}{bufferGrafico}}
+{\footnotesize\ttfamily \label{grafica_8h_a8c8538ed22b6719ed1022061f7f21535} 
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} buffer\+Grafico}
+
+\Hypertarget{grafica_8h_af6e9d4cd5e2d7c6ad2594fca1b647a63}\index{grafica.h@{grafica.h}!bufferSetDesenho@{bufferSetDesenho}}
+\index{bufferSetDesenho@{bufferSetDesenho}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{bufferSetDesenho}{bufferSetDesenho}}
+{\footnotesize\ttfamily \label{grafica_8h_af6e9d4cd5e2d7c6ad2594fca1b647a63} 
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} buffer\+Set\+Desenho}
+
+\Hypertarget{grafica_8h_af62f882913619371164e7731a978a928}\index{grafica.h@{grafica.h}!bytesInAPixel@{bytesInAPixel}}
+\index{bytesInAPixel@{bytesInAPixel}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{bytesInAPixel}{bytesInAPixel}}
+{\footnotesize\ttfamily \label{grafica_8h_af62f882913619371164e7731a978a928} 
+int bytes\+In\+APixel}
+
+\Hypertarget{grafica_8h_aa5151578f53c2409ba24773631554b49}\index{grafica.h@{grafica.h}!frameTamanho@{frameTamanho}}
+\index{frameTamanho@{frameTamanho}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{frameTamanho}{frameTamanho}}
+{\footnotesize\ttfamily \label{grafica_8h_aa5151578f53c2409ba24773631554b49} 
+int frame\+Tamanho}
+
+\Hypertarget{grafica_8h_aa19f9b39471a0ff5d5cb0e3c41a80421}\index{grafica.h@{grafica.h}!modInf@{modInf}}
+\index{modInf@{modInf}!grafica.h@{grafica.h}}
+\doxysubsubsection{\texorpdfstring{modInf}{modInf}}
+{\footnotesize\ttfamily \label{grafica_8h_aa19f9b39471a0ff5d5cb0e3c41a80421} 
+vbe\+\_\+mode\+\_\+info\+\_\+t mod\+Inf}
+

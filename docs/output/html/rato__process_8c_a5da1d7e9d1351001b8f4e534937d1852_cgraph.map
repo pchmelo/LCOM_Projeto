@@ -1,0 +1,13 @@
+<map id="process_rato_grab_drop" name="process_rato_grab_drop">
+<area shape="rect" id="Node000001" title="Processes mouse inputs for card grab and drop actions." alt="" coords="5,31,183,56"/>
+<area shape="rect" id="Node000002" href="$sp_8c.html#a0f5877ed1cc7d0cc779f1be8b25fc28f" title="Sends a byte through the serial port." alt="" coords="263,5,362,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,30,249,23,250,28,183,36"/>
+<area shape="rect" id="Node000005" href="$collision_8c.html#a36fdf4da6f334bebc9507bb89b34196d" title="Tests if a given point is within a card grab collision area." alt="" coords="231,55,395,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="183,50,217,54,217,59,183,56"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="443,5,548,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,15,429,15,429,21,362,21"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="596,5,695,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="548,15,582,15,582,21,548,21"/>
+<area shape="rect" id="Node000006" href="$collision_8c.html#aa847ebd1f6d9f431211f82ea20568a5f" title="Checks if a point is inside a collision area." alt="" coords="451,55,540,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="395,65,437,65,437,70,395,70"/>
+</map>

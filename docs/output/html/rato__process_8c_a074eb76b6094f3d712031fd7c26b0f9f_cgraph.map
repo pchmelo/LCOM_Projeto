@@ -1,0 +1,49 @@
+<map id="process_rato_P2" name="process_rato_P2">
+<area shape="rect" id="Node000001" title="Processes mouse inputs for Player 2 during the game." alt="" coords="5,303,133,328"/>
+<area shape="rect" id="Node000002" href="$sp_8c.html#a0f5877ed1cc7d0cc779f1be8b25fc28f" title="Sends a byte through the serial port." alt="" coords="463,129,562,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,301,120,257,148,233,180,213,249,184,321,164,390,151,449,144,450,149,391,156,322,169,251,189,183,218,151,238,123,261,83,304"/>
+<area shape="rect" id="Node000005" href="$rules_8c.html#af3766cd05cc46936abb71224c2d061ee" title="Checks if a selected card is playable." alt="" coords="241,501,331,527"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="77,327,90,360,112,404,143,450,162,470,183,488,205,499,228,506,227,511,203,504,180,492,158,474,139,453,108,407,86,362,72,329"/>
+<area shape="rect" id="Node000006" href="$rato__process_8c.html#a0c6657d850be9b2f06e4b2471d1e7dd5" title=" " alt="" coords="197,92,375,117"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="74,301,111,230,142,186,180,147,202,132,226,120,228,125,204,136,183,151,146,189,116,233,78,304"/>
+<area shape="rect" id="Node000010" href="$rato__process_8c.html#a19019ad5af5b2487b8edaaa8d904dce7" title=" " alt="" coords="215,228,357,253"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="107,300,235,255,237,260,108,305"/>
+<area shape="rect" id="Node000014" href="$rtc_8c.html#ae05582b9454a374bbdc4621cbda8336d" title="Gets the current time from the RTC." alt="" coords="234,12,338,37"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="71,302,83,260,104,201,136,137,156,106,179,77,205,56,234,41,236,45,208,61,183,81,160,109,140,139,109,203,88,262,76,303"/>
+<area shape="rect" id="Node000016" href="$collision_8c.html#a4622c9bbeb2cad51aa617f25da29d70f" title="Checks if a point is inside the card grab area." alt="" coords="457,327,569,352"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="133,316,443,333,443,338,133,321"/>
+<area shape="rect" id="Node000017" href="$collision_8c.html#a15807ecb1059a4b067e9c5caa955cc1a" title="Checks if a point is inside the exit button collision area in the pause menu." alt="" coords="181,353,391,379"/>
+<area shape="poly" id="edge23_Node000001_Node000017" title=" " alt="" coords="125,326,218,348,217,353,124,331"/>
+<area shape="rect" id="Node000018" href="$collision_8c.html#a46a318dfcb5101187e08c7c369aaf3b6" title="Checks if a point is inside the restart button collision area." alt="" coords="189,403,383,428"/>
+<area shape="poly" id="edge25_Node000001_Node000018" title=" " alt="" coords="87,326,129,357,182,388,206,396,204,401,180,392,126,361,84,330"/>
+<area shape="rect" id="Node000019" href="$collision_8c.html#acb822278b846a2a904931f57246afd02" title="Checks if a point is inside the resume button collision area." alt="" coords="187,452,385,477"/>
+<area shape="poly" id="edge27_Node000001_Node000019" title=" " alt="" coords="80,327,120,381,149,411,183,437,198,445,195,449,180,442,145,415,116,384,76,330"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="644,104,749,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="562,133,630,123,631,128,562,138"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="807,55,905,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="738,101,800,82,802,87,739,107"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="364,115,450,129,449,134,363,120"/>
+<area shape="rect" id="Node000007" href="$collision_8c.html#a60dbc749a5a7ccd2cc1e9fa01a1cbbac" title="Tests if a given point is within the bot button collision area." alt="" coords="457,31,569,56"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="333,89,451,57,453,62,334,95"/>
+<area shape="rect" id="Node000009" href="$collision_8c.html#ab2b82e4bf763c015330fbab62639bc17" title="Tests if a given point is within the top button collision area." alt="" coords="457,80,569,105"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="376,97,443,94,443,99,376,103"/>
+<area shape="rect" id="Node000008" href="$collision_8c.html#aa847ebd1f6d9f431211f82ea20568a5f" title="Checks if a point is inside a collision area." alt="" coords="652,301,741,327"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="570,54,589,65,617,106,645,167,689,287,684,289,640,169,612,108,585,69,567,58"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="569,103,588,115,626,156,656,203,677,249,690,287,685,289,672,251,651,205,622,159,585,119,567,108"/>
+<area shape="poly" id="edge12_Node000010_Node000002" title=" " alt="" coords="309,226,367,196,438,164,455,157,457,162,440,168,369,201,312,230"/>
+<area shape="rect" id="Node000011" href="$aux__func_8c.html#a273a13e41691394960eebd025f664bd6" title="Gets the position of the slider." alt="" coords="455,179,571,204"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="344,225,441,204,442,209,346,231"/>
+<area shape="rect" id="Node000012" href="$collision_8c.html#aeb4235e8e0390ac27d85aaac5e126807" title="Tests if a given point is within the slide button collision area." alt="" coords="451,228,574,253"/>
+<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="358,238,438,238,438,243,358,243"/>
+<area shape="rect" id="Node000013" href="$collision_8c.html#af1f3554bc4b49545e6c8b232dc84baa8" title="Tests if a given point is within the square button collision area." alt="" coords="439,277,587,303"/>
+<area shape="poly" id="edge16_Node000010_Node000013" title=" " alt="" coords="346,251,441,272,440,277,344,256"/>
+<area shape="poly" id="edge15_Node000012_Node000008" title=" " alt="" coords="556,251,588,262,658,293,656,298,586,267,554,256"/>
+<area shape="poly" id="edge17_Node000013_Node000008" title=" " alt="" coords="587,297,639,304,638,309,586,302"/>
+<area shape="rect" id="Node000015" href="$aux__dispositivos_8c.html#a12feaa4b91b2a749d13b96eab97d6662" title="Reads the output of the RTC based on the sent command." alt="" coords="635,5,759,31"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="338,19,439,15,621,14,621,20,439,21,338,25"/>
+<area shape="poly" id="edge20_Node000015_Node000004" title=" " alt="" coords="739,28,802,48,800,53,738,33"/>
+<area shape="poly" id="edge22_Node000016_Node000008" title=" " alt="" coords="569,329,638,319,639,325,569,334"/>
+<area shape="poly" id="edge24_Node000017_Node000008" title=" " alt="" coords="391,373,486,373,537,369,586,361,626,348,661,331,663,336,628,353,587,366,538,374,487,378,391,378"/>
+<area shape="poly" id="edge26_Node000018_Node000008" title=" " alt="" coords="383,414,482,405,535,395,586,381,631,359,668,333,671,337,633,364,588,386,536,400,483,410,383,419"/>
+<area shape="poly" id="edge28_Node000019_Node000008" title=" " alt="" coords="385,461,485,449,537,435,585,416,613,399,638,378,676,336,680,339,641,382,616,403,588,420,538,440,486,454,386,467"/>
+</map>

@@ -1,0 +1,548 @@
+\doxysection{src/prog/process/teclado\+\_\+process.c File Reference}
+\hypertarget{teclado__process_8c}{}\label{teclado__process_8c}\index{src/prog/process/teclado\_process.c@{src/prog/process/teclado\_process.c}}
+{\ttfamily \#include "{}teclado\+\_\+process.\+h"{}}\newline
+Include dependency graph for teclado\+\_\+process.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{teclado__process_8c_a0ee37f1e7303425b7d4fbf4f43f76fd5}{process\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs based on the current game state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8c_aae3ad73cea948d2846da46830634a16b}{process\+\_\+main\+\_\+menu\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs in the main menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8c_a5d3d3c043e06ce537a08a1fd50465245}{process\+\_\+game\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8c_ab9eaf45861a19da225a3292cc634c8af}{process\+\_\+select\+\_\+card\+\_\+\+P1}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}}, int max\+\_\+cards)
+\begin{DoxyCompactList}\small\item\em Processes the selection of cards for Player 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8c_a496e97d8fdbe56eaf529d3c1ebed3eae}{process\+\_\+select\+\_\+card\+\_\+\+P2}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}}, int max\+\_\+cards)
+\begin{DoxyCompactList}\small\item\em Processes the selection of cards for Player 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8c_a50d2690a2bd307bf886dec9178c98731}{process\+\_\+connection\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs during the connection phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8c_a4bbb02ce0c11506bd7749b4bba3c485e}{process\+\_\+invitation\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs during the invitation phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{teclado__process_8c_a4abd67bb8b6c4c87ff15f233ad803728}{process\+\_\+prepare\+\_\+round\+\_\+trump\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\item 
+void \mbox{\hyperlink{teclado__process_8c_a290cec00c38570d698fca32fb57a17fa}{process\+\_\+prepare\+\_\+round\+\_\+slide\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\item 
+void \mbox{\hyperlink{teclado__process_8c_a6fb4fb356f3d9a9155ad454c65103069}{process\+\_\+time\+\_\+tracker\+\_\+teclado}} (uint8\+\_\+t \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{teclado__process_8c_a4a2e9a802a7d2717096036db9853445e}{num\+\_\+cards}}
+\item 
+int \mbox{\hyperlink{teclado__process_8c_ae7397b90d6412f27103e2ddd3290afbb}{selected\+\_\+card\+\_\+player\+\_\+1}}
+\item 
+int \mbox{\hyperlink{teclado__process_8c_aa85e8f951e5ae1eab799914ed3916a84}{selected\+\_\+card\+\_\+player\+\_\+3}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{teclado__process_8c_acfeef0fb69a884a6407f55be9a44239d}{state\+\_\+of\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{teclado__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}{state\+\_\+of\+\_\+game\+\_\+previous}}
+\item 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} \mbox{\hyperlink{teclado__process_8c_acf3b88ad82da765f4133edaf7c34315f}{state\+\_\+main\+\_\+menu\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} \mbox{\hyperlink{teclado__process_8c_a49775543b61b6d7073a319a8cb5bb660}{state\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} \mbox{\hyperlink{teclado__process_8c_a3c13ebda1df4624b49da4526768fba3a}{state\+\_\+menu\+\_\+pause\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} \mbox{\hyperlink{teclado__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}{state\+\_\+multiplayer\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} \mbox{\hyperlink{teclado__process_8c_a2106df119fe4a2964e5b8e31295534fc}{state\+\_\+time\+\_\+tracker\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} \mbox{\hyperlink{teclado__process_8c_a491bc2f539592755fefc04bc9eedba0f}{state\+\_\+connection\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} \mbox{\hyperlink{teclado__process_8c_a18d9006704d3f9b8a71e0589315bc937}{state\+\_\+invited\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} \mbox{\hyperlink{teclado__process_8c_a5e23243b38366a394331c3ea89c5190d}{state\+\_\+sp\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} \mbox{\hyperlink{teclado__process_8c_aaa0bb0b7dff0cc701562858bde039341}{state\+\_\+select\+\_\+card\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} \mbox{\hyperlink{teclado__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}{state\+\_\+prepare\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} \mbox{\hyperlink{teclado__process_8c_a1d487359caf9090127372f89fcb84c59}{state\+\_\+split\+\_\+current}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{teclado__process_8c_a3e6e6f29084971899a686ce9a1a3387a}{player1}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{teclado__process_8c_a66e9c264dc76e28477f2848bfd9bd247}{player3}}
+\item 
+int \mbox{\hyperlink{teclado__process_8c_a28ee33f04adbe3bdd53e606aead42473}{trump\+\_\+location}}
+\item 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} \mbox{\hyperlink{teclado__process_8c_ab3a7c5625440730169d69d3a41ea0017}{round}}
+\item 
+int \mbox{\hyperlink{teclado__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}{slide\+\_\+number}}
+\item 
+int \mbox{\hyperlink{teclado__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc}{square\+\_\+x}}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{teclado__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80}{time\+\_\+end}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{teclado__process_8c_a50d2690a2bd307bf886dec9178c98731}\index{teclado\_process.c@{teclado\_process.c}!process\_connection\_teclado@{process\_connection\_teclado}}
+\index{process\_connection\_teclado@{process\_connection\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_connection\_teclado()}{process\_connection\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a50d2690a2bd307bf886dec9178c98731} 
+void process\+\_\+connection\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs during the connection phase. 
+
+Handles the processing of keyboard inputs during the connection phase. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the connection. Handles the actions to be performed when certain keys are pressed, and the navigation between different states using arrow keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a50d2690a2bd307bf886dec9178c98731_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a50d2690a2bd307bf886dec9178c98731_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_a5d3d3c043e06ce537a08a1fd50465245}\index{teclado\_process.c@{teclado\_process.c}!process\_game\_teclado@{process\_game\_teclado}}
+\index{process\_game\_teclado@{process\_game\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_game\_teclado()}{process\_game\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a5d3d3c043e06ce537a08a1fd50465245} 
+void process\+\_\+game\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs during the game. 
+
+Handles the processing of keyboard inputs during the game. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the game. Handles the navigation between different buttons in the pause menu and the actions to be performed when certain keys are pressed. Also processes the selection of cards in the game or multiplayer mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a5d3d3c043e06ce537a08a1fd50465245_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a5d3d3c043e06ce537a08a1fd50465245_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_a4bbb02ce0c11506bd7749b4bba3c485e}\index{teclado\_process.c@{teclado\_process.c}!process\_invitation\_teclado@{process\_invitation\_teclado}}
+\index{process\_invitation\_teclado@{process\_invitation\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_invitation\_teclado()}{process\_invitation\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a4bbb02ce0c11506bd7749b4bba3c485e} 
+void process\+\_\+invitation\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs during the invitation phase. 
+
+Handles the processing of keyboard inputs during the invitation phase. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the invitation. Handles the actions to be performed when certain keys are pressed, and the navigation between different states using arrow keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a4bbb02ce0c11506bd7749b4bba3c485e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a4bbb02ce0c11506bd7749b4bba3c485e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_aae3ad73cea948d2846da46830634a16b}\index{teclado\_process.c@{teclado\_process.c}!process\_main\_menu\_teclado@{process\_main\_menu\_teclado}}
+\index{process\_main\_menu\_teclado@{process\_main\_menu\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_main\_menu\_teclado()}{process\_main\_menu\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_aae3ad73cea948d2846da46830634a16b} 
+void process\+\_\+main\+\_\+menu\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs in the main menu. 
+
+Handles the processing of keyboard inputs in the main menu. Checks the scancode of the key pressed and performs actions based on the scancode and the current state of the main menu. Handles the navigation between different buttons in the main menu and the actions to be performed when certain keys are pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_aae3ad73cea948d2846da46830634a16b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_aae3ad73cea948d2846da46830634a16b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_a290cec00c38570d698fca32fb57a17fa}\index{teclado\_process.c@{teclado\_process.c}!process\_prepare\_round\_slide\_teclado@{process\_prepare\_round\_slide\_teclado}}
+\index{process\_prepare\_round\_slide\_teclado@{process\_prepare\_round\_slide\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_prepare\_round\_slide\_teclado()}{process\_prepare\_round\_slide\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a290cec00c38570d698fca32fb57a17fa} 
+void process\+\_\+prepare\+\_\+round\+\_\+slide\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a290cec00c38570d698fca32fb57a17fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a290cec00c38570d698fca32fb57a17fa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_a4abd67bb8b6c4c87ff15f233ad803728}\index{teclado\_process.c@{teclado\_process.c}!process\_prepare\_round\_trump\_teclado@{process\_prepare\_round\_trump\_teclado}}
+\index{process\_prepare\_round\_trump\_teclado@{process\_prepare\_round\_trump\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_prepare\_round\_trump\_teclado()}{process\_prepare\_round\_trump\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a4abd67bb8b6c4c87ff15f233ad803728} 
+void process\+\_\+prepare\+\_\+round\+\_\+trump\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a4abd67bb8b6c4c87ff15f233ad803728_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a4abd67bb8b6c4c87ff15f233ad803728_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_ab9eaf45861a19da225a3292cc634c8af}\index{teclado\_process.c@{teclado\_process.c}!process\_select\_card\_P1@{process\_select\_card\_P1}}
+\index{process\_select\_card\_P1@{process\_select\_card\_P1}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_select\_card\_P1()}{process\_select\_card\_P1()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_ab9eaf45861a19da225a3292cc634c8af} 
+void process\+\_\+select\+\_\+card\+\_\+\+P1 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{, }\item[{int}]{max\+\_\+cards}{}\end{DoxyParamCaption})}
+
+
+
+Processes the selection of cards for Player 1. 
+
+Handles the processing of keyboard inputs for the selection of cards for Player 1. Checks the scancode of the key pressed and performs actions based on the scancode. Handles the navigation between different cards using arrow keys and the action to be performed when the ENTER key is pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+{\em max\+\_\+cards} & The maximum number of cards that can be selected. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_ab9eaf45861a19da225a3292cc634c8af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_ab9eaf45861a19da225a3292cc634c8af_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_a496e97d8fdbe56eaf529d3c1ebed3eae}\index{teclado\_process.c@{teclado\_process.c}!process\_select\_card\_P2@{process\_select\_card\_P2}}
+\index{process\_select\_card\_P2@{process\_select\_card\_P2}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_select\_card\_P2()}{process\_select\_card\_P2()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a496e97d8fdbe56eaf529d3c1ebed3eae} 
+void process\+\_\+select\+\_\+card\+\_\+\+P2 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{, }\item[{int}]{max\+\_\+cards}{}\end{DoxyParamCaption})}
+
+
+
+Processes the selection of cards for Player 2. 
+
+Handles the processing of keyboard inputs for the selection of cards for Player 2. Checks the scancode of the key pressed and performs actions based on the scancode. Handles the navigation between different cards using arrow keys and the action to be performed when the ENTER key is pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+{\em max\+\_\+cards} & The maximum number of cards that can be selected. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a496e97d8fdbe56eaf529d3c1ebed3eae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a496e97d8fdbe56eaf529d3c1ebed3eae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_a0ee37f1e7303425b7d4fbf4f43f76fd5}\index{teclado\_process.c@{teclado\_process.c}!process\_teclado@{process\_teclado}}
+\index{process\_teclado@{process\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_teclado()}{process\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a0ee37f1e7303425b7d4fbf4f43f76fd5} 
+void process\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes keyboard inputs based on the current game state. 
+
+Handles the processing of keyboard inputs based on the current game state. If the game is in the main menu, processes the keyboard inputs for the main menu, connection, or invitation based on the current connection and invitation states. If the game is in the game state or multiplayer mode, it processes the keyboard inputs for the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & The scancode of the key pressed. \\
+\hline
+{\em teclado\+\_\+on} & Pointer to the variable that indicates if the keyboard is on. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a0ee37f1e7303425b7d4fbf4f43f76fd5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a0ee37f1e7303425b7d4fbf4f43f76fd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{teclado__process_8c_a6fb4fb356f3d9a9155ad454c65103069}\index{teclado\_process.c@{teclado\_process.c}!process\_time\_tracker\_teclado@{process\_time\_tracker\_teclado}}
+\index{process\_time\_tracker\_teclado@{process\_time\_tracker\_teclado}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_time\_tracker\_teclado()}{process\_time\_tracker\_teclado()}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a6fb4fb356f3d9a9155ad454c65103069} 
+void process\+\_\+time\+\_\+tracker\+\_\+teclado (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teclado__process_8c_a6fb4fb356f3d9a9155ad454c65103069_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{teclado__process_8c_a4a2e9a802a7d2717096036db9853445e}\index{teclado\_process.c@{teclado\_process.c}!num\_cards@{num\_cards}}
+\index{num\_cards@{num\_cards}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{num\_cards}{num\_cards}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a4a2e9a802a7d2717096036db9853445e} 
+int num\+\_\+cards\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a3e6e6f29084971899a686ce9a1a3387a}\index{teclado\_process.c@{teclado\_process.c}!player1@{player1}}
+\index{player1@{player1}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{player1}{player1}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a3e6e6f29084971899a686ce9a1a3387a} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a66e9c264dc76e28477f2848bfd9bd247}\index{teclado\_process.c@{teclado\_process.c}!player3@{player3}}
+\index{player3@{player3}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{player3}{player3}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a66e9c264dc76e28477f2848bfd9bd247} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_ab3a7c5625440730169d69d3a41ea0017}\index{teclado\_process.c@{teclado\_process.c}!round@{round}}
+\index{round@{round}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily \label{teclado__process_8c_ab3a7c5625440730169d69d3a41ea0017} 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} round\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_ae7397b90d6412f27103e2ddd3290afbb}\index{teclado\_process.c@{teclado\_process.c}!selected\_card\_player\_1@{selected\_card\_player\_1}}
+\index{selected\_card\_player\_1@{selected\_card\_player\_1}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_1}{selected\_card\_player\_1}}
+{\footnotesize\ttfamily \label{teclado__process_8c_ae7397b90d6412f27103e2ddd3290afbb} 
+int selected\+\_\+card\+\_\+player\+\_\+1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_aa85e8f951e5ae1eab799914ed3916a84}\index{teclado\_process.c@{teclado\_process.c}!selected\_card\_player\_3@{selected\_card\_player\_3}}
+\index{selected\_card\_player\_3@{selected\_card\_player\_3}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_3}{selected\_card\_player\_3}}
+{\footnotesize\ttfamily \label{teclado__process_8c_aa85e8f951e5ae1eab799914ed3916a84} 
+int selected\+\_\+card\+\_\+player\+\_\+3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}\index{teclado\_process.c@{teclado\_process.c}!slide\_number@{slide\_number}}
+\index{slide\_number@{slide\_number}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{slide\_number}{slide\_number}}
+{\footnotesize\ttfamily \label{teclado__process_8c_ab5d2a533d3c16134c03dd9727f2a2303} 
+int slide\+\_\+number\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc}\index{teclado\_process.c@{teclado\_process.c}!square\_x@{square\_x}}
+\index{square\_x@{square\_x}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{square\_x}{square\_x}}
+{\footnotesize\ttfamily \label{teclado__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc} 
+int square\+\_\+x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a491bc2f539592755fefc04bc9eedba0f}\index{teclado\_process.c@{teclado\_process.c}!state\_connection\_current@{state\_connection\_current}}
+\index{state\_connection\_current@{state\_connection\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_connection\_current}{state\_connection\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a491bc2f539592755fefc04bc9eedba0f} 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} state\+\_\+connection\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a49775543b61b6d7073a319a8cb5bb660}\index{teclado\_process.c@{teclado\_process.c}!state\_game\_current@{state\_game\_current}}
+\index{state\_game\_current@{state\_game\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_game\_current}{state\_game\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a49775543b61b6d7073a319a8cb5bb660} 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} state\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a18d9006704d3f9b8a71e0589315bc937}\index{teclado\_process.c@{teclado\_process.c}!state\_invited\_current@{state\_invited\_current}}
+\index{state\_invited\_current@{state\_invited\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_invited\_current}{state\_invited\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a18d9006704d3f9b8a71e0589315bc937} 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} state\+\_\+invited\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_acf3b88ad82da765f4133edaf7c34315f}\index{teclado\_process.c@{teclado\_process.c}!state\_main\_menu\_current@{state\_main\_menu\_current}}
+\index{state\_main\_menu\_current@{state\_main\_menu\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_main\_menu\_current}{state\_main\_menu\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_acf3b88ad82da765f4133edaf7c34315f} 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} state\+\_\+main\+\_\+menu\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a3c13ebda1df4624b49da4526768fba3a}\index{teclado\_process.c@{teclado\_process.c}!state\_menu\_pause\_current@{state\_menu\_pause\_current}}
+\index{state\_menu\_pause\_current@{state\_menu\_pause\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_menu\_pause\_current}{state\_menu\_pause\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a3c13ebda1df4624b49da4526768fba3a} 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} state\+\_\+menu\+\_\+pause\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}\index{teclado\_process.c@{teclado\_process.c}!state\_multiplayer\_current@{state\_multiplayer\_current}}
+\index{state\_multiplayer\_current@{state\_multiplayer\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_multiplayer\_current}{state\_multiplayer\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c} 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} state\+\_\+multiplayer\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_acfeef0fb69a884a6407f55be9a44239d}\index{teclado\_process.c@{teclado\_process.c}!state\_of\_game\_current@{state\_of\_game\_current}}
+\index{state\_of\_game\_current@{state\_of\_game\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_current}{state\_of\_game\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_acfeef0fb69a884a6407f55be9a44239d} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}\index{teclado\_process.c@{teclado\_process.c}!state\_of\_game\_previous@{state\_of\_game\_previous}}
+\index{state\_of\_game\_previous@{state\_of\_game\_previous}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_previous}{state\_of\_game\_previous}}
+{\footnotesize\ttfamily \label{teclado__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+previous\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}\index{teclado\_process.c@{teclado\_process.c}!state\_prepare\_current@{state\_prepare\_current}}
+\index{state\_prepare\_current@{state\_prepare\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_prepare\_current}{state\_prepare\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f} 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} state\+\_\+prepare\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_aaa0bb0b7dff0cc701562858bde039341}\index{teclado\_process.c@{teclado\_process.c}!state\_select\_card\_current@{state\_select\_card\_current}}
+\index{state\_select\_card\_current@{state\_select\_card\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_select\_card\_current}{state\_select\_card\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_aaa0bb0b7dff0cc701562858bde039341} 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} state\+\_\+select\+\_\+card\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a5e23243b38366a394331c3ea89c5190d}\index{teclado\_process.c@{teclado\_process.c}!state\_sp\_current@{state\_sp\_current}}
+\index{state\_sp\_current@{state\_sp\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_sp\_current}{state\_sp\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a5e23243b38366a394331c3ea89c5190d} 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} state\+\_\+sp\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a1d487359caf9090127372f89fcb84c59}\index{teclado\_process.c@{teclado\_process.c}!state\_split\_current@{state\_split\_current}}
+\index{state\_split\_current@{state\_split\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_split\_current}{state\_split\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a1d487359caf9090127372f89fcb84c59} 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} state\+\_\+split\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a2106df119fe4a2964e5b8e31295534fc}\index{teclado\_process.c@{teclado\_process.c}!state\_time\_tracker\_current@{state\_time\_tracker\_current}}
+\index{state\_time\_tracker\_current@{state\_time\_tracker\_current}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_time\_tracker\_current}{state\_time\_tracker\_current}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a2106df119fe4a2964e5b8e31295534fc} 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} state\+\_\+time\+\_\+tracker\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80}\index{teclado\_process.c@{teclado\_process.c}!time\_end@{time\_end}}
+\index{time\_end@{time\_end}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{time\_end}{time\_end}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} time\+\_\+end\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{teclado__process_8c_a28ee33f04adbe3bdd53e606aead42473}\index{teclado\_process.c@{teclado\_process.c}!trump\_location@{trump\_location}}
+\index{trump\_location@{trump\_location}!teclado\_process.c@{teclado\_process.c}}
+\doxysubsubsection{\texorpdfstring{trump\_location}{trump\_location}}
+{\footnotesize\ttfamily \label{teclado__process_8c_a28ee33f04adbe3bdd53e606aead42473} 
+int trump\+\_\+location\hspace{0.3cm}{\ttfamily [extern]}}
+

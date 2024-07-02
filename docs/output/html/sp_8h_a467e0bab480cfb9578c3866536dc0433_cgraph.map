@@ -1,0 +1,5 @@
+<map id="exit_serial_port" name="exit_serial_port">
+<area shape="rect" id="Node000001" title="Exits the serial port." alt="" coords="5,5,128,31"/>
+<area shape="rect" id="Node000002" href="$fila__sp_8c.html#a7ff2a9990961ae0ea2135720b76a465f" title="Clears the serial port queue." alt="" coords="176,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
+</map>

@@ -1,0 +1,89 @@
+\doxysection{src/prog/game.h File Reference}
+\hypertarget{game_8h}{}\label{game_8h}\index{src/prog/game.h@{src/prog/game.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/timer.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}../dispositivos/grafica/grafica.\+h"{}}\newline
+{\ttfamily \#include "{}../dispositivos/rato/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}../dispositivos/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}../dispositivos/rtc/rtc.\+h"{}}\newline
+{\ttfamily \#include "{}../dispositivos/sp/sp.\+h"{}}\newline
+{\ttfamily \#include "{}../dispositivos/interrupts.\+h"{}}\newline
+{\ttfamily \#include "{}../dispositivos/handler.\+h"{}}\newline
+{\ttfamily \#include "{}functions/composer.\+h"{}}\newline
+{\ttfamily \#include "{}functions/collision.\+h"{}}\newline
+{\ttfamily \#include "{}game\+\_\+rules/rules.\+h"{}}\newline
+{\ttfamily \#include "{}process/teclado\+\_\+process.\+h"{}}\newline
+{\ttfamily \#include "{}process/rato\+\_\+process.\+h"{}}\newline
+{\ttfamily \#include "{}process/timer\+\_\+process.\+h"{}}\newline
+{\ttfamily \#include "{}process/serial\+\_\+process.\+h"{}}\newline
+Include dependency graph for game.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8h_a0c3066e9555a95a71d7192ba757e135f}{loop\+\_\+interrupcoes}} ()
+\begin{DoxyCompactList}\small\item\em Main game loop handling hardware interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game_8h_a63e8f2a3a5b0421c4a291c02bc7a8a2a}{wait\+\_\+60\+\_\+seconds}} ()
+\begin{DoxyCompactList}\small\item\em Waits for 60 seconds during a pause in the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8h_a0c3066e9555a95a71d7192ba757e135f}\index{game.h@{game.h}!loop\_interrupcoes@{loop\_interrupcoes}}
+\index{loop\_interrupcoes@{loop\_interrupcoes}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{loop\_interrupcoes()}{loop\_interrupcoes()}}
+{\footnotesize\ttfamily \label{game_8h_a0c3066e9555a95a71d7192ba757e135f} 
+int loop\+\_\+interrupcoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Main game loop handling hardware interrupts. 
+
+Main game loop that handles hardware interrupts from the timer, keyboard, mouse, and serial port. Initializes and subscribes to the necessary hardware interrupts, processes the interrupts, and unsubscribes from the interrupts at the end. Also handles error checking for each operation and returns an error code if any operation fails. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a0c3066e9555a95a71d7192ba757e135f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{game_8h_a0c3066e9555a95a71d7192ba757e135f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8h_a63e8f2a3a5b0421c4a291c02bc7a8a2a}\index{game.h@{game.h}!wait\_60\_seconds@{wait\_60\_seconds}}
+\index{wait\_60\_seconds@{wait\_60\_seconds}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{wait\_60\_seconds()}{wait\_60\_seconds()}}
+{\footnotesize\ttfamily \label{game_8h_a63e8f2a3a5b0421c4a291c02bc7a8a2a} 
+int wait\+\_\+60\+\_\+seconds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Waits for 60 seconds during a pause in the game. 
+
+Increments a counter during a pause in the game. When the counter reaches the frames per second (fps) value, resets the counter and returns 1, effectively waiting for 60 seconds. If the game is not paused, returns 0. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a63e8f2a3a5b0421c4a291c02bc7a8a2a_icgraph}
+\end{center}
+\end{figure}

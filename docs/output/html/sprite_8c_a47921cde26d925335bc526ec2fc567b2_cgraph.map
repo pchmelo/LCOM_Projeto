@@ -1,0 +1,5 @@
+<map id="remover_sprite_mem" name="remover_sprite_mem">
+<area shape="rect" id="Node000001" title="Removes sprites from memory." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a344d1684775ee30816651e3b49ecae8f" title="Destroys a sprite." alt="" coords="216,5,332,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,15,202,15,202,21,168,21"/>
+</map>

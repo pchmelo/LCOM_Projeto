@@ -1,0 +1,7 @@
+<map id="process_rato_time_tracker" name="process_rato_time_tracker">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,200,31"/>
+<area shape="rect" id="Node000002" href="$collision_8c.html#add0b53555541a207b18b312728ab97fb" title="Tests if a given point is within the timer tracker &quot;confirm&quot; button collision area." alt="" coords="248,5,435,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,15,234,15,234,21,200,21"/>
+<area shape="rect" id="Node000003" href="$collision_8c.html#aa847ebd1f6d9f431211f82ea20568a5f" title="Checks if a point is inside a collision area." alt="" coords="483,5,572,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,15,469,15,469,21,435,21"/>
+</map>

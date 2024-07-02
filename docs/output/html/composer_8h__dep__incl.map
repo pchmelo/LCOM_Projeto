@@ -1,0 +1,33 @@
+<map id="src/prog/functions/composer.h" name="src/prog/functions/composer.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="417,5,556,45"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html" title=" " alt="" coords="5,93,144,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,45,157,96,145,98,144,93,155,91,403,40"/>
+<area shape="rect" id="Node000003" href="$game_8h.html" title=" " alt="" coords="251,189,378,214"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="444,55,393,95,351,146,323,190,319,187,347,143,389,91,441,51"/>
+<area shape="rect" id="Node000005" href="$teclado__process_8h.html" title=" " alt="" coords="626,269,806,309"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="570,33,628,42,685,54,734,70,752,80,765,92,783,124,786,154,779,186,765,222,750,249,731,271,727,267,745,246,760,220,774,184,781,154,778,125,761,95,749,85,731,75,684,59,627,47,569,38"/>
+<area shape="rect" id="Node000008" href="$rato__process_8h.html" title=" " alt="" coords="169,93,327,133"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="422,53,301,96,299,91,420,48"/>
+<area shape="rect" id="Node000010" href="$serial__process_8h.html" title=" " alt="" coords="403,93,571,133"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="489,59,489,93,484,93,484,59"/>
+<area shape="rect" id="Node000012" href="$timer__process_8h.html" title=" " alt="" coords="595,93,762,133"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="542,49,638,91,636,96,540,53"/>
+<area shape="rect" id="Node000004" href="$game_8c.html" title=" " alt="" coords="315,277,442,302"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="334,223,372,275,368,278,329,227"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="362,215,379,219,626,270,625,275,378,224,361,220"/>
+<area shape="rect" id="Node000007" href="$proj_8c.html" title=" " alt="" coords="210,277,291,302"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="300,227,262,278,257,275,296,223"/>
+<area shape="poly" id="edge5_Node000005_Node000001" title=" " alt="" coords="758,258,773,241,784,220,798,184,805,154,802,125,785,95,771,83,749,73,690,55,621,43,556,35,556,29,622,37,691,50,751,68,774,79,789,92,807,124,810,154,803,186,789,222,778,244,762,262"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="616,269,402,224,371,217,372,211,403,219,617,264"/>
+<area shape="rect" id="Node000006" href="$teclado__process_8c.html" title=" " alt="" coords="626,357,806,397"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="719,323,719,357,713,357,713,323"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="273,143,308,187,303,190,269,146"/>
+<area shape="rect" id="Node000009" href="$rato__process_8c.html" title=" " alt="" coords="69,181,227,221"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="217,144,172,183,168,179,214,140"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="438,142,339,191,336,186,436,137"/>
+<area shape="rect" id="Node000011" href="$serial__process_8c.html" title=" " alt="" coords="403,181,571,221"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="489,147,489,181,484,181,484,147"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="584,139,391,184,361,191,360,186,390,179,583,134"/>
+<area shape="rect" id="Node000013" href="$timer__process_8c.html" title=" " alt="" coords="595,181,762,221"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="681,147,681,181,676,181,676,147"/>
+</map>

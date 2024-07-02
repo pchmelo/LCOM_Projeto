@@ -1,0 +1,42 @@
+<map id="isPlayable" name="isPlayable">
+<area shape="rect" id="Node000001" title="Checks if a selected card is playable." alt="" coords="991,180,1080,205"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#a6c7cc7359a9f7454b8f0433f5d8774b0" title="Manages the game state." alt="" coords="811,5,898,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1023,168,993,105,970,72,941,44,920,33,897,26,899,21,922,28,944,40,974,69,998,103,1028,166"/>
+<area shape="rect" id="Node000007" href="$composer_8c.html#a0751beffc95521a2e8729c5556f9da38" title="Creates the game for player 1." alt="" coords="800,55,909,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1016,170,984,130,964,110,941,94,909,80,911,75,944,89,967,106,988,127,1020,167"/>
+<area shape="rect" id="Node000009" href="$composer_8c.html#a0bab17a2f62c67f1b12dda747dae2e47" title="Creates the game for player 2." alt="" coords="800,104,909,129"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="996,176,942,151,892,132,894,127,944,146,998,171"/>
+<area shape="rect" id="Node000011" href="$rato__process_8c.html#a24ce13e18f0e9cb0674c54d3fe885d3a" title="Processes mouse inputs during different game states." alt="" coords="575,205,681,231"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="977,193,879,192,767,197,682,209,681,204,766,191,879,186,977,188"/>
+<area shape="rect" id="Node000012" href="$rato__process_8c.html#a8d2c7a28e7be735956de6e02befdb313" title="Processes mouse inputs for Player 1 during the game." alt="" coords="791,205,919,231"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="977,203,919,212,919,206,976,198"/>
+<area shape="rect" id="Node000013" href="$rato__process_8c.html#a074eb76b6094f3d712031fd7c26b0f9f" title="Processes mouse inputs for Player 2 during the game." alt="" coords="791,255,919,280"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="1004,215,944,246,911,257,909,252,942,241,1002,210"/>
+<area shape="rect" id="Node000014" href="$teclado__process_8c.html#ab9eaf45861a19da225a3292cc634c8af" title="Processes the selection of cards for Player 1." alt="" coords="767,304,943,329"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="1020,219,988,258,967,278,944,295,920,306,917,302,941,290,964,274,984,254,1016,215"/>
+<area shape="rect" id="Node000017" href="$teclado__process_8c.html#a496e97d8fdbe56eaf529d3c1ebed3eae" title="Processes the selection of cards for Player 2." alt="" coords="767,353,943,379"/>
+<area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="1028,220,997,282,974,316,944,344,924,355,922,351,941,340,970,312,993,279,1023,217"/>
+<area shape="rect" id="Node000003" href="$timer__process_8c.html#a67d5c3dff00cb6a8b4a04324d8808d4c" title="Processes the game timer events and updates game states." alt="" coords="549,5,707,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="798,21,708,21,708,15,798,15"/>
+<area shape="rect" id="Node000004" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="369,80,483,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="561,37,538,44,453,82,451,78,536,40,559,32"/>
+<area shape="rect" id="Node000005" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,205,315,231"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="397,116,266,207,263,203,394,111"/>
+<area shape="rect" id="Node000006" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,205,128,231"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="163,221,128,221,128,215,163,215"/>
+<area shape="rect" id="Node000008" href="$timer__process_8c.html#a9f9192f61838e1bc485e138becf22079" title="Processes the game timer events and updates game states for Player 1 in multiplayer mode." alt="" coords="537,55,719,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="786,70,719,70,719,65,786,65"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="524,83,484,88,483,83,523,78"/>
+<area shape="rect" id="Node000010" href="$timer__process_8c.html#adf8442c897e4175d1a7f55cffd57257b" title="Processes the game timer events and updates game states for Player 2 in multiplayer mode." alt="" coords="537,104,719,129"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="786,119,719,119,719,114,786,114"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="523,107,483,102,484,97,524,102"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="561,221,315,221,315,215,561,215"/>
+<area shape="poly" id="edge15_Node000012_Node000011" title=" " alt="" coords="777,221,681,221,681,215,777,215"/>
+<area shape="poly" id="edge17_Node000013_Node000011" title=" " alt="" coords="782,254,680,232,681,227,783,249"/>
+<area shape="rect" id="Node000015" href="$teclado__process_8c.html#a5d3d3c043e06ce537a08a1fd50465245" title="Processes keyboard inputs during the game." alt="" coords="543,304,713,329"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="753,319,713,319,713,314,753,314"/>
+<area shape="rect" id="Node000016" href="$teclado__process_8c.html#a0ee37f1e7303425b7d4fbf4f43f76fd5" title="Processes keyboard inputs based on the current game state." alt="" coords="363,280,489,305"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="529,308,489,303,490,298,529,302"/>
+<area shape="poly" id="edge21_Node000016_Node000005" title=" " alt="" coords="380,277,276,233,278,228,382,272"/>
+<area shape="poly" id="edge23_Node000017_Node000015" title=" " alt="" coords="782,353,687,332,688,327,783,348"/>
+</map>

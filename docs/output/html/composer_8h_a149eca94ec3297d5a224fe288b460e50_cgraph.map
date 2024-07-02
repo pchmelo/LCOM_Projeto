@@ -1,0 +1,7 @@
+<map id="criar_mao_grabbed_P2" name="criar_mao_grabbed_P2">
+<area shape="rect" id="Node000001" title="Creates the hand of grabbed cards for player 2." alt="" coords="5,5,176,31"/>
+<area shape="rect" id="Node000002" href="$grafica_8c.html#afe44ad8c40405c5ae1dd181c70e5d2e6" title="Prints a form from an XPM sprite." alt="" coords="224,5,407,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,15,210,15,210,21,177,21"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#a1ebb4488d400f798504117c353edd1bd" title="Draws a pixel based on the received parameters." alt="" coords="455,5,575,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,15,441,15,441,21,407,21"/>
+</map>

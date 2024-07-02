@@ -1,0 +1,7 @@
+<map id="rtc_get_time" name="rtc_get_time">
+<area shape="rect" id="Node000001" title="Gets the current time from the RTC." alt="" coords="5,5,109,31"/>
+<area shape="rect" id="Node000002" href="$aux__dispositivos_8c.html#a12feaa4b91b2a749d13b96eab97d6662" title="Reads the output of the RTC based on the sent command." alt="" coords="157,5,281,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,15,144,15,144,21,110,21"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="329,5,428,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="282,15,316,15,316,21,282,21"/>
+</map>

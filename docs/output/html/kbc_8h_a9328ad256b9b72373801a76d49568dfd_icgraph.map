@@ -1,0 +1,9 @@
+<map id="write_command_KBC" name="write_command_KBC">
+<area shape="rect" id="Node000001" title="Writes a command byte to the Keyboard Controller." alt="" coords="517,5,679,31"/>
+<area shape="rect" id="Node000002" href="$mouse_8c.html#a01a70d44c0ecd2ff75328d443517b08c" title="Writes a command directly to the Mouse." alt="" coords="363,5,469,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="503,21,470,21,470,15,503,15"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,5,315,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,21,315,21,315,15,349,15"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="163,21,128,21,128,15,163,15"/>
+</map>

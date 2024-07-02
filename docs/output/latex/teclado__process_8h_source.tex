@@ -1,0 +1,45 @@
+\doxysection{teclado\+\_\+process.\+h}
+\hypertarget{teclado__process_8h_source}{}\label{teclado__process_8h_source}\index{src/prog/process/teclado\_process.h@{src/prog/process/teclado\_process.h}}
+\mbox{\hyperlink{teclado__process_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TECLADO\_PROCESS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TECLADO\_PROCESS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{composer_8h}{../functions/composer.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{i8042_8h}{../../dispositivos/i8042.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sp_8h}{../../dispositivos/sp/sp.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rules_8h}{../game\_rules/rules.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{game_8h}{../game.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{aux__func_8h}{../functions/aux\_func.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a0ee37f1e7303425b7d4fbf4f43f76fd5}{process\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_aae3ad73cea948d2846da46830634a16b}{process\_main\_menu\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a5d3d3c043e06ce537a08a1fd50465245}{process\_game\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_ab9eaf45861a19da225a3292cc634c8af}{process\_select\_card\_P1}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}},\ \textcolor{keywordtype}{int}\ max\_cards);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00083\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a496e97d8fdbe56eaf529d3c1ebed3eae}{process\_select\_card\_P2}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}},\ \textcolor{keywordtype}{int}\ max\_cards);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a50d2690a2bd307bf886dec9178c98731}{process\_connection\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00111\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a4bbb02ce0c11506bd7749b4bba3c485e}{process\_invitation\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a4abd67bb8b6c4c87ff15f233ad803728}{process\_prepare\_round\_trump\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a290cec00c38570d698fca32fb57a17fa}{process\_prepare\_round\_slide\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{teclado__process_8h_a6fb4fb356f3d9a9155ad454c65103069}{process\_time\_tracker\_teclado}}(uint8\_t\ \mbox{\hyperlink{handler_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\_on}},\ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\_on}});}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TECLADO\_PROCESS\_H}}
+
+\end{DoxyCode}

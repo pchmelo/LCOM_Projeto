@@ -1,0 +1,5 @@
+<map id="printar_form_xpm_sprite" name="printar_form_xpm_sprite">
+<area shape="rect" id="Node000001" title="Prints a form from an XPM sprite." alt="" coords="5,5,188,31"/>
+<area shape="rect" id="Node000002" href="$aux__dispositivos_8c.html#a1ebb4488d400f798504117c353edd1bd" title="Draws a pixel based on the received parameters." alt="" coords="236,5,356,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,15,222,15,222,21,188,21"/>
+</map>

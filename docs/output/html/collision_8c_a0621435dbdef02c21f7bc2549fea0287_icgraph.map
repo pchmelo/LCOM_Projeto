@@ -1,0 +1,7 @@
+<map id="allocate_collision_array" name="allocate_collision_array">
+<area shape="rect" id="Node000001" title="Allocates collision arrays for the main and pause menus." alt="" coords="363,5,497,45"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,13,315,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="349,28,315,28,315,23,349,23"/>
+<area shape="rect" id="Node000003" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,13,128,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,28,128,28,128,23,163,23"/>
+</map>

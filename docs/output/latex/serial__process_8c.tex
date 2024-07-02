@@ -1,0 +1,279 @@
+\doxysection{src/prog/process/serial\+\_\+process.c File Reference}
+\hypertarget{serial__process_8c}{}\label{serial__process_8c}\index{src/prog/process/serial\_process.c@{src/prog/process/serial\_process.c}}
+{\ttfamily \#include "{}serial\+\_\+process.\+h"{}}\newline
+Include dependency graph for serial\+\_\+process.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{serial__process_8c_a72ebc9c8b6ee1b881cfa1497b89de292}{serial\+\_\+process}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs during different game states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__process_8c_a9526b4b80c4e0c0ca0bde7eb40d5bfde}{serial\+\_\+process\+\_\+main\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs in the main menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__process_8c_a70897b5243566bc91472ad8b5611b9e3}{serial\+\_\+process\+\_\+\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs for Player 1 during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serial__process_8c_aa4d3a936659696a543c9eb4241cedac2}{serial\+\_\+process\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Processes serial inputs for Player 2 during the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{serial__process_8c_acfeef0fb69a884a6407f55be9a44239d}{state\+\_\+of\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{serial__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}{state\+\_\+of\+\_\+game\+\_\+previous}}
+\item 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} \mbox{\hyperlink{serial__process_8c_acf3b88ad82da765f4133edaf7c34315f}{state\+\_\+main\+\_\+menu\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} \mbox{\hyperlink{serial__process_8c_a49775543b61b6d7073a319a8cb5bb660}{state\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} \mbox{\hyperlink{serial__process_8c_a3c13ebda1df4624b49da4526768fba3a}{state\+\_\+menu\+\_\+pause\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} \mbox{\hyperlink{serial__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}{state\+\_\+multiplayer\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} \mbox{\hyperlink{serial__process_8c_ab3a7c5625440730169d69d3a41ea0017}{round}}
+\item 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} \mbox{\hyperlink{serial__process_8c_a491bc2f539592755fefc04bc9eedba0f}{state\+\_\+connection\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} \mbox{\hyperlink{serial__process_8c_a18d9006704d3f9b8a71e0589315bc937}{state\+\_\+invited\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} \mbox{\hyperlink{serial__process_8c_a5e23243b38366a394331c3ea89c5190d}{state\+\_\+sp\+\_\+current}}
+\item 
+int \mbox{\hyperlink{serial__process_8c_ae7397b90d6412f27103e2ddd3290afbb}{selected\+\_\+card\+\_\+player\+\_\+1}}
+\item 
+int \mbox{\hyperlink{serial__process_8c_aa85e8f951e5ae1eab799914ed3916a84}{selected\+\_\+card\+\_\+player\+\_\+3}}
+\item 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} \mbox{\hyperlink{serial__process_8c_aaa0bb0b7dff0cc701562858bde039341}{state\+\_\+select\+\_\+card\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} \mbox{\hyperlink{serial__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}{state\+\_\+prepare\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} \mbox{\hyperlink{serial__process_8c_a2106df119fe4a2964e5b8e31295534fc}{state\+\_\+time\+\_\+tracker\+\_\+current}}
+\item 
+int \mbox{\hyperlink{serial__process_8c_a28ee33f04adbe3bdd53e606aead42473}{trump\+\_\+location}}
+\item 
+int \mbox{\hyperlink{serial__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}{slide\+\_\+number}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{serial__process_8c_ae4bf90bce11d52b3b50d5899e43e8c47}{value\+\_\+sp}}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{serial__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80}{time\+\_\+end}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{serial__process_8c_a72ebc9c8b6ee1b881cfa1497b89de292}\index{serial\_process.c@{serial\_process.c}!serial\_process@{serial\_process}}
+\index{serial\_process@{serial\_process}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{serial\_process()}{serial\_process()}}
+{\footnotesize\ttfamily \label{serial__process_8c_a72ebc9c8b6ee1b881cfa1497b89de292} 
+void serial\+\_\+process (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs during different game states. 
+
+Handles the processing of serial inputs during different game states. Checks the current state of the game and performs actions based on the state. Handles the actions to be performed in the main menu, multiplayer mode, and other states. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c_a72ebc9c8b6ee1b881cfa1497b89de292_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c_a72ebc9c8b6ee1b881cfa1497b89de292_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__process_8c_a9526b4b80c4e0c0ca0bde7eb40d5bfde}\index{serial\_process.c@{serial\_process.c}!serial\_process\_main\_menu@{serial\_process\_main\_menu}}
+\index{serial\_process\_main\_menu@{serial\_process\_main\_menu}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{serial\_process\_main\_menu()}{serial\_process\_main\_menu()}}
+{\footnotesize\ttfamily \label{serial__process_8c_a9526b4b80c4e0c0ca0bde7eb40d5bfde} 
+void serial\+\_\+process\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs in the main menu. 
+
+Handles the processing of serial inputs in the main menu. Checks the value of the serial port and performs actions based on the value. Handles the actions to be performed when the player starts a multiplayer session, accepts an invite, or disconnects from the session. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c_a9526b4b80c4e0c0ca0bde7eb40d5bfde_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__process_8c_a70897b5243566bc91472ad8b5611b9e3}\index{serial\_process.c@{serial\_process.c}!serial\_process\_P1@{serial\_process\_P1}}
+\index{serial\_process\_P1@{serial\_process\_P1}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{serial\_process\_P1()}{serial\_process\_P1()}}
+{\footnotesize\ttfamily \label{serial__process_8c_a70897b5243566bc91472ad8b5611b9e3} 
+void serial\+\_\+process\+\_\+\+P1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs for Player 1 during the game. 
+
+Handles the processing of serial inputs for Player 1 during the game. Checks the received value and performs actions based on the value. Handles the actions to be performed when Player 2 disconnects, the game is initialized, and when Player 3 plays a card. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c_a70897b5243566bc91472ad8b5611b9e3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c_a70897b5243566bc91472ad8b5611b9e3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serial__process_8c_aa4d3a936659696a543c9eb4241cedac2}\index{serial\_process.c@{serial\_process.c}!serial\_process\_P2@{serial\_process\_P2}}
+\index{serial\_process\_P2@{serial\_process\_P2}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{serial\_process\_P2()}{serial\_process\_P2()}}
+{\footnotesize\ttfamily \label{serial__process_8c_aa4d3a936659696a543c9eb4241cedac2} 
+void serial\+\_\+process\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes serial inputs for Player 2 during the game. 
+
+Handles the processing of serial inputs for Player 2 during the game. Checks the received value and performs actions based on the value. Handles the actions to be performed when Player 1 disconnects, the game is initialized, and when Player 1 plays a card. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c_aa4d3a936659696a543c9eb4241cedac2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serial__process_8c_aa4d3a936659696a543c9eb4241cedac2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{serial__process_8c_ab3a7c5625440730169d69d3a41ea0017}\index{serial\_process.c@{serial\_process.c}!round@{round}}
+\index{round@{round}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily \label{serial__process_8c_ab3a7c5625440730169d69d3a41ea0017} 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} round\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_ae7397b90d6412f27103e2ddd3290afbb}\index{serial\_process.c@{serial\_process.c}!selected\_card\_player\_1@{selected\_card\_player\_1}}
+\index{selected\_card\_player\_1@{selected\_card\_player\_1}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_1}{selected\_card\_player\_1}}
+{\footnotesize\ttfamily \label{serial__process_8c_ae7397b90d6412f27103e2ddd3290afbb} 
+int selected\+\_\+card\+\_\+player\+\_\+1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_aa85e8f951e5ae1eab799914ed3916a84}\index{serial\_process.c@{serial\_process.c}!selected\_card\_player\_3@{selected\_card\_player\_3}}
+\index{selected\_card\_player\_3@{selected\_card\_player\_3}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_3}{selected\_card\_player\_3}}
+{\footnotesize\ttfamily \label{serial__process_8c_aa85e8f951e5ae1eab799914ed3916a84} 
+int selected\+\_\+card\+\_\+player\+\_\+3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}\index{serial\_process.c@{serial\_process.c}!slide\_number@{slide\_number}}
+\index{slide\_number@{slide\_number}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{slide\_number}{slide\_number}}
+{\footnotesize\ttfamily \label{serial__process_8c_ab5d2a533d3c16134c03dd9727f2a2303} 
+int slide\+\_\+number\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a491bc2f539592755fefc04bc9eedba0f}\index{serial\_process.c@{serial\_process.c}!state\_connection\_current@{state\_connection\_current}}
+\index{state\_connection\_current@{state\_connection\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_connection\_current}{state\_connection\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_a491bc2f539592755fefc04bc9eedba0f} 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} state\+\_\+connection\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a49775543b61b6d7073a319a8cb5bb660}\index{serial\_process.c@{serial\_process.c}!state\_game\_current@{state\_game\_current}}
+\index{state\_game\_current@{state\_game\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_game\_current}{state\_game\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_a49775543b61b6d7073a319a8cb5bb660} 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} state\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a18d9006704d3f9b8a71e0589315bc937}\index{serial\_process.c@{serial\_process.c}!state\_invited\_current@{state\_invited\_current}}
+\index{state\_invited\_current@{state\_invited\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_invited\_current}{state\_invited\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_a18d9006704d3f9b8a71e0589315bc937} 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} state\+\_\+invited\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_acf3b88ad82da765f4133edaf7c34315f}\index{serial\_process.c@{serial\_process.c}!state\_main\_menu\_current@{state\_main\_menu\_current}}
+\index{state\_main\_menu\_current@{state\_main\_menu\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_main\_menu\_current}{state\_main\_menu\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_acf3b88ad82da765f4133edaf7c34315f} 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} state\+\_\+main\+\_\+menu\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a3c13ebda1df4624b49da4526768fba3a}\index{serial\_process.c@{serial\_process.c}!state\_menu\_pause\_current@{state\_menu\_pause\_current}}
+\index{state\_menu\_pause\_current@{state\_menu\_pause\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_menu\_pause\_current}{state\_menu\_pause\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_a3c13ebda1df4624b49da4526768fba3a} 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} state\+\_\+menu\+\_\+pause\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}\index{serial\_process.c@{serial\_process.c}!state\_multiplayer\_current@{state\_multiplayer\_current}}
+\index{state\_multiplayer\_current@{state\_multiplayer\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_multiplayer\_current}{state\_multiplayer\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c} 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} state\+\_\+multiplayer\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_acfeef0fb69a884a6407f55be9a44239d}\index{serial\_process.c@{serial\_process.c}!state\_of\_game\_current@{state\_of\_game\_current}}
+\index{state\_of\_game\_current@{state\_of\_game\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_current}{state\_of\_game\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_acfeef0fb69a884a6407f55be9a44239d} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}\index{serial\_process.c@{serial\_process.c}!state\_of\_game\_previous@{state\_of\_game\_previous}}
+\index{state\_of\_game\_previous@{state\_of\_game\_previous}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_previous}{state\_of\_game\_previous}}
+{\footnotesize\ttfamily \label{serial__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+previous\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}\index{serial\_process.c@{serial\_process.c}!state\_prepare\_current@{state\_prepare\_current}}
+\index{state\_prepare\_current@{state\_prepare\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_prepare\_current}{state\_prepare\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f} 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} state\+\_\+prepare\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_aaa0bb0b7dff0cc701562858bde039341}\index{serial\_process.c@{serial\_process.c}!state\_select\_card\_current@{state\_select\_card\_current}}
+\index{state\_select\_card\_current@{state\_select\_card\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_select\_card\_current}{state\_select\_card\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_aaa0bb0b7dff0cc701562858bde039341} 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} state\+\_\+select\+\_\+card\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a5e23243b38366a394331c3ea89c5190d}\index{serial\_process.c@{serial\_process.c}!state\_sp\_current@{state\_sp\_current}}
+\index{state\_sp\_current@{state\_sp\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_sp\_current}{state\_sp\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_a5e23243b38366a394331c3ea89c5190d} 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} state\+\_\+sp\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a2106df119fe4a2964e5b8e31295534fc}\index{serial\_process.c@{serial\_process.c}!state\_time\_tracker\_current@{state\_time\_tracker\_current}}
+\index{state\_time\_tracker\_current@{state\_time\_tracker\_current}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_time\_tracker\_current}{state\_time\_tracker\_current}}
+{\footnotesize\ttfamily \label{serial__process_8c_a2106df119fe4a2964e5b8e31295534fc} 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} state\+\_\+time\+\_\+tracker\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80}\index{serial\_process.c@{serial\_process.c}!time\_end@{time\_end}}
+\index{time\_end@{time\_end}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{time\_end}{time\_end}}
+{\footnotesize\ttfamily \label{serial__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} time\+\_\+end\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_a28ee33f04adbe3bdd53e606aead42473}\index{serial\_process.c@{serial\_process.c}!trump\_location@{trump\_location}}
+\index{trump\_location@{trump\_location}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{trump\_location}{trump\_location}}
+{\footnotesize\ttfamily \label{serial__process_8c_a28ee33f04adbe3bdd53e606aead42473} 
+int trump\+\_\+location\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{serial__process_8c_ae4bf90bce11d52b3b50d5899e43e8c47}\index{serial\_process.c@{serial\_process.c}!value\_sp@{value\_sp}}
+\index{value\_sp@{value\_sp}!serial\_process.c@{serial\_process.c}}
+\doxysubsubsection{\texorpdfstring{value\_sp}{value\_sp}}
+{\footnotesize\ttfamily \label{serial__process_8c_ae4bf90bce11d52b3b50d5899e43e8c47} 
+uint8\+\_\+t value\+\_\+sp\hspace{0.3cm}{\ttfamily [extern]}}
+

@@ -1,0 +1,9 @@
+<map id="process_prepare_round_slide_teclado" name="process_prepare_round_slide_teclado">
+<area shape="rect" id="Node000001" title=" " alt="" coords="537,5,711,45"/>
+<area shape="rect" id="Node000002" href="$teclado__process_8c.html#a0ee37f1e7303425b7d4fbf4f43f76fd5" title="Processes keyboard inputs based on the current game state." alt="" coords="363,13,489,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="523,28,489,28,489,23,523,23"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,13,315,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,28,315,28,315,23,349,23"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,13,128,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="163,28,128,28,128,23,163,23"/>
+</map>

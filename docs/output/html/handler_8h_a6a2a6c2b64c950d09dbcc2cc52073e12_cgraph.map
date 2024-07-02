@@ -1,0 +1,10 @@
+<map id="keyboard_ih" name="keyboard_ih">
+<area shape="rect" id="Node000001" title="Keyboard interrupt handler." alt="" coords="5,31,107,56"/>
+<area shape="rect" id="Node000002" href="$kbc_8c.html#af00123e2b17f85beb8565fddd0e7385a" title="Reads the output of the Keyboard Controller." alt="" coords="155,31,277,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,41,141,41,141,46,107,46"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#aea12e94b49a4890d1f6b6ef71437586e" title="Reads the status of the Keyboard Controller." alt="" coords="325,5,445,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="277,32,311,26,312,32,278,37"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="493,31,592,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="278,41,480,41,480,46,278,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="446,25,480,31,479,36,445,30"/>
+</map>

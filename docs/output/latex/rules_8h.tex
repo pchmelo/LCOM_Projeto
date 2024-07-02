@@ -1,0 +1,450 @@
+\doxysection{src/prog/game\+\_\+rules/rules.h File Reference}
+\hypertarget{rules_8h}{}\label{rules_8h}\index{src/prog/game\_rules/rules.h@{src/prog/game\_rules/rules.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}../functions/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}../functions/aux\+\_\+func.\+h"{}}\newline
+Include dependency graph for rules.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_card}{Card}}
+\item 
+struct \mbox{\hyperlink{structrules}{rules}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rules_8h_ab48a679225d82ec51e09e62d14313b34}{DECK\+\_\+\+SIZE}}~40
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structrules}{rules}} \mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rules_8h_ab13c958758a438df8ffa77ca4975bc55}{fill\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Fills a deck of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8h_aebdb0f340a4800e7b841571ffc1f5da9}{shuffle\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Shuffles the deck of cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8h_a1c629ccbdb12749b09e75c86f2759650}{shuffle\+Deck\+Seed}} ()
+\begin{DoxyCompactList}\small\item\em Shuffles the deck of cards with a seed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8h_a273228885ce4b0b07699c595b93f4d63}{get\+Top}} ()
+\begin{DoxyCompactList}\small\item\em Deals a card from the deck. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{rules_8h_a4d10df4c26ab05e602410300279f2066}{get\+Bottom}} ()
+\begin{DoxyCompactList}\small\item\em Deals a card from the deck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8h_aeaefd5413bdb591b46cb4f4ff0442d48}{split\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Splits and reorders a deck of cards. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rules_8h_abf760716bfff375324964b5f23708c3d}{process\+Round}} ()
+\begin{DoxyCompactList}\small\item\em Processes a round of a card game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{rules_8h_af3766cd05cc46936abb71224c2d061ee}{is\+Playable}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Hand, int num\+Cards, \mbox{\hyperlink{struct_card}{Card}} selected\+Card)
+\begin{DoxyCompactList}\small\item\em Checks if a selected card is playable. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rules_8h_adebe5c3d5222f8b9e4ffe63ec311000f}{bot\+Play\+Card}} (\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}player\+Deck)
+\begin{DoxyCompactList}\small\item\em Determines the card to be played by the bot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{rules_8h_a3df79d631c10ddcff7ef8064fb4534ac}{get\+Sprite}} (int rank, int suit)
+\begin{DoxyCompactList}\small\item\em Retrieves the sprite for a card based on its rank and suit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8h_a54c0cd193fcd3f116ad8ef4b233eb391}{fill\+Players\+Hand}} (int order, int player\+Num)
+\begin{DoxyCompactList}\small\item\em Fills the hands of the players with cards from the deck. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8h_a17004f10be86cdd8b324a0bfbdf3271e}{remove\+Card}} (int player, int card\+Index)
+\begin{DoxyCompactList}\small\item\em Removes a card from a player\textquotesingle{}s hand. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rules_8h_a91a0d490a3563ee97302b9a4eda45f67}{remove\+Card\+Hand}} (\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \texorpdfstring{$\ast$}{*}player, int card\+Index, int num\+Cards)
+\begin{DoxyCompactList}\small\item\em Removes a card from a player\textquotesingle{}s hand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{rules_8h_ab48a679225d82ec51e09e62d14313b34}\index{rules.h@{rules.h}!DECK\_SIZE@{DECK\_SIZE}}
+\index{DECK\_SIZE@{DECK\_SIZE}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{DECK\_SIZE}{DECK\_SIZE}}
+{\footnotesize\ttfamily \label{rules_8h_ab48a679225d82ec51e09e62d14313b34} 
+\#define DECK\+\_\+\+SIZE~40}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}\index{rules.h@{rules.h}!Player@{Player}}
+\index{Player@{Player}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \label{rules_8h_a62adeb6a57ce9bdfff368969e21e9207} 
+typedef struct \mbox{\hyperlink{structrules}{rules}} \mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rules_8h_adebe5c3d5222f8b9e4ffe63ec311000f}\index{rules.h@{rules.h}!botPlayCard@{botPlayCard}}
+\index{botPlayCard@{botPlayCard}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{botPlayCard()}{botPlayCard()}}
+{\footnotesize\ttfamily \label{rules_8h_adebe5c3d5222f8b9e4ffe63ec311000f} 
+int bot\+Play\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Deck}{}\end{DoxyParamCaption})}
+
+
+
+Determines the card to be played by the bot. 
+
+Decides which card the bot should play based on the current round suit and trump suit. If the round suit hasn\textquotesingle{}t been set, it sets the round suit to the suit of the first card in the bot\textquotesingle{}s deck and plays that card. If the bot has a card of the round suit, it plays that card. If the bot doesn\textquotesingle{}t have a card of the round suit, but has a card of the trump suit, it plays that card. If the bot doesn\textquotesingle{}t have a card of either the round suit or the trump suit, it plays the first card in its deck.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Deck} & Pointer to the array of cards in the bot\textquotesingle{}s deck. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the card to be played in the bot\textquotesingle{}s deck. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_adebe5c3d5222f8b9e4ffe63ec311000f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_ab13c958758a438df8ffa77ca4975bc55}\index{rules.h@{rules.h}!fillDeck@{fillDeck}}
+\index{fillDeck@{fillDeck}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{fillDeck()}{fillDeck()}}
+{\footnotesize\ttfamily \label{rules_8h_ab13c958758a438df8ffa77ca4975bc55} 
+void fill\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Fills a deck of cards. 
+
+Initializes a deck of cards, assigning each card a rank, suit, value, and sprite. Fills the deck in a specific order, with the rank and suit incrementing sequentially. The value of the cards is determined by a switch statement, with specific values assigned to ranks 5-\/9. All other ranks are assigned a value of 0. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{rules_8h_ab13c958758a438df8ffa77ca4975bc55_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_ab13c958758a438df8ffa77ca4975bc55_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_a54c0cd193fcd3f116ad8ef4b233eb391}\index{rules.h@{rules.h}!fillPlayersHand@{fillPlayersHand}}
+\index{fillPlayersHand@{fillPlayersHand}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{fillPlayersHand()}{fillPlayersHand()}}
+{\footnotesize\ttfamily \label{rules_8h_a54c0cd193fcd3f116ad8ef4b233eb391} 
+void fill\+Players\+Hand (\begin{DoxyParamCaption}\item[{int}]{order}{, }\item[{int}]{player\+Num}{}\end{DoxyParamCaption})}
+
+
+
+Fills the hands of the players with cards from the deck. 
+
+Distributes cards from the deck to the players\textquotesingle{} hands. The order of distribution is determined by the \textquotesingle{}order\textquotesingle{} parameter\+: 1 for clockwise and 0 for counter-\/clockwise. Each player is given 10 cards from the deck.
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & The order of distribution\+: 1 for clockwise, 0 for counter-\/clockwise. \\
+\hline
+{\em player\+Num} & The player number (1-\/4) to be dealt cards first. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a54c0cd193fcd3f116ad8ef4b233eb391_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_a4d10df4c26ab05e602410300279f2066}\index{rules.h@{rules.h}!getBottom@{getBottom}}
+\index{getBottom@{getBottom}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{getBottom()}{getBottom()}}
+{\footnotesize\ttfamily \label{rules_8h_a4d10df4c26ab05e602410300279f2066} 
+\mbox{\hyperlink{struct_card}{Card}} get\+Bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Deals a card from the deck. 
+
+Deals a card from the deck, removing the card from the deck and returning it. The card is removed from the bottom of the deck, and the deck is resized accordingly.
+
+\begin{DoxyReturn}{Returns}
+The card that was dealt. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a4d10df4c26ab05e602410300279f2066_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_a3df79d631c10ddcff7ef8064fb4534ac}\index{rules.h@{rules.h}!getSprite@{getSprite}}
+\index{getSprite@{getSprite}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{getSprite()}{getSprite()}}
+{\footnotesize\ttfamily \label{rules_8h_a3df79d631c10ddcff7ef8064fb4534ac} 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} get\+Sprite (\begin{DoxyParamCaption}\item[{int}]{rank}{, }\item[{int}]{suit}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the sprite for a card based on its rank and suit. 
+
+Maps a card\textquotesingle{}s rank and suit to it\textquotesingle{}s sprite. The rank is mapped to a number from 0 to 9, representing 2, 3, 4, 5, 6, Q, J, K, 7, and Ace respectively. The suit is mapped to a number from 0 to 3, representing clubs, diamonds, hearts, and spades respectively. If the rank or suit does not match any of the predefined values, the function returns NULL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & The rank of the card. \\
+\hline
+{\em suit} & The suit of the card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sprite representing the card, or NULL if the rank or suit is invalid. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a3df79d631c10ddcff7ef8064fb4534ac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_a273228885ce4b0b07699c595b93f4d63}\index{rules.h@{rules.h}!getTop@{getTop}}
+\index{getTop@{getTop}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{getTop()}{getTop()}}
+{\footnotesize\ttfamily \label{rules_8h_a273228885ce4b0b07699c595b93f4d63} 
+\mbox{\hyperlink{struct_card}{Card}} get\+Top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Deals a card from the deck. 
+
+Deals a card from the deck, removing the card from the deck and returning it. The card is removed from the top of the deck, and the deck is resized accordingly.
+
+\begin{DoxyReturn}{Returns}
+The card that was dealt. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a273228885ce4b0b07699c595b93f4d63_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_af3766cd05cc46936abb71224c2d061ee}\index{rules.h@{rules.h}!isPlayable@{isPlayable}}
+\index{isPlayable@{isPlayable}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{isPlayable()}{isPlayable()}}
+{\footnotesize\ttfamily \label{rules_8h_af3766cd05cc46936abb71224c2d061ee} 
+bool is\+Playable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}}]{player\+Hand}{, }\item[{int}]{num\+Cards}{, }\item[{\mbox{\hyperlink{struct_card}{Card}}}]{selected\+Card}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a selected card is playable. 
+
+Checks if a selected card from a player\textquotesingle{}s hand is playable based on the round suit. If the player has a card of the round suit in their hand, they must play a card of that suit. If they do not have a card of the round suit, they can play any card.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Hand} & Pointer to the array of cards in the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The number of cards in the player\textquotesingle{}s hand. \\
+\hline
+{\em selected\+Card} & The card the player has selected to play. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the selected card is playable, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_af3766cd05cc46936abb71224c2d061ee_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_abf760716bfff375324964b5f23708c3d}\index{rules.h@{rules.h}!processRound@{processRound}}
+\index{processRound@{processRound}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{processRound()}{processRound()}}
+{\footnotesize\ttfamily \label{rules_8h_abf760716bfff375324964b5f23708c3d} 
+int process\+Round (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes a round of a card game. 
+
+Calculates the rank of each player\textquotesingle{}s card, taking into account the trump suit and the round suit. Determines the winner of the round based on the calculated ranks.
+
+\begin{DoxyReturn}{Returns}
+The player number (1-\/4) who won the round. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_abf760716bfff375324964b5f23708c3d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_a17004f10be86cdd8b324a0bfbdf3271e}\index{rules.h@{rules.h}!removeCard@{removeCard}}
+\index{removeCard@{removeCard}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{removeCard()}{removeCard()}}
+{\footnotesize\ttfamily \label{rules_8h_a17004f10be86cdd8b324a0bfbdf3271e} 
+void remove\+Card (\begin{DoxyParamCaption}\item[{int}]{player}{, }\item[{int}]{card\+Index}{}\end{DoxyParamCaption})}
+
+
+
+Removes a card from a player\textquotesingle{}s hand. 
+
+Removes a card at a specific index from a player\textquotesingle{}s hand. After the card is removed, the number of cards in the player\textquotesingle{}s hand is decremented.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player number (1-\/4) from whose hand the card is to be removed. \\
+\hline
+{\em card\+Index} & The index of the card to be removed in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{rules_8h_a17004f10be86cdd8b324a0bfbdf3271e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a17004f10be86cdd8b324a0bfbdf3271e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_a91a0d490a3563ee97302b9a4eda45f67}\index{rules.h@{rules.h}!removeCardHand@{removeCardHand}}
+\index{removeCardHand@{removeCardHand}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{removeCardHand()}{removeCardHand()}}
+{\footnotesize\ttfamily \label{rules_8h_a91a0d490a3563ee97302b9a4eda45f67} 
+void remove\+Card\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \texorpdfstring{$\ast$}{*}}]{player}{, }\item[{int}]{card\+Index}{, }\item[{int}]{num\+Cards}{}\end{DoxyParamCaption})}
+
+
+
+Removes a card from a player\textquotesingle{}s hand. 
+
+Removes a card at a specific index from a player\textquotesingle{}s hand. The \textquotesingle{}player\textquotesingle{} parameter is a pointer to the player structure whose hand the card is to be removed from. Creates a temporary hand without the card to be removed, then copies this back to the player\textquotesingle{}s hand.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & A pointer to the player structure. \\
+\hline
+{\em card\+Index} & The index of the card to be removed in the player\textquotesingle{}s hand. \\
+\hline
+{\em num\+Cards} & The current number of cards in the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a91a0d490a3563ee97302b9a4eda45f67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_aebdb0f340a4800e7b841571ffc1f5da9}\index{rules.h@{rules.h}!shuffleDeck@{shuffleDeck}}
+\index{shuffleDeck@{shuffleDeck}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{shuffleDeck()}{shuffleDeck()}}
+{\footnotesize\ttfamily \label{rules_8h_aebdb0f340a4800e7b841571ffc1f5da9} 
+void shuffle\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Shuffles the deck of cards. 
+
+Shuffles the deck of cards using the Fisher-\/\+Yates algorithm. The deck is shuffled in place, with each card being swapped with another card at a random index. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{rules_8h_aebdb0f340a4800e7b841571ffc1f5da9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_aebdb0f340a4800e7b841571ffc1f5da9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_a1c629ccbdb12749b09e75c86f2759650}\index{rules.h@{rules.h}!shuffleDeckSeed@{shuffleDeckSeed}}
+\index{shuffleDeckSeed@{shuffleDeckSeed}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{shuffleDeckSeed()}{shuffleDeckSeed()}}
+{\footnotesize\ttfamily \label{rules_8h_a1c629ccbdb12749b09e75c86f2759650} 
+void shuffle\+Deck\+Seed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Shuffles the deck of cards with a seed. 
+
+Shuffles the deck of cards using the Fisher-\/\+Yates algorithm. The deck is shuffled in place, with each card being swapped with another card at a random index. The seed is used to generate a random number, which is used to shuffle the deck. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a1c629ccbdb12749b09e75c86f2759650_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_a1c629ccbdb12749b09e75c86f2759650_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rules_8h_aeaefd5413bdb591b46cb4f4ff0442d48}\index{rules.h@{rules.h}!splitDeck@{splitDeck}}
+\index{splitDeck@{splitDeck}!rules.h@{rules.h}}
+\doxysubsubsection{\texorpdfstring{splitDeck()}{splitDeck()}}
+{\footnotesize\ttfamily \label{rules_8h_aeaefd5413bdb591b46cb4f4ff0442d48} 
+void split\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Splits and reorders a deck of cards. 
+
+Splits the deck at a given index and reorders it by placing the second half before the first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index at which to split and reorder the deck. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{rules_8h_aeaefd5413bdb591b46cb4f4ff0442d48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rules_8h_aeaefd5413bdb591b46cb4f4ff0442d48_icgraph}
+\end{center}
+\end{figure}

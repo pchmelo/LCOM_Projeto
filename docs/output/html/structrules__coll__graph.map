@@ -1,0 +1,7 @@
+<map id="rules" name="rules">
+<area shape="rect" id="Node000001" title=" " alt="" coords="8,181,63,207"/>
+<area shape="rect" id="Node000002" href="$struct_card.html" title=" " alt="" coords="9,93,61,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,133,38,181,33,181,33,133"/>
+<area shape="rect" id="Node000003" href="$struct_sprite.html" title="Structure representing a sprite." alt="" coords="5,5,65,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="38,45,38,93,33,93,33,45"/>
+</map>

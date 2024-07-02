@@ -1,0 +1,107 @@
+\doxysection{src/dispositivos/teclado/kbc.h File Reference}
+\hypertarget{kbc_8h}{}\label{kbc_8h}\index{src/dispositivos/teclado/kbc.h@{src/dispositivos/teclado/kbc.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include "{}../i8042.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}util.\+h"{}}\newline
+{\ttfamily \#include "{}../aux\+\_\+dispositivos.\+h"{}}\newline
+Include dependency graph for kbc.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{kbc_8h_af00123e2b17f85beb8565fddd0e7385a}{ler\+\_\+output\+\_\+\+KBC}} (uint8\+\_\+t port, uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, uint8\+\_\+t mouse)
+\begin{DoxyCompactList}\small\item\em Reads the output of the Keyboard Controller. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{kbc_8h_a9328ad256b9b72373801a76d49568dfd}{write\+\_\+command\+\_\+\+KBC}} (uint8\+\_\+t port, uint8\+\_\+t command\+Byte)
+\begin{DoxyCompactList}\small\item\em Writes a command byte to the Keyboard Controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{kbc_8h_af00123e2b17f85beb8565fddd0e7385a}\index{kbc.h@{kbc.h}!ler\_output\_KBC@{ler\_output\_KBC}}
+\index{ler\_output\_KBC@{ler\_output\_KBC}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{ler\_output\_KBC()}{ler\_output\_KBC()}}
+{\footnotesize\ttfamily \label{kbc_8h_af00123e2b17f85beb8565fddd0e7385a} 
+int ler\+\_\+output\+\_\+\+KBC (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{uint8\+\_\+t}]{mouse}{}\end{DoxyParamCaption})}
+
+
+
+Reads the output of the Keyboard Controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to read from. \\
+\hline
+{\em output} & Pointer to store the output. \\
+\hline
+{\em mouse} & Flag to indicate if the output is from a mouse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_af00123e2b17f85beb8565fddd0e7385a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_af00123e2b17f85beb8565fddd0e7385a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbc_8h_a9328ad256b9b72373801a76d49568dfd}\index{kbc.h@{kbc.h}!write\_command\_KBC@{write\_command\_KBC}}
+\index{write\_command\_KBC@{write\_command\_KBC}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{write\_command\_KBC()}{write\_command\_KBC()}}
+{\footnotesize\ttfamily \label{kbc_8h_a9328ad256b9b72373801a76d49568dfd} 
+int write\+\_\+command\+\_\+\+KBC (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port}{, }\item[{uint8\+\_\+t}]{command\+Byte}{}\end{DoxyParamCaption})}
+
+
+
+Writes a command byte to the Keyboard Controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to write to. \\
+\hline
+{\em command\+Byte} & The command byte to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_a9328ad256b9b72373801a76d49568dfd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_a9328ad256b9b72373801a76d49568dfd_icgraph}
+\end{center}
+\end{figure}

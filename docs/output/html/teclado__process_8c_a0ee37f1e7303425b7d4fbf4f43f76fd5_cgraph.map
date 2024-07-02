@@ -1,0 +1,44 @@
+<map id="process_teclado" name="process_teclado">
+<area shape="rect" id="Node000001" title="Processes keyboard inputs based on the current game state." alt="" coords="5,313,132,339"/>
+<area shape="rect" id="Node000002" href="$teclado__process_8c.html#a50d2690a2bd307bf886dec9178c98731" title="Processes keyboard inputs during the connection phase." alt="" coords="451,471,602,511"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,337,125,375,152,396,181,413,283,439,438,472,437,477,281,445,179,418,149,400,121,379,80,341"/>
+<area shape="rect" id="Node000006" href="$teclado__process_8c.html#a5d3d3c043e06ce537a08a1fd50465245" title="Processes keyboard inputs during the game." alt="" coords="200,104,371,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="76,312,116,254,146,218,178,184,213,156,247,134,250,138,216,161,182,188,150,221,121,257,80,315"/>
+<area shape="rect" id="Node000012" href="$teclado__process_8c.html#a4bbb02ce0c11506bd7749b4bba3c485e" title="Processes keyboard inputs during the invitation phase." alt="" coords="456,306,597,346"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="132,323,443,323,443,329,132,329"/>
+<area shape="rect" id="Node000013" href="$teclado__process_8c.html#aae3ad73cea948d2846da46830634a16b" title="Processes keyboard inputs in the main menu." alt="" coords="180,199,391,224"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="80,311,121,273,149,252,179,234,199,226,201,231,181,239,152,256,125,277,84,315"/>
+<area shape="rect" id="Node000014" href="$teclado__process_8c.html#a290cec00c38570d698fca32fb57a17fa" title=" " alt="" coords="199,363,372,403"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="118,336,197,357,196,362,117,341"/>
+<area shape="rect" id="Node000016" href="$teclado__process_8c.html#a4abd67bb8b6c4c87ff15f233ad803728" title=" " alt="" coords="199,249,372,289"/>
+<area shape="poly" id="edge23_Node000001_Node000016" title=" " alt="" coords="117,311,196,290,197,295,118,316"/>
+<area shape="rect" id="Node000017" href="$teclado__process_8c.html#a6fb4fb356f3d9a9155ad454c65103069" title=" " alt="" coords="205,478,366,518"/>
+<area shape="poly" id="edge25_Node000001_Node000017" title=" " alt="" coords="80,337,119,395,148,428,182,457,203,470,201,475,178,461,144,432,114,398,75,340"/>
+<area shape="rect" id="Node000003" href="$sp_8c.html#a0f5877ed1cc7d0cc779f1be8b25fc28f" title="Sends a byte through the serial port." alt="" coords="663,205,761,231"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="595,469,613,456,634,432,651,405,678,346,695,289,704,244,710,245,700,291,683,348,656,407,638,435,616,460,599,473"/>
+<area shape="rect" id="Node000004" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="819,155,924,180"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="752,203,817,182,819,187,754,208"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="981,131,1080,156"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="924,157,967,150,968,155,925,162"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="341,127,650,201,649,206,339,132"/>
+<area shape="rect" id="Node000007" href="$teclado__process_8c.html#ab9eaf45861a19da225a3292cc634c8af" title="Processes the selection of cards for Player 1." alt="" coords="439,55,615,80"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="348,101,450,80,451,85,349,107"/>
+<area shape="rect" id="Node000009" href="$teclado__process_8c.html#a496e97d8fdbe56eaf529d3c1ebed3eae" title="Processes the selection of cards for Player 2." alt="" coords="439,104,615,129"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="371,114,425,114,425,119,371,119"/>
+<area shape="rect" id="Node000010" href="$rtc_8c.html#ae05582b9454a374bbdc4621cbda8336d" title="Gets the current time from the RTC." alt="" coords="475,5,579,31"/>
+<area shape="poly" id="edge13_Node000006_Node000010" title=" " alt="" coords="308,102,366,71,438,40,461,32,462,37,440,44,368,76,310,106"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="594,78,616,89,644,112,667,139,700,191,696,194,663,143,640,116,613,94,591,82"/>
+<area shape="rect" id="Node000008" href="$rules_8c.html#af3766cd05cc46936abb71224c2d061ee" title="Checks if a selected card is playable." alt="" coords="667,92,757,117"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="591,77,654,90,653,96,590,83"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="571,127,616,146,654,170,686,194,683,198,651,174,613,151,569,132"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="615,108,653,106,654,111,615,114"/>
+<area shape="rect" id="Node000011" href="$aux__dispositivos_8c.html#a12feaa4b91b2a749d13b96eab97d6662" title="Reads the output of the RTC based on the sent command." alt="" coords="809,80,933,105"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="579,26,799,74,798,80,578,32"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="913,103,978,124,976,129,911,108"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="577,303,613,285,683,237,686,241,616,290,579,308"/>
+<area shape="poly" id="edge19_Node000013_Node000003" title=" " alt="" coords="391,210,649,214,649,220,391,216"/>
+<area shape="poly" id="edge21_Node000014_Node000003" title=" " alt="" coords="372,393,429,396,492,393,555,380,585,370,613,356,643,332,667,302,686,270,699,242,704,245,691,273,672,305,647,336,616,360,587,375,556,385,492,398,429,401,372,399"/>
+<area shape="rect" id="Node000015" href="$aux__func_8c.html#a273a13e41691394960eebd025f664bd6" title="Gets the position of the slider." alt="" coords="469,421,585,447"/>
+<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="373,399,456,416,455,422,372,404"/>
+<area shape="poly" id="edge24_Node000016_Node000003" title=" " alt="" coords="372,256,649,223,649,228,373,261"/>
+</map>

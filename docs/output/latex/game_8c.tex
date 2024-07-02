@@ -1,0 +1,271 @@
+\doxysection{src/prog/game.c File Reference}
+\hypertarget{game_8c}{}\label{game_8c}\index{src/prog/game.c@{src/prog/game.c}}
+{\ttfamily \#include "{}game.\+h"{}}\newline
+Include dependency graph for game.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8c_a0c3066e9555a95a71d7192ba757e135f}{loop\+\_\+interrupcoes}} ()
+\begin{DoxyCompactList}\small\item\em Main game loop handling hardware interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game_8c_a63e8f2a3a5b0421c4a291c02bc7a8a2a}{wait\+\_\+60\+\_\+seconds}} ()
+\begin{DoxyCompactList}\small\item\em Waits for 60 seconds during a pause in the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{game_8c_acfeef0fb69a884a6407f55be9a44239d}{state\+\_\+of\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{game_8c_ae15c7c4d04ece7eef3d011d6b2654eda}{state\+\_\+of\+\_\+game\+\_\+previous}}
+\item 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} \mbox{\hyperlink{game_8c_acf3b88ad82da765f4133edaf7c34315f}{state\+\_\+main\+\_\+menu\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} \mbox{\hyperlink{game_8c_a49775543b61b6d7073a319a8cb5bb660}{state\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} \mbox{\hyperlink{game_8c_a3c13ebda1df4624b49da4526768fba3a}{state\+\_\+menu\+\_\+pause\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} \mbox{\hyperlink{game_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}{state\+\_\+multiplayer\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} \mbox{\hyperlink{game_8c_a5e23243b38366a394331c3ea89c5190d}{state\+\_\+sp\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} \mbox{\hyperlink{game_8c_ab3a7c5625440730169d69d3a41ea0017}{round}}
+\item 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} \mbox{\hyperlink{game_8c_aa6ade37f01e0477e7cd12fcfe6d05692}{grab}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+int \mbox{\hyperlink{game_8c_a617a47c70795bcff659815ad0efd2266}{counter}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{game_8c_a9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\item 
+int \mbox{\hyperlink{game_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}
+\item 
+int \mbox{\hyperlink{game_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a8884dab9d88cd6c24f21afc6c7144a7b}{byte\+\_\+index}}
+\item 
+struct packet \mbox{\hyperlink{game_8c_a3b2e64ffb96c650d6525c99be01c7331}{mouse\+\_\+packet}}
+\item 
+int \mbox{\hyperlink{game_8c_a005e1f8eeb371d205d4b10a62f393183}{pause\+\_\+on}} = 0
+\item 
+int \mbox{\hyperlink{game_8c_a65ebcb3f36ccccce18607d6867e5bbd8}{counter\+\_\+pause}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_ae4bf90bce11d52b3b50d5899e43e8c47}{value\+\_\+sp}}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{game_8c_a00e70ef1ef9e5d3500ae8b09605b16fe}{rtc\+\_\+time}}
+\item 
+int \mbox{\hyperlink{game_8c_a45b67662d620a977a2cfe519f7ab6273}{fps}} = 30
+\item 
+int \mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}} = 0
+\item 
+int \mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}} = 0
+\item 
+int \mbox{\hyperlink{game_8c_a582d7349c9ad4a4843c70c2e60b39f23}{x\+\_\+before}} = 100
+\item 
+int \mbox{\hyperlink{game_8c_a07f2187d0b1dad8a6b19d56db0fb9e1e}{y\+\_\+before}} = 100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8c_a0c3066e9555a95a71d7192ba757e135f}\index{game.c@{game.c}!loop\_interrupcoes@{loop\_interrupcoes}}
+\index{loop\_interrupcoes@{loop\_interrupcoes}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{loop\_interrupcoes()}{loop\_interrupcoes()}}
+{\footnotesize\ttfamily \label{game_8c_a0c3066e9555a95a71d7192ba757e135f} 
+int loop\+\_\+interrupcoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Main game loop handling hardware interrupts. 
+
+Main game loop that handles hardware interrupts from the timer, keyboard, mouse, and serial port. Initializes and subscribes to the necessary hardware interrupts, processes the interrupts, and unsubscribes from the interrupts at the end. Also handles error checking for each operation and returns an error code if any operation fails. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a0c3066e9555a95a71d7192ba757e135f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{game_8c_a0c3066e9555a95a71d7192ba757e135f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_a63e8f2a3a5b0421c4a291c02bc7a8a2a}\index{game.c@{game.c}!wait\_60\_seconds@{wait\_60\_seconds}}
+\index{wait\_60\_seconds@{wait\_60\_seconds}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{wait\_60\_seconds()}{wait\_60\_seconds()}}
+{\footnotesize\ttfamily \label{game_8c_a63e8f2a3a5b0421c4a291c02bc7a8a2a} 
+int wait\+\_\+60\+\_\+seconds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Waits for 60 seconds during a pause in the game. 
+
+Increments a counter during a pause in the game. When the counter reaches the frames per second (fps) value, resets the counter and returns 1, effectively waiting for 60 seconds. If the game is not paused, returns 0. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a63e8f2a3a5b0421c4a291c02bc7a8a2a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{game_8c_a8884dab9d88cd6c24f21afc6c7144a7b}\index{game.c@{game.c}!byte\_index@{byte\_index}}
+\index{byte\_index@{byte\_index}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{byte\_index}{byte\_index}}
+{\footnotesize\ttfamily \label{game_8c_a8884dab9d88cd6c24f21afc6c7144a7b} 
+uint8\+\_\+t byte\+\_\+index\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a617a47c70795bcff659815ad0efd2266}\index{game.c@{game.c}!counter@{counter}}
+\index{counter@{counter}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{game_8c_a617a47c70795bcff659815ad0efd2266} 
+int counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a65ebcb3f36ccccce18607d6867e5bbd8}\index{game.c@{game.c}!counter\_pause@{counter\_pause}}
+\index{counter\_pause@{counter\_pause}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{counter\_pause}{counter\_pause}}
+{\footnotesize\ttfamily \label{game_8c_a65ebcb3f36ccccce18607d6867e5bbd8} 
+int counter\+\_\+pause = 0}
+
+\Hypertarget{game_8c_a45b67662d620a977a2cfe519f7ab6273}\index{game.c@{game.c}!fps@{fps}}
+\index{fps@{fps}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{fps}{fps}}
+{\footnotesize\ttfamily \label{game_8c_a45b67662d620a977a2cfe519f7ab6273} 
+int fps = 30}
+
+\Hypertarget{game_8c_aa6ade37f01e0477e7cd12fcfe6d05692}\index{game.c@{game.c}!grab@{grab}}
+\index{grab@{grab}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{grab}{grab}}
+{\footnotesize\ttfamily \label{game_8c_aa6ade37f01e0477e7cd12fcfe6d05692} 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} grab\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a9fcc2243068f8e628648febc0909c509}\index{game.c@{game.c}!mode\_info@{mode\_info}}
+\index{mode\_info@{mode\_info}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mode\_info}{mode\_info}}
+{\footnotesize\ttfamily \label{game_8c_a9fcc2243068f8e628648febc0909c509} 
+vbe\+\_\+mode\+\_\+info\+\_\+t mode\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a3b2e64ffb96c650d6525c99be01c7331}\index{game.c@{game.c}!mouse\_packet@{mouse\_packet}}
+\index{mouse\_packet@{mouse\_packet}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet}{mouse\_packet}}
+{\footnotesize\ttfamily \label{game_8c_a3b2e64ffb96c650d6525c99be01c7331} 
+struct packet mouse\+\_\+packet\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a6c59af730728bf5260ef828aea2eebee}\index{game.c@{game.c}!mouse\_x@{mouse\_x}}
+\index{mouse\_x@{mouse\_x}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_x}{mouse\_x}}
+{\footnotesize\ttfamily \label{game_8c_a6c59af730728bf5260ef828aea2eebee} 
+int mouse\+\_\+x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_ab21653e455bbca86826aa5f628a5fdb2}\index{game.c@{game.c}!mouse\_y@{mouse\_y}}
+\index{mouse\_y@{mouse\_y}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_y}{mouse\_y}}
+{\footnotesize\ttfamily \label{game_8c_ab21653e455bbca86826aa5f628a5fdb2} 
+int mouse\+\_\+y\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a005e1f8eeb371d205d4b10a62f393183}\index{game.c@{game.c}!pause\_on@{pause\_on}}
+\index{pause\_on@{pause\_on}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{pause\_on}{pause\_on}}
+{\footnotesize\ttfamily \label{game_8c_a005e1f8eeb371d205d4b10a62f393183} 
+int pause\+\_\+on = 0}
+
+\Hypertarget{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}\index{game.c@{game.c}!rato\_on@{rato\_on}}
+\index{rato\_on@{rato\_on}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{rato\_on}{rato\_on}}
+{\footnotesize\ttfamily \label{game_8c_a8d2a3253e17fef291ec498d4de8fd84b} 
+int rato\+\_\+on = 0}
+
+\Hypertarget{game_8c_ab3a7c5625440730169d69d3a41ea0017}\index{game.c@{game.c}!round@{round}}
+\index{round@{round}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily \label{game_8c_ab3a7c5625440730169d69d3a41ea0017} 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} round\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a00e70ef1ef9e5d3500ae8b09605b16fe}\index{game.c@{game.c}!rtc\_time@{rtc\_time}}
+\index{rtc\_time@{rtc\_time}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_time}{rtc\_time}}
+{\footnotesize\ttfamily \label{game_8c_a00e70ef1ef9e5d3500ae8b09605b16fe} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} rtc\+\_\+time\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}\index{game.c@{game.c}!scancode@{scancode}}
+\index{scancode@{scancode}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily \label{game_8c_aa1de7a5557e9d96b83cf03f73c92163f} 
+uint8\+\_\+t scancode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a49775543b61b6d7073a319a8cb5bb660}\index{game.c@{game.c}!state\_game\_current@{state\_game\_current}}
+\index{state\_game\_current@{state\_game\_current}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{state\_game\_current}{state\_game\_current}}
+{\footnotesize\ttfamily \label{game_8c_a49775543b61b6d7073a319a8cb5bb660} 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} state\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_acf3b88ad82da765f4133edaf7c34315f}\index{game.c@{game.c}!state\_main\_menu\_current@{state\_main\_menu\_current}}
+\index{state\_main\_menu\_current@{state\_main\_menu\_current}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{state\_main\_menu\_current}{state\_main\_menu\_current}}
+{\footnotesize\ttfamily \label{game_8c_acf3b88ad82da765f4133edaf7c34315f} 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} state\+\_\+main\+\_\+menu\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a3c13ebda1df4624b49da4526768fba3a}\index{game.c@{game.c}!state\_menu\_pause\_current@{state\_menu\_pause\_current}}
+\index{state\_menu\_pause\_current@{state\_menu\_pause\_current}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{state\_menu\_pause\_current}{state\_menu\_pause\_current}}
+{\footnotesize\ttfamily \label{game_8c_a3c13ebda1df4624b49da4526768fba3a} 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} state\+\_\+menu\+\_\+pause\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}\index{game.c@{game.c}!state\_multiplayer\_current@{state\_multiplayer\_current}}
+\index{state\_multiplayer\_current@{state\_multiplayer\_current}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{state\_multiplayer\_current}{state\_multiplayer\_current}}
+{\footnotesize\ttfamily \label{game_8c_a9a52ccb1c42185bb4f11f15ca88ac08c} 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} state\+\_\+multiplayer\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_acfeef0fb69a884a6407f55be9a44239d}\index{game.c@{game.c}!state\_of\_game\_current@{state\_of\_game\_current}}
+\index{state\_of\_game\_current@{state\_of\_game\_current}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_current}{state\_of\_game\_current}}
+{\footnotesize\ttfamily \label{game_8c_acfeef0fb69a884a6407f55be9a44239d} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_ae15c7c4d04ece7eef3d011d6b2654eda}\index{game.c@{game.c}!state\_of\_game\_previous@{state\_of\_game\_previous}}
+\index{state\_of\_game\_previous@{state\_of\_game\_previous}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_previous}{state\_of\_game\_previous}}
+{\footnotesize\ttfamily \label{game_8c_ae15c7c4d04ece7eef3d011d6b2654eda} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+previous\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a5e23243b38366a394331c3ea89c5190d}\index{game.c@{game.c}!state\_sp\_current@{state\_sp\_current}}
+\index{state\_sp\_current@{state\_sp\_current}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{state\_sp\_current}{state\_sp\_current}}
+{\footnotesize\ttfamily \label{game_8c_a5e23243b38366a394331c3ea89c5190d} 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} state\+\_\+sp\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a336696ca7d3985f711ac340f29cce200}\index{game.c@{game.c}!teclado\_on@{teclado\_on}}
+\index{teclado\_on@{teclado\_on}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{teclado\_on}{teclado\_on}}
+{\footnotesize\ttfamily \label{game_8c_a336696ca7d3985f711ac340f29cce200} 
+int teclado\+\_\+on = 0}
+
+\Hypertarget{game_8c_ae4bf90bce11d52b3b50d5899e43e8c47}\index{game.c@{game.c}!value\_sp@{value\_sp}}
+\index{value\_sp@{value\_sp}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{value\_sp}{value\_sp}}
+{\footnotesize\ttfamily \label{game_8c_ae4bf90bce11d52b3b50d5899e43e8c47} 
+uint8\+\_\+t value\+\_\+sp\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a582d7349c9ad4a4843c70c2e60b39f23}\index{game.c@{game.c}!x\_before@{x\_before}}
+\index{x\_before@{x\_before}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{x\_before}{x\_before}}
+{\footnotesize\ttfamily \label{game_8c_a582d7349c9ad4a4843c70c2e60b39f23} 
+int x\+\_\+before = 100}
+
+\Hypertarget{game_8c_a07f2187d0b1dad8a6b19d56db0fb9e1e}\index{game.c@{game.c}!y\_before@{y\_before}}
+\index{y\_before@{y\_before}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{y\_before}{y\_before}}
+{\footnotesize\ttfamily \label{game_8c_a07f2187d0b1dad8a6b19d56db0fb9e1e} 
+int y\+\_\+before = 100}
+

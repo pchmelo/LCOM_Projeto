@@ -1,0 +1,5 @@
+<map id="testStartButtonCollision" name="testStartButtonCollision">
+<area shape="rect" id="Node000001" title="Checks if a point is inside the start button collision area." alt="" coords="5,5,183,31"/>
+<area shape="rect" id="Node000002" href="$collision_8c.html#aa847ebd1f6d9f431211f82ea20568a5f" title="Checks if a point is inside a collision area." alt="" coords="231,5,320,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,15,217,15,217,21,183,21"/>
+</map>

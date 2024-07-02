@@ -1,0 +1,15 @@
+<map id="sp_interrupt_handler" name="sp_interrupt_handler">
+<area shape="rect" id="Node000001" title="Handles the serial port interrupts." alt="" coords="5,131,161,156"/>
+<area shape="rect" id="Node000002" href="$sp_8c.html#ac49ac47c244b1208cb547863f2eee4a4" title="Receives a byte from the serial port." alt="" coords="209,80,316,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,128,203,107,204,112,130,133"/>
+<area shape="rect" id="Node000006" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="534,105,633,131"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="162,137,520,118,520,124,162,142"/>
+<area shape="rect" id="Node000003" href="$fila__sp_8c.html#ade729f42295947061681421a846c1459" title="Inserts a value into the serial port queue." alt="" coords="364,5,476,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,77,363,40,375,34,377,39,365,44,290,82"/>
+<area shape="rect" id="Node000005" href="$aux__dispositivos_8c.html#ae99efaf0e0d9e755532707deea1e60e6" title="Reads the status of the serial port." alt="" coords="367,55,473,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="316,81,353,75,354,81,317,87"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="316,94,521,110,520,116,316,99"/>
+<area shape="rect" id="Node000004" href="$aux__dispositivos_8c.html#a0b8ca7bc01262e52044c1d72e622383e" title="Places a value into the serial port queue." alt="" coords="524,5,643,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,15,510,15,510,21,476,21"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="463,78,529,99,528,104,461,83"/>
+</map>

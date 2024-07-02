@@ -1,0 +1,16 @@
+<map id="testCancelButtonCollision" name="testCancelButtonCollision">
+<area shape="rect" id="Node000001" title="Tests if a given point is within the cancel button collision area." alt="" coords="756,31,947,56"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#a03432a52e5ca823ca9ab88f0bc8bf032" title="Handles the creation of a mouse in the game." alt="" coords="575,5,659,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="742,34,659,25,659,20,743,29"/>
+<area shape="rect" id="Node000006" href="$rato__process_8c.html#a56dd5a3b28a0482d4832ad7d87bb9002" title="Processes mouse inputs during the connection phase." alt="" coords="525,55,708,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="743,57,708,61,708,55,742,52"/>
+<area shape="rect" id="Node000003" href="$timer__process_8c.html#a64fd6fd0bc8e963b4609e5b919321a12" title="Processes game timer events and updates game states." alt="" coords="363,5,477,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="561,21,477,21,477,15,561,15"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,31,315,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="349,31,316,36,315,31,349,26"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,31,128,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="163,46,128,46,128,41,163,41"/>
+<area shape="rect" id="Node000007" href="$rato__process_8c.html#a24ce13e18f0e9cb0674c54d3fe885d3a" title="Processes mouse inputs during different game states." alt="" coords="367,55,473,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="512,70,473,70,473,65,512,65"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="353,61,314,55,315,50,354,56"/>
+</map>

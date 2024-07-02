@@ -1,0 +1,160 @@
+\doxysection{src/dispositivos/grafica/vbe.h File Reference}
+\hypertarget{vbe_8h}{}\label{vbe_8h}\index{src/dispositivos/grafica/vbe.h@{src/dispositivos/grafica/vbe.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a974cc8c899fe50c05bab20bf14b90c4b}{REG86\+\_\+\+INTNO}}~0x10
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a788a8f53888df256c78682009e74abab}{REG86\+\_\+\+AH}}~0x4F
+\item 
+\#define \mbox{\hyperlink{vbe_8h_ac1adafc6f96c3f3dc82a3fe99bb0dca5}{REG86\+\_\+\+AL}}~0x02
+\item 
+\#define \mbox{\hyperlink{vbe_8h_ad6dc8a011149235fa98a11e23a53b7ad}{REG86\+\_\+\+BX}}~BIT(14)
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a06fb331d5efce9c1e6fbb3d16cc8c39b}{BYTES\+\_\+\+NUM\+\_\+\+PIXEL}}(n)~(n +7) / 8;
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a0fe0c031463f5a28fafb879db622ccc5}{SIZ\+\_\+\+COR\+\_\+\+PADRAO}}~32
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a3886fd9c173f9005c2bc907098a415d5}{MASK\+\_\+\+COR\+\_\+\+PADRAO}}(n)~(BIT(n)  -\/1)
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a08cc82534c9176857ed1028788a7d969}{VBE\+\_\+768}}~0x105
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a06e52fa2509d19c63ef493e6dc3ceff8}{VBE\+\_\+480}}~0x110
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a6471d4962d427224d536e838c974d55e}{VBE\+\_\+600}}~0x115
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a980958160cec07dd4c5960f59d7287f0}{VBE\+\_\+1024}}~0x11A
+\item 
+\#define \mbox{\hyperlink{vbe_8h_ada5adc18981439a0bcf822d2badee3fb}{VBE\+\_\+864}}~0x14C
+\item 
+\#define \mbox{\hyperlink{vbe_8h_aaa987ae5eddfaff13162b3e7b354b974}{MODO\+\_\+\+VBE\+\_\+\+SET}}~0x4\+F02
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a7677400ac96b096f977d8f310331cccf}{LINEAR\+\_\+\+VBE\+\_\+\+FB}}~BIT(14)
+\item 
+\#define \mbox{\hyperlink{vbe_8h_aff76a8d4e3eed0336e46a36b5f05fa38}{DIRETA\+\_\+\+COR}}~0x06
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a3ad3e4adcc89f44dc719a673478cbb75}{INDEXADA\+\_\+\+COR}}~0x105
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a98ac233d4fd279522a38650477847c8e}{BIOS\+\_\+\+SET\+\_\+\+MODOVIDEO}}~0x00
+\item 
+\#define \mbox{\hyperlink{vbe_8h_a5dc96eaa7728fc632f7b79c6f3a3b019}{BIOS\+\_\+\+CARTAIVIDEO\+\_\+\+SERV}}~0x10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{vbe_8h_a5dc96eaa7728fc632f7b79c6f3a3b019}\index{vbe.h@{vbe.h}!BIOS\_CARTAIVIDEO\_SERV@{BIOS\_CARTAIVIDEO\_SERV}}
+\index{BIOS\_CARTAIVIDEO\_SERV@{BIOS\_CARTAIVIDEO\_SERV}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{BIOS\_CARTAIVIDEO\_SERV}{BIOS\_CARTAIVIDEO\_SERV}}
+{\footnotesize\ttfamily \label{vbe_8h_a5dc96eaa7728fc632f7b79c6f3a3b019} 
+\#define BIOS\+\_\+\+CARTAIVIDEO\+\_\+\+SERV~0x10}
+
+\Hypertarget{vbe_8h_a98ac233d4fd279522a38650477847c8e}\index{vbe.h@{vbe.h}!BIOS\_SET\_MODOVIDEO@{BIOS\_SET\_MODOVIDEO}}
+\index{BIOS\_SET\_MODOVIDEO@{BIOS\_SET\_MODOVIDEO}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{BIOS\_SET\_MODOVIDEO}{BIOS\_SET\_MODOVIDEO}}
+{\footnotesize\ttfamily \label{vbe_8h_a98ac233d4fd279522a38650477847c8e} 
+\#define BIOS\+\_\+\+SET\+\_\+\+MODOVIDEO~0x00}
+
+\Hypertarget{vbe_8h_a06fb331d5efce9c1e6fbb3d16cc8c39b}\index{vbe.h@{vbe.h}!BYTES\_NUM\_PIXEL@{BYTES\_NUM\_PIXEL}}
+\index{BYTES\_NUM\_PIXEL@{BYTES\_NUM\_PIXEL}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{BYTES\_NUM\_PIXEL}{BYTES\_NUM\_PIXEL}}
+{\footnotesize\ttfamily \label{vbe_8h_a06fb331d5efce9c1e6fbb3d16cc8c39b} 
+\#define BYTES\+\_\+\+NUM\+\_\+\+PIXEL(\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})~(n +7) / 8;}
+
+\Hypertarget{vbe_8h_aff76a8d4e3eed0336e46a36b5f05fa38}\index{vbe.h@{vbe.h}!DIRETA\_COR@{DIRETA\_COR}}
+\index{DIRETA\_COR@{DIRETA\_COR}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{DIRETA\_COR}{DIRETA\_COR}}
+{\footnotesize\ttfamily \label{vbe_8h_aff76a8d4e3eed0336e46a36b5f05fa38} 
+\#define DIRETA\+\_\+\+COR~0x06}
+
+\Hypertarget{vbe_8h_a3ad3e4adcc89f44dc719a673478cbb75}\index{vbe.h@{vbe.h}!INDEXADA\_COR@{INDEXADA\_COR}}
+\index{INDEXADA\_COR@{INDEXADA\_COR}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{INDEXADA\_COR}{INDEXADA\_COR}}
+{\footnotesize\ttfamily \label{vbe_8h_a3ad3e4adcc89f44dc719a673478cbb75} 
+\#define INDEXADA\+\_\+\+COR~0x105}
+
+\Hypertarget{vbe_8h_a7677400ac96b096f977d8f310331cccf}\index{vbe.h@{vbe.h}!LINEAR\_VBE\_FB@{LINEAR\_VBE\_FB}}
+\index{LINEAR\_VBE\_FB@{LINEAR\_VBE\_FB}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_VBE\_FB}{LINEAR\_VBE\_FB}}
+{\footnotesize\ttfamily \label{vbe_8h_a7677400ac96b096f977d8f310331cccf} 
+\#define LINEAR\+\_\+\+VBE\+\_\+\+FB~BIT(14)}
+
+\Hypertarget{vbe_8h_a3886fd9c173f9005c2bc907098a415d5}\index{vbe.h@{vbe.h}!MASK\_COR\_PADRAO@{MASK\_COR\_PADRAO}}
+\index{MASK\_COR\_PADRAO@{MASK\_COR\_PADRAO}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{MASK\_COR\_PADRAO}{MASK\_COR\_PADRAO}}
+{\footnotesize\ttfamily \label{vbe_8h_a3886fd9c173f9005c2bc907098a415d5} 
+\#define MASK\+\_\+\+COR\+\_\+\+PADRAO(\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})~(BIT(n)  -\/1)}
+
+\Hypertarget{vbe_8h_aaa987ae5eddfaff13162b3e7b354b974}\index{vbe.h@{vbe.h}!MODO\_VBE\_SET@{MODO\_VBE\_SET}}
+\index{MODO\_VBE\_SET@{MODO\_VBE\_SET}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{MODO\_VBE\_SET}{MODO\_VBE\_SET}}
+{\footnotesize\ttfamily \label{vbe_8h_aaa987ae5eddfaff13162b3e7b354b974} 
+\#define MODO\+\_\+\+VBE\+\_\+\+SET~0x4\+F02}
+
+\Hypertarget{vbe_8h_a788a8f53888df256c78682009e74abab}\index{vbe.h@{vbe.h}!REG86\_AH@{REG86\_AH}}
+\index{REG86\_AH@{REG86\_AH}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{REG86\_AH}{REG86\_AH}}
+{\footnotesize\ttfamily \label{vbe_8h_a788a8f53888df256c78682009e74abab} 
+\#define REG86\+\_\+\+AH~0x4F}
+
+\Hypertarget{vbe_8h_ac1adafc6f96c3f3dc82a3fe99bb0dca5}\index{vbe.h@{vbe.h}!REG86\_AL@{REG86\_AL}}
+\index{REG86\_AL@{REG86\_AL}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{REG86\_AL}{REG86\_AL}}
+{\footnotesize\ttfamily \label{vbe_8h_ac1adafc6f96c3f3dc82a3fe99bb0dca5} 
+\#define REG86\+\_\+\+AL~0x02}
+
+\Hypertarget{vbe_8h_ad6dc8a011149235fa98a11e23a53b7ad}\index{vbe.h@{vbe.h}!REG86\_BX@{REG86\_BX}}
+\index{REG86\_BX@{REG86\_BX}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{REG86\_BX}{REG86\_BX}}
+{\footnotesize\ttfamily \label{vbe_8h_ad6dc8a011149235fa98a11e23a53b7ad} 
+\#define REG86\+\_\+\+BX~BIT(14)}
+
+\Hypertarget{vbe_8h_a974cc8c899fe50c05bab20bf14b90c4b}\index{vbe.h@{vbe.h}!REG86\_INTNO@{REG86\_INTNO}}
+\index{REG86\_INTNO@{REG86\_INTNO}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{REG86\_INTNO}{REG86\_INTNO}}
+{\footnotesize\ttfamily \label{vbe_8h_a974cc8c899fe50c05bab20bf14b90c4b} 
+\#define REG86\+\_\+\+INTNO~0x10}
+
+\Hypertarget{vbe_8h_a0fe0c031463f5a28fafb879db622ccc5}\index{vbe.h@{vbe.h}!SIZ\_COR\_PADRAO@{SIZ\_COR\_PADRAO}}
+\index{SIZ\_COR\_PADRAO@{SIZ\_COR\_PADRAO}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{SIZ\_COR\_PADRAO}{SIZ\_COR\_PADRAO}}
+{\footnotesize\ttfamily \label{vbe_8h_a0fe0c031463f5a28fafb879db622ccc5} 
+\#define SIZ\+\_\+\+COR\+\_\+\+PADRAO~32}
+
+\Hypertarget{vbe_8h_a980958160cec07dd4c5960f59d7287f0}\index{vbe.h@{vbe.h}!VBE\_1024@{VBE\_1024}}
+\index{VBE\_1024@{VBE\_1024}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{VBE\_1024}{VBE\_1024}}
+{\footnotesize\ttfamily \label{vbe_8h_a980958160cec07dd4c5960f59d7287f0} 
+\#define VBE\+\_\+1024~0x11A}
+
+\Hypertarget{vbe_8h_a06e52fa2509d19c63ef493e6dc3ceff8}\index{vbe.h@{vbe.h}!VBE\_480@{VBE\_480}}
+\index{VBE\_480@{VBE\_480}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{VBE\_480}{VBE\_480}}
+{\footnotesize\ttfamily \label{vbe_8h_a06e52fa2509d19c63ef493e6dc3ceff8} 
+\#define VBE\+\_\+480~0x110}
+
+\Hypertarget{vbe_8h_a6471d4962d427224d536e838c974d55e}\index{vbe.h@{vbe.h}!VBE\_600@{VBE\_600}}
+\index{VBE\_600@{VBE\_600}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{VBE\_600}{VBE\_600}}
+{\footnotesize\ttfamily \label{vbe_8h_a6471d4962d427224d536e838c974d55e} 
+\#define VBE\+\_\+600~0x115}
+
+\Hypertarget{vbe_8h_a08cc82534c9176857ed1028788a7d969}\index{vbe.h@{vbe.h}!VBE\_768@{VBE\_768}}
+\index{VBE\_768@{VBE\_768}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{VBE\_768}{VBE\_768}}
+{\footnotesize\ttfamily \label{vbe_8h_a08cc82534c9176857ed1028788a7d969} 
+\#define VBE\+\_\+768~0x105}
+
+\Hypertarget{vbe_8h_ada5adc18981439a0bcf822d2badee3fb}\index{vbe.h@{vbe.h}!VBE\_864@{VBE\_864}}
+\index{VBE\_864@{VBE\_864}!vbe.h@{vbe.h}}
+\doxysubsubsection{\texorpdfstring{VBE\_864}{VBE\_864}}
+{\footnotesize\ttfamily \label{vbe_8h_ada5adc18981439a0bcf822d2badee3fb} 
+\#define VBE\+\_\+864~0x14C}
+

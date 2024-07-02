@@ -1,0 +1,55 @@
+\doxysection{src/dispositivos/timer/timer.c File Reference}
+\hypertarget{timer_8c}{}\label{timer_8c}\index{src/dispositivos/timer/timer.c@{src/dispositivos/timer/timer.c}}
+{\ttfamily \#include "{}timer.\+h"{}}\newline
+Include dependency graph for timer.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{timer_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{timer_8c_aca1506be74dfc71c6f90772ca269c619}{timer\+\_\+set\+\_\+frequency}} (uint8\+\_\+t timer, uint32\+\_\+t freq)
+\begin{DoxyCompactList}\small\item\em Changes the operating frequency of a timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{timer_8c_aca1506be74dfc71c6f90772ca269c619}\index{timer.c@{timer.c}!timer\_set\_frequency@{timer\_set\_frequency}}
+\index{timer\_set\_frequency@{timer\_set\_frequency}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer\_set\_frequency()}{timer\_set\_frequency()}}
+{\footnotesize\ttfamily \label{timer_8c_aca1506be74dfc71c6f90772ca269c619} 
+int timer\+\_\+set\+\_\+frequency (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer}{, }\item[{uint32\+\_\+t}]{freq}{}\end{DoxyParamCaption})}
+
+
+
+Changes the operating frequency of a timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & The timer to change the frequency of. \\
+\hline
+{\em freq} & The frequency to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c_aca1506be74dfc71c6f90772ca269c619_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c_aca1506be74dfc71c6f90772ca269c619_icgraph}
+\end{center}
+\end{figure}

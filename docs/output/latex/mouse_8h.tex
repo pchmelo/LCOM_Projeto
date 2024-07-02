@@ -1,0 +1,104 @@
+\doxysection{src/dispositivos/rato/mouse.h File Reference}
+\hypertarget{mouse_8h}{}\label{mouse_8h}\index{src/dispositivos/rato/mouse.h@{src/dispositivos/rato/mouse.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}../i8042.\+h"{}}\newline
+{\ttfamily \#include "{}../teclado/kbc.\+h"{}}\newline
+Include dependency graph for mouse.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mouse_8h_a8d6ee7592c47e8f3830a140c1c36587d}{mouse\+\_\+sync\+\_\+bytes}} ()
+\begin{DoxyCompactList}\small\item\em Synchronizes the bytes received from the Mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mouse_8h_a763e29f4a4e0f5682458012740c6450b}{mouse\+\_\+bytes\+\_\+to\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em Converts the array of bytes into a packet structure. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mouse_8h_a01a70d44c0ecd2ff75328d443517b08c}{write\+\_\+mouse}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes a command directly to the Mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mouse_8h_a763e29f4a4e0f5682458012740c6450b}\index{mouse.h@{mouse.h}!mouse\_bytes\_to\_packet@{mouse\_bytes\_to\_packet}}
+\index{mouse\_bytes\_to\_packet@{mouse\_bytes\_to\_packet}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_bytes\_to\_packet()}{mouse\_bytes\_to\_packet()}}
+{\footnotesize\ttfamily \label{mouse_8h_a763e29f4a4e0f5682458012740c6450b} 
+void mouse\+\_\+bytes\+\_\+to\+\_\+packet (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Converts the array of bytes into a packet structure. 
+
+Transforms the mouse\+\_\+bytes array into a mouse\+\_\+packet structure. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a763e29f4a4e0f5682458012740c6450b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_a8d6ee7592c47e8f3830a140c1c36587d}\index{mouse.h@{mouse.h}!mouse\_sync\_bytes@{mouse\_sync\_bytes}}
+\index{mouse\_sync\_bytes@{mouse\_sync\_bytes}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_sync\_bytes()}{mouse\_sync\_bytes()}}
+{\footnotesize\ttfamily \label{mouse_8h_a8d6ee7592c47e8f3830a140c1c36587d} 
+void mouse\+\_\+sync\+\_\+bytes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Synchronizes the bytes received from the Mouse. 
+
+Ensures the first byte of the packet has BIT(3) set. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a8d6ee7592c47e8f3830a140c1c36587d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_a01a70d44c0ecd2ff75328d443517b08c}\index{mouse.h@{mouse.h}!write\_mouse@{write\_mouse}}
+\index{write\_mouse@{write\_mouse}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{write\_mouse()}{write\_mouse()}}
+{\footnotesize\ttfamily \label{mouse_8h_a01a70d44c0ecd2ff75328d443517b08c} 
+int write\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Writes a command directly to the Mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command byte to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a01a70d44c0ecd2ff75328d443517b08c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a01a70d44c0ecd2ff75328d443517b08c_icgraph}
+\end{center}
+\end{figure}

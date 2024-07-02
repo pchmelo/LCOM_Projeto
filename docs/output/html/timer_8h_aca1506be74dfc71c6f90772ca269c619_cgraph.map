@@ -1,0 +1,11 @@
+<map id="timer_set_frequency" name="timer_set_frequency">
+<area shape="rect" id="Node000001" title="Changes the operating frequency of a timer." alt="" coords="5,55,161,80"/>
+<area shape="rect" id="Node000002" href="$aux__dispositivos_8c.html#afafc1891c876602d55b894103b1841a7" title="Reads the input timer configuration via Read&#45;Back command." alt="" coords="209,5,329,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,52,206,32,208,37,133,57"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a31ab374573517f8a5ba31c52a49a8606" title="Gets the least significant byte (LSB) of a 16&#45;bit value." alt="" coords="218,55,321,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,65,204,65,204,70,161,70"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html#afc6ca7a9a39943ff1792d206da514a59" title="Gets the most significant byte (MSB) of a 16&#45;bit value." alt="" coords="216,104,323,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="133,77,208,98,206,103,131,83"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="377,5,476,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,15,364,15,364,21,330,21"/>
+</map>

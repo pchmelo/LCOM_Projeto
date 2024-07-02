@@ -1,0 +1,683 @@
+\doxysection{src/prog/process/timer\+\_\+process.c File Reference}
+\hypertarget{timer__process_8c}{}\label{timer__process_8c}\index{src/prog/process/timer\_process.c@{src/prog/process/timer\_process.c}}
+{\ttfamily \#include "{}timer\+\_\+process.\+h"{}}\newline
+Include dependency graph for timer\+\_\+process.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a64fd6fd0bc8e963b4609e5b919321a12}{process\+\_\+timer}} (int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a336696ca7d3985f711ac340f29cce200}{teclado\+\_\+on}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}}, int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes game timer events and updates game states. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8c_a0dc3c9d6d60caf9f138d02fd4f0da19c}{process\+\_\+main\+\_\+menu\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em Processes the main menu timer events and updates game states. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8c_a67d5c3dff00cb6a8b4a04324d8808d4c}{process\+\_\+game\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em Processes the game timer events and updates game states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8c_a7dc69e7e999eb6570eda1718ff0f250b}{process\+\_\+round}} ()
+\begin{DoxyCompactList}\small\item\em Processes a round of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8c_afb1045e70aa06f1d3e32a3c6caf070eb}{process\+\_\+display}} ()
+\begin{DoxyCompactList}\small\item\em Processes the display of the game based on the current round. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8c_a9f9192f61838e1bc485e138becf22079}{process\+\_\+game\+\_\+timer\+\_\+\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Processes the game timer events and updates game states for Player 1 in multiplayer mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{timer__process_8c_adf8442c897e4175d1a7f55cffd57257b}{process\+\_\+game\+\_\+timer\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Processes the game timer events and updates game states for Player 2 in multiplayer mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8c_a0bdb4570bfceb45ef7a3eccccae0cc40}{process\+\_\+display\+\_\+\+P1}} ()
+\begin{DoxyCompactList}\small\item\em Processes the display for Player 1 in a multiplayer game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8c_aedf736e2ebdb639de95eed424a33b64b}{process\+\_\+round\+\_\+\+MUL}} ()
+\begin{DoxyCompactList}\small\item\em Processes the round in a multiplayer game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer__process_8c_a4cf537a56fb1484a861581947c928511}{process\+\_\+display\+\_\+\+P2}} ()
+\begin{DoxyCompactList}\small\item\em Processes the display for Player 2 in a multiplayer game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{timer__process_8c_acfeef0fb69a884a6407f55be9a44239d}{state\+\_\+of\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{timer__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}{state\+\_\+of\+\_\+game\+\_\+previous}}
+\item 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} \mbox{\hyperlink{timer__process_8c_acf3b88ad82da765f4133edaf7c34315f}{state\+\_\+main\+\_\+menu\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} \mbox{\hyperlink{timer__process_8c_a49775543b61b6d7073a319a8cb5bb660}{state\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} \mbox{\hyperlink{timer__process_8c_a3c13ebda1df4624b49da4526768fba3a}{state\+\_\+menu\+\_\+pause\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} \mbox{\hyperlink{timer__process_8c_aa6ade37f01e0477e7cd12fcfe6d05692}{grab}}
+\item 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} \mbox{\hyperlink{timer__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}{state\+\_\+multiplayer\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} \mbox{\hyperlink{timer__process_8c_a5e23243b38366a394331c3ea89c5190d}{state\+\_\+sp\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} \mbox{\hyperlink{timer__process_8c_aaa0bb0b7dff0cc701562858bde039341}{state\+\_\+select\+\_\+card\+\_\+current}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}}
+\item 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} \mbox{\hyperlink{timer__process_8c_ab3a7c5625440730169d69d3a41ea0017}{round}}
+\item 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} \mbox{\hyperlink{timer__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}{state\+\_\+prepare\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} \mbox{\hyperlink{timer__process_8c_a1d487359caf9090127372f89fcb84c59}{state\+\_\+split\+\_\+current}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_aaefa47f4fdf865c2358c22b542a993e4}{turn}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a4a2e9a802a7d2717096036db9853445e}{num\+\_\+cards}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_ac3d4f3b90dd1f5105984342ca522b4e6}{player\+\_\+a\+\_\+dar}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_ae7397b90d6412f27103e2ddd3290afbb}{selected\+\_\+card\+\_\+player\+\_\+1}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{timer__process_8c_a3e6e6f29084971899a686ce9a1a3387a}{player1}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{timer__process_8c_a35a776e3cebb62d6547a769980fef1c8}{player2}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{timer__process_8c_a66e9c264dc76e28477f2848bfd9bd247}{player3}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{timer__process_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64}{player4}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_af127c467a6fc53d3a2bc6f0bb7709b6d}{selected\+\_\+card\+\_\+player\+\_\+2}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_aa85e8f951e5ae1eab799914ed3916a84}{selected\+\_\+card\+\_\+player\+\_\+3}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a563773274b3ee56ffbd4bb58c9f181ac}{selected\+\_\+card\+\_\+player\+\_\+4}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{timer__process_8c_a6b0317c964e845aac22514aa059456c7}{card\+\_\+player\+\_\+1}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{timer__process_8c_a4d4566c0ac528e5f47246deb958adaac}{card\+\_\+player\+\_\+2}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{timer__process_8c_a7e92ab63718b30f4c636fa001f1d4cd1}{card\+\_\+player\+\_\+3}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{timer__process_8c_a3950e93ad01de21f04caecff8706dfab}{card\+\_\+player\+\_\+4}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a85a359fca667c371d197c5e0895e2d6b}{player\+\_\+1\+\_\+played}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b}{player\+\_\+3\+\_\+played}}
+\item 
+\mbox{\hyperlink{struct_card}{Card}} \mbox{\hyperlink{timer__process_8c_a82ae4144ba4eead926bae4a546871dba}{trump\+\_\+card}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_ab2c4d2cad1a69ad48fb003d6153cf809}{trump\+Suit}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_abff3f5a0e76dd66b277a03c01b5b3056}{round\+Suit}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a02bef385ddb3221f862da02f0d280cde}{timer\+\_\+pause}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a005e1f8eeb371d205d4b10a62f393183}{pause\+\_\+on}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a28ee33f04adbe3bdd53e606aead42473}{trump\+\_\+location}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}{slide\+\_\+number}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_af5b6d85c7b40a07df150ae29e088deda}{player\+\_\+a\+\_\+split}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{timer__process_8c_ae4bf90bce11d52b3b50d5899e43e8c47}{value\+\_\+sp}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a6d62e31b8f1c394fb39d740b477c6ac5}{blue\+Score}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_a5594cebb2b5e20aa709644b5e331e0ce}{red\+Score}}
+\item 
+int \mbox{\hyperlink{timer__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc}{square\+\_\+x}}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{timer__process_8c_ad378a63e5307c8aa046aa0ec42315e01}{time\+\_\+start}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{timer__process_8c_afb1045e70aa06f1d3e32a3c6caf070eb}\index{timer\_process.c@{timer\_process.c}!process\_display@{process\_display}}
+\index{process\_display@{process\_display}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_display()}{process\_display()}}
+{\footnotesize\ttfamily \label{timer__process_8c_afb1045e70aa06f1d3e32a3c6caf070eb} 
+void process\+\_\+display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the display of the game based on the current round. 
+
+Handles the display of the game based on the current round. Processes the display for each player\textquotesingle{}s turn, including the selection of the card, the removal of the card from the player\textquotesingle{}s hand, and the setting of the round suit. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_afb1045e70aa06f1d3e32a3c6caf070eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_afb1045e70aa06f1d3e32a3c6caf070eb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_a0bdb4570bfceb45ef7a3eccccae0cc40}\index{timer\_process.c@{timer\_process.c}!process\_display\_P1@{process\_display\_P1}}
+\index{process\_display\_P1@{process\_display\_P1}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_display\_P1()}{process\_display\_P1()}}
+{\footnotesize\ttfamily \label{timer__process_8c_a0bdb4570bfceb45ef7a3eccccae0cc40} 
+void process\+\_\+display\+\_\+\+P1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the display for Player 1 in a multiplayer game. 
+
+Handles the display processing for Player 1 in a multiplayer game. Checks the current round and performs actions based on the player whose turn it is. For Player 1, it handles the display of the selected card and the removal of the card from the player\textquotesingle{}s hand. For Players 2 and 4, it handles the display of the selected card by the bot and the removal of the card from the bot\textquotesingle{}s hand. For Player 3, it handles the start and finish of the single player mode. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a0bdb4570bfceb45ef7a3eccccae0cc40_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a0bdb4570bfceb45ef7a3eccccae0cc40_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_a4cf537a56fb1484a861581947c928511}\index{timer\_process.c@{timer\_process.c}!process\_display\_P2@{process\_display\_P2}}
+\index{process\_display\_P2@{process\_display\_P2}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_display\_P2()}{process\_display\_P2()}}
+{\footnotesize\ttfamily \label{timer__process_8c_a4cf537a56fb1484a861581947c928511} 
+void process\+\_\+display\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the display for Player 2 in a multiplayer game. 
+
+Handles the display processing for Player 2 in a multiplayer game. Checks the current round and performs actions based on the player whose turn it is. For Player 1, it handles the start and finish of the single player mode. For Players 2, 3, and 4, it handles the display of the selected card and the removal of the card from the player\textquotesingle{}s hand. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a4cf537a56fb1484a861581947c928511_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a4cf537a56fb1484a861581947c928511_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_a67d5c3dff00cb6a8b4a04324d8808d4c}\index{timer\_process.c@{timer\_process.c}!process\_game\_timer@{process\_game\_timer}}
+\index{process\_game\_timer@{process\_game\_timer}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_game\_timer()}{process\_game\_timer()}}
+{\footnotesize\ttfamily \label{timer__process_8c_a67d5c3dff00cb6a8b4a04324d8808d4c} 
+int process\+\_\+game\+\_\+timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the game timer events and updates game states. 
+
+Handles the game timer events. If the previous game state was not GAME, sets the current game state to GAME, the main menu state to NOTHING\+\_\+\+MAIN\+\_\+\+MENU, and the game play state to GAME\+\_\+\+INIT. Also handles the initialization of the game, the start of the game, the creation of the game, and the pause menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+jogo or criar\+\_\+menu\+\_\+pausa functions. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a67d5c3dff00cb6a8b4a04324d8808d4c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a67d5c3dff00cb6a8b4a04324d8808d4c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_a9f9192f61838e1bc485e138becf22079}\index{timer\_process.c@{timer\_process.c}!process\_game\_timer\_P1@{process\_game\_timer\_P1}}
+\index{process\_game\_timer\_P1@{process\_game\_timer\_P1}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_game\_timer\_P1()}{process\_game\_timer\_P1()}}
+{\footnotesize\ttfamily \label{timer__process_8c_a9f9192f61838e1bc485e138becf22079} 
+int process\+\_\+game\+\_\+timer\+\_\+\+P1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the game timer events and updates game states for Player 1 in multiplayer mode. 
+
+Handles the game timer events for Player 1 in multiplayer mode. If the previous game state was not MULTIPLAYER\+\_\+\+P1, it sets the current game state to MULTIPLAYER\+\_\+\+P1, the main menu state to NOTHING\+\_\+\+MAIN\+\_\+\+MENU, and the game play state to GAME\+\_\+\+INIT. Handles the initialization of the P1 game, the start of the game, the creation of the game, and the pause menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+jogo\+\_\+\+P1 or criar\+\_\+menu\+\_\+pausa functions. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a9f9192f61838e1bc485e138becf22079_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a9f9192f61838e1bc485e138becf22079_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_adf8442c897e4175d1a7f55cffd57257b}\index{timer\_process.c@{timer\_process.c}!process\_game\_timer\_P2@{process\_game\_timer\_P2}}
+\index{process\_game\_timer\_P2@{process\_game\_timer\_P2}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_game\_timer\_P2()}{process\_game\_timer\_P2()}}
+{\footnotesize\ttfamily \label{timer__process_8c_adf8442c897e4175d1a7f55cffd57257b} 
+int process\+\_\+game\+\_\+timer\+\_\+\+P2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the game timer events and updates game states for Player 2 in multiplayer mode. 
+
+This function handles the game timer events for Player 2 in multiplayer mode. If the previous game state was not MULTIPLAYER\+\_\+\+P2, it sets the current game state to MULTIPLAYER\+\_\+\+P2, the main menu state to NOTHING\+\_\+\+MAIN\+\_\+\+MENU, and the game play state to GAME\+\_\+\+INIT. Handles the initialization of the P2 game, the start of the game, the creation of the game, and the pause menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+jogo\+\_\+\+P2 or criar\+\_\+menu\+\_\+pausa functions. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_adf8442c897e4175d1a7f55cffd57257b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_adf8442c897e4175d1a7f55cffd57257b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_a0dc3c9d6d60caf9f138d02fd4f0da19c}\index{timer\_process.c@{timer\_process.c}!process\_main\_menu\_timer@{process\_main\_menu\_timer}}
+\index{process\_main\_menu\_timer@{process\_main\_menu\_timer}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_main\_menu\_timer()}{process\_main\_menu\_timer()}}
+{\footnotesize\ttfamily \label{timer__process_8c_a0dc3c9d6d60caf9f138d02fd4f0da19c} 
+int process\+\_\+main\+\_\+menu\+\_\+timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the main menu timer events and updates game states. 
+
+Handles the main menu timer events. If the previous game state was not MAIN\+\_\+\+MENU, sets the current game state to MAIN\+\_\+\+MENU, the main menu state to WAIT, and the game play state to NOTHING\+\_\+\+GAME\+\_\+\+PLAY. Also handles the creation of the main menu.
+
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs in the criar\+\_\+main\+\_\+menu function. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a0dc3c9d6d60caf9f138d02fd4f0da19c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a0dc3c9d6d60caf9f138d02fd4f0da19c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_a7dc69e7e999eb6570eda1718ff0f250b}\index{timer\_process.c@{timer\_process.c}!process\_round@{process\_round}}
+\index{process\_round@{process\_round}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_round()}{process\_round()}}
+{\footnotesize\ttfamily \label{timer__process_8c_a7dc69e7e999eb6570eda1718ff0f250b} 
+void process\+\_\+round (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes a round of the game. 
+
+handles the processing of a game round. Determines the winner of the round, resets the selected cards and the player who played, and updates the number of cards, turn, and round suit. It also handles the end of the round and the transitions between players, including pauses and waits. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{timer__process_8c_a7dc69e7e999eb6570eda1718ff0f250b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a7dc69e7e999eb6570eda1718ff0f250b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_aedf736e2ebdb639de95eed424a33b64b}\index{timer\_process.c@{timer\_process.c}!process\_round\_MUL@{process\_round\_MUL}}
+\index{process\_round\_MUL@{process\_round\_MUL}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_round\_MUL()}{process\_round\_MUL()}}
+{\footnotesize\ttfamily \label{timer__process_8c_aedf736e2ebdb639de95eed424a33b64b} 
+void process\+\_\+round\+\_\+\+MUL (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processes the round in a multiplayer game. 
+
+Handles the processing of a round in a multiplayer game. Checks if the turn is 5, indicating the end of a round, and then processes the round to determine the winner. Also handles the resetting of the game state at the end of a round. If the turn is not 5, processes the round for each player, waiting for 60 seconds before moving to the next player. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{timer__process_8c_aedf736e2ebdb639de95eed424a33b64b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_aedf736e2ebdb639de95eed424a33b64b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{timer__process_8c_a64fd6fd0bc8e963b4609e5b919321a12}\index{timer\_process.c@{timer\_process.c}!process\_timer@{process\_timer}}
+\index{process\_timer@{process\_timer}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_timer()}{process\_timer()}}
+{\footnotesize\ttfamily \label{timer__process_8c_a64fd6fd0bc8e963b4609e5b919321a12} 
+int process\+\_\+timer (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{teclado\+\_\+on}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{, }\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes game timer events and updates game states. 
+
+Handles the game timer events based on the current game state. Processes the main menu timer, game timer, multiplayer game timers, and mouse events. It also handles the creation of the mouse and the copying of the buffer set drawing to the graphic buffer. Processes game rounds for both single and multiplayer modes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em teclado\+\_\+on} & Pointer to the keyboard status. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the mouse status. \\
+\hline
+{\em mouse\+\_\+x} & X-\/coordinate of the mouse. \\
+\hline
+{\em mouse\+\_\+y} & Y-\/coordinate of the mouse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful execution, 1 if an error occurs. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a64fd6fd0bc8e963b4609e5b919321a12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer__process_8c_a64fd6fd0bc8e963b4609e5b919321a12_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{timer__process_8c_a6d62e31b8f1c394fb39d740b477c6ac5}\index{timer\_process.c@{timer\_process.c}!blueScore@{blueScore}}
+\index{blueScore@{blueScore}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{blueScore}{blueScore}}
+{\footnotesize\ttfamily \label{timer__process_8c_a6d62e31b8f1c394fb39d740b477c6ac5} 
+int blue\+Score\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a6b0317c964e845aac22514aa059456c7}\index{timer\_process.c@{timer\_process.c}!card\_player\_1@{card\_player\_1}}
+\index{card\_player\_1@{card\_player\_1}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_1}{card\_player\_1}}
+{\footnotesize\ttfamily \label{timer__process_8c_a6b0317c964e845aac22514aa059456c7} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a4d4566c0ac528e5f47246deb958adaac}\index{timer\_process.c@{timer\_process.c}!card\_player\_2@{card\_player\_2}}
+\index{card\_player\_2@{card\_player\_2}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_2}{card\_player\_2}}
+{\footnotesize\ttfamily \label{timer__process_8c_a4d4566c0ac528e5f47246deb958adaac} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a7e92ab63718b30f4c636fa001f1d4cd1}\index{timer\_process.c@{timer\_process.c}!card\_player\_3@{card\_player\_3}}
+\index{card\_player\_3@{card\_player\_3}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_3}{card\_player\_3}}
+{\footnotesize\ttfamily \label{timer__process_8c_a7e92ab63718b30f4c636fa001f1d4cd1} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a3950e93ad01de21f04caecff8706dfab}\index{timer\_process.c@{timer\_process.c}!card\_player\_4@{card\_player\_4}}
+\index{card\_player\_4@{card\_player\_4}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{card\_player\_4}{card\_player\_4}}
+{\footnotesize\ttfamily \label{timer__process_8c_a3950e93ad01de21f04caecff8706dfab} 
+\mbox{\hyperlink{struct_card}{Card}} card\+\_\+player\+\_\+4\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_aa6ade37f01e0477e7cd12fcfe6d05692}\index{timer\_process.c@{timer\_process.c}!grab@{grab}}
+\index{grab@{grab}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{grab}{grab}}
+{\footnotesize\ttfamily \label{timer__process_8c_aa6ade37f01e0477e7cd12fcfe6d05692} 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} grab\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a4a2e9a802a7d2717096036db9853445e}\index{timer\_process.c@{timer\_process.c}!num\_cards@{num\_cards}}
+\index{num\_cards@{num\_cards}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{num\_cards}{num\_cards}}
+{\footnotesize\ttfamily \label{timer__process_8c_a4a2e9a802a7d2717096036db9853445e} 
+int num\+\_\+cards\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a005e1f8eeb371d205d4b10a62f393183}\index{timer\_process.c@{timer\_process.c}!pause\_on@{pause\_on}}
+\index{pause\_on@{pause\_on}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{pause\_on}{pause\_on}}
+{\footnotesize\ttfamily \label{timer__process_8c_a005e1f8eeb371d205d4b10a62f393183} 
+int pause\+\_\+on\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a3e6e6f29084971899a686ce9a1a3387a}\index{timer\_process.c@{timer\_process.c}!player1@{player1}}
+\index{player1@{player1}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player1}{player1}}
+{\footnotesize\ttfamily \label{timer__process_8c_a3e6e6f29084971899a686ce9a1a3387a} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a35a776e3cebb62d6547a769980fef1c8}\index{timer\_process.c@{timer\_process.c}!player2@{player2}}
+\index{player2@{player2}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player2}{player2}}
+{\footnotesize\ttfamily \label{timer__process_8c_a35a776e3cebb62d6547a769980fef1c8} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a66e9c264dc76e28477f2848bfd9bd247}\index{timer\_process.c@{timer\_process.c}!player3@{player3}}
+\index{player3@{player3}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player3}{player3}}
+{\footnotesize\ttfamily \label{timer__process_8c_a66e9c264dc76e28477f2848bfd9bd247} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64}\index{timer\_process.c@{timer\_process.c}!player4@{player4}}
+\index{player4@{player4}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player4}{player4}}
+{\footnotesize\ttfamily \label{timer__process_8c_ab7a4d6e34d8b81e9167b318f9e5f4f64} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player4\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a85a359fca667c371d197c5e0895e2d6b}\index{timer\_process.c@{timer\_process.c}!player\_1\_played@{player\_1\_played}}
+\index{player\_1\_played@{player\_1\_played}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player\_1\_played}{player\_1\_played}}
+{\footnotesize\ttfamily \label{timer__process_8c_a85a359fca667c371d197c5e0895e2d6b} 
+int player\+\_\+1\+\_\+played\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b}\index{timer\_process.c@{timer\_process.c}!player\_3\_played@{player\_3\_played}}
+\index{player\_3\_played@{player\_3\_played}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player\_3\_played}{player\_3\_played}}
+{\footnotesize\ttfamily \label{timer__process_8c_a1b0e6d09b34efb94992dfd7d5e07ea3b} 
+int player\+\_\+3\+\_\+played\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ac3d4f3b90dd1f5105984342ca522b4e6}\index{timer\_process.c@{timer\_process.c}!player\_a\_dar@{player\_a\_dar}}
+\index{player\_a\_dar@{player\_a\_dar}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player\_a\_dar}{player\_a\_dar}}
+{\footnotesize\ttfamily \label{timer__process_8c_ac3d4f3b90dd1f5105984342ca522b4e6} 
+int player\+\_\+a\+\_\+dar\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_af5b6d85c7b40a07df150ae29e088deda}\index{timer\_process.c@{timer\_process.c}!player\_a\_split@{player\_a\_split}}
+\index{player\_a\_split@{player\_a\_split}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{player\_a\_split}{player\_a\_split}}
+{\footnotesize\ttfamily \label{timer__process_8c_af5b6d85c7b40a07df150ae29e088deda} 
+int player\+\_\+a\+\_\+split\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a8d2a3253e17fef291ec498d4de8fd84b}\index{timer\_process.c@{timer\_process.c}!rato\_on@{rato\_on}}
+\index{rato\_on@{rato\_on}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{rato\_on}{rato\_on}}
+{\footnotesize\ttfamily \label{timer__process_8c_a8d2a3253e17fef291ec498d4de8fd84b} 
+int rato\+\_\+on\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a5594cebb2b5e20aa709644b5e331e0ce}\index{timer\_process.c@{timer\_process.c}!redScore@{redScore}}
+\index{redScore@{redScore}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{redScore}{redScore}}
+{\footnotesize\ttfamily \label{timer__process_8c_a5594cebb2b5e20aa709644b5e331e0ce} 
+int red\+Score\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ab3a7c5625440730169d69d3a41ea0017}\index{timer\_process.c@{timer\_process.c}!round@{round}}
+\index{round@{round}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily \label{timer__process_8c_ab3a7c5625440730169d69d3a41ea0017} 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} round\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_abff3f5a0e76dd66b277a03c01b5b3056}\index{timer\_process.c@{timer\_process.c}!roundSuit@{roundSuit}}
+\index{roundSuit@{roundSuit}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{roundSuit}{roundSuit}}
+{\footnotesize\ttfamily \label{timer__process_8c_abff3f5a0e76dd66b277a03c01b5b3056} 
+int round\+Suit\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ae7397b90d6412f27103e2ddd3290afbb}\index{timer\_process.c@{timer\_process.c}!selected\_card\_player\_1@{selected\_card\_player\_1}}
+\index{selected\_card\_player\_1@{selected\_card\_player\_1}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_1}{selected\_card\_player\_1}}
+{\footnotesize\ttfamily \label{timer__process_8c_ae7397b90d6412f27103e2ddd3290afbb} 
+int selected\+\_\+card\+\_\+player\+\_\+1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_af127c467a6fc53d3a2bc6f0bb7709b6d}\index{timer\_process.c@{timer\_process.c}!selected\_card\_player\_2@{selected\_card\_player\_2}}
+\index{selected\_card\_player\_2@{selected\_card\_player\_2}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_2}{selected\_card\_player\_2}}
+{\footnotesize\ttfamily \label{timer__process_8c_af127c467a6fc53d3a2bc6f0bb7709b6d} 
+int selected\+\_\+card\+\_\+player\+\_\+2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_aa85e8f951e5ae1eab799914ed3916a84}\index{timer\_process.c@{timer\_process.c}!selected\_card\_player\_3@{selected\_card\_player\_3}}
+\index{selected\_card\_player\_3@{selected\_card\_player\_3}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_3}{selected\_card\_player\_3}}
+{\footnotesize\ttfamily \label{timer__process_8c_aa85e8f951e5ae1eab799914ed3916a84} 
+int selected\+\_\+card\+\_\+player\+\_\+3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a563773274b3ee56ffbd4bb58c9f181ac}\index{timer\_process.c@{timer\_process.c}!selected\_card\_player\_4@{selected\_card\_player\_4}}
+\index{selected\_card\_player\_4@{selected\_card\_player\_4}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_4}{selected\_card\_player\_4}}
+{\footnotesize\ttfamily \label{timer__process_8c_a563773274b3ee56ffbd4bb58c9f181ac} 
+int selected\+\_\+card\+\_\+player\+\_\+4\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}\index{timer\_process.c@{timer\_process.c}!slide\_number@{slide\_number}}
+\index{slide\_number@{slide\_number}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{slide\_number}{slide\_number}}
+{\footnotesize\ttfamily \label{timer__process_8c_ab5d2a533d3c16134c03dd9727f2a2303} 
+int slide\+\_\+number\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc}\index{timer\_process.c@{timer\_process.c}!square\_x@{square\_x}}
+\index{square\_x@{square\_x}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{square\_x}{square\_x}}
+{\footnotesize\ttfamily \label{timer__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc} 
+int square\+\_\+x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a49775543b61b6d7073a319a8cb5bb660}\index{timer\_process.c@{timer\_process.c}!state\_game\_current@{state\_game\_current}}
+\index{state\_game\_current@{state\_game\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_game\_current}{state\_game\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_a49775543b61b6d7073a319a8cb5bb660} 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} state\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_acf3b88ad82da765f4133edaf7c34315f}\index{timer\_process.c@{timer\_process.c}!state\_main\_menu\_current@{state\_main\_menu\_current}}
+\index{state\_main\_menu\_current@{state\_main\_menu\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_main\_menu\_current}{state\_main\_menu\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_acf3b88ad82da765f4133edaf7c34315f} 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} state\+\_\+main\+\_\+menu\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a3c13ebda1df4624b49da4526768fba3a}\index{timer\_process.c@{timer\_process.c}!state\_menu\_pause\_current@{state\_menu\_pause\_current}}
+\index{state\_menu\_pause\_current@{state\_menu\_pause\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_menu\_pause\_current}{state\_menu\_pause\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_a3c13ebda1df4624b49da4526768fba3a} 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} state\+\_\+menu\+\_\+pause\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}\index{timer\_process.c@{timer\_process.c}!state\_multiplayer\_current@{state\_multiplayer\_current}}
+\index{state\_multiplayer\_current@{state\_multiplayer\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_multiplayer\_current}{state\_multiplayer\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c} 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} state\+\_\+multiplayer\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_acfeef0fb69a884a6407f55be9a44239d}\index{timer\_process.c@{timer\_process.c}!state\_of\_game\_current@{state\_of\_game\_current}}
+\index{state\_of\_game\_current@{state\_of\_game\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_current}{state\_of\_game\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_acfeef0fb69a884a6407f55be9a44239d} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}\index{timer\_process.c@{timer\_process.c}!state\_of\_game\_previous@{state\_of\_game\_previous}}
+\index{state\_of\_game\_previous@{state\_of\_game\_previous}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_previous}{state\_of\_game\_previous}}
+{\footnotesize\ttfamily \label{timer__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+previous\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}\index{timer\_process.c@{timer\_process.c}!state\_prepare\_current@{state\_prepare\_current}}
+\index{state\_prepare\_current@{state\_prepare\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_prepare\_current}{state\_prepare\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f} 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} state\+\_\+prepare\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_aaa0bb0b7dff0cc701562858bde039341}\index{timer\_process.c@{timer\_process.c}!state\_select\_card\_current@{state\_select\_card\_current}}
+\index{state\_select\_card\_current@{state\_select\_card\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_select\_card\_current}{state\_select\_card\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_aaa0bb0b7dff0cc701562858bde039341} 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} state\+\_\+select\+\_\+card\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a5e23243b38366a394331c3ea89c5190d}\index{timer\_process.c@{timer\_process.c}!state\_sp\_current@{state\_sp\_current}}
+\index{state\_sp\_current@{state\_sp\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_sp\_current}{state\_sp\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_a5e23243b38366a394331c3ea89c5190d} 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} state\+\_\+sp\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a1d487359caf9090127372f89fcb84c59}\index{timer\_process.c@{timer\_process.c}!state\_split\_current@{state\_split\_current}}
+\index{state\_split\_current@{state\_split\_current}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_split\_current}{state\_split\_current}}
+{\footnotesize\ttfamily \label{timer__process_8c_a1d487359caf9090127372f89fcb84c59} 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} state\+\_\+split\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ad378a63e5307c8aa046aa0ec42315e01}\index{timer\_process.c@{timer\_process.c}!time\_start@{time\_start}}
+\index{time\_start@{time\_start}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{time\_start}{time\_start}}
+{\footnotesize\ttfamily \label{timer__process_8c_ad378a63e5307c8aa046aa0ec42315e01} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} time\+\_\+start\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a02bef385ddb3221f862da02f0d280cde}\index{timer\_process.c@{timer\_process.c}!timer\_pause@{timer\_pause}}
+\index{timer\_pause@{timer\_pause}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{timer\_pause}{timer\_pause}}
+{\footnotesize\ttfamily \label{timer__process_8c_a02bef385ddb3221f862da02f0d280cde} 
+int timer\+\_\+pause\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a82ae4144ba4eead926bae4a546871dba}\index{timer\_process.c@{timer\_process.c}!trump\_card@{trump\_card}}
+\index{trump\_card@{trump\_card}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{trump\_card}{trump\_card}}
+{\footnotesize\ttfamily \label{timer__process_8c_a82ae4144ba4eead926bae4a546871dba} 
+\mbox{\hyperlink{struct_card}{Card}} trump\+\_\+card\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_a28ee33f04adbe3bdd53e606aead42473}\index{timer\_process.c@{timer\_process.c}!trump\_location@{trump\_location}}
+\index{trump\_location@{trump\_location}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{trump\_location}{trump\_location}}
+{\footnotesize\ttfamily \label{timer__process_8c_a28ee33f04adbe3bdd53e606aead42473} 
+int trump\+\_\+location\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ab2c4d2cad1a69ad48fb003d6153cf809}\index{timer\_process.c@{timer\_process.c}!trumpSuit@{trumpSuit}}
+\index{trumpSuit@{trumpSuit}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{trumpSuit}{trumpSuit}}
+{\footnotesize\ttfamily \label{timer__process_8c_ab2c4d2cad1a69ad48fb003d6153cf809} 
+int trump\+Suit\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_aaefa47f4fdf865c2358c22b542a993e4}\index{timer\_process.c@{timer\_process.c}!turn@{turn}}
+\index{turn@{turn}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{turn}{turn}}
+{\footnotesize\ttfamily \label{timer__process_8c_aaefa47f4fdf865c2358c22b542a993e4} 
+int turn\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{timer__process_8c_ae4bf90bce11d52b3b50d5899e43e8c47}\index{timer\_process.c@{timer\_process.c}!value\_sp@{value\_sp}}
+\index{value\_sp@{value\_sp}!timer\_process.c@{timer\_process.c}}
+\doxysubsubsection{\texorpdfstring{value\_sp}{value\_sp}}
+{\footnotesize\ttfamily \label{timer__process_8c_ae4bf90bce11d52b3b50d5899e43e8c47} 
+uint8\+\_\+t value\+\_\+sp\hspace{0.3cm}{\ttfamily [extern]}}
+

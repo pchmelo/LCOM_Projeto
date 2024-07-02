@@ -1,0 +1,26 @@
+<map id="process_main_menu_timer" name="process_main_menu_timer">
+<area shape="rect" id="Node000001" title="Processes the main menu timer events and updates game states." alt="" coords="5,107,204,132"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#a354537f43440702f41f54da9f51f24ef" title="Creates the main menu of the game." alt="" coords="252,107,387,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,117,238,117,238,122,205,122"/>
+<area shape="rect" id="Node000003" href="$composer_8c.html#a25fb78cd36fc504288e4c7f5afb46ab1" title="Displays the connection menu." alt="" coords="435,5,625,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="337,104,380,77,434,48,471,33,473,38,436,52,383,81,340,109"/>
+<area shape="rect" id="Node000004" href="$grafica_8c.html#afe44ad8c40405c5ae1dd181c70e5d2e6" title="Prints a form from an XPM sprite." alt="" coords="673,56,856,81"/>
+<area shape="poly" id="edge13_Node000002_Node000004" title=" " alt="" coords="370,104,434,91,551,78,660,70,660,76,551,83,435,97,371,109"/>
+<area shape="rect" id="Node000006" href="$composer_8c.html#a6784bddfa50786e649cec1d2045383a0" title="Displays the invitation menu." alt="" coords="439,107,621,132"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="387,117,425,117,425,122,387,122"/>
+<area shape="rect" id="Node000007" href="$composer_8c.html#a07a784e7ea6967105b2dc4e560f8e144" title="Displays the time tracking." alt="" coords="456,156,604,181"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="375,129,462,150,461,155,374,135"/>
+<area shape="rect" id="Node000011" href="$grafica_8c.html#aec4db1eee466b906c5f21a2bea09d85d" title="Clears the graphic buffer." alt="" coords="455,205,605,231"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="339,130,381,160,436,190,458,199,456,204,434,195,379,165,336,134"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="590,28,693,50,691,56,589,33"/>
+<area shape="rect" id="Node000005" href="$aux__dispositivos_8c.html#a1ebb4488d400f798504117c353edd1bd" title="Draws a pixel based on the received parameters." alt="" coords="904,56,1024,81"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="856,66,890,66,890,71,856,71"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="589,104,691,82,693,87,590,109"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="596,153,624,141,638,129,647,117,657,104,672,92,688,84,690,89,675,96,660,108,652,120,642,133,627,146,598,158"/>
+<area shape="rect" id="Node000008" href="$aux__func_8c.html#a61b958aafad26d30fe9f4a26cca143dc" title="Calculates the time spent between two RTC times." alt="" coords="703,107,826,132"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="591,153,690,132,691,138,592,159"/>
+<area shape="rect" id="Node000009" href="$aux__func_8c.html#a117c80c1097e2105f62c481b22cce24a" title="Converts a number into a sprite." alt="" coords="707,156,822,181"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="604,166,694,166,694,171,604,171"/>
+<area shape="rect" id="Node000010" href="$aux__func_8c.html#a40315791d60ce97710995e8ee2746dbb" title="Converts a time interval into an array of integers." alt="" coords="687,205,843,231"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="592,179,691,200,690,205,591,184"/>
+</map>

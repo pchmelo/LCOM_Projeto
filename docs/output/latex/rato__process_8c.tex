@@ -1,0 +1,527 @@
+\doxysection{src/prog/process/rato\+\_\+process.c File Reference}
+\hypertarget{rato__process_8c}{}\label{rato__process_8c}\index{src/prog/process/rato\_process.c@{src/prog/process/rato\_process.c}}
+{\ttfamily \#include "{}rato\+\_\+process.\+h"{}}\newline
+Include dependency graph for rato\+\_\+process.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rato__process_8c_a24ce13e18f0e9cb0674c54d3fe885d3a}{process\+\_\+rato}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs during different game states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8c_a5da1d7e9d1351001b8f4e534937d1852}{process\+\_\+rato\+\_\+grab\+\_\+drop}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}}, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{game_8c_a8d2a3253e17fef291ec498d4de8fd84b}{rato\+\_\+on}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs for card grab and drop actions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8c_a378dda404ba854377a6a6ad11e01f299}{process\+\_\+card}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\item 
+void \mbox{\hyperlink{rato__process_8c_a8d2c7a28e7be735956de6e02befdb313}{process\+\_\+rato\+\_\+\+P1}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs for Player 1 during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8c_a074eb76b6094f3d712031fd7c26b0f9f}{process\+\_\+rato\+\_\+\+P2}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs for Player 2 during the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8c_a56dd5a3b28a0482d4832ad7d87bb9002}{process\+\_\+rato\+\_\+connection}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs during the connection phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8c_a9c157da5f0fc6a2ac2047ee875a2634a}{process\+\_\+rato\+\_\+invitation}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Processes mouse inputs during the invitation phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rato__process_8c_a0c6657d850be9b2f06e4b2471d1e7dd5}{process\+\_\+rato\+\_\+get\+\_\+trump}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\item 
+void \mbox{\hyperlink{rato__process_8c_a19019ad5af5b2487b8edaaa8d904dce7}{process\+\_\+rato\+\_\+slide}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\item 
+void \mbox{\hyperlink{rato__process_8c_a830d9bbdf4cd44309ed29b8c74a328af}{process\+\_\+rato\+\_\+time\+\_\+tracker}} (int \mbox{\hyperlink{mouse_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}, int \mbox{\hyperlink{mouse_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{rato__process_8c_acfeef0fb69a884a6407f55be9a44239d}{state\+\_\+of\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} \mbox{\hyperlink{rato__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}{state\+\_\+of\+\_\+game\+\_\+previous}}
+\item 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} \mbox{\hyperlink{rato__process_8c_acf3b88ad82da765f4133edaf7c34315f}{state\+\_\+main\+\_\+menu\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} \mbox{\hyperlink{rato__process_8c_a49775543b61b6d7073a319a8cb5bb660}{state\+\_\+game\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} \mbox{\hyperlink{rato__process_8c_a3c13ebda1df4624b49da4526768fba3a}{state\+\_\+menu\+\_\+pause\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} \mbox{\hyperlink{rato__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}{state\+\_\+multiplayer\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} \mbox{\hyperlink{rato__process_8c_a18d9006704d3f9b8a71e0589315bc937}{state\+\_\+invited\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} \mbox{\hyperlink{rato__process_8c_a491bc2f539592755fefc04bc9eedba0f}{state\+\_\+connection\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} \mbox{\hyperlink{rato__process_8c_a5e23243b38366a394331c3ea89c5190d}{state\+\_\+sp\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} \mbox{\hyperlink{rato__process_8c_aaa0bb0b7dff0cc701562858bde039341}{state\+\_\+select\+\_\+card\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} \mbox{\hyperlink{rato__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}{state\+\_\+prepare\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} \mbox{\hyperlink{rato__process_8c_a1d487359caf9090127372f89fcb84c59}{state\+\_\+split\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} \mbox{\hyperlink{rato__process_8c_a2106df119fe4a2964e5b8e31295534fc}{state\+\_\+time\+\_\+tracker\+\_\+current}}
+\item 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} \mbox{\hyperlink{rato__process_8c_ab3a7c5625440730169d69d3a41ea0017}{round}}
+\item 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} \mbox{\hyperlink{rato__process_8c_aa6ade37f01e0477e7cd12fcfe6d05692}{grab}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{rato__process_8c_a3e6e6f29084971899a686ce9a1a3387a}{player1}}
+\item 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} \mbox{\hyperlink{rato__process_8c_a66e9c264dc76e28477f2848bfd9bd247}{player3}}
+\item 
+int \mbox{\hyperlink{rato__process_8c_ae7397b90d6412f27103e2ddd3290afbb}{selected\+\_\+card\+\_\+player\+\_\+1}}
+\item 
+int \mbox{\hyperlink{rato__process_8c_aa85e8f951e5ae1eab799914ed3916a84}{selected\+\_\+card\+\_\+player\+\_\+3}}
+\item 
+int \mbox{\hyperlink{rato__process_8c_a28ee33f04adbe3bdd53e606aead42473}{trump\+\_\+location}}
+\item 
+int \mbox{\hyperlink{rato__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}{slide\+\_\+number}}
+\item 
+int \mbox{\hyperlink{rato__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc}{square\+\_\+x}}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{rato__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80}{time\+\_\+end}}
+\item 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} \mbox{\hyperlink{rato__process_8c_ad378a63e5307c8aa046aa0ec42315e01}{time\+\_\+start}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rato__process_8c_a378dda404ba854377a6a6ad11e01f299}\index{rato\_process.c@{rato\_process.c}!process\_card@{process\_card}}
+\index{process\_card@{process\_card}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_card()}{process\_card()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a378dda404ba854377a6a6ad11e01f299} 
+void process\+\_\+card (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a378dda404ba854377a6a6ad11e01f299_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a24ce13e18f0e9cb0674c54d3fe885d3a}\index{rato\_process.c@{rato\_process.c}!process\_rato@{process\_rato}}
+\index{process\_rato@{process\_rato}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato()}{process\_rato()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a24ce13e18f0e9cb0674c54d3fe885d3a} 
+void process\+\_\+rato (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs during different game states. 
+
+Handles the processing of mouse inputs during different game states. Checks the current state of the game and performs actions based on the state and the mouse coordinates. Handles the actions to be performed when different buttons are clicked, and the navigation between different states based on mouse inputs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a24ce13e18f0e9cb0674c54d3fe885d3a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a24ce13e18f0e9cb0674c54d3fe885d3a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a56dd5a3b28a0482d4832ad7d87bb9002}\index{rato\_process.c@{rato\_process.c}!process\_rato\_connection@{process\_rato\_connection}}
+\index{process\_rato\_connection@{process\_rato\_connection}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_connection()}{process\_rato\_connection()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a56dd5a3b28a0482d4832ad7d87bb9002} 
+void process\+\_\+rato\+\_\+connection (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs during the connection phase. 
+
+Handles the processing of mouse inputs during the connection phase. Checks if the cancel button has been clicked and performs actions based on the mouse coordinates. Handles the actions to be performed when the cancel button is clicked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a56dd5a3b28a0482d4832ad7d87bb9002_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a56dd5a3b28a0482d4832ad7d87bb9002_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a0c6657d850be9b2f06e4b2471d1e7dd5}\index{rato\_process.c@{rato\_process.c}!process\_rato\_get\_trump@{process\_rato\_get\_trump}}
+\index{process\_rato\_get\_trump@{process\_rato\_get\_trump}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_get\_trump()}{process\_rato\_get\_trump()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a0c6657d850be9b2f06e4b2471d1e7dd5} 
+void process\+\_\+rato\+\_\+get\+\_\+trump (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a0c6657d850be9b2f06e4b2471d1e7dd5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a0c6657d850be9b2f06e4b2471d1e7dd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a5da1d7e9d1351001b8f4e534937d1852}\index{rato\_process.c@{rato\_process.c}!process\_rato\_grab\_drop@{process\_rato\_grab\_drop}}
+\index{process\_rato\_grab\_drop@{process\_rato\_grab\_drop}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_grab\_drop()}{process\_rato\_grab\_drop()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a5da1d7e9d1351001b8f4e534937d1852} 
+void process\+\_\+rato\+\_\+grab\+\_\+drop (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{rato\+\_\+on}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs for card grab and drop actions. 
+
+Handles the processing of mouse inputs for card grab and drop actions. Checks if a card grab collision has occurred and performs actions based on the current state of the game. Handles the actions to be performed when a card is dropped in the multiplayer mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+{\em rato\+\_\+on} & Pointer to the variable that indicates if the mouse is on. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a5da1d7e9d1351001b8f4e534937d1852_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a5da1d7e9d1351001b8f4e534937d1852_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a9c157da5f0fc6a2ac2047ee875a2634a}\index{rato\_process.c@{rato\_process.c}!process\_rato\_invitation@{process\_rato\_invitation}}
+\index{process\_rato\_invitation@{process\_rato\_invitation}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_invitation()}{process\_rato\_invitation()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a9c157da5f0fc6a2ac2047ee875a2634a} 
+void process\+\_\+rato\+\_\+invitation (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs during the invitation phase. 
+
+Handles the processing of mouse inputs during the invitation phase. Checks if the accept or decline buttons have been clicked and performs actions based on the mouse coordinates. Handles the actions to be performed when the accept or decline buttons are clicked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a9c157da5f0fc6a2ac2047ee875a2634a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a9c157da5f0fc6a2ac2047ee875a2634a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a8d2c7a28e7be735956de6e02befdb313}\index{rato\_process.c@{rato\_process.c}!process\_rato\_P1@{process\_rato\_P1}}
+\index{process\_rato\_P1@{process\_rato\_P1}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_P1()}{process\_rato\_P1()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a8d2c7a28e7be735956de6e02befdb313} 
+void process\+\_\+rato\+\_\+\+P1 (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs for Player 1 during the game. 
+
+Handles the processing of mouse inputs for Player 1 during the game. Checks the current state of the game and performs actions based on the state and the mouse coordinates. Handles the actions to be performed when different buttons are clicked in the pause menu, and the selection of cards by Player 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a8d2c7a28e7be735956de6e02befdb313_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a8d2c7a28e7be735956de6e02befdb313_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a074eb76b6094f3d712031fd7c26b0f9f}\index{rato\_process.c@{rato\_process.c}!process\_rato\_P2@{process\_rato\_P2}}
+\index{process\_rato\_P2@{process\_rato\_P2}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_P2()}{process\_rato\_P2()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a074eb76b6094f3d712031fd7c26b0f9f} 
+void process\+\_\+rato\+\_\+\+P2 (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse}{}\end{DoxyParamCaption})}
+
+
+
+Processes mouse inputs for Player 2 during the game. 
+
+Handles the processing of mouse inputs for Player 2 during the game. Checks the current state of the game and performs actions based on the state and the mouse coordinates. Handles the actions to be performed when different buttons are clicked in the pause menu, and the selection of cards by Player 2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & The x-\/coordinate of the mouse cursor. \\
+\hline
+{\em mouse\+\_\+y} & The y-\/coordinate of the mouse cursor. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a074eb76b6094f3d712031fd7c26b0f9f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a074eb76b6094f3d712031fd7c26b0f9f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a19019ad5af5b2487b8edaaa8d904dce7}\index{rato\_process.c@{rato\_process.c}!process\_rato\_slide@{process\_rato\_slide}}
+\index{process\_rato\_slide@{process\_rato\_slide}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_slide()}{process\_rato\_slide()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a19019ad5af5b2487b8edaaa8d904dce7} 
+void process\+\_\+rato\+\_\+slide (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a19019ad5af5b2487b8edaaa8d904dce7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a19019ad5af5b2487b8edaaa8d904dce7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rato__process_8c_a830d9bbdf4cd44309ed29b8c74a328af}\index{rato\_process.c@{rato\_process.c}!process\_rato\_time\_tracker@{process\_rato\_time\_tracker}}
+\index{process\_rato\_time\_tracker@{process\_rato\_time\_tracker}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{process\_rato\_time\_tracker()}{process\_rato\_time\_tracker()}}
+{\footnotesize\ttfamily \label{rato__process_8c_a830d9bbdf4cd44309ed29b8c74a328af} 
+void process\+\_\+rato\+\_\+time\+\_\+tracker (\begin{DoxyParamCaption}\item[{int}]{mouse\+\_\+x}{, }\item[{int}]{mouse\+\_\+y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a830d9bbdf4cd44309ed29b8c74a328af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rato__process_8c_a830d9bbdf4cd44309ed29b8c74a328af_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rato__process_8c_aa6ade37f01e0477e7cd12fcfe6d05692}\index{rato\_process.c@{rato\_process.c}!grab@{grab}}
+\index{grab@{grab}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{grab}{grab}}
+{\footnotesize\ttfamily \label{rato__process_8c_aa6ade37f01e0477e7cd12fcfe6d05692} 
+\mbox{\hyperlink{composer_8h_a2a2dda99ff6e7a4243c9d483e49b172c}{grab\+\_\+state}} grab\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a3e6e6f29084971899a686ce9a1a3387a}\index{rato\_process.c@{rato\_process.c}!player1@{player1}}
+\index{player1@{player1}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{player1}{player1}}
+{\footnotesize\ttfamily \label{rato__process_8c_a3e6e6f29084971899a686ce9a1a3387a} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a66e9c264dc76e28477f2848bfd9bd247}\index{rato\_process.c@{rato\_process.c}!player3@{player3}}
+\index{player3@{player3}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{player3}{player3}}
+{\footnotesize\ttfamily \label{rato__process_8c_a66e9c264dc76e28477f2848bfd9bd247} 
+\mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}} player3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_ab3a7c5625440730169d69d3a41ea0017}\index{rato\_process.c@{rato\_process.c}!round@{round}}
+\index{round@{round}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily \label{rato__process_8c_ab3a7c5625440730169d69d3a41ea0017} 
+\mbox{\hyperlink{composer_8h_a9948582ef5310fc307a7258c885e38e7}{game\+\_\+round}} round\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_ae7397b90d6412f27103e2ddd3290afbb}\index{rato\_process.c@{rato\_process.c}!selected\_card\_player\_1@{selected\_card\_player\_1}}
+\index{selected\_card\_player\_1@{selected\_card\_player\_1}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_1}{selected\_card\_player\_1}}
+{\footnotesize\ttfamily \label{rato__process_8c_ae7397b90d6412f27103e2ddd3290afbb} 
+int selected\+\_\+card\+\_\+player\+\_\+1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_aa85e8f951e5ae1eab799914ed3916a84}\index{rato\_process.c@{rato\_process.c}!selected\_card\_player\_3@{selected\_card\_player\_3}}
+\index{selected\_card\_player\_3@{selected\_card\_player\_3}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{selected\_card\_player\_3}{selected\_card\_player\_3}}
+{\footnotesize\ttfamily \label{rato__process_8c_aa85e8f951e5ae1eab799914ed3916a84} 
+int selected\+\_\+card\+\_\+player\+\_\+3\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_ab5d2a533d3c16134c03dd9727f2a2303}\index{rato\_process.c@{rato\_process.c}!slide\_number@{slide\_number}}
+\index{slide\_number@{slide\_number}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{slide\_number}{slide\_number}}
+{\footnotesize\ttfamily \label{rato__process_8c_ab5d2a533d3c16134c03dd9727f2a2303} 
+int slide\+\_\+number\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc}\index{rato\_process.c@{rato\_process.c}!square\_x@{square\_x}}
+\index{square\_x@{square\_x}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{square\_x}{square\_x}}
+{\footnotesize\ttfamily \label{rato__process_8c_af3646bb8c5d5c8836e3601cc7344dcdc} 
+int square\+\_\+x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a491bc2f539592755fefc04bc9eedba0f}\index{rato\_process.c@{rato\_process.c}!state\_connection\_current@{state\_connection\_current}}
+\index{state\_connection\_current@{state\_connection\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_connection\_current}{state\_connection\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a491bc2f539592755fefc04bc9eedba0f} 
+\mbox{\hyperlink{composer_8h_abe146658bb3233fc0fe3bff3845397b1}{state\+\_\+connection}} state\+\_\+connection\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a49775543b61b6d7073a319a8cb5bb660}\index{rato\_process.c@{rato\_process.c}!state\_game\_current@{state\_game\_current}}
+\index{state\_game\_current@{state\_game\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_game\_current}{state\_game\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a49775543b61b6d7073a319a8cb5bb660} 
+\mbox{\hyperlink{composer_8h_a923762042f3074402fbf32bc96074164}{state\+\_\+game}} state\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a18d9006704d3f9b8a71e0589315bc937}\index{rato\_process.c@{rato\_process.c}!state\_invited\_current@{state\_invited\_current}}
+\index{state\_invited\_current@{state\_invited\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_invited\_current}{state\_invited\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a18d9006704d3f9b8a71e0589315bc937} 
+\mbox{\hyperlink{composer_8h_a058a020bd18d660613ea747597667329}{state\+\_\+invited}} state\+\_\+invited\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_acf3b88ad82da765f4133edaf7c34315f}\index{rato\_process.c@{rato\_process.c}!state\_main\_menu\_current@{state\_main\_menu\_current}}
+\index{state\_main\_menu\_current@{state\_main\_menu\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_main\_menu\_current}{state\_main\_menu\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_acf3b88ad82da765f4133edaf7c34315f} 
+\mbox{\hyperlink{composer_8h_a13fb278ffcd042dae10afbd9031fd30b}{state\+\_\+main\+\_\+menu}} state\+\_\+main\+\_\+menu\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a3c13ebda1df4624b49da4526768fba3a}\index{rato\_process.c@{rato\_process.c}!state\_menu\_pause\_current@{state\_menu\_pause\_current}}
+\index{state\_menu\_pause\_current@{state\_menu\_pause\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_menu\_pause\_current}{state\_menu\_pause\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a3c13ebda1df4624b49da4526768fba3a} 
+\mbox{\hyperlink{composer_8h_a7efcfa9b101fdfbce413e827dd77b012}{state\+\_\+menu\+\_\+pause}} state\+\_\+menu\+\_\+pause\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c}\index{rato\_process.c@{rato\_process.c}!state\_multiplayer\_current@{state\_multiplayer\_current}}
+\index{state\_multiplayer\_current@{state\_multiplayer\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_multiplayer\_current}{state\_multiplayer\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a9a52ccb1c42185bb4f11f15ca88ac08c} 
+\mbox{\hyperlink{composer_8h_a12b842e60374d6364cf1e12537a68c84}{state\+\_\+multiplayer}} state\+\_\+multiplayer\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_acfeef0fb69a884a6407f55be9a44239d}\index{rato\_process.c@{rato\_process.c}!state\_of\_game\_current@{state\_of\_game\_current}}
+\index{state\_of\_game\_current@{state\_of\_game\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_current}{state\_of\_game\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_acfeef0fb69a884a6407f55be9a44239d} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda}\index{rato\_process.c@{rato\_process.c}!state\_of\_game\_previous@{state\_of\_game\_previous}}
+\index{state\_of\_game\_previous@{state\_of\_game\_previous}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_of\_game\_previous}{state\_of\_game\_previous}}
+{\footnotesize\ttfamily \label{rato__process_8c_ae15c7c4d04ece7eef3d011d6b2654eda} 
+\mbox{\hyperlink{composer_8h_a73254e36fbb9de54f2ee7a4263b9e5b2}{state\+\_\+machine\+\_\+game}} state\+\_\+of\+\_\+game\+\_\+previous\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f}\index{rato\_process.c@{rato\_process.c}!state\_prepare\_current@{state\_prepare\_current}}
+\index{state\_prepare\_current@{state\_prepare\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_prepare\_current}{state\_prepare\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_ac8f57491cd8cc29c7a48fbb8848fde2f} 
+\mbox{\hyperlink{composer_8h_a1e396b29404f85751c9f30567c08f51e}{state\+\_\+prepare}} state\+\_\+prepare\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_aaa0bb0b7dff0cc701562858bde039341}\index{rato\_process.c@{rato\_process.c}!state\_select\_card\_current@{state\_select\_card\_current}}
+\index{state\_select\_card\_current@{state\_select\_card\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_select\_card\_current}{state\_select\_card\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_aaa0bb0b7dff0cc701562858bde039341} 
+\mbox{\hyperlink{composer_8h_a765de81ffc2717f9ccd384aa66b55df3}{state\+\_\+select\+\_\+card}} state\+\_\+select\+\_\+card\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a5e23243b38366a394331c3ea89c5190d}\index{rato\_process.c@{rato\_process.c}!state\_sp\_current@{state\_sp\_current}}
+\index{state\_sp\_current@{state\_sp\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_sp\_current}{state\_sp\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a5e23243b38366a394331c3ea89c5190d} 
+\mbox{\hyperlink{composer_8h_aacd89b0cc452a02bfb870e9f004e4e85}{state\+\_\+sp}} state\+\_\+sp\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a1d487359caf9090127372f89fcb84c59}\index{rato\_process.c@{rato\_process.c}!state\_split\_current@{state\_split\_current}}
+\index{state\_split\_current@{state\_split\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_split\_current}{state\_split\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a1d487359caf9090127372f89fcb84c59} 
+\mbox{\hyperlink{composer_8h_a4253cb234a2895fb3213254b634a9215}{state\+\_\+split}} state\+\_\+split\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a2106df119fe4a2964e5b8e31295534fc}\index{rato\_process.c@{rato\_process.c}!state\_time\_tracker\_current@{state\_time\_tracker\_current}}
+\index{state\_time\_tracker\_current@{state\_time\_tracker\_current}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{state\_time\_tracker\_current}{state\_time\_tracker\_current}}
+{\footnotesize\ttfamily \label{rato__process_8c_a2106df119fe4a2964e5b8e31295534fc} 
+\mbox{\hyperlink{composer_8h_ae5de974455ecf0fc2ff7eb1b544aa0ca}{state\+\_\+time\+\_\+tracker}} state\+\_\+time\+\_\+tracker\+\_\+current\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80}\index{rato\_process.c@{rato\_process.c}!time\_end@{time\_end}}
+\index{time\_end@{time\_end}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{time\_end}{time\_end}}
+{\footnotesize\ttfamily \label{rato__process_8c_a63bd2db6b62e3ab777e5813e4c71cd80} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} time\+\_\+end\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_ad378a63e5307c8aa046aa0ec42315e01}\index{rato\_process.c@{rato\_process.c}!time\_start@{time\_start}}
+\index{time\_start@{time\_start}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{time\_start}{time\_start}}
+{\footnotesize\ttfamily \label{rato__process_8c_ad378a63e5307c8aa046aa0ec42315e01} 
+\mbox{\hyperlink{structrtc__struct}{rtc\+\_\+struct}} time\+\_\+start\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{rato__process_8c_a28ee33f04adbe3bdd53e606aead42473}\index{rato\_process.c@{rato\_process.c}!trump\_location@{trump\_location}}
+\index{trump\_location@{trump\_location}!rato\_process.c@{rato\_process.c}}
+\doxysubsubsection{\texorpdfstring{trump\_location}{trump\_location}}
+{\footnotesize\ttfamily \label{rato__process_8c_a28ee33f04adbe3bdd53e606aead42473} 
+int trump\+\_\+location\hspace{0.3cm}{\ttfamily [extern]}}
+

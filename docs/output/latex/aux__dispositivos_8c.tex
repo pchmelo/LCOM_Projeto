@@ -1,0 +1,229 @@
+\doxysection{src/dispositivos/aux\+\_\+dispositivos.c File Reference}
+\hypertarget{aux__dispositivos_8c}{}\label{aux__dispositivos_8c}\index{src/dispositivos/aux\_dispositivos.c@{src/dispositivos/aux\_dispositivos.c}}
+{\ttfamily \#include "{}aux\+\_\+dispositivos.\+h"{}}\newline
+Include dependency graph for aux\+\_\+dispositivos.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__dispositivos_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{aux__dispositivos_8c_a1ebb4488d400f798504117c353edd1bd}{desenhar\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t cor)
+\begin{DoxyCompactList}\small\item\em Draws a pixel based on the received parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{aux__dispositivos_8c_aea12e94b49a4890d1f6b6ef71437586e}{ler\+\_\+status\+\_\+\+KBC}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}status)
+\begin{DoxyCompactList}\small\item\em Reads the status of the Keyboard Controller. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{aux__dispositivos_8c_ae99efaf0e0d9e755532707deea1e60e6}{serial\+\_\+status}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}status)
+\begin{DoxyCompactList}\small\item\em Reads the status of the serial port. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{aux__dispositivos_8c_a0b8ca7bc01262e52044c1d72e622383e}{colocar\+\_\+fila\+\_\+sp}} (\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{interrupts_8c_a1c185ef10097e4cde9265c5df24b13a5}{f}}, int valor)
+\begin{DoxyCompactList}\small\item\em Places a value into the serial port queue. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{aux__dispositivos_8c_a12feaa4b91b2a749d13b96eab97d6662}{rtc\+\_\+read\+\_\+output}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, uint8\+\_\+t comando)
+\begin{DoxyCompactList}\small\item\em Reads the output of the RTC based on the sent command. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{aux__dispositivos_8c_afafc1891c876602d55b894103b1841a7}{timer\+\_\+get\+\_\+conf}} (uint8\+\_\+t timer, uint8\+\_\+t \texorpdfstring{$\ast$}{*}st)
+\begin{DoxyCompactList}\small\item\em Reads the input timer configuration via Read-\/\+Back command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{aux__dispositivos_8c_a0b8ca7bc01262e52044c1d72e622383e}\index{aux\_dispositivos.c@{aux\_dispositivos.c}!colocar\_fila\_sp@{colocar\_fila\_sp}}
+\index{colocar\_fila\_sp@{colocar\_fila\_sp}!aux\_dispositivos.c@{aux\_dispositivos.c}}
+\doxysubsubsection{\texorpdfstring{colocar\_fila\_sp()}{colocar\_fila\_sp()}}
+{\footnotesize\ttfamily \label{aux__dispositivos_8c_a0b8ca7bc01262e52044c1d72e622383e} 
+int colocar\+\_\+fila\+\_\+sp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}}]{f}{, }\item[{int}]{valor}{}\end{DoxyParamCaption})}
+
+
+
+Places a value into the serial port queue. 
+
+Inserts a value into the queue at the position indicated by the end index (fim). Increments the end index and the size of the queue. If the queue is full (i.\+e., the size of the queue is equal to its capacity), the function returns 1 to indicate an error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointer to the queue. This is the queue where the value will be placed. \\
+\hline
+{\em valor} & The value to place. This is the data that will be placed into the queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if the value was successfully placed into the queue, 1 if the queue is full. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__dispositivos_8c_a0b8ca7bc01262e52044c1d72e622383e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__dispositivos_8c_a1ebb4488d400f798504117c353edd1bd}\index{aux\_dispositivos.c@{aux\_dispositivos.c}!desenhar\_pixel@{desenhar\_pixel}}
+\index{desenhar\_pixel@{desenhar\_pixel}!aux\_dispositivos.c@{aux\_dispositivos.c}}
+\doxysubsubsection{\texorpdfstring{desenhar\_pixel()}{desenhar\_pixel()}}
+{\footnotesize\ttfamily \label{aux__dispositivos_8c_a1ebb4488d400f798504117c353edd1bd} 
+int desenhar\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint32\+\_\+t}]{cor}{}\end{DoxyParamCaption})}
+
+
+
+Draws a pixel based on the received parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the pixel. \\
+\hline
+{\em y} & The y-\/coordinate of the pixel. \\
+\hline
+{\em cor} & The color of the pixel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__dispositivos_8c_a1ebb4488d400f798504117c353edd1bd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__dispositivos_8c_aea12e94b49a4890d1f6b6ef71437586e}\index{aux\_dispositivos.c@{aux\_dispositivos.c}!ler\_status\_KBC@{ler\_status\_KBC}}
+\index{ler\_status\_KBC@{ler\_status\_KBC}!aux\_dispositivos.c@{aux\_dispositivos.c}}
+\doxysubsubsection{\texorpdfstring{ler\_status\_KBC()}{ler\_status\_KBC()}}
+{\footnotesize\ttfamily \label{aux__dispositivos_8c_aea12e94b49a4890d1f6b6ef71437586e} 
+int ler\+\_\+status\+\_\+\+KBC (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{status}{}\end{DoxyParamCaption})}
+
+
+
+Reads the status of the Keyboard Controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & Pointer to store the status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{aux__dispositivos_8c_aea12e94b49a4890d1f6b6ef71437586e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__dispositivos_8c_aea12e94b49a4890d1f6b6ef71437586e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__dispositivos_8c_a12feaa4b91b2a749d13b96eab97d6662}\index{aux\_dispositivos.c@{aux\_dispositivos.c}!rtc\_read\_output@{rtc\_read\_output}}
+\index{rtc\_read\_output@{rtc\_read\_output}!aux\_dispositivos.c@{aux\_dispositivos.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_read\_output()}{rtc\_read\_output()}}
+{\footnotesize\ttfamily \label{aux__dispositivos_8c_a12feaa4b91b2a749d13b96eab97d6662} 
+int rtc\+\_\+read\+\_\+output (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{uint8\+\_\+t}]{comando}{}\end{DoxyParamCaption})}
+
+
+
+Reads the output of the RTC based on the sent command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to store the read data. \\
+\hline
+{\em comando} & The command to send to the RTC. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{aux__dispositivos_8c_a12feaa4b91b2a749d13b96eab97d6662_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__dispositivos_8c_a12feaa4b91b2a749d13b96eab97d6662_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__dispositivos_8c_ae99efaf0e0d9e755532707deea1e60e6}\index{aux\_dispositivos.c@{aux\_dispositivos.c}!serial\_status@{serial\_status}}
+\index{serial\_status@{serial\_status}!aux\_dispositivos.c@{aux\_dispositivos.c}}
+\doxysubsubsection{\texorpdfstring{serial\_status()}{serial\_status()}}
+{\footnotesize\ttfamily \label{aux__dispositivos_8c_ae99efaf0e0d9e755532707deea1e60e6} 
+int serial\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{status}{}\end{DoxyParamCaption})}
+
+
+
+Reads the status of the serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & Pointer to store the status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{aux__dispositivos_8c_ae99efaf0e0d9e755532707deea1e60e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__dispositivos_8c_ae99efaf0e0d9e755532707deea1e60e6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aux__dispositivos_8c_afafc1891c876602d55b894103b1841a7}\index{aux\_dispositivos.c@{aux\_dispositivos.c}!timer\_get\_conf@{timer\_get\_conf}}
+\index{timer\_get\_conf@{timer\_get\_conf}!aux\_dispositivos.c@{aux\_dispositivos.c}}
+\doxysubsubsection{\texorpdfstring{timer\_get\_conf()}{timer\_get\_conf()}}
+{\footnotesize\ttfamily \label{aux__dispositivos_8c_afafc1891c876602d55b894103b1841a7} 
+int timer\+\_\+get\+\_\+conf (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{st}{}\end{DoxyParamCaption})}
+
+
+
+Reads the input timer configuration via Read-\/\+Back command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & The timer to get the configuration from. \\
+\hline
+{\em st} & Pointer to store the configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 on error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{aux__dispositivos_8c_afafc1891c876602d55b894103b1841a7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aux__dispositivos_8c_afafc1891c876602d55b894103b1841a7_icgraph}
+\end{center}
+\end{figure}

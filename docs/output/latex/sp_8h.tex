@@ -1,0 +1,144 @@
+\doxysection{src/dispositivos/sp/sp.h File Reference}
+\hypertarget{sp_8h}{}\label{sp_8h}\index{src/dispositivos/sp/sp.h@{src/dispositivos/sp/sp.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}sp\+\_\+macros.\+h"{}}\newline
+{\ttfamily \#include "{}fila\+\_\+sp.\+h"{}}\newline
+{\ttfamily \#include "{}../utils.\+h"{}}\newline
+{\ttfamily \#include "{}../aux\+\_\+dispositivos.\+h"{}}\newline
+Include dependency graph for sp.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sp_8h_a467e0bab480cfb9578c3866536dc0433}{exit\+\_\+serial\+\_\+port}} ()
+\begin{DoxyCompactList}\small\item\em Exits the serial port. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sp_8h_a0f5877ed1cc7d0cc779f1be8b25fc28f}{enviar\+\_\+byte}} (uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em Sends a byte through the serial port. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sp_8h_ac49ac47c244b1208cb547863f2eee4a4}{receber\+\_\+byte}} ()
+\begin{DoxyCompactList}\small\item\em Receives a byte from the serial port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sp_8h_ab11728b54cf64e7065c11438e362add0}{get\+\_\+value}} ()
+\begin{DoxyCompactList}\small\item\em Gets the value from the serial port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sp_8h_a0f5877ed1cc7d0cc779f1be8b25fc28f}\index{sp.h@{sp.h}!enviar\_byte@{enviar\_byte}}
+\index{enviar\_byte@{enviar\_byte}!sp.h@{sp.h}}
+\doxysubsubsection{\texorpdfstring{enviar\_byte()}{enviar\_byte()}}
+{\footnotesize\ttfamily \label{sp_8h_a0f5877ed1cc7d0cc779f1be8b25fc28f} 
+int enviar\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte}{}\end{DoxyParamCaption})}
+
+
+
+Sends a byte through the serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em byte} & The byte to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp_8h_a0f5877ed1cc7d0cc779f1be8b25fc28f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp_8h_a0f5877ed1cc7d0cc779f1be8b25fc28f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sp_8h_a467e0bab480cfb9578c3866536dc0433}\index{sp.h@{sp.h}!exit\_serial\_port@{exit\_serial\_port}}
+\index{exit\_serial\_port@{exit\_serial\_port}!sp.h@{sp.h}}
+\doxysubsubsection{\texorpdfstring{exit\_serial\_port()}{exit\_serial\_port()}}
+{\footnotesize\ttfamily \label{sp_8h_a467e0bab480cfb9578c3866536dc0433} 
+void exit\+\_\+serial\+\_\+port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Exits the serial port. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{sp_8h_a467e0bab480cfb9578c3866536dc0433_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sp_8h_ab11728b54cf64e7065c11438e362add0}\index{sp.h@{sp.h}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!sp.h@{sp.h}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily \label{sp_8h_ab11728b54cf64e7065c11438e362add0} 
+void get\+\_\+value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the value from the serial port. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{sp_8h_ab11728b54cf64e7065c11438e362add0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp_8h_ab11728b54cf64e7065c11438e362add0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sp_8h_ac49ac47c244b1208cb547863f2eee4a4}\index{sp.h@{sp.h}!receber\_byte@{receber\_byte}}
+\index{receber\_byte@{receber\_byte}!sp.h@{sp.h}}
+\doxysubsubsection{\texorpdfstring{receber\_byte()}{receber\_byte()}}
+{\footnotesize\ttfamily \label{sp_8h_ac49ac47c244b1208cb547863f2eee4a4} 
+int receber\+\_\+byte (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Receives a byte from the serial port. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on success, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp_8h_ac49ac47c244b1208cb547863f2eee4a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sp_8h_ac49ac47c244b1208cb547863f2eee4a4_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,78 @@
+\doxysection{rules.\+h}
+\hypertarget{rules_8h_source}{}\label{rules_8h_source}\index{src/prog/game\_rules/rules.h@{src/prog/game\_rules/rules.h}}
+\mbox{\hyperlink{rules_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RULES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RULES\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{../functions/sprite.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{aux__func_8h}{../functions/aux\_func.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ DECK\_SIZE\ 40}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_card_a6cfd95afd0afebd625b889fb6e58371c}{rank}};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_card_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_card_af8ed615e797a93e3933a1e7a448f3dbd}{suit}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//suits:\ clubs\ (♣,\ 0),\ diamonds\ (♦,\ 1),\ hearts\ (♥,\ 2)\ and\ spades\ (♠,\ 3)}}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{struct_card_a7c54302f990f134ca6e37a2e9ef9999d}{sprite}};}
+\DoxyCodeLine{00017\ \}\ \mbox{\hyperlink{struct_card}{Card}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structrules}{rules}}\{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structrules_a0ae8a274f7d0f338ba0809389c2c427a}{playerNum}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structrules_aea9d45c80fb213a303c1e9fedc9fa412}{numCards}};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{struct_card}{Card}}\ \mbox{\hyperlink{structrules_a427455c8713034271914c413ee2f8421}{playerHand}}[10];}
+\DoxyCodeLine{00023\ \}\ \mbox{\hyperlink{rules_8h_a62adeb6a57ce9bdfff368969e21e9207}{Player}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00036\ void\ (\mbox{\hyperlink{rules_8h_ab13c958758a438df8ffa77ca4975bc55}{fillDeck}})();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00046\ void\ (\mbox{\hyperlink{rules_8h_aebdb0f340a4800e7b841571ffc1f5da9}{shuffleDeck}})();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00057\ void\ (\mbox{\hyperlink{rules_8h_a1c629ccbdb12749b09e75c86f2759650}{shuffleDeckSeed}})();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00069\ \mbox{\hyperlink{struct_card}{Card}}\ (\mbox{\hyperlink{rules_8h_a273228885ce4b0b07699c595b93f4d63}{getTop}})();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00080\ \mbox{\hyperlink{struct_card}{Card}}\ (\mbox{\hyperlink{rules_8h_a4d10df4c26ab05e602410300279f2066}{getBottom}})();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00090\ void\ (\mbox{\hyperlink{rules_8h_aeaefd5413bdb591b46cb4f4ff0442d48}{splitDeck}})();\ \ \ \ \textcolor{comment}{//splits\ the\ deck\ at\ the\ index(1-\/40)}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00101\ int\ (\mbox{\hyperlink{rules_8h_abf760716bfff375324964b5f23708c3d}{processRound}})();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00118\ bool\ (\mbox{\hyperlink{rules_8h_af3766cd05cc46936abb71224c2d061ee}{isPlayable}})(\mbox{\hyperlink{struct_card}{Card}}\ *playerHand,\ \textcolor{keywordtype}{int}\ numCards,\ \mbox{\hyperlink{struct_card}{Card}}\ selectedCard);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00133\ int\ (\mbox{\hyperlink{rules_8h_adebe5c3d5222f8b9e4ffe63ec311000f}{botPlayCard}})(\mbox{\hyperlink{struct_card}{Card}}*\ playerDeck);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00149\ \mbox{\hyperlink{struct_sprite}{Sprite}}*\ (\mbox{\hyperlink{rules_8h_a3df79d631c10ddcff7ef8064fb4534ac}{getSprite}})(\textcolor{keywordtype}{int}\ rank,\ \textcolor{keywordtype}{int}\ suit);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00164\ void\ (\mbox{\hyperlink{rules_8h_a54c0cd193fcd3f116ad8ef4b233eb391}{fillPlayersHand}})(\textcolor{keywordtype}{int}\ order,\ \textcolor{keywordtype}{int}\ playerNum);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00176\ void\ (\mbox{\hyperlink{rules_8h_a17004f10be86cdd8b324a0bfbdf3271e}{removeCard}})(\textcolor{keywordtype}{int}\ player,\ \textcolor{keywordtype}{int}\ cardIndex);}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00191\ void\ (\mbox{\hyperlink{rules_8h_a91a0d490a3563ee97302b9a4eda45f67}{removeCardHand}})(\mbox{\hyperlink{structrules}{Player}}\ *\ player,\ \textcolor{keywordtype}{int}\ cardIndex,\ \textcolor{keywordtype}{int}\ numCards);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RULES\_H}}
+
+\end{DoxyCode}

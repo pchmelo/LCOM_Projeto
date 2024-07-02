@@ -1,0 +1,20 @@
+<map id="serial_process" name="serial_process">
+<area shape="rect" id="Node000001" title="Processes serial inputs during different game states." alt="" coords="5,80,120,105"/>
+<area shape="rect" id="Node000002" href="$serial__process_8c.html#a9526b4b80c4e0c0ca0bde7eb40d5bfde" title="Processes serial inputs in the main menu." alt="" coords="168,5,367,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,78,123,58,167,40,191,32,193,37,169,44,125,63,88,82"/>
+<area shape="rect" id="Node000003" href="$serial__process_8c.html#a70897b5243566bc91472ad8b5611b9e3" title="Processes serial inputs for Player 1 during the game." alt="" coords="198,55,337,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,83,184,75,185,80,121,88"/>
+<area shape="rect" id="Node000007" href="$serial__process_8c.html#aa4d3a936659696a543c9eb4241cedac2" title="Processes serial inputs for Player 2 during the game." alt="" coords="198,104,337,129"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="121,97,185,104,184,110,120,102"/>
+<area shape="rect" id="Node000008" href="$interrupts_8c.html#a44b9e3cbf1f7a02d96ecaa401789fba8" title="Cleans the serial port interrupts." alt="" coords="193,153,342,179"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="88,103,169,140,193,147,192,152,167,144,86,108"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#ae05582b9454a374bbdc4621cbda8336d" title="Gets the current time from the RTC." alt="" coords="415,80,519,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="337,73,401,82,400,87,337,79"/>
+<area shape="rect" id="Node000005" href="$aux__dispositivos_8c.html#a12feaa4b91b2a749d13b96eab97d6662" title="Reads the output of the RTC based on the sent command." alt="" coords="567,80,691,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="519,90,553,90,553,95,519,95"/>
+<area shape="rect" id="Node000006" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="739,80,837,105"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="691,90,725,90,725,95,691,95"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="337,106,400,98,401,103,337,111"/>
+<area shape="rect" id="Node000009" href="$fila__sp_8c.html#a1aea4a5be0ef7f13f8871f5e0b4d32c3" title="Pops a value from the serial port queue." alt="" coords="419,153,514,179"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="342,163,406,163,406,169,342,169"/>
+</map>

@@ -1,0 +1,135 @@
+\doxysection{src/dispositivos/sp/fila\+\_\+sp.c File Reference}
+\hypertarget{fila__sp_8c}{}\label{fila__sp_8c}\index{src/dispositivos/sp/fila\_sp.c@{src/dispositivos/sp/fila\_sp.c}}
+{\ttfamily \#include "{}fila\+\_\+sp.\+h"{}}\newline
+Include dependency graph for fila\+\_\+sp.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila__sp_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{fila__sp_8c_acdaaba07dd5967b48fe896d8b052e9d7}{criar\+\_\+fila\+\_\+sp}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new serial port queue. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{fila__sp_8c_ade729f42295947061681421a846c1459}{inserir\+\_\+fila\+\_\+sp}} (\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{interrupts_8c_a1c185ef10097e4cde9265c5df24b13a5}{f}}, int rbr, uint8\+\_\+t status)
+\begin{DoxyCompactList}\small\item\em Inserts a value into the serial port queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fila__sp_8c_a7ff2a9990961ae0ea2135720b76a465f}{limpar\+\_\+fila\+\_\+sp}} (\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{interrupts_8c_a1c185ef10097e4cde9265c5df24b13a5}{f}})
+\begin{DoxyCompactList}\small\item\em Clears the serial port queue. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{fila__sp_8c_a1aea4a5be0ef7f13f8871f5e0b4d32c3}{pop\+\_\+fila\+\_\+sp}} (\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{interrupts_8c_a1c185ef10097e4cde9265c5df24b13a5}{f}})
+\begin{DoxyCompactList}\small\item\em Pops a value from the serial port queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{fila__sp_8c_acdaaba07dd5967b48fe896d8b052e9d7}\index{fila\_sp.c@{fila\_sp.c}!criar\_fila\_sp@{criar\_fila\_sp}}
+\index{criar\_fila\_sp@{criar\_fila\_sp}!fila\_sp.c@{fila\_sp.c}}
+\doxysubsubsection{\texorpdfstring{criar\_fila\_sp()}{criar\_fila\_sp()}}
+{\footnotesize\ttfamily \label{fila__sp_8c_acdaaba07dd5967b48fe896d8b052e9d7} 
+\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*} criar\+\_\+fila\+\_\+sp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new serial port queue. 
+
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the created queue. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila__sp_8c_acdaaba07dd5967b48fe896d8b052e9d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fila__sp_8c_ade729f42295947061681421a846c1459}\index{fila\_sp.c@{fila\_sp.c}!inserir\_fila\_sp@{inserir\_fila\_sp}}
+\index{inserir\_fila\_sp@{inserir\_fila\_sp}!fila\_sp.c@{fila\_sp.c}}
+\doxysubsubsection{\texorpdfstring{inserir\_fila\_sp()}{inserir\_fila\_sp()}}
+{\footnotesize\ttfamily \label{fila__sp_8c_ade729f42295947061681421a846c1459} 
+int inserir\+\_\+fila\+\_\+sp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}}]{f}{, }\item[{int}]{rbr}{, }\item[{uint8\+\_\+t}]{status}{}\end{DoxyParamCaption})}
+
+
+
+Inserts a value into the serial port queue. 
+
+Checks if the data is available by using the status parameter. If the data is available, it calls the colocar\+\_\+fila\+\_\+sp function to insert the value into the queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointer to the queue. This is the queue where the value will be inserted. \\
+\hline
+{\em rbr} & The value to insert. This is the data that will be inserted into the queue. \\
+\hline
+{\em status} & The status of the serial port. This is used to check if the data is available for insertion. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if the value was successfully inserted into the queue, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{fila__sp_8c_ade729f42295947061681421a846c1459_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila__sp_8c_ade729f42295947061681421a846c1459_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fila__sp_8c_a7ff2a9990961ae0ea2135720b76a465f}\index{fila\_sp.c@{fila\_sp.c}!limpar\_fila\_sp@{limpar\_fila\_sp}}
+\index{limpar\_fila\_sp@{limpar\_fila\_sp}!fila\_sp.c@{fila\_sp.c}}
+\doxysubsubsection{\texorpdfstring{limpar\_fila\_sp()}{limpar\_fila\_sp()}}
+{\footnotesize\ttfamily \label{fila__sp_8c_a7ff2a9990961ae0ea2135720b76a465f} 
+void limpar\+\_\+fila\+\_\+sp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}}]{f}{}\end{DoxyParamCaption})}
+
+
+
+Clears the serial port queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointer to the queue. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{fila__sp_8c_a7ff2a9990961ae0ea2135720b76a465f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fila__sp_8c_a1aea4a5be0ef7f13f8871f5e0b4d32c3}\index{fila\_sp.c@{fila\_sp.c}!pop\_fila\_sp@{pop\_fila\_sp}}
+\index{pop\_fila\_sp@{pop\_fila\_sp}!fila\_sp.c@{fila\_sp.c}}
+\doxysubsubsection{\texorpdfstring{pop\_fila\_sp()}{pop\_fila\_sp()}}
+{\footnotesize\ttfamily \label{fila__sp_8c_a1aea4a5be0ef7f13f8871f5e0b4d32c3} 
+int pop\+\_\+fila\+\_\+sp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfila__sp}{fila\+\_\+sp}} \texorpdfstring{$\ast$}{*}}]{f}{}\end{DoxyParamCaption})}
+
+
+
+Pops a value from the serial port queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointer to the queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the popped value. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fila__sp_8c_a1aea4a5be0ef7f13f8871f5e0b4d32c3_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,9 @@
+<map id="serial_process_P2" name="serial_process_P2">
+<area shape="rect" id="Node000001" title="Processes serial inputs for Player 2 during the game." alt="" coords="5,5,144,31"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#ae05582b9454a374bbdc4621cbda8336d" title="Gets the current time from the RTC." alt="" coords="192,5,296,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
+<area shape="rect" id="Node000003" href="$aux__dispositivos_8c.html#a12feaa4b91b2a749d13b96eab97d6662" title="Reads the output of the RTC based on the sent command." alt="" coords="344,5,468,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,15,330,15,330,21,296,21"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="516,5,615,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="468,15,503,15,503,21,468,21"/>
+</map>

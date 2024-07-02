@@ -1,0 +1,5 @@
+<map id="testResumeButtonCollision" name="testResumeButtonCollision">
+<area shape="rect" id="Node000001" title="Checks if a point is inside the resume button collision area." alt="" coords="5,5,204,31"/>
+<area shape="rect" id="Node000002" href="$collision_8c.html#aa847ebd1f6d9f431211f82ea20568a5f" title="Checks if a point is inside a collision area." alt="" coords="252,5,341,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,15,238,15,238,21,205,21"/>
+</map>

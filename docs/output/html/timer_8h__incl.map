@@ -1,0 +1,12 @@
+<map id="src/dispositivos/timer/timer.h" name="src/dispositivos/timer/timer.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="50,5,212,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="91,167,176,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,48,44,61,21,78,9,97,9,106,13,117,26,133,42,145,79,163,77,168,39,150,22,137,9,120,3,107,4,95,17,74,41,57,70,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="23,93,127,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,47,93,84,89,80,115,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="152,93,222,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,44,173,80,168,84,142,47"/>
+<area shape="rect" id="Node000005" href="$i8254_8h.html" title=" " alt="" coords="246,93,317,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="168,43,248,84,246,89,166,48"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="259,121,171,163,169,158,257,116"/>
+</map>

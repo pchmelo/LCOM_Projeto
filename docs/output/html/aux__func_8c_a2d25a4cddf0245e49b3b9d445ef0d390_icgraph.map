@@ -1,0 +1,5 @@
+<map id="time_to_int" name="time_to_int">
+<area shape="rect" id="Node000001" title="Converts the current RTC time into an array of integers." alt="" coords="156,5,252,31"/>
+<area shape="rect" id="Node000002" href="$composer_8c.html#ae0caca23df585ad5b33cbd09fc814ac0" title="Displays the current time at (x, y)." alt="" coords="5,5,108,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,21,108,21,108,15,142,15"/>
+</map>

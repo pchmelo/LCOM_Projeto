@@ -1,0 +1,5 @@
+<map id="ler_status_KBC" name="ler_status_KBC">
+<area shape="rect" id="Node000001" title="Reads the status of the Keyboard Controller." alt="" coords="5,5,125,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from a specified port." alt="" coords="173,5,272,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,15,160,15,160,21,126,21"/>
+</map>

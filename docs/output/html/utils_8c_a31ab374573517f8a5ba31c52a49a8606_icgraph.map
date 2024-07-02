@@ -1,0 +1,9 @@
+<map id="util_get_LSB" name="util_get_LSB">
+<area shape="rect" id="Node000001" title="Gets the least significant byte (LSB) of a 16&#45;bit value." alt="" coords="567,5,669,31"/>
+<area shape="rect" id="Node000002" href="$timer_8c.html#aca1506be74dfc71c6f90772ca269c619" title="Changes the operating frequency of a timer." alt="" coords="363,5,519,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="553,21,519,21,519,15,553,15"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a0c3066e9555a95a71d7192ba757e135f" title="Main game loop handling hardware interrupts." alt="" coords="176,5,315,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,21,315,21,315,15,349,15"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="163,21,128,21,128,15,163,15"/>
+</map>

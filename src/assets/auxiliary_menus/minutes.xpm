@@ -1,0 +1,27 @@
+/* XPM */
+static char *minutes[] = {
+/* columns rows colors chars-per-pixel */
+"94 16 5 1 ",
+"  c #000000",
+". c #0F0F0F",
+"X c #3F3F3F",
+"o c #FFFFFF",
+"O c #00FF00",
+/* pixels */
+"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+"O     OO    OOO        OOO   OOO     OO   X.OOOOOOOOOO            OO           OOOO         OO",
+"O ooo OO oo OOO oooooo OO  o   O ooo OO oooXOOO     OO oooooooooo OO ooooooooo OOO  ooooooo  O",
+"O ooo OO oo OOO oooooo OO oooo   ooo OO oooXOOO ooo OO oooooooooo OO ooooooooo OO  ooooooooo O",
+"O ooo    oo OOO oooooo OO ooooo  ooo OO oooXOOO ooo OO     ooo    OO ooo       OO oooo   ooo O",
+"O oooo  ooo OOO ooooo  OO oooooo ooo OO oooXOOO ooo OO     ooo    OO ooo      OOO oooo    o  O",
+"O ooooooooo OOO oooo   OO oooooo ooo OO oooXOOO ooo OOOOOO ooo OOOOO ooo      OOO  oooo      O",
+"O ooooooooo OOO oooo   OO oo ooooooo OO oooXOOO ooo OOOOOO ooo OOOOO oooooooo OOO     ooooo  O",
+"  ooooooooo   O oooo OOOO oo  oooooo OO ooo     ooo OOOOO  ooo OOOOO ooo      OOO  oo   oooo O",
+" ooo oooo ooo O ooo  OOOO oo   ooooo OO oooo   oooo OOOOO oooo OOOOO ooo       OO oooo   ooo O",
+" ooo oooo ooo O ooo  OOOO oo    oooo OO ooooooooooo OOOOO oooo OOOOO ooooooooo OO oooooooooo O",
+" ooo  oo  ooo O ooo  OOOO oo O   ooo OO  ooooooooo  OOOOO oooo OOOOO ooooooooo OO  ooooooooo O",
+" ooo      ooo O ooo OOOOO oo OO      OO   ooooooo   OOOOO oooo OOOOO ooooooooo OO    oooooo  O",
+"              O     OOOOO    OOO     OOO           OOOOOO      OOOOO           OOO           O",
+"     OOOO     O     OOOOO    OOOOOOOOOOOO         OOOOOOO      OOOOO           OOOO         OO",
+"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+};

@@ -1,0 +1,27 @@
+\doxysection{rtc.\+h}
+\hypertarget{rtc_8h_source}{}\label{rtc_8h_source}\index{src/dispositivos/rtc/rtc.h@{src/dispositivos/rtc/rtc.h}}
+\mbox{\hyperlink{rtc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rtc__macros_8h}{rtc\_macros.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../util.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{aux__dispositivos_8h}{../aux\_dispositivos.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00013\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structrtc__struct_a46729a903be1a03cdb248fb48d84d4f5}{seconds}};\ }
+\DoxyCodeLine{00014\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structrtc__struct_a7acca8be0094a19be6e308ac05924c4f}{minutes}};\ }
+\DoxyCodeLine{00015\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structrtc__struct_a00a531a34a1d603329df5778f1203ab6}{hours}};\ \ \ }
+\DoxyCodeLine{00016\ \}\ \mbox{\hyperlink{structrtc__struct}{rtc\_struct}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ int\ (\mbox{\hyperlink{rtc_8h_a082d1137bf57d60a2747117221f5dbff}{rtc\_read\_set}})();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ int\ (\mbox{\hyperlink{rtc_8h_ae05582b9454a374bbdc4621cbda8336d}{rtc\_get\_time}})(\mbox{\hyperlink{structrtc__struct}{rtc\_struct}}\ *rtc\_time\_dis);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}
