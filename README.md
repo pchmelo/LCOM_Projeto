@@ -20,7 +20,7 @@ To run the game, in MINIX, navigate to the project's 'src' folder and enter the 
 Upon launching the game, you will be presented with the following Menu: 
 
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/mainMenu.png" alt="menu">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/mainMenu.png" alt="menu">
 
 
 From here, you can choose to exit or play in single or multiplayer mode using arrow keys/enter or your Mouse.
@@ -32,13 +32,13 @@ Keep in mind that you need to configure another Virtual Machine in order for the
 
 Point of view of the player who invited someone:
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/WaitingUI.png" alt="wait">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/WaitingUI.png" alt="wait">
 
 
 
 Point of view of the invited player:
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/invitedUI.png" alt="invited">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/invitedUI.png" alt="invited">
 
 ### Gameplay
 
@@ -47,33 +47,33 @@ The game is a Portuguese "Sueca" card game. Players can use the arrow keys and e
 Upon starting a singleplayer match, you will be presented with the following Interface:
 
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/slider.png" alt="slider">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/slider.png" alt="slider">
 
 
 
 After sliding to choose an amount, you will be asked to choose a card from the top or bottom of the deck. This card's Suit will determine the Trump Suit for the round;
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/getTopBottom.png" alt="drawcard">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/getTopBottom.png" alt="drawcard">
 
 Then, the game itself will start:
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/gameState.png" alt="game">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/gameState.png" alt="game">
 
 
 
 Example of a Multiplayer match, side by side:
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/multiplayer.png" alt="mpl">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/multiplayer.png" alt="mpl">
 
 
 Players can exit to the main Menu by clicking ESC and choose to exit the game in the ESC Menu. All of these actions can be made both through the use of Keyboard and Mouse:
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/pauseMenu.png" alt="pause">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/pauseMenu.png" alt="pause">
 
 
 Upon stopping the game, you will have access to the elapsed time you've been playing for:
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/elapsedTime.png" alt="time">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/elapsedTime.png" alt="time">
 
 ### Game Rules
 
@@ -346,7 +346,7 @@ Percentage weight of this module in our project: 7%
 
 ### Function Call Graph
 
-<img src="https://git.fe.up.pt/lcom/2324/t15/g5/-/raw/main/Docs/Function_call_graph.png" alt="Graph">
+<img src="https://github.com/pchmelo/LCOM_Projeto/blob/main/imgs/Function_call_graph.png" alt="Graph">
 
 
 
