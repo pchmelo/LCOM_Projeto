@@ -1,5 +1,9 @@
 # LCOM Project - Group T15G5
 
+**Project Grade:** 19.30/20.00
+
+**Demo Video**: https://www.youtube.com/watch?v=72LLkL45acQ
+
 ## Group Members
 - Rafael Cunha (up202208957@fe.up.pt)
 - Vasco Melo (up202207564@fe.up.pt)
